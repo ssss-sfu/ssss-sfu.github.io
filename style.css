@@ -75,11 +75,11 @@ body
   color: forestgreen;
 
 }
- 
+
 .about
 {
   color: black;
-  font-size: 20px;
+  font-size: 17px;
   font-family: Helvetica, sans-serif;
   margin-right: 150px;
   margin-left: 150px;
@@ -166,12 +166,6 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   }
 
-/*.sfss
-{
-  height: 10px;
-  width: 100px;
-}*/
-
 
 /*clear both makes sure the footer is placed below the next element.*/
 .footer {
@@ -187,13 +181,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 
 /*form page*/
 
+.form_h{
+  text-align: center;
+  padding-right: 450px;
+  font-size: 35px;
+  color: black;
+  font-family: Noto sans, sans-serif;
+
+}
 .form{
   text-align: center;
 }
 
 .map{
-  margin-left: 100px;
-  float: left;
+  text-align: center;
 }
 
 .email_title{
@@ -203,7 +204,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 }
 
 .email{
-  padding-top: 200px;
+  padding-top: 75px;
   text-align: center;
   font-size: 20px;
   font-family: Noto sans, sans-serif;
