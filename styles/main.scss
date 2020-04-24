@@ -1,0 +1,46 @@
+// sass main.scss main.css
+
+
+// Sections
+    @use "menu";
+    @use "body";
+    @use "footer";
+
+
+// Fonts
+    @import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Montserrat&display=swap');
+    // $header-font: 'Ibarra Real Nova', serif;
+    $text-font: 'Montserrat', sans-serif;
+
+
+// DOM
+    *{ 
+        transition: 0.5s all; 
+    }
+
+    h1, h2, h3 { 
+        // font-family: $header-font; 
+        font-family: $text-font; 
+    }
+
+    h4, p { 
+        font-family: $text-font; 
+    }
+
+    a { 
+        color: grey;
+        &:hover{
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    
+// Bootstrap
+    .container, .container-fluid {
+        padding-bottom: 50px;
+    }
+
+    .row {
+        padding: 1rem 0;
+    }

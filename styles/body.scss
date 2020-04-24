@@ -1,0 +1,40 @@
+body { 
+    padding-top: 150px; 
+
+    &::-webkit-scrollbar {
+        background-color: white;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: grey;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #009640;
+    }
+    &::-webkit-scrollbar:hover {
+        background-color: #ffed00;
+    }
+}
+
+
+img {
+    width: 75%;
+    text-align: center;
+    padding: 50px 0;
+
+    filter: grayscale(100%);
+    &:hover{
+        filter: grayscale(0%);
+    }
+}
+
+.photo {
+    text-align: center;
+}
+
+
+.hero {
+    padding: 50px 0;
+    .img-colored {
+        filter: grayscale(0%) !important;
+    }
+}

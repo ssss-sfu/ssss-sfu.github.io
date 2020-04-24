@@ -1,0 +1,12 @@
+.footer {
+    text-align: center;
+    a {
+        color: grey;
+        border-bottom: 2px solid grey;
+        text-transform: uppercase;
+        &:hover { 
+            color: black;
+            border-bottom: 5px solid black;
+        } 
+    }
+}
