@@ -1,0 +1,59 @@
+// Try to make sub scss files, and use them here. 
+// Main is for GLOBAL GENERIC settings.
+// sass main.scss main.css
+@use "menu";
+
+// Fonts
+    @import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Montserrat&display=swap');
+    $header-font: 'Ibarra Real Nova', serif;
+    $text-font: 'Montserrat', sans-serif;
+
+
+// DOM
+    *{ 
+        transition: 0.5s all; 
+    }
+
+    body { 
+        padding-top: 150px; 
+        &::-webkit-scrollbar {
+            background-color: white;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: grey;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 { 
+        font-family: $header-font; 
+    }
+
+    p { 
+        font-family: $text-font; 
+    }
+
+    a { 
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    img {
+        width: 75%;
+        text-align: center;
+        padding: 50px 0;
+        filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%);
+        }
+    }
+
+
+// Bootstrap
+    .container, .container-fluid {
+        padding-bottom: 50px;
+    }
+
+    .row {
+        padding: 1rem 0;
+    }

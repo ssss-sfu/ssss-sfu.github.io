@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Montserrat&display=swap");
+.menu {
+  background-color: white;
+  padding-bottom: 10px !important;
+}
+.menu .menu-nav > a {
+  color: grey;
+  padding: 8px;
+}
+.menu h4 {
+  margin: 0 !important;
+}
+
+* {
+  transition: 0.5s all;
+}
+
+body {
+  padding-top: 150px;
+}
+body::-webkit-scrollbar {
+  background-color: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 75%;
+  text-align: center;
+  padding: 50px 0;
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: grayscale(0%);
+}
+
+.container, .container-fluid {
+  padding-bottom: 50px;
+}
+
+.row {
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */
