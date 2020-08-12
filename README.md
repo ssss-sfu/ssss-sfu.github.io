@@ -1,22 +1,24 @@
 # ssss-sfu.github.io
 
-In Development!
 
 
-## Ideas
+Director of Services Responsibilities
+We want SoSy students (and students in general) to have easy access to info about what the SSSS is doing. An up-to-date website will help with this. - website forum
 
-ML UBC Confession auto generator based on previous confessions. 
-
-discordapps
-- auto renew compass card ( Hilals friend )
-
-boardgames / library of ssss  online renting. 
-  cleaner kreigslist - for textbooks 
-  Hidden blacksite for pdfs. (Research Purposes)
-  
-Hackathon voting - based on hilal model but clean af. 
-2 player tetris react 
-myschedule overlay
-- Coursesys etc 
-
-- Minimalistic Facebook / Myschedule / School stuff
+Maintaining and creating student services that facilitate and enhance student and society functions.
+Website and Discord information management, 
+Applications for travel and conference funding, society accessibility and transparency.
+Help with admission - getting into sosy (FAQ)
+Advising, either with fas or in general
+Co-op and career
+Finances and scholarships
+Key access to rooms and to the labs.
+Getting access to government / sfu resources during covid
+Course enrollment, coursys, myschedule, getting info from the faculty on electives etc.
+Student q and a section 
+Students Page on the website
+student issues and concerns
+Co op info
+Advising info 
+Courses for next semester
+Course updates from professors
