@@ -1,6 +1,13 @@
 # ssss-sfu.github.io
 
 
+## Frosh 
+Website - SSSS
+Join Discord 
+Join Facebook Group
+Description of events, etc. 
+
+## Others 
 
 Director of Services Responsibilities
 We want SoSy students (and students in general) to have easy access to info about what the SSSS is doing. An up-to-date website will help with this. - website forum
@@ -22,3 +29,4 @@ Co op info
 Advising info 
 Courses for next semester
 Course updates from professors
+Resources etc. 

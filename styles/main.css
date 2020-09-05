@@ -49,16 +49,17 @@ img:hover {
 }
 
 .footer {
-  text-align: center;
+  border-top: 1px solid black;
+  padding-top: 50px;
 }
-.footer a {
-  color: grey;
-  border-bottom: 2px solid grey;
-  text-transform: uppercase;
+.footer ul {
+  padding-left: 0;
+  list-style: none;
 }
-.footer a:hover {
-  color: black;
-  border-bottom: 5px solid black;
+.footer .footer-image {
+  width: 50px;
+  padding: 0;
+  filter: grayscale(0);
 }
 
 * {
