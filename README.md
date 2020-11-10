@@ -1,5 +1,7 @@
 # ssss-sfu.github.io
 
+SFU Software Systems website repository
+Social links here: https://linktr.ee/sosy
 
 ## Frosh 
 Website - SSSS
