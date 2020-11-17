@@ -1,28 +1,15 @@
-// .footer {
-//     text-align: center;
-//     a {
-//         color: grey;
-//         border-bottom: 2px solid grey;
-//         text-transform: uppercase;
-//         &:hover { 
-//             color: black;
-//             border-bottom: 5px solid black;
-//         } 
-//     }
-// }
-
 .footer {
     border-top: 1px solid black;
-    padding-top: 50px;
+    padding: 50px 0;
+
+    .footer-image {
+        width: 50px;
+        padding: 0;
+    }
 
     ul {
         padding-left: 0;
         list-style: none;
     }
 
-    .footer-image {
-        width: 50px;
-        padding: 0;
-        filter: grayscale(0);
-    }
 }

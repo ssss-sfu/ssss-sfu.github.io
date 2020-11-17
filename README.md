@@ -1,32 +1,16 @@
 # ssss-sfu.github.io
+ 
+Current Website Developer: Andy Wang, President of the SSSS
+Please see SSSS Open Source Projects for a list of ways to contribute 
 
+## Structure 
 
-## Frosh 
-Website - SSSS
-Join Discord 
-Join Facebook Group
-Description of events, etc. 
+We are developing on a blended Bootstrap 4.4.1 and Custom SCSS Styling, 
+based on minimalism, with an emphasise on using Bootstrap for structure and Custom SCSS for color and animation. 
 
-## Others 
+All custom SCSS is linked into the main.scss file, which is compiled into one main.css file. 
 
-Director of Services Responsibilities
-We want SoSy students (and students in general) to have easy access to info about what the SSSS is doing. An up-to-date website will help with this. - website forum
+There is little to no js other than files required by Bootstrap, including jQuery 3.5.0
 
-Maintaining and creating student services that facilitate and enhance student and society functions.
-Website and Discord information management, 
-Applications for travel and conference funding, society accessibility and transparency.
-Help with admission - getting into sosy (FAQ)
-Advising, either with fas or in general
-Co-op and career
-Finances and scholarships
-Key access to rooms and to the labs.
-Getting access to government / sfu resources during covid
-Course enrollment, coursys, myschedule, getting info from the faculty on electives etc.
-Student q and a section 
-Students Page on the website
-student issues and concerns
-Co op info
-Advising info 
-Courses for next semester
-Course updates from professors
-Resources etc. 
+## SCSS 
+Run the command sass main.scss main.css

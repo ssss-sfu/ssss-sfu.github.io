@@ -1,33 +1,25 @@
-body { 
-    padding-top: 150px; 
-
-    &::-webkit-scrollbar {
-        background-color: white;
+// Does not include the Navigation or Footer 
+.body {
+    img {
+        width: 75%;
     }
-    &::-webkit-scrollbar-thumb {
-        background-color: grey;
+
+    .row {
+        padding: 50px;
     }
-}
-
-img {
-    width: 75%;
-    text-align: center;
-    padding: 50px 0;
-
-    filter: grayscale(100%);
-    &:hover{
-        filter: grayscale(0%);
+    
+    .image-row {
+        padding: 50px 0;
+        text-align: center; 
     }
-}
 
-.photo {
-    text-align: center;
-}
-
-
-.hero {
-    padding: 50px 0;
-    .img-colored {
-        filter: grayscale(0%) !important;
+    .greyscaled {
+        filter: grayscale(100%);
+        &:hover{ filter: grayscale(0%); }
     }
-}
+    
+    .inverted {
+        background-color: black;
+        color: white;
+    }
+} 

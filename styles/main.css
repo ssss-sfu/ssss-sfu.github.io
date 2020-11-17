@@ -1,93 +1,63 @@
 @import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Montserrat&display=swap");
-.menu {
-  background-color: white;
-  padding-bottom: 10px !important;
-}
-.menu .menu-header {
-  padding: 25px;
-}
-.menu .menu-nav {
-  padding: 0;
-}
-.menu .menu-nav a {
-  padding: 8px;
-  border-bottom: 2px solid transparent;
-}
-.menu .menu-nav a:hover {
-  border-color: black;
-}
-
-body {
-  padding-top: 150px;
-}
-body::-webkit-scrollbar {
+.navbar {
   background-color: white;
 }
-body::-webkit-scrollbar-thumb {
-  background-color: grey;
+
+.navbar-logo {
+  width: 50px;
 }
 
-img {
+.body img {
   width: 75%;
-  text-align: center;
+}
+.body .row {
+  padding: 50px;
+}
+.body .image-row {
   padding: 50px 0;
+  text-align: center;
+}
+.body .greyscaled {
   filter: grayscale(100%);
 }
-img:hover {
+.body .greyscaled:hover {
   filter: grayscale(0%);
 }
-
-.photo {
-  text-align: center;
-}
-
-.hero {
-  padding: 50px 0;
-}
-.hero .img-colored {
-  filter: grayscale(0%) !important;
+.body .inverted {
+  background-color: black;
+  color: white;
 }
 
 .footer {
   border-top: 1px solid black;
-  padding-top: 50px;
+  padding: 50px 0;
+}
+.footer .footer-image {
+  width: 50px;
+  padding: 0;
 }
 .footer ul {
   padding-left: 0;
   list-style: none;
 }
-.footer .footer-image {
-  width: 50px;
-  padding: 0;
-  filter: grayscale(0);
-}
 
 * {
   transition: 0.5s all;
-}
-
-h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-h4, p {
-  font-family: "Montserrat", sans-serif;
+body::-webkit-scrollbar {
+  background-color: white;
 }
-
-a {
+body::-webkit-scrollbar-thumb {
+  background-color: #343a40;
+}
+body a {
   color: grey;
 }
-a:hover {
+body a:hover {
   color: black;
   text-decoration: none;
-}
-
-.container, .container-fluid {
-  padding-bottom: 50px;
-}
-
-.row {
-  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
