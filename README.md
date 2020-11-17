@@ -1,5 +1,5 @@
 # ssss-sfu.github.io
- 
+SFU Software Systems Website Repository 
 Current Website Developer: Andy Wang, President of the SSSS
 Please see SSSS Open Source Projects for a list of ways to contribute 
 
