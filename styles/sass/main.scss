@@ -1,0 +1,44 @@
+// This is the main.scss that compiles into main.css.
+@use "utilities/colors" as *;
+@use "utilities/typography" as *;
+@use "utilities/media-queries" as *;
+
+@use "components/main-nav";
+@use "components/title-section";
+@use "components/header-image-section";
+@use "components/discord-cta";
+@use "components/newsletter-cta";
+@use "components/footer";
+
+@use "layouts/wrappers";
+
+:root {
+  font-family: $font-stack;
+  color: $text-color;
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// This is for accessibility
+// Whenever someone navigates the site without a mouse,
+// it helps that they can focus on a single style that
+// they can follow as they tab through different
+// elements on the site
+a:focus,
+button:focus {
+  background: $cyber;
+  border-bottom: 6px solid #000;
+  color: #000;
+}
+
+html,
+body {
+  width: 100%;
+}

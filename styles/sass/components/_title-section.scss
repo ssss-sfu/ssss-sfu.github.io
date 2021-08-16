@@ -1,0 +1,15 @@
+@use '../utilities/' as *;
+
+.title-container {
+  // min-height: 45vh;
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    // .h1 {
+    //   max-width: 50rem;
+    // }
+  }
+}

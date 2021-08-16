@@ -1,0 +1,124 @@
+@use "./colors" as *;
+@use "./typography" as *;
+@use "./spacers" as *;
+@use "./animations" as *;
+@use "./media-queries" as *;
+
+button {
+  font-family: $font-stack;
+  font-weight: $fw-bold;
+  font-size: clamp(#{$fs-body-small}, 1.05vw, #{$fs-body-regular});
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: $grey-1000;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    transform: translateY(0.25rem);
+  }
+
+  &.btn-disabled {
+    cursor: not-allowed;
+    background-color: $grey-600;
+  }
+}
+
+.btn-text {
+  text-align: left;
+  background: none;
+  border: none;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: $spc-xsmall * 0.5;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    transition: margin-left 0.3s $fade-cubic-bezier;
+    background-image: url('../../../assets/icons/arrow-right.svg');
+  }
+
+  &:hover::after {
+    margin-left: $spc-xsmall;
+  }
+}
+
+.square-btn-container {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: $spc-large;
+  }
+}
+
+.square-btn {
+  background-color: $grey-50;
+  cursor: pointer;
+  transition: background-color 0.3s $fade-cubic-bezier;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url('../../../assets/images/square-btn-background.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s $fade-cubic-bezier;
+  }
+
+  .content {
+    padding: clamp(1.5rem, 5vmin, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    @media screen and (min-width: $tablet-min-width) {
+      aspect-ratio: 1/1;
+    }
+
+    h2 {
+      margin-bottom: $spc-xsmall;
+    }
+  }
+
+  &:hover {
+    background-color: $sosy-green;
+    color: $white;
+
+    &::before {
+      opacity: 1;
+    }
+
+    .btn-text {
+      color: $white;
+
+      &::after {
+        margin-left: $spc-xsmall;
+        filter: invert(1);
+      }
+    }
+  }
+}

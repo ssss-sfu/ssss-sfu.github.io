@@ -1,110 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title> SSSS </title>
-    <link rel="icon" href="favicon.ico">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-</head>
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top "> 
-        <div class="container">
-            
-            <a class="navbar-brand" href="index.html">
-                <img class="navbar-logo" src="photos/ssss.png">
-            </a> <!-- Navbar Brand -->
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
-                <span class="navbar-toggler-icon"></span>
-            </button> <!-- Navbar Toggler -->
-            
-            <div id="navbarToggler" class="navbar-collapse collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="pages/about.html"> About Us </a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/issuesandconcerns.html"> Issues and Concerns </a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/community.html"> Community </a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/resources.html"> Resources </a></li>
-                </ul> <!-- Navbar Nav -->
-            </div> <!-- Navbar Collapse -->
-
-        </div> <!-- Container -->
-    </nav> <!-- Navigation -->
-
-    <div class="body container">
-        <div class="row vh-100">
-            <div class="col-md col-12 my-auto text-center">
-                <img src="photos/ssss.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Official Website of SFU's Software Systems Student Society (SSSS)"
+    />
+    <title>Software Systems Student Society</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles/main.min.css" />
+  </head>
+  <body>
+    <nav class="main-nav-container">
+      <div class="content-wrapper">
+        <a class="logo" href="/"
+          ><img src="./assets/logos/full-logo.svg" alt="SSSS Full Logo"
+        /></a>
+        <input
+          type="checkbox"
+          class="mobile-only menu-toggle"
+          id="menu-toggle"
+        />
+        <label for="menu-toggle" class="mobile-only menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <div class="items">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Issues and Concerns</a></li>
+          </ul>
+          <div class="mobile-only socials">
+            <a target="_blank" href="https://www.facebook.com/ssss.sfu/">
+              <img src="./assets/icons/facebook-mark.svg" alt="" />
+            </a>
+            <a target="_blank" href="https://discord.gg/hY7WjXt">
+              <img src="/assets/icons/discord-mark.svg" alt="" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/ssss.sfu/">
+              <img src="/assets/icons/instagram-mark.svg" alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/19037531/"
+            >
+              <img src="/assets/icons/linked-in-mark.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main-wrapper">
+      <section class="title-container">
+        <div class="content-wrapper">
+          <h1 class="h1">
+            Representing SFU’s Software Systems Student Society
+          </h1>
+        </div>
+      </section>
+      <section class="header-image-container"></section>
+      <section class="section-container">
+        <div class="content-wrapper">
+          <h2 class="h2">
+            Our mission is to represent students in the Software Systems Program
+            at SFU
+          </h2>
+          <p class="b-regular">
+            We help students by addressing Issues and Concerns between the
+            students and faculty, building Community in and around our society,
+            and sharing Resources provided by students and external
+            organizations.
+          </p>
+          <p class="b-regular">
+            Our voice has influenced and improved our Education. Our reach
+            extends to over 700 students, and our annual Hackathon has over 500
+            registrations. We have funded conference fees, created Career
+            Opportunities, and shared insights and materials to help students in
+            their courses.
+          </p>
+        </div>
+      </section>
+      <section class="discord-cta-container">
+        <div class="content-wrapper">
+          <h2 class="h2">Join the SSSS Discord Server</h2>
+          <p class="b-regular">
+            Connect with other Software Systems students and get instant
+            notifications about events, news, and more!
+          </p>
+          <a href="https://discord.gg/hY7WjXt" target="_blank" class="btn"
+            >Join Now</a
+          >
+        </div>
+        <div class="image"></div>
+      </section>
+      <section class="square-btn-container">
+        <div class="content-wrapper no-pad-mobile">
+          <a class="square-btn">
+            <div class="content">
+              <h2 class="h2">Events</h2>
+              <p class="b-regular">Join the SSSS in our next event</p>
+              <button class="btn-text">See What's Next</button>
             </div>
-
-            <div class="col-md col-12 my-auto">
-                <h1 class="text-uppercase"> We believe every student has the potential to be great.</h1>
-                <p> Software Systems Student Society <a href="https://www.sfu.ca">@SFU</a> </p>
+          </a>
+          <a class="square-btn">
+            <div class="content">
+              <h2 class="h2">The Team</h2>
+              <p class="b-regular">Meet the people behind it all</p>
+              <button class="btn-text">Meet the Team</button>
             </div>
-        </div> <!-- Full Height Row -->
-
-        <div class="image-row">
-            <img class="greyscaled" src="photos/clubs_day.jpg">
-        </div> <!-- Image Row -->
-
-        <div class="row">
-            <h1>
-                Our mission is to represent students in the <span class="inverted">Software Systems Program</span> at SFU. 
-                <br><br>
-                We help students by addressing <span class="inverted">Issues and Concerns</span> between the students and faculty, 
-                building <span class="inverted">Community</span> in and around our society, 
-                and sharing <span class="inverted">Resources</span> provided by students and external organizations. 
-                <br><br>
-                Our voice has inflenced and improved our <span class="inverted">Education</span>. 
-                Our reach extends to over <span class="inverted">700 students</span>, and our annual <span class="inverted">Hackathon</span> has over 500 registrations.
-                We have funded conference fees, created <span class="inverted">Career Opportunities</span>, and shared insights and materials to help students in their courses. 
-            </h1>
-        </div> <!-- Row -->
-    </div> <!-- Body -->
-    
-
-    <div class="footer container">
-        <div class="row">
-            <div class="col-sm-3">
-                <img class="footer-image" src="photos/ssss.png">
+          </a>
+          <a class="square-btn">
+            <div class="content">
+              <h2 class="h2">Resources</h2>
+              <p class="b-regular">Need anything?</p>
+              <button class="btn-text">View Resources</button>
             </div>
-            <div class="col-sm-3">
-                <h5> Issues and Concerns </h5>
-                <ul>
-                    <li><a href="https://forms.gle/WR97B6Mdruod9J3D6">Issues and Concerns Form</a></li>
-                    <li><a href="https://www.sfu.ca/ombudsperson.html">Ombudsperson</a></li>
-                    <li><a href="https://www.sfu.ca/fas/current-student/advising.html">FAS Advising</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5> Learn More </h5>
-                <ul>
-                    <li><a href="https://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html">Software Systems</a></li>
-                    <li><a href="https://sfss.ca/">SFSS</a></li>
-                    <li><a href="documents/constitution.pdf">Constitution</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5> Contact Us </h5>
-                <ul>
-                    <li><a href="mailto:ss-pres@sfu.ca">Email</a></li>
-                    <li><a href="https://discordapp.com/invite/ZHyWxXc">Discord</a></li>
-                    <li><a href="https://www.facebook.com/ssss.sfu/">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/ssss.sfu/">Instagram</a></li>
-                    <li><a href="https://ca.linkedin.com/company/ssss-sfu">Linkedin</a></li>
-                </ul>
-            </div>
-        </div> 
-    </div> <!-- Footer -->
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
+          </a>
+        </div>
+      </section>
+    </main>
+    <section class="newsletter-cta-container">
+      <div class="content-wrapper">
+        <h2 class="h2">Get Our Newsletter</h2>
+        <p class="b-regular">
+          Stay up to date with the latest events and announcements from the SSSS
+        </p>
+        <a class="btn btn-disabled">Coming Soon</a>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="content-wrapper">
+        <a class="logo" href="/"
+          ><img src="./assets/logos/logomark.svg" alt="SSSS Logomark"
+        /></a>
+        <ul>
+          <li>Issues and Concerns</li>
+          <li>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScqimaf9a_GoLheF1xCoZTOvFaIzeAeiN0OfppCauJRNx6u9Q/viewform"
+              >Issues and Concerns Form</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.sfu.ca/ombudsperson.html"
+              >Ombudsperson</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.sfu.ca/fas/current-student/advising.html"
+              >FAS Advising</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>Learn More</li>
+          <li>
+            <a
+              target="_blank"
+              href="https://ssss-sfu.github.io/documents/constitution.pdf"
+              >Software Systems Program Page</a
+            >
+          </li>
+          <li><a target="_blank" href="https://sfss.ca/">SFSS</a></li>
+          <li><a target="_blank" href="https://sfss.ca/">Constitution</a></li>
+        </ul>
+        <div class="socials">
+          <a target="_blank" href="https://www.facebook.com/ssss.sfu/">
+            <img src="./assets/icons/facebook-mark.svg" alt="" />
+          </a>
+          <a target="_blank" href="https://discord.gg/hY7WjXt">
+            <img src="/assets/icons/discord-mark.svg" alt="" />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/ssss.sfu/">
+            <img src="/assets/icons/instagram-mark.svg" alt="" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/company/19037531/">
+            <img src="/assets/icons/linked-in-mark.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

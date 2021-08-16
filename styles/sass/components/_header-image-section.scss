@@ -1,0 +1,12 @@
+@use "../utilities/" as *;
+
+.header-image-container {
+  height: clamp(24em, 100vmin, 48em);
+  background-image: url('../../../assets/images/landing-header-image.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &.position-top {
+    background-position: top;
+  }
+}
