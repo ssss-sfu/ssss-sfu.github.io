@@ -10,8 +10,6 @@
     display: flex;
     justify-content: space-between;
     margin-block: $spc-small;
-    // padding-top: $spc-small;
-    // padding-bottom: $spc-small;
 
     .mobile-only {
       display: none;
@@ -22,7 +20,6 @@
       align-items: center;
       img {
         width: clamp(10em, 85%, 20em);
-        // max-width: 85%;
       }
     }
 
@@ -39,6 +36,11 @@
 
         li + li {
           margin-left: $spc-small;
+        }
+
+        li.active {
+          border-bottom: 0.25rem solid $sosy-green;
+          padding-block: $spc-xsmall;
         }
 
         a {
@@ -137,6 +139,10 @@
 
           li {
             text-align: center;
+
+            &.active {
+              margin-bottom: $spc-xsmall;
+            }
 
             a {
               font-size: clamp(#{$fs-heading-3}, 6vmin, #{$fs-heading-1});
