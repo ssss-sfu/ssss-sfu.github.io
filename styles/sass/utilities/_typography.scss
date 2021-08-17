@@ -16,6 +16,7 @@ $fs-body-small: 0.8rem;
 $fw-bold: 700;
 $fw-regular: 400;
 
+// Headings
 .h1,
 .h2,
 .h3 {
@@ -46,6 +47,7 @@ $fw-regular: 400;
   max-width: 24em;
 }
 
+// Body Text
 .b-large,
 .b-regular,
 .b-small {
@@ -68,6 +70,7 @@ $fw-regular: 400;
   margin-bottom: $spc-small;
 }
 
+// Lists
 .ul {
   padding-left: clamp(#{$spc-small}, 1vw, #{$spc-medium});
 }

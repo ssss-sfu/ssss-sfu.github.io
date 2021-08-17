@@ -4,6 +4,7 @@
 @use "./animations" as *;
 @use "./media-queries" as *;
 
+// General button and link styles
 button {
   font-family: $font-stack;
   font-weight: $fw-bold;
@@ -15,6 +16,7 @@ a.btn {
   text-decoration: none;
 }
 
+// General dark square button
 .btn {
   padding: 1rem 1.5rem;
   background-color: $grey-1000;
@@ -37,6 +39,9 @@ a.btn {
   }
 }
 
+// Text button with an arrow on the right
+// Hovering on this button makes the arrow move
+// to the right for a little cute animation
 .btn-text {
   text-align: left;
   background: none;
@@ -61,6 +66,8 @@ a.btn {
   }
 }
 
+// Just a text link that is a different colour
+// from the default text colour
 .btn-link {
   color: $sosy-green;
   position: relative;
@@ -72,6 +79,7 @@ a.btn {
   }
 }
 
+// Container for a group of square buttons
 .square-btn-container {
   .content-wrapper {
     display: flex;
@@ -80,6 +88,8 @@ a.btn {
   }
 }
 
+// Square button with a main title
+// and a description
 a.square-btn {
   background-color: $grey-50;
   cursor: pointer;
@@ -142,6 +152,8 @@ a.square-btn {
   }
 }
 
+// A bigger version of the text button with
+// the arrow on the right
 .big-text-btns-container {
   .big-text-btn + .big-text-btn {
     border-top: 0.075rem solid $grey-100;
