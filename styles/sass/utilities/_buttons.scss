@@ -52,7 +52,7 @@ a.btn {
     height: 100%;
     background-repeat: no-repeat;
     transition: margin-left 0.3s $fade-cubic-bezier;
-    background-image: url('../../../assets/icons/arrow-right.svg');
+    background-image: url('/assets/icons/arrow-right.svg');
   }
 
   &:hover::after {
@@ -68,17 +68,19 @@ a.btn {
   }
 }
 
-.square-btn {
+a.square-btn {
   background-color: $grey-50;
   cursor: pointer;
   transition: background-color 0.3s $fade-cubic-bezier;
   overflow: hidden;
   position: relative;
+  color: $text-color;
+  text-decoration: none;
 
   &::before {
     content: '';
     display: block;
-    background-image: url('../../../assets/images/square-btn-background.svg');
+    background-image: url('/assets/images/square-btn-background.svg');
     background-repeat: no-repeat;
     background-position: top right;
     width: 100%;

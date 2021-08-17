@@ -2,11 +2,15 @@
 
 .header-image-container {
   height: clamp(24em, 100vmin, 48em);
-  background-image: url('../../../assets/images/landing-header-image.jpg');
+  background-image: url('/assets/images/landing-header-image.jpg');
   background-size: cover;
   background-position: center;
 
   &.position-top {
     background-position: top;
+  }
+
+  &.about {
+    background-image: url('/assets/images/about-header-image.jpg');
   }
 }
