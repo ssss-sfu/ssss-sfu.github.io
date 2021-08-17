@@ -1,0 +1,50 @@
+@use '../utilities/' as *;
+
+.footer-container {
+  background-color: $grey-1000;
+  background-image: url('../../../assets/images/footer-background.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: 6rem;
+  padding-bottom: 16rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .content-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    gap: $spc-large;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+
+    ul,
+    a {
+      color: $white;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li:first-child {
+        font-weight: $fw-bold;
+        margin-bottom: $spc-small;
+      }
+
+      li:not(:first-child) {
+        margin-top: $spc-xsmall;
+      }
+    }
+
+    .socials {
+      a + a {
+        margin-left: $spc-xsmall;
+      }
+
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+}

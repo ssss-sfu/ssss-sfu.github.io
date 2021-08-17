@@ -1,0 +1,38 @@
+@use "../utilities/" as *;
+
+// Wrapper for <main>
+.main-wrapper {
+  padding-top: 6rem;
+}
+
+// Inner wrapper for different sections that sets the max width and gutters
+.content-wrapper {
+  max-width: $width-limit;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+  margin-block: min(10vh, 10rem);
+
+  @media screen and (max-width: $tablet-min-width) {
+    &.no-pad-mobile {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet-min-width) {
+    padding-left: $gutter-tablet;
+    padding-right: $gutter-tablet;
+  }
+
+  @media screen and (min-width: $desktop-min-width) {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+
+  @media screen and (min-width: $width-limit * 1.25) {
+    padding-left: $gutter-width-limit;
+    padding-right: $gutter-width-limit;
+  }
+}

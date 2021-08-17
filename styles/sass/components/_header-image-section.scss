@@ -1,0 +1,32 @@
+@use "../utilities/" as *;
+
+.header-image-container {
+  height: clamp(24em, 100vmin, 48em);
+  background-image: url('/assets/images/landing-header-image.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &.position-top {
+    background-position: top;
+  }
+
+  &.about {
+    background-image: url('/assets/images/about-header-image.jpg');
+  }
+
+  &.events {
+    background-image: url('/assets/images/events-header-image.jpg');
+  }
+
+  &.resources {
+    background-image: url('/assets/images/resources-header-image.jpg');
+  }
+
+  &.faq {
+    background-image: url('/assets/images/faq-header-image.jpg');
+  }
+
+  &.issues {
+    background-image: url('/assets/images/issues-header-image.jpg');
+  }
+}
