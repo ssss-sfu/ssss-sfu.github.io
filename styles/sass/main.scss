@@ -1,7 +1,5 @@
 // This is the main.scss that compiles into main.css.
-@use "utilities/colors" as *;
-@use "utilities/typography" as *;
-@use "utilities/media-queries" as *;
+@use "utilities/" as *;
 
 @use "components/main-nav";
 @use "components/title-section";
