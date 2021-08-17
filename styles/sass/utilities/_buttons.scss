@@ -62,8 +62,8 @@ a.btn {
 
 .square-btn-container {
   .content-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: $spc-large;
   }
 }
@@ -76,6 +76,7 @@ a.square-btn {
   position: relative;
   color: $text-color;
   text-decoration: none;
+  width: 100%;
 
   &::before {
     content: '';
@@ -104,6 +105,10 @@ a.square-btn {
     h2 {
       margin-bottom: $spc-xsmall;
     }
+  }
+
+  @media screen and (min-width: $tablet-min-width) {
+    max-width: 24rem;
   }
 
   &:hover {

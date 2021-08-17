@@ -67,3 +67,7 @@ $fw-regular: 400;
   font-size: clamp(#{$fs-body-small}, 1.05vw, #{$fs-body-regular});
   margin-bottom: $spc-small;
 }
+
+.ul {
+  padding-left: clamp(#{$spc-small}, 1vw, #{$spc-medium});
+}
