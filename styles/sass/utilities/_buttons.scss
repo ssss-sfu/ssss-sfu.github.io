@@ -10,6 +10,7 @@ button {
   font-size: clamp(#{$fs-body-small}, 1.05vw, #{$fs-body-regular});
 }
 
+a,
 a.btn {
   text-decoration: none;
 }
@@ -43,17 +44,16 @@ a.btn {
   display: flex;
   white-space: nowrap;
   align-items: center;
+  text-decoration: none;
 
   &::after {
-    content: '';
+    content: url('/assets/icons/arrow-right.svg');
     display: inline-block;
     margin-left: $spc-xsmall * 0.5;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     transition: margin-left 0.3s $fade-cubic-bezier;
-    background-image: url('/assets/icons/arrow-right.svg');
-    background-size: contain;
   }
 
   &:hover::after {
