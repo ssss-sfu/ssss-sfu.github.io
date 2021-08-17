@@ -2,8 +2,9 @@
 
 |     | Version | Release Date      | Main Developer |
 | --- | ------- | ----------------- | -------------- |
-| ✅  | v2.0    | August 17, 2021   | Kiaan Castillo |
-|     | v1.0    | November 17, 2020 | Andy Wang      |
+| ✅  | v3.0    | August 17, 2021   | Kiaan Castillo |
+|     | v2.0    | November 17, 2020 | Andy Wang      |
+|     | v1.0    | January 27, 2020 | Amos Ko      |
 
 ## General Structure
 
