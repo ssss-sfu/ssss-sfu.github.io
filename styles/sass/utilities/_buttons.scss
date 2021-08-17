@@ -53,6 +53,7 @@ a.btn {
     background-repeat: no-repeat;
     transition: margin-left 0.3s $fade-cubic-bezier;
     background-image: url('/assets/icons/arrow-right.svg');
+    background-size: contain;
   }
 
   &:hover::after {
@@ -125,6 +126,28 @@ a.square-btn {
       &::after {
         margin-left: $spc-xsmall;
         filter: invert(1);
+      }
+    }
+  }
+}
+
+.big-text-btns-container {
+  .big-text-btn + .big-text-btn {
+    border-top: 0.075rem solid $grey-100;
+  }
+
+  .big-text-btn {
+    a {
+      font-size: clamp(#{$fs-heading-3 * 0.75}, 1vmin, #{$fs-heading-3});
+      text-decoration: none;
+      word-wrap: break-word;
+      white-space: unset;
+      max-width: unset;
+      color: $text-color;
+
+      &::after {
+        width: 7em;
+        height: 1em;
       }
     }
   }
