@@ -39,7 +39,7 @@
         }
 
         li.active {
-          border-bottom: 0.25rem solid $sosy-green;
+          border-bottom: 0.2rem solid $sosy-green;
           padding-block: $spc-xsmall;
         }
 
@@ -55,6 +55,7 @@
     // Mobile Styles
     @media screen and (max-width: $tablet-min-width) {
       align-items: center;
+      margin-block: $spc-small * 0.5;
 
       .logo,
       .menu-icon {

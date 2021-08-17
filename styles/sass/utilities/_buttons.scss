@@ -61,6 +61,17 @@ a.btn {
   }
 }
 
+.btn-link {
+  color: $sosy-green;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s $fade-cubic-bezier;
+
+  &:hover {
+    color: $sosy-green-400;
+  }
+}
+
 .square-btn-container {
   .content-wrapper {
     display: flex;
