@@ -82,9 +82,10 @@ a.btn {
 // Container for a group of square buttons
 .square-btn-container {
   .content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
     gap: $spc-large;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
   }
 }
 
@@ -98,7 +99,6 @@ a.square-btn {
   position: relative;
   color: $text-color;
   text-decoration: none;
-  width: 100%;
 
   &::before {
     content: '';
@@ -120,17 +120,19 @@ a.square-btn {
     justify-content: flex-end;
     position: relative;
 
-    @media screen and (min-width: $tablet-min-width) {
-      aspect-ratio: 1/1;
-    }
-
     h2 {
       margin-bottom: $spc-xsmall;
     }
+
+    @media screen and (min-width: $tablet-min-width) {
+      aspect-ratio: 1/1;
+    }
   }
 
-  @media screen and (min-width: $tablet-min-width) {
-    max-width: 24rem;
+  &.max-width {
+    @media screen and (min-width: $tablet-min-width) {
+      max-width: 24rem;
+    }
   }
 
   &:hover {
