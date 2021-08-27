@@ -4,7 +4,7 @@
 | --- | ------- | ----------------- | -------------- |
 | ✅  | v3.0    | August 17, 2021   | Kiaan Castillo |
 |     | v2.0    | November 17, 2020 | Andy Wang      |
-|     | v1.0    | January 27, 2020 | Amos Ko      |
+|     | v1.0    | January 27, 2020  | Amos Ko        |
 
 ## General Structure
 
@@ -54,10 +54,10 @@ styles/
 
 ### SCSS to CSS
 
-Run this command to process `main.scss` into a compressed `main.min.css` file
+Run this command in the `/sass` directory to automatically compile `main.scss` into a compressed `main.min.css` file whenever you modify any of the `.scss` files.
 
 ```
-sass main.scss ../main.min.css --style=compressed
+sass --no-source-map --style=compressed --watch main.scss:../main.min.css
 ```
 
 This produces one CSS file that is a compressed, compilation of all of the SCSS files. All HTML files then link to this compressed CSS file.
