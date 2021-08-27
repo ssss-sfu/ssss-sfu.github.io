@@ -26,18 +26,6 @@
   box-sizing: border-box;
 }
 
-// This is for accessibility
-// Whenever someone navigates the site without a mouse,
-// it helps that they can focus on a single style that
-// they can follow as they tab through different
-// elements on the site
-a:focus,
-button:focus {
-  background: $blurple;
-  border-bottom: 6px solid #000;
-  color: #000;
-}
-
 html,
 body {
   width: 100%;

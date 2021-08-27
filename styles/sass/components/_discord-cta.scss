@@ -16,7 +16,7 @@
   }
 
   .image {
-    height: clamp(24em, 30vmin, 48em);
+    height: clamp(16em, 36vmin, 48em);
     width: 100%;
     background-image: url('../../../assets/images/ssss-on-discord-icon.svg'),
       linear-gradient($blurple, $blurple);

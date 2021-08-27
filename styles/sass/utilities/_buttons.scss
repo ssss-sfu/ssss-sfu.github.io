@@ -33,6 +33,10 @@ a.btn {
     transform: translateY(0.25rem);
   }
 
+  &:focus {
+    box-shadow: 0 0 0 5px $sosy-green-600;
+  }
+
   &.btn-disabled {
     cursor: not-allowed;
     background-color: $grey-600;
