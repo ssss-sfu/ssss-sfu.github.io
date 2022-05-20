@@ -6,6 +6,7 @@
 |     | v2.0    | November 17, 2020 | Andy Wang      |
 |     | v1.0    | January 27, 2020  | Amos Ko        |
 
+View the live site here: https://ssss-sfu.github.io/
 ## General Structure
 
 - `assets`: Anything that is put on the site that is not code
