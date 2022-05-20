@@ -7,6 +7,26 @@
 |     | v1.0    | January 27, 2020  | Amos Ko        |
 
 View the live site here: https://ssss-sfu.github.io/
+
+## Getting Started Contributing
+
+- Clone the repository locally in a folder of your choice:
+`git clone https://github.com/ssss-sfu/ssss-sfu.github.io.git`
+- If you have issues with github authentication, contact the website team on our [Software Systems Discord](https://discord.gg/XZUd7amxPq)
+- Ste up a local server to test changes locally
+    - On mac open a terminal, navigate to the root folder of your repository clone and enter the following commands:
+    `sudo npm install http-server -g`
+    `http-server `
+    You should now have the site running locally, and be able to view any code changes locally at http://localhost:8080/
+- Please create a branch name based on your contribution, e.g.
+    **task/yourName/coolFeatureName**
+- Once you have written code locally that you are happy with, push the new branch to github:
+    - on Mac:
+    `git push -u origin task/yourName/coolFeatureName`
+- Then, create a pull request  in github pointing your new feature at the develop branch
+- An Executive will review your feature and ensure it is included or changes are requested.
+Thanks for contributing!
+
 ## General Structure
 
 - `assets`: Anything that is put on the site that is not code
