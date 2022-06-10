@@ -82,6 +82,10 @@ Once you have found an issue to work on, follow the steps below:
 6. Start coding!
 7. Commit and push your changes and create a pull request with the following format:
     ```
+    Target Branch
+    -------------
+    develop 
+    
     Title
     -----
     Clear and descriptive title relevant to the issue
