@@ -6,10 +6,10 @@ This guide will help you through the process of contributing, whether it’s you
 P.S. Interested in joining the website committee? Reach out to one of the SSSS executives on our Discord Server to learn more.
 
 ## Table of Contents
-- [New Contributor Guide](#New-Contributor-Guide)
-- [How to Contribute](#How-to-Contribute)
-  - [Creating Issues](#Creating-Issues)
-  - [Claiming Issues](#Claiming-Issues)
+- [New Contributor Guide](#new-contributor-guide)
+- [How to Contribute](#how-to-contribute)
+  - [Creating Issues](#creating-issues)
+  - [Claiming Issues](#claiming-issues)
 
 ## New Contributor Guide
 Are you new to web development?
@@ -30,10 +30,10 @@ Are you new to open source contribution?
 
 ## How to Contribute
 There are two ways for you to contribute:
-1. [Creating issues](#Creating-Issues)
-    1. [Reporting a bug](#Reporting-a-Bug)
-    2. [Suggesting an enhancement](#Suggesting-an-Enhancement)
-2. [Claiming issues](#Claiming-Issues)
+1. [Creating issues](#creating-issues)
+    1. [Reporting a bug](#reporting-a-bug)
+    2. [Suggesting an enhancement](#suggesting-an-enhancement)
+2. [Claiming issues](#claiming-issues)
 
 ### Creating Issues
 If you spot a problem or think something can be improved, [search if an issue for that bug or enhancement](https://github.com/ssss-sfu/ssss-sfu.github.io/issues) already exists. 
