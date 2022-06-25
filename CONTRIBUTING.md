@@ -100,10 +100,10 @@ Once you have found an issue to work on, follow the steps below:
     ---------
     Request a review from all committee chair members
     
-    - megarage90000 (John)
+    - megarage90000 (John O.)
     - artymiz (Art)
     - bendjukastein (Ben)
-    - ransurf (John)
+    - ransurf (John R.)
     - KiaanCastillo (Kiaan)
     ```
       
