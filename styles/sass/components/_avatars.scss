@@ -12,6 +12,8 @@
       img {
         max-width: 7rem;
         aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
       }
     }
 
@@ -24,7 +26,8 @@
         gap: $spc-small;
 
         img {
-          max-width: 100%;
+          width: 20vw;
+          max-width: 15rem;
         }
 
         .title {
