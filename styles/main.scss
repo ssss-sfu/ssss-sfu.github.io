@@ -1,0 +1,51 @@
+@use './variables.scss' as *;
+
+@use './typography.scss';
+
+@use './components/button.scss';
+
+:root {
+  --colour-sosy-green-900: #07221C;
+  --colour-sosy-green-800: #0E4438;
+  --colour-sosy-green-700: #166553;
+  --colour-sosy-green-600: #1D876F;
+  --colour-sosy-green-500: #24A98B;
+  --colour-sosy-green-400: #50BAA2;
+  --colour-sosy-green-300: #7CCBB9;
+  --colour-sosy-green-200: #A7DDD1;
+  --colour-sosy-green-100: #D3EEE8;
+
+  --colour-cyber-900: #332D00;
+  --colour-cyber-800: #665900;
+  --colour-cyber-700: #998600;
+  --colour-cyber-600: #CCB200;
+  --colour-cyber-500: #FFDF00;
+  --colour-cyber-400: #FFE533;
+  --colour-cyber-300: #FFF18C;
+  --colour-cyber-200: #FFF299;
+  --colour-cyber-100: #FFF9CC;
+
+  --colour-neutral-1200: #141515;
+  --colour-neutral-1100: #191A1A;
+  --colour-neutral-1000: #323434;
+  --colour-neutral-900: #4B4E4D;
+  --colour-neutral-800: #646867;
+  --colour-neutral-700: #7D8281;
+  --colour-neutral-600: #979B9A;
+  --colour-neutral-500: #B0B5B4;
+  --colour-neutral-400: #CACECD;
+  --colour-neutral-300: #E5E6E6;
+  --colour-neutral-200: #EFF0F0;
+  --colour-neutral-100: #F7F8F7;
+  --colour-neutral-000: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+  color: var(--colour-neutral-1200);
+}
