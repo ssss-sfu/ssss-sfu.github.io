@@ -2,9 +2,9 @@
 
 @use './typography.scss';
 
-:root {
-  font-family: $font-stack;
+@use './components/button.scss';
 
+:root {
   --colour-sosy-green-900: #07221C;
   --colour-sosy-green-800: #0E4438;
   --colour-sosy-green-700: #166553;
@@ -46,5 +46,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: $font-stack;
   color: var(--colour-neutral-1200);
 }
