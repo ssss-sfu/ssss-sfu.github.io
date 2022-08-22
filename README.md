@@ -1,8 +1,10 @@
 # Software Systems Student Society Website
 ## Welcome
 Welcome to the Software Systems Student Society (SSSS) website repo. This project is maintained by the website committee.
-To join the committee, go to the [SSSS Discord server](https://discord.gg/XZUd7amxPq), find the `#what-are-committees`, and claim the `@website` role. 
-We hold meetings every 1st and 3rd Thursday of the month at 6:30pm in the `#website` channel, feel free to join when you're available!
+
+To join the committee, go to the [SSSS Discord server](https://discord.gg/XZUd7amxPq), find the `#what-are-committees`, and claim the `@website` role.
+
+**We hold meetings every 1st and 3rd Thursday of the month at 6:30pm in the `#website` channel, feel free to join when you're available!**
 
 View the live site here: https://ssss-sfu.github.io/
 
@@ -18,22 +20,45 @@ View the live site here: https://ssss-sfu.github.io/
 2. Join our [Trello workspace](https://trello.com/invite/b/Qt4lRLAO/de5aad51b8e3ce5222c795090ab638e4/website-committee-summer-term)
 3. Claim a free task from the `Todo` board
 4. Set up your development environment (terminal instructions):
-    a. Clone the repository locally in a folder of your choice:
-    `git clone https://github.com/ssss-sfu/ssss-sfu.github.io.git`
+
+    a. Clone the repository locally in a folder of your choice
+    ```
+    git clone https://github.com/ssss-sfu/ssss-sfu.github.io.git
+    ```
     b. Change directories into the newly cloned project folder
-    `cd [folder name]`  
-    b. Install node modules
-    `npm i`
-    c. Run the server locally
-    `npm run dev`
-    d. View the project in your browser
-    `localhost:3000`
-5. Create a new branch in this format:
-    `[computing ID or GitHub username]/[task-name-concise]`
+    ```
+    cd ssss-sfu.github.io
+    ```
+    c. Install node modules
+    ```
+    npm i
+    ```
+    d. Switch to the `develop` branch (this is where we'll be doing most of our work so we need to branch off from here)
+    ```
+    git checkout develop
+    git pull
+    ```
+    e. Create a new branch in this format:
+    ```
+    [computing ID or GitHub username]/[task-name-concise]
+    ```
+
     e.g. `kiaanc/read-me-update`
-6. Start coding!
-7. Commit and push your changes
-8. Create a pull request with the following format:
+    ```
+    git checkout -b kiaanc/read-me-update
+    ```
+    f. Run the server locally
+    ```
+    npm run dev
+    ```
+    g. View the project in your browser
+    ```
+    localhost:3000
+    ```
+    
+5. Start coding!
+6. Commit and push your changes
+7. Create a pull request with the following format:
     ```
     Target Branch: develop 
 
@@ -47,6 +72,7 @@ View the live site here: https://ssss-sfu.github.io/
     - bendjukastein (Ben)
     - KiaanCastillo (Kiaan)
     ```
+8. Wait for one of the reviewers to take a look and make changes or merge accordingly.
 
 Thanks for contributing!
 
