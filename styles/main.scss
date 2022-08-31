@@ -3,6 +3,7 @@
 @use './typography.scss';
 
 @use './components/button.scss';
+@use './components/header.scss';
 
 :root {
   --colour-sosy-green-900: #07221C;
@@ -47,5 +48,6 @@
   padding: 0;
   margin: 0;
   font-family: $font-stack;
-  color: var(--colour-neutral-1200);
+  color: var(--colour-neutral-000);
+  background-color: var(--colour-neutral-1200);
 }
