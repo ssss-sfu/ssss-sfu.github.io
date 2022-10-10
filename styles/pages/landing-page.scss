@@ -1,0 +1,66 @@
+@import '../variables.scss';
+
+@keyframes pop-up {
+  0% {
+    transform: translateY(100%);
+  }
+
+  8% {
+    transform: translateY(1rem);
+  }
+
+  13% {
+    transform: translateY(0rem);
+  }
+
+  25% {
+    transform: translateY(2rem);
+  }
+  
+
+  75% {
+    transform: translateY(2rem);
+  }
+
+  85% {
+    transform: translateY(0rem);
+  }
+
+  95% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(95%);
+  }
+}
+
+.landing-page {
+  .hero {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0.75) 100%), url('../../public/images/landing-page-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 12rem;
+    overflow: hidden;
+    
+    h1, p {
+      color: var(--colour-neutral-000);
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    img {
+      transform: translateY(100%);
+      margin: auto;
+      width: 20rem;
+      bottom: -10%;
+      margin-top: 3rem;
+      left: 50%;
+      animation: pop-up 10s $easing-bounce infinite 0.5s;
+    }
+  }
+}
