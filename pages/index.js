@@ -1,16 +1,13 @@
-import Head from 'next/head'
-import { Button } from '@components/button'
+import { Helmet } from '@components'
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className='container'>
-      <Head>
-        <title>Software Systems Student Society</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <h1>Software Systems Student Society</h1>
-      <Button label='Primary button'/>
-      <Button label='Secondary button' type='secondary'/>
+    <div className='landing-page'>
+      <Helmet />
+      <main className='hero'>
+        <p>Welcome to the</p>
+        <h1>Software Systems Student Society</h1>
+      </main>
     </div>
   )
 }
