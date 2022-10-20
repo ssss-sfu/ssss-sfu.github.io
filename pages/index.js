@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Button } from '@components/button'
 import Header from "../components/header.js";
+import Footer from "../components/footer.js";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <h1>Software Systems Student Society</h1>
       <Button label='Primary button'/>
       <Button label='Secondary button' type='secondary'/>
+      <Footer />
     </div>
   )
 }
