@@ -36,6 +36,16 @@
 }
 
 .landing-page {
+  background-color: var(--colour-neutral-1200);
+  
+  h2, p {
+    color: var(--colour-neutral-000);
+  }
+  
+  .container {
+    padding: clamp(1rem, 4vw, 6rem);
+  }
+
   .hero {
     position: relative;
     text-align: center;
@@ -61,6 +71,66 @@
       margin-top: 3rem;
       left: 50%;
       animation: pop-up 10s $easing-bounce infinite 0.5s;
+    }
+  }
+
+  .discover-ssss {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h3, p {
+      color: var(--colour-neutral-000);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-weight: 500;
+      margin-top: 0.25rem;
+    }
+
+    header {
+      margin-bottom: 1rem;
+
+      button {
+        margin-top: 1rem;
+      }
+    }
+
+    .discover-ssss__main-link-item, .discover-ssss__link-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 14rem;
+      border-radius: $border-radius;
+      padding: 1rem;
+      background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-main.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .discover-ssss__link-items {
+      & > * + * {
+        margin-top: 2rem;
+      }
+
+      .discover-ssss__link-item:nth-child(1) {
+        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-events.png');
+        background-size: cover;
+        background-position: center;
+      }
+      .discover-ssss__link-item:nth-child(2) {
+        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-get-involved.png');
+        background-size: cover;
+        background-position: center;
+      }
+      .discover-ssss__link-item:nth-child(3) {
+        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-about-us.png');
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 }
