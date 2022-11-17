@@ -1,5 +1,6 @@
 import { Helmet, Button } from '@components'
 import HappySeb from '@images/seb/happy-seb-head.svg'
+import SSSSOnDiscord from '@images/landing-page/ssss-on-discord.svg'
 
 export default function LandingPage() {
 
@@ -7,7 +8,7 @@ export default function LandingPage() {
     <div className='landing-page'>
       <Helmet />
       <main>
-        <header className="hero">
+        <header className="container hero">
           <p>Welcome to the</p>
           <h1>Software Systems Student Society</h1>
           <img src={HappySeb.src} alt='Happy Seb, the SSSS mascot' />
@@ -35,6 +36,18 @@ export default function LandingPage() {
               <p>About Us</p>
             </a>
           </section>
+        </article>
+        <article className="container discord-banner">
+          <div className="banner">
+            <img src={SSSSOnDiscord.src} alt='SSSS on Discord' />
+            <h2>We’re on Discord!</h2>
+            <div className="status-tags">
+              <div className="status-tag">Join other SoSy Students</div>
+              <div className="status-tag">Home of Many SSSS Events</div>
+            </div>
+            <p>Connect with other Software Systems students and get instant notifications about events, news, and more!</p>
+            <Button label='Join the SSSS Discord server' type='secondary' />
+          </div>
         </article>
       </main>
     </div>
