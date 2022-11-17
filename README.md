@@ -4,7 +4,7 @@ Welcome to the Software Systems Student Society (SSSS) website repo. This projec
 
 To join the committee, go to the [SSSS Discord server](https://discord.gg/XZUd7amxPq), find the `#what-are-committees`, and claim the `@website` role.
 
-**We hold meetings every 1st and 3rd Thursday of the month at 6:30pm in the `#website` channel, feel free to join when you're available!**
+> **We hold meetings every 1st and 3rd Wednesday of the month at 7:30pm in the `#website` channel, feel free to join when you're available!**
 
 View the live site here: https://ssss-sfu.github.io/
 
