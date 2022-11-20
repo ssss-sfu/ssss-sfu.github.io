@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   format:
-    name: Check Format
+    name: Check Formatting
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
