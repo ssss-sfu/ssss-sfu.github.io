@@ -2,6 +2,8 @@
 
 @use './typography.scss';
 
+@use './pages/landing-page.scss';
+
 @use './components/button.scss';
 @use './components/header.scss';
 @use './components/footer.scss';
@@ -49,6 +51,7 @@
   padding: 0;
   margin: 0;
   font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
   color: var(--colour-neutral-000);
-  background-color: var(--colour-neutral-1200);
+  // background-color: var(--colour-neutral-1200);
 }

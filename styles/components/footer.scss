@@ -2,9 +2,11 @@
 
 .footer {
     //Stick footer to bottom of screen regardless of scrolling:
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     width:100%;
+    padding-bottom: 4rem;
+    position: relative;
     //display: flex;
 
     .main-footer-content {
@@ -14,7 +16,6 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-bottom: 18px;//leave space for the code graphic below
         
 
         .icon-container {
@@ -29,10 +30,10 @@
     }
 
     .footer-code-graphic-container {
-        max-width: 180px;
-        right: 0;
+        max-width: 15rem;
         position: absolute;
-        bottom: -8px;
         z-index: 1;
+        right: 0;
+        bottom: 0;
     }
 }

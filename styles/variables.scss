@@ -7,3 +7,46 @@ $border-radius: 12px;
 // Animation
 $transition-speed-fast: 0.2s;
 $easing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+// Media queries
+$container-max-width: 1500px;
+$gutter: 1.75rem;
+$nav-height: 3.81rem;
+
+$tablet-min-width: 768px;
+$desktop-min-width: 1025px;
+
+@mixin viewport($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $tablet-min-width - 1) {
+      @content;
+    }
+  } @else if $media == mobile-tablet {
+    @media only screen and (max-width: $desktop-min-width - 1) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (min-width: $tablet-min-width) and (max-width: $desktop-min-width - 1) {
+      @content;
+    }
+  } @else if $media == tablet-desktop {
+    @media only screen and (min-width: $tablet-min-width) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: $desktop-min-width) {
+      @content;
+    }
+  }
+}
+
+.container {
+  max-width: $container-max-width;
+  padding: clamp(1rem, 4vw, 6rem);
+  margin: auto;
+
+  &.no-gutter-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
