@@ -1,44 +1,44 @@
-@use './variables.scss' as *;
+@use "./variables.scss" as *;
 
-@use './typography.scss';
+@use "./typography.scss";
 
-@use './components/button.scss';
-@use './components/header.scss';
-@use './components/footer.scss';
+@use "./components/button.scss";
+@use "./components/header.scss";
+@use "./components/footer.scss";
 
 :root {
-  --colour-sosy-green-900: #07221C;
-  --colour-sosy-green-800: #0E4438;
+  --colour-sosy-green-900: #07221c;
+  --colour-sosy-green-800: #0e4438;
   --colour-sosy-green-700: #166553;
-  --colour-sosy-green-600: #1D876F;
-  --colour-sosy-green-500: #24A98B;
-  --colour-sosy-green-400: #50BAA2;
-  --colour-sosy-green-300: #7CCBB9;
-  --colour-sosy-green-200: #A7DDD1;
-  --colour-sosy-green-100: #D3EEE8;
+  --colour-sosy-green-600: #1d876f;
+  --colour-sosy-green-500: #24a98b;
+  --colour-sosy-green-400: #50baa2;
+  --colour-sosy-green-300: #7ccbb9;
+  --colour-sosy-green-200: #a7ddd1;
+  --colour-sosy-green-100: #d3eee8;
 
-  --colour-cyber-900: #332D00;
+  --colour-cyber-900: #332d00;
   --colour-cyber-800: #665900;
   --colour-cyber-700: #998600;
-  --colour-cyber-600: #CCB200;
-  --colour-cyber-500: #FFDF00;
-  --colour-cyber-400: #FFE533;
-  --colour-cyber-300: #FFF18C;
-  --colour-cyber-200: #FFF299;
-  --colour-cyber-100: #FFF9CC;
+  --colour-cyber-600: #ccb200;
+  --colour-cyber-500: #ffdf00;
+  --colour-cyber-400: #ffe533;
+  --colour-cyber-300: #fff18c;
+  --colour-cyber-200: #fff299;
+  --colour-cyber-100: #fff9cc;
 
   --colour-neutral-1200: #141515;
-  --colour-neutral-1100: #191A1A;
+  --colour-neutral-1100: #191a1a;
   --colour-neutral-1000: #323434;
-  --colour-neutral-900: #4B4E4D;
+  --colour-neutral-900: #4b4e4d;
   --colour-neutral-800: #646867;
-  --colour-neutral-700: #7D8281;
-  --colour-neutral-600: #979B9A;
-  --colour-neutral-500: #B0B5B4;
-  --colour-neutral-400: #CACECD;
-  --colour-neutral-300: #E5E6E6;
-  --colour-neutral-200: #EFF0F0;
-  --colour-neutral-100: #F7F8F7;
+  --colour-neutral-700: #7d8281;
+  --colour-neutral-600: #979b9a;
+  --colour-neutral-500: #b0b5b4;
+  --colour-neutral-400: #cacecd;
+  --colour-neutral-300: #e5e6e6;
+  --colour-neutral-200: #eff0f0;
+  --colour-neutral-100: #f7f8f7;
   --colour-neutral-000: #fff;
 }
 

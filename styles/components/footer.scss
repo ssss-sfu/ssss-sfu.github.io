@@ -1,38 +1,36 @@
 //@import '../main.scss';
 
 .footer {
-    //Stick footer to bottom of screen regardless of scrolling:
-    position: fixed;
-    bottom: 0;
-    width:100%;
-    //display: flex;
+  //Stick footer to bottom of screen regardless of scrolling:
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  //display: flex;
 
-    .main-footer-content {
-        font-size: small;
-        color: var(--colour-neutral-000);
-        background-color: var(--colour-neutral-1200);
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-bottom: 18px;//leave space for the code graphic below
-        
+  .main-footer-content {
+    font-size: small;
+    color: var(--colour-neutral-000);
+    background-color: var(--colour-neutral-1200);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 18px; //leave space for the code graphic below
 
-        .icon-container {
-            display: flex;
-            padding: 1em;
-        }
-
-        .left-icon {
-            padding-right: 0.5em;
-        }
-
+    .icon-container {
+      display: flex;
+      padding: 1em;
     }
 
-    .footer-code-graphic-container {
-        max-width: 180px;
-        right: 0;
-        position: absolute;
-        bottom: -8px;
-        z-index: 1;
+    .left-icon {
+      padding-right: 0.5em;
     }
+  }
+
+  .footer-code-graphic-container {
+    max-width: 180px;
+    right: 0;
+    position: absolute;
+    bottom: -8px;
+    z-index: 1;
+  }
 }

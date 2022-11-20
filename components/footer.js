@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Button } from '@components/button'
+import Image from "next/image";
+import { Button } from "@components/button";
 
 function Footer() {
   return (
@@ -22,7 +22,8 @@ function Footer() {
           <div class="address icon-right-content">
             <h4>Office Address</h4>
             <address>
-              <strong>Software Systems Student Society</strong><br />
+              <strong>Software Systems Student Society</strong>
+              <br />
               13450 102 Ave Unit 250, <br></br>
               SUR 4016, Galleria 4<br></br>
               Surrey, BC V3T 0A3<br></br>
@@ -36,9 +37,7 @@ function Footer() {
           </div>
           <div class="address icon-right-content">
             <h4>Get in Touch</h4>
-            <address>
-              ssss-exec@sfu.ca
-            </address>
+            <address>ssss-exec@sfu.ca</address>
           </div>
         </div>
 
@@ -61,6 +60,6 @@ function Footer() {
         <Image src="/code-snippet.svg" height={187} width={572} />
       </div>
     </div>
-  )
+  );
 }
-export default Footer
+export default Footer;
