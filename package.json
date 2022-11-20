@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "format:write": "npx prettier --write .",
+    "format:check": "npx prettier --check .",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +18,7 @@
   "devDependencies": {
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
+    "prettier": "2.7.1",
     "sass": "^1.54.4"
   }
 }
