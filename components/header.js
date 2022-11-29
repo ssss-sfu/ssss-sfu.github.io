@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { Button } from "@components";
+import Image from "next/image"
+import { Button } from "@components"
 
 function Header() {
   return (
@@ -35,6 +35,6 @@ function Header() {
         <Button label="Contact Us" />
       </div>
     </div>
-  );
+  )
 }
-export default Header;
+export default Header
