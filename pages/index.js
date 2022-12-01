@@ -1,8 +1,8 @@
-import { Helmet, Button } from "@components"
-import HappySeb from "@images/seb/happy-seb-head.svg"
-import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg"
-import Header from "../components/header.js"
-import Footer from "../components/footer.js"
+import { Helmet, Button } from "@components";
+import HappySeb from "@images/seb/happy-seb-head.svg";
+import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
+import Header from "../components/header.js";
+import Footer from "../components/footer.js";
 
 export default function LandingPage() {
   return (
@@ -57,5 +57,5 @@ export default function LandingPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
