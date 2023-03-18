@@ -1,58 +1,39 @@
-import { Helmet, Button } from '@components'
-import HappySeb from '@images/seb/happy-seb-head.svg'
-import SSSSOnDiscord from '@images/landing-page/ssss-on-discord.svg'
+import { Helmet } from '@components'
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 
-export default function LandingPage() {
+export default function EventsPage() {
 
   return (
-    <div className='landing-page'>
+    <div className='events-page'>
       <Helmet />
       <Header />
-      {/* <main>
+      <main>
         <header className="container hero">
-          <p>Welcome to the</p>
-          <h1>Software Systems Student Society</h1>
-          <img src={HappySeb.src} alt='Happy Seb, the SSSS mascot' />
+          <p>Events</p>
+          <h1>Join and meet other SoSy students</h1>
         </header>
-        <article className='container discover-ssss'>
+        
+        <article className='container annual-events'>
           <header>
-            <h2>Discover the SSSS</h2>
-            <Button label='Learn more' type='secondary' />
+            <h2>Annual Events</h2>
           </header>
-          <a className="discover-ssss__main-link-item">
-            <h3>Learn About Software Systems</h3>
-            <p>About Us</p>
-          </a>
-          <section className='discover-ssss__link-items'>
-            <a className="discover-ssss__link-item">
-              <h3>Events Calendar</h3>
-              <p>Events</p>
+          <section className='annual-events__link-items'>
+            <a className="annual-events__link-item" href="https://discord.com/invite/XZUd7amxPq">
+              <h3>Frosh</h3>
+              <p>The annual first year's kick off week</p>
             </a>
-            <a className="discover-ssss__link-item">
-              <h3>Committees</h3>
-              <p>Get Involved</p>
+            <a className="annual-events__link-item" href="https://systemshacks.sfussss.org/">
+              <h3>Systems Hacks</h3>
+              <p>The SSSS' annual hackathon - new theme every year!</p>
             </a>
-            <a className="discover-ssss__link-item">
-              <h3>Meet the Exec Team</h3>
-              <p>About Us</p>
+            <a className="annual-events__link-item" href="https://systemsfair.ca/">
+              <h3>Systems Fair</h3>
+              <p>Job fair in collaboration with the MSESSS and SEESS</p>
             </a>
           </section>
         </article>
-        <article className="container discord-banner">
-          <div className="banner">
-            <img src={SSSSOnDiscord.src} alt='SSSS on Discord' />
-            <h2>We’re on Discord!</h2>
-            <div className="status-tags">
-              <div className="status-tag">Join other SoSy Students</div>
-              <div className="status-tag">Home of Many SSSS Events</div>
-            </div>
-            <p>Connect with other Software Systems students and get instant notifications about events, news, and more!</p>
-            <Button label='Join the SSSS Discord server' type='secondary' />
-          </div>
-        </article>
-      </main> */}
+      </main>
       <Footer />
     </div>
   )
