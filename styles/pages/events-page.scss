@@ -70,7 +70,7 @@
       margin-top: 2rem;
 
       .annual-events__link-item:nth-child(1) {
-        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/events-page/annual-events-frosh.png');
+        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/events-page/annual-events-frosh.jpeg');
         background-size: cover;
         background-position: center;
       }
@@ -110,7 +110,7 @@
         }
 
         .annual-events__link-item:nth-child(1)::before {
-          background-image: url('../../public/images/events-page/annual-events-frosh.png');
+          background-image: url('../../public/images/events-page/annual-events-frosh.jpeg');
         }
 
         .annual-events__link-item:nth-child(2)::before {
