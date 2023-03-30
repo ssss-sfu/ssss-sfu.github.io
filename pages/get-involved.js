@@ -34,43 +34,98 @@ const roles = [
   },
   {
     name: "Secretary",
-    content: ["lols"],
+    content: [
+      "Ensure that proper notice of general and special general meetings is given, as specified by this constitution.",
+      "Keep and reproduce minutes of Software Systems Student Society meetings and written records of all decisions made at properly constituted meeting of the society.",
+      "Maintain records of all correspondence between the society and other organizations.",
+      "Make the minutes of all meetings available to the public, including the Student Union Organizer.",
+      "Compile semester executive, representative, and committee membership lists along with maintaining the mailing lists.",
+      "Compile a semester contact list of the executive members for the School of Computing Science, the Software Systems program staff, and the Student Union Organizer.",
+      "Write a continuity report at the end of their term for the next executive member who will fill this position.",
+      "Distribute electronic versions of the minutes to appropriate SSSS mailing lists.",
+      "Maintain the records of the SSSS, including but not limited to the minutes archive and the Google Drive.",
+    ],
   },
   {
     name: "Treasurer",
-    content: ["lols"],
+    content: [
+      "Maintain all financial records of the SSSS, including but not limited to the Society’s Bank Account if one exists, a record of submitted, approved and rejected grant proposals, and a record of submitted, approved and rejected reimbursements both from grant proposals and trust.",
+      "Work closely with the Treasurer to coordinate grant proposals, reimbursements and event budgets.",
+      "Be a signing officer of the Society, including the Society's Bank Account if one exists.",
+      "Make regular reports to the membership.",
+      "Write a continuity report at the end of their term for the next executive member who will fill this position.",
+    ],
   },
   {
     name: "Director of Marketing",
-    content: ["lols"],
+    content: [
+      "Chair the marketing committee, and be responsible for presenting its reports at the regular meetings as well as keeping a record of the meeting minutes and making the Secretary aware of them.",
+      "Be responsible for ensuring the administration of maintenance, upkeep and smooth operation of all SSSS resources – including but not limited to common room(s), computer(s), the office, and merchandise, such that these resources remain in good working order and are usable by the membership.",
+      "Be responsible for the distribution of appropriate posters, online notifications, and other advertising materials pursuant to the creation of awareness about the Society and its events or delegate such responsibilities as necessary.",
+      "Be a signing officers of the Society, including the Society's Bank Account.",
+      "Write a continuity report at the end of their term for the next executive member who will fill their position.",
+    ],
   },
   {
     name: "Director of Activities (2)",
-    content: ["lols"],
+    content: [
+      "Chair the activities committee, and be responsible for presenting its reports at the regular meetings as well as supplying a copy of the meeting's minutes to the Secretary.",
+      "Plan, organize, and execute all SSSS sponsored events and fundraisers or delegate such responsibilities as necessary.",
+      "Work closely with the Treasurer to coordinate grant proposals, reimbursements and event budgets.",
+      "Be signing officers of the Society, including the Society's Bank Account.",
+      "Write a continuity report at the end of their term for the next executive member who will fill their position.",
+      "Write a report containing procedures and contacts for each class of event for future SSSS members.",
+    ],
   },
   {
     name: "Director of Visual Design",
-    content: ["lols"],
+    content: [
+      "Produce art and graphics for events, meetings, merchandise, promotional materials and any other materials the Society may require",
+      "Maintain communication with relevant officers to keep the content of the graphics relevant and updated.",
+    ],
   },
   {
     name: "External Representative",
-    content: ["lols"],
+    content: [
+      "Share responsibility for the day-to-day operations of the SSSS and its resources.",
+      "Work closely with the Director(s) of Activities to recruit sponsors for relevant events.",
+      "Act as a channel of communication between the Director(s) of Activities and the Director of Marketing and Director of Visual Design to produce sponsorship packages to recruit sponsors for relevant events.",
+      "Be available to the other executives to assist them with tasks relating to the operations and activities of the SSSS.",
+      "Work closely with the Internal Representative to make sure the society’s needs for representation outside of the school and SFSS are being met.",
+      "Attend meetings external to the SSSS and the SFSS as a representative of this Society, in the cases where there is no previously appointed representative of this Society attending the aforementioned meeting or when such a representative is unable to attend and has given sufficient notice.",
+      "Write a continuity report at the end of their term for the next executive member who will fill their position.",
+    ],
   },
   {
     name: "Internal Representative",
-    content: ["lols"],
+    content: [
+      "Share responsibility for the day-to-day operations of the SSSS and its resources.",
+      "Be available to the other executives to assist them with tasks relating to the operations and activities of the SSSS.",
+      "Work closely with the External Representative to make sure the society’s needs for representation within the school and SFSS are being met.",
+      "Attend meetings internal to the SFSS as a representative of this Society, in the cases where there is no previously appointed representative of this Society attending the aforementioned meeting or when such a representative is unable to attend and has given sufficient notice.",
+      "Write a continuity report at the end of their term for the next executive member who will fill their position.",
+    ],
   },
   {
-    name: "Second Year Representative",
-    content: ["lols"],
+    name: "Year Representative",
+    content: [
+      "2 roles for first years",
+      "1 role for second, third, and fourth",
+      "Share responsibility for the day-to-day operations of the SSSS and its resources.",
+      "Ensure that issues and views pertaining to the Members in their specific year of Post-Secondary education are well represented within the Executive and the Society as a whole.",
+      "Comprise a separate committee under the Vice President as well as maintaining positions on the main executive council.",
+      "Write a continuity report at the end of their term for the next executive member who will fill this position.",
+    ],
   },
   {
-    name: "Third Year Representative",
-    content: ["lols"],
-  },
-  {
-    name: "Fourth Year Representative",
-    content: ["lols"],
+    name: "SFSS Council Representative",
+    content: [
+      "Sit on the executive council of the SSSS and be elected in the SSSS general election, unless otherwise filled – or previously specified to be filled – during the course of the SFSS general election.",
+      "Follow all Simon Fraser Student Society requirements for a Student Union Forum Representative.",
+      "Act to further the best interests of the Software Systems Student Society as directed by the membership, within the Simon Fraser Student Society Council.",
+      "Report on the activities of the Simon Fraser Student Society Council at general meetings.",
+      "Submit a written report for each meeting to the Secretary for distribution and filing.",
+    ],
   },
 ];
 
