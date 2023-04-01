@@ -31,16 +31,16 @@
     border-radius: 20px;
   }
 
-  .section-container {
-    padding: 1rem;
-  }
-
   .roles-and-selected-role-desktop {
     display: none;
   }
 
   #roles-section {
     display: none;
+  }
+
+  .roles-and-selected-role-mobile {
+    padding-top: 1rem;
   }
 
   @include viewport(desktop) {
@@ -53,6 +53,7 @@
       grid-template-columns: auto 3fr;
       grid-template-areas: "roles selected-role";
       gap: 2rem;
+      padding-top: 1rem;
 
       #roles-section {
         display: flex;

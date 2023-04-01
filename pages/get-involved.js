@@ -141,7 +141,7 @@ export default function GetInvolved() {
       </Head>
       <Header />
       <main className="get-involved-page container">
-        <section className="section-container main-content">
+        <section className="main-content">
           <h1>SSSS Elections</h1>
           <p>
             Join the Software Systems Student Society by running for any of the
@@ -149,7 +149,7 @@ export default function GetInvolved() {
             election dates.
           </p>
         </section>
-        <section className="roles-and-selected-role-desktop section-container">
+        <section className="roles-and-selected-role-desktop">
           <DisplayRoles
             roles={roles}
             selectedRoleId={selectedRoleIndex}
@@ -161,10 +161,6 @@ export default function GetInvolved() {
         </section>
         <section className="roles-and-selected-role-mobile">
           <Accordion data={roles} />
-        </section>
-        <section id="past-elections">
-          <h2>Past Elections</h2>
-          <p>is;adjfa;dksjkf</p>
         </section>
       </main>
       <Footer />
