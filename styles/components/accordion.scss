@@ -1,0 +1,45 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--colour-neutral-1100);
+
+  button {
+    display: block;
+    width: 100%;
+    text-align: initial;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      list-style: circle;
+      margin-left: 1.5rem;
+    }
+
+    button {
+      padding: 1rem;
+    }
+  }
+
+  .card:not(:last-child) {
+    border-bottom: 2px solid var(--colour-neutral-000);
+  }
+
+  .card-body[data-opened] {
+    padding: 0 0.5rem 1rem;
+  }
+
+  .card-body {
+    box-sizing: content-box;
+    padding: 0 0.5rem;
+    border-radius: 10px;
+    overflow-y: hidden;
+    max-height: 0;
+    transition: max-height 250ms ease-in-out, padding 250ms ease-in-out;
+  }
+}

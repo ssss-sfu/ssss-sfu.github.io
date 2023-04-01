@@ -1,22 +1,23 @@
 import Head from "next/head";
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
-import { useState } from "react";
+import Accordion from "../components/Accordion";
+import { useState, useRef, useLayoutEffect } from "react";
 
 const roles = [
   {
     name: "President",
     content: [
-      "Carry out the business of the Software Systems Student Society as directed by decisions of the membership, and in accordance with this constitution, by delegation of duties to other members of the Society as necessary in order to ensure well being of the Society",
+      "Carry out the business of the Software Systems Student Society as directed by decisions of the membership, and in accordance with this constitution, by delegation of duties to other members of the Society as necessary in order to ensure well being of the Society.",
       "Be responsible for calling regular and special general meetings.",
-      "Assume ex officio membership on all committees wit… Systems Student Society appoints representatives.",
+      "Assume ex officio membership on all committees within and to which the Software Systems Student Society appoints representatives.",
       "Act as official spokesperson and representative for the Software Systems Student Society.",
       "Be the official contact with the School of Computing Science and its representatives.",
       "Be the official contact with the Software Systems program staff and its representatives.",
       "Be the official contact with the Simon Fraser Student Society and its representatives.",
       "Be a signing officer of the Society, including the Society's Bank Account, if one exists.",
       "Be responsible for monitoring all projects funded through the society.",
-      "Write a continuity report at the end of their term…next executive member who will fill this position.",
+      "Write a continuity report at the end of their term for the next executive member who will fill this position.",
     ],
   },
   {
@@ -140,7 +141,7 @@ export default function GetInvolved() {
       </Head>
       <Header />
       <main className="get-involved-page container">
-        <section className="section-container space-vertically-full">
+        <section className="section-container main-content">
           <h1>SSSS Elections</h1>
           <p>
             Join the Software Systems Student Society by running for any of the
@@ -148,7 +149,7 @@ export default function GetInvolved() {
             election dates.
           </p>
         </section>
-        <section className="roles-and-selected-role-container section-container">
+        <section className="roles-and-selected-role-desktop section-container">
           <DisplayRoles
             roles={roles}
             selectedRoleId={selectedRoleIndex}
@@ -157,6 +158,9 @@ export default function GetInvolved() {
           <DisplaySelectedRole
             role={roles.find((role, index) => index === selectedRoleIndex)}
           />
+        </section>
+        <section className="roles-and-selected-role-mobile">
+          <Accordion data={roles} />
         </section>
         <section id="past-elections">
           <h2>Past Elections</h2>
@@ -191,13 +195,15 @@ function DisplayRoles({ roles, selectedRoleId, selectRole }) {
 
 function DisplaySelectedRole({ role }) {
   return (
-    <article id="selected-role-section" className="selected-role-container">
+    <article id="selected-role-section">
       <h2>{role.name}</h2>
-      <div className="space-vertically-half">
+      <ul className="role-description-container">
         {role.content.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <li key={index} className="role-description">
+            {paragraph}
+          </li>
         ))}
-      </div>
+      </ul>
     </article>
   );
 }
