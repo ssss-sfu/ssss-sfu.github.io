@@ -2,7 +2,6 @@
 
 .get-involved-page {
   background-color: var(--colour-neutral-1200);
-
   li {
     list-style: none;
   }
@@ -91,6 +90,12 @@
 
   #selected-role-section {
     grid-area: selected-role;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--colour-neutral-1100);
+    border-radius: 10px;
+    padding: 1rem;
   }
 
   .role-description-container {

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import Accordion from "../components/Accordion";
-import { useState, useRef, useLayoutEffect } from "react";
+import { useState } from "react";
 
 const roles = [
   {
@@ -134,13 +134,13 @@ export default function GetInvolved() {
   const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
   const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
   return (
-    <div>
+    <div className="get-involved-page">
       <Head>
         <title>Software Systems Student Society</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <main className="get-involved-page container">
+      <main className="container">
         <section className="main-content">
           <h1>SSSS Elections</h1>
           <p>
