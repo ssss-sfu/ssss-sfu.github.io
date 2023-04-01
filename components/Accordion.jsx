@@ -16,30 +16,18 @@ export default function Accordian({ data }) {
       previouslyOpenedPanelIndex.current
     );
     const selectedNode = idPanelMap.get(indexClicked);
-    if (previouslyOpenedPanelIndex.current === undefined) {
-      selectedNode.style.maxHeight = `${
-        idPanelMap.get(indexClicked).scrollHeight
-      }px`;
-      selectedNode.setAttribute("data-opened", "");
-      previouslyOpenedPanelIndex.current = indexClicked;
-      return;
-    }
-    if (parseInt(selectedNode.style.maxHeight)) {
-      selectedNode.style.maxHeight =
-        "0px";
-      selectedNode.removeAttribute("data-opened");
+    if (selectedNode.dataset.hasOwnProperty("opened")) {
+      closePanel(selectedNode);
     } else {
-      selectedNode.style.maxHeight = `${
-        idPanelMap.get(indexClicked).scrollHeight
-      }px`;
-      selectedNode.setAttribute("data-opened", "");
-      if (previouslyOpenedPanelIndex.current !== indexClicked) {
-        previouslyOpenedNode.style.maxHeight =
-          "0px";
-        previouslyOpenedNode.removeAttribute("data-opened");
-        previouslyOpenedPanelIndex.current = indexClicked;
+      openPanel(selectedNode);
+      if (
+        previouslyOpenedPanelIndex.current !== indexClicked ||
+        previouslyOpenedPanelIndex.current === undefined
+      ) {
+        closePanel(previouslyOpenedNode);
       }
     }
+    previouslyOpenedPanelIndex.current = indexClicked;
   }
   return (
     <ul className="accordion">
@@ -65,4 +53,14 @@ export default function Accordian({ data }) {
       ))}
     </ul>
   );
+}
+
+function openPanel(node) {
+  node.style.maxHeight = `${node.scrollHeight}px`;
+  node.setAttribute("data-opened", "");
+}
+
+function closePanel(node) {
+  node.style.maxHeight = "0";
+  node.removeAttribute("data-opened");
 }
