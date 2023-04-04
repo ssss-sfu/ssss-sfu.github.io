@@ -1,5 +1,6 @@
-import Image from "next/image"
-import { Button } from '@components'
+import Image from "next/image";
+import { Button } from "@components";
+
 
 function Header() {    
   return (        
@@ -18,23 +19,24 @@ function Header() {
           <a className="page-link">Get Involved</a>
           <a className="page-link">Resources</a>
         </div>
-
-        <div class="socials">
-          <a href="https://www.facebook.com/ssss.sfu">
-            <Image src="/social-media/facebook.svg" height={18} width={18} />
-          </a>
-          <a  href="https://www.linkedin.com/company/ssss-sfu/">
-            <Image src="/social-media/linkedin.svg" height={18} width={18} />
-          </a>
-          <a href="https://www.instagram.com/ssss.sfu/">
-            <Image src="/social-media/instagram.svg" height={18} width={18} />
-          </a>
-          <a href="https://discord.gg/XZUd7amxPq">
-            <Image src="/social-media/discord.svg" height={18} width={18} />
-          </a>
-          <Button label='Contact Us'/>
-        </div>
       </div>
-  )
+
+      <div class="socials">
+        <a href="https://www.facebook.com/ssss.sfu">
+          <Image src="/social-media/facebook.svg" height={18} width={18} />
+        </a>
+        <a href="https://www.linkedin.com/company/ssss-sfu/">
+          <Image src="/social-media/linkedin.svg" height={18} width={18} />
+        </a>
+        <a href="https://www.instagram.com/ssss.sfu/">
+          <Image src="/social-media/instagram.svg" height={18} width={18} />
+        </a>
+        <a href="https://discord.gg/XZUd7amxPq">
+          <Image src="/social-media/discord.svg" height={18} width={18} />
+        </a>
+        <Button label="Contact Us" />
+      </div>
+    </div>
+  );
 }
-export default Header
+export default Header;

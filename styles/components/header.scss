@@ -1,32 +1,33 @@
 //@import '../main.scss';
 
 .header {
-    color: var(--colour-neutral-000);
-    background-color: var(--colour-neutral-1200);
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
+  color: var(--colour-neutral-000);
+  background-color: var(--colour-neutral-1200);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.home-link{
-    display: flex;
-    justify-content: center;
+.home-link {
+  display: flex;
+  justify-content: center;
 }
-.pages{
-    display: flex;
-    justify-content: space-evenly;
+.pages {
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .page-link{
     padding: 10px;
     text-decoration: none;
 }
 
-.socials{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-.socials > a{
-    margin: 1px;
-    padding-right: 10px;
+.socials > a {
+  margin: 1px;
+  padding-right: 10px;
 }

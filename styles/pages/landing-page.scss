@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 @keyframes pop-up {
   0% {
@@ -16,7 +16,6 @@
   25% {
     transform: translateY(2rem);
   }
-  
 
   75% {
     transform: translateY(2rem);
@@ -37,8 +36,9 @@
 
 .landing-page {
   background-color: var(--colour-neutral-1200);
-  
-  h2, p {
+
+  h2,
+  p {
     color: var(--colour-neutral-000);
   }
 
@@ -46,14 +46,16 @@
     position: relative;
     max-width: unset;
     text-align: center;
-    background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0.75) 100%), url('../../public/images/landing-page-hero.jpg');
+    background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0.75) 100%),
+      url("../../public/images/landing-page-hero.jpg");
     background-position: center;
     background-size: cover;
     padding-top: 12rem;
     overflow: hidden;
     padding-bottom: 0;
-    
-    h1, p {
+
+    h1,
+    p {
       color: var(--colour-neutral-000);
     }
 
@@ -76,7 +78,8 @@
     padding-top: 4rem;
     padding-bottom: 1rem;
 
-    h3, p {
+    h3,
+    p {
       color: var(--colour-neutral-000);
     }
 
@@ -97,19 +100,21 @@
       }
     }
 
-    .discover-ssss__main-link-item, .discover-ssss__link-item {
+    .discover-ssss__main-link-item,
+    .discover-ssss__link-item {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       height: 14rem;
       border-radius: $border-radius;
       padding: 1rem;
-      background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-main.png');
+      background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
+        url("../../public/images/landing-page/discover-ssss-main.png");
       background-size: cover;
       background-position: center;
       cursor: pointer;
     }
-  
+
     .discover-ssss__link-items {
       margin-top: 2rem;
 
@@ -118,17 +123,32 @@
       }
 
       .discover-ssss__link-item:nth-child(1) {
-        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-events.png');
+        background: linear-gradient(
+            180deg,
+            rgba(20, 21, 21, 0) 0%,
+            #141515 100%
+          ),
+          url("../../public/images/landing-page/discover-ssss-events.png");
         background-size: cover;
         background-position: center;
       }
       .discover-ssss__link-item:nth-child(2) {
-        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-get-involved.png');
+        background: linear-gradient(
+            180deg,
+            rgba(20, 21, 21, 0) 0%,
+            #141515 100%
+          ),
+          url("../../public/images/landing-page/discover-ssss-get-involved.png");
         background-size: cover;
         background-position: center;
       }
       .discover-ssss__link-item:nth-child(3) {
-        background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%), url('../../public/images/landing-page/discover-ssss-about-us.png');
+        background: linear-gradient(
+            180deg,
+            rgba(20, 21, 21, 0) 0%,
+            #141515 100%
+          ),
+          url("../../public/images/landing-page/discover-ssss-about-us.png");
         background-size: cover;
         background-position: center;
       }
@@ -136,7 +156,7 @@
 
     @include viewport(tablet-desktop) {
       display: grid;
-      grid-template-areas: 
+      grid-template-areas:
         "header header"
         "main items";
       gap: 1rem;
@@ -165,8 +185,8 @@
         grid-area: items;
         margin-top: 0;
 
-        & > .discover-ssss__link-item:nth-child(1), 
-        & > .discover-ssss__link-item:nth-child(2), 
+        & > .discover-ssss__link-item:nth-child(1),
+        & > .discover-ssss__link-item:nth-child(2),
         & > .discover-ssss__link-item:nth-child(3) {
           height: 8rem;
           justify-content: center;
@@ -176,9 +196,9 @@
           padding-right: 1.5rem;
           margin: 0 0 1rem 0;
           background: var(--colour-neutral-1100);
-  
+
           &::before {
-            content: '';
+            content: "";
             background-size: cover;
             background-position: center;
             display: block;
@@ -189,17 +209,17 @@
             height: 100%;
           }
         }
-        
+
         .discover-ssss__link-item:nth-child(1)::before {
-          background-image: url('../../public/images/landing-page/discover-ssss-events.png');
+          background-image: url("../../public/images/landing-page/discover-ssss-events.png");
         }
 
         .discover-ssss__link-item:nth-child(2)::before {
-          background-image: url('../../public/images/landing-page/discover-ssss-get-involved.png');
+          background-image: url("../../public/images/landing-page/discover-ssss-get-involved.png");
         }
 
         .discover-ssss__link-item:nth-child(3)::before {
-          background-image: url('../../public/images/landing-page/discover-ssss-about-us.png');
+          background-image: url("../../public/images/landing-page/discover-ssss-about-us.png");
         }
       }
     }
@@ -239,7 +259,7 @@
           gap: 0.5rem;
 
           &::before {
-            content: '';
+            content: "";
             width: 1rem;
             height: 1rem;
             border-radius: 50%;
@@ -265,7 +285,12 @@
 
       @include viewport(tablet-desktop) {
         padding: 6rem;
-        background: linear-gradient(95.56deg, #181B1A 37.95%, rgba(24, 27, 26, 0.16) 104.54%), url('../../public/images/landing-page/discord-screenshot.png');
+        background: linear-gradient(
+            95.56deg,
+            #181b1a 37.95%,
+            rgba(24, 27, 26, 0.16) 104.54%
+          ),
+          url("../../public/images/landing-page/discord-screenshot.png");
         background-position: center left;
       }
     }
