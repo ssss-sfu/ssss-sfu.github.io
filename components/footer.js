@@ -2,10 +2,10 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <div class="footer">
-      <div class="main-footer-content">
-        <div class="home-link">
-          <div class="left-icon">
+    <div className="footer">
+      <div className="main-footer-content">
+        <div className="home-link">
+          <div className="left-icon">
             <Image src="/sosy-logo.svg" height={36} width={36} />
           </div>
           <div>
@@ -14,11 +14,11 @@ function Footer() {
           </div>
         </div>
 
-        <div class="office-address icon-container">
-          <div class="gray-backdrop left-icon">
+        <div className="office-address icon-container">
+          <div className="gray-backdrop left-icon">
             <Image src="/icons/office-building.svg" height={48} width={48} />
           </div>
-          <div class="address icon-right-content">
+          <div className="address icon-right-content">
             <h4>Office Address</h4>
             <address>
               <strong>Software Systems Student Society</strong>
@@ -30,17 +30,17 @@ function Footer() {
           </div>
         </div>
 
-        <div class="get-in-touch icon-container">
-          <div class="gray-backdrop left-icon">
+        <div className="get-in-touch icon-container">
+          <div className="gray-backdrop left-icon">
             <Image src="/icons/contact-us.svg" height={48} width={48} />
           </div>
-          <div class="address icon-right-content">
+          <div className="address icon-right-content">
             <h4>Get in Touch</h4>
             <address>ssss-exec@sfu.ca</address>
           </div>
         </div>
 
-        <div class="footer-socials icon-contianer">
+        <div className="footer-socials icon-contianer">
           <a href="https://www.facebook.com/ssss.sfu">
             <Image src="/social-media/facebook.svg" height={34} width={34} />
           </a>
@@ -55,7 +55,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div class="footer-code-graphic-container">
+      <div className="footer-code-graphic-container">
         <Image src="/code-snippet.svg" height={187} width={572} />
       </div>
     </div>

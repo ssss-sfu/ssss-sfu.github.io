@@ -1,0 +1,146 @@
+@import "../variables.scss";
+
+.events-page {
+  background-color: var(--colour-neutral-1200);
+
+  h2,
+  p {
+    color: var(--colour-neutral-000);
+  }
+
+  .hero {
+    position: relative;
+    max-width: unset;
+    text-align: center;
+    background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0.75) 100%),
+      url("../../public/images/landing-page/discover-ssss-get-involved.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 6rem;
+    overflow: hidden;
+    padding-bottom: 6rem;
+
+    h1,
+    p {
+      color: var(--colour-neutral-000);
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .annual-events {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h3,
+    p {
+      color: var(--colour-neutral-000);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-weight: 500;
+      margin-top: 0.25rem;
+    }
+
+    header {
+      margin-bottom: 1rem;
+
+      button {
+        margin-top: 1rem;
+      }
+    }
+
+    .annual-events__link-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 16rem;
+      border-radius: $border-radius;
+      padding: 1rem;
+      background: linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
+        url("../../public/images/landing-page/discover-ssss-main.png");
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .annual-events__link-items {
+      margin-top: 2rem;
+
+      .annual-events__link-item:nth-child(1) {
+        background: linear-gradient(
+            180deg,
+            rgba(20, 21, 21, 0) 0%,
+            #141515 100%
+          ),
+          url("../../public/images/events-page/annual-events-frosh.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      .annual-events__link-item:nth-child(2) {
+        background: linear-gradient(
+            180deg,
+            rgba(20, 21, 21, 0) 0%,
+            #141515 100%
+          ),
+          url("../../public/images/landing-page/discover-ssss-about-us.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .annual-events__link-item:nth-child(3) {
+        background: linear-gradient(
+            180deg,
+            rgba(20, 21, 21, 0) 0%,
+            #141515 100%
+          ),
+          url("../../public/images/landing-page/discover-ssss-main.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    @include viewport(tablet-desktop) {
+      header {
+        grid-area: header;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+
+        button {
+          margin-top: 0;
+        }
+      }
+
+      .annual-events__link-items {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        .annual-events__link-item {
+          flex: 1 1 0px;
+        }
+
+        .annual-events__link-item:nth-child(1)::before {
+          background-image: url("../../public/images/events-page/annual-events-frosh.jpeg");
+        }
+
+        .annual-events__link-item:nth-child(2)::before {
+          background-image: url("../../public/images/landing-page/discover-ssss-about-us.png");
+        }
+
+        .annual-events__link-item:nth-child(3)::before {
+          background-image: url("../../public/images/landing-page/discover-ssss-main.png");
+        }
+      }
+    }
+  }
+}

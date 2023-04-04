@@ -3,8 +3,8 @@ import { Button } from "@components";
 
 function Header() {
   return (
-    <div class="header">
-      <div class="home-link">
+    <div className="header">
+      <div className="home-link">
         <Image src="/sosy-logo.svg" height={36} width={36} />
         <div>
           <h6>Software Systems</h6>
@@ -12,14 +12,18 @@ function Header() {
         </div>
       </div>
 
-      <div class="pages">
-        <a class="page-link">About</a>
-        <a class="page-link">Events</a>
-        <a class="page-link">Get Involved</a>
-        <a class="page-link">Resources</a>
+      <div className="pages">
+        <a className="page-link" href="/">
+          About
+        </a>
+        <a className="page-link" href="/events">
+          Events
+        </a>
+        <a className="page-link">Get Involved</a>
+        <a className="page-link">Resources</a>
       </div>
 
-      <div class="socials">
+      <div className="socials">
         <a href="https://www.facebook.com/ssss.sfu">
           <Image src="/social-media/facebook.svg" height={18} width={18} />
         </a>
