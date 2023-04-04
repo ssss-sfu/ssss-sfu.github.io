@@ -19,7 +19,7 @@ function Header() {
           <a className="page-link">Get Involved</a>
           <a className="page-link">Resources</a>
         </div>
-      </div>
+
 
       <div class="socials">
         <a href="https://www.facebook.com/ssss.sfu">
