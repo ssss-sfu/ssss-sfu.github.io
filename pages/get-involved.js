@@ -19,8 +19,15 @@ export default function GetInvolved() {
           <h1>SSSS Elections</h1>
           <p>
             Join the Software Systems Student Society by running for any of the
-            elected positions. Join our Discord server to stay up to date with
-            election dates.
+            elected positions.{" "}
+            <a
+              href="https://discord.gg/599e3myXPj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join our Discord server
+            </a>{" "}
+            to stay up to date with election dates.
           </p>
         </section>
         <section className="roles-and-selected-role-desktop">
