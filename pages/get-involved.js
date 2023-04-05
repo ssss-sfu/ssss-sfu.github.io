@@ -4,6 +4,80 @@ import Footer from "../components/footer.js";
 import Accordion from "../components/Accordion";
 import { useState } from "react";
 
+export default function GetInvolved() {
+  const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
+  const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
+  return (
+    <div className="get-involved-page">
+      <Head>
+        <title>Software Systems Student Society</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Header />
+      <main className="container">
+        <section className="main-content">
+          <h1>SSSS Elections</h1>
+          <p>
+            Join the Software Systems Student Society by running for any of the
+            elected positions. Join our Discord server to stay up to date with
+            election dates.
+          </p>
+        </section>
+        <section className="roles-and-selected-role-desktop">
+          <DisplayRoles
+            roles={roles}
+            selectedRoleId={selectedRoleIndex}
+            selectRole={selectRole}
+          />
+          <DisplaySelectedRole
+            role={roles.find((role, index) => index === selectedRoleIndex)}
+          />
+        </section>
+        <section className="roles-and-selected-role-mobile">
+          <Accordion data={roles} />
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+function DisplayRoles({ roles, selectedRoleId, selectRole }) {
+  return (
+    <ul id="roles-section" className="role-list-container">
+      {roles.map(({ name }, index) => {
+        const active = index === selectedRoleId;
+        return (
+          <li key={index}>
+            <div className={`selected-bar ${active ? "show-bar" : ""}`}></div>
+            <button
+              className={`${active ? "active-button" : ""}`}
+              onClick={() => selectRole(index)}
+            >
+              {name}
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function DisplaySelectedRole({ role }) {
+  return (
+    <article id="selected-role-section">
+      <h2>{role.name}</h2>
+      <ul className="role-description-container">
+        {role.content.map((paragraph, index) => (
+          <li key={index} className="role-description">
+            {paragraph}
+          </li>
+        ))}
+      </ul>
+    </article>
+  );
+}
+
 const roles = [
   {
     name: "President",
@@ -30,7 +104,7 @@ const roles = [
       "Provide a line of communication between the SSSS and graduate students and alumni.",
       "Assume the duties of the President in the event that the President is unable or unavailable to carry them out, or that the position of President becomes vacant.",
       "Be a signing officer of the Society, including the Society's Bank Account, if one exists.",
-      "Write a continuity report at the end of their term for the next executive member who will fill this position",
+      "Write a continuity report at the end of their term for the next executive member who will fill this position.",
     ],
   },
   {
@@ -110,8 +184,8 @@ const roles = [
   {
     name: "Year Representative",
     content: [
-      "2 roles for first years",
-      "1 role for second, third, and fourth",
+      "2 roles for first years.",
+      "1 role for second, third, and fourth years.",
       "Share responsibility for the day-to-day operations of the SSSS and its resources.",
       "Ensure that issues and views pertaining to the Members in their specific year of Post-Secondary education are well represented within the Executive and the Society as a whole.",
       "Comprise a separate committee under the Vice President as well as maintaining positions on the main executive council.",
@@ -129,77 +203,3 @@ const roles = [
     ],
   },
 ];
-
-export default function GetInvolved() {
-  const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
-  const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
-  return (
-    <div className="get-involved-page">
-      <Head>
-        <title>Software Systems Student Society</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <Header />
-      <main className="container">
-        <section className="main-content">
-          <h1>SSSS Elections</h1>
-          <p>
-            Join the Software Systems Student Society by running for any of the
-            elected positions. Join our Discord server to stay up to date with
-            election dates.
-          </p>
-        </section>
-        <section className="roles-and-selected-role-desktop">
-          <DisplayRoles
-            roles={roles}
-            selectedRoleId={selectedRoleIndex}
-            selectRole={selectRole}
-          />
-          <DisplaySelectedRole
-            role={roles.find((role, index) => index === selectedRoleIndex)}
-          />
-        </section>
-        <section className="roles-and-selected-role-mobile">
-          <Accordion data={roles} />
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
-}
-
-function DisplayRoles({ roles, selectedRoleId, selectRole }) {
-  return (
-    <ul id="roles-section" className="role-list-container">
-      {roles.map(({ name }, index) => {
-        const active = index === selectedRoleId;
-        return (
-          <li key={index}>
-            <div className={`selected-bar ${active ? "show-bar" : ""}`}></div>
-            <button
-              className={`${active ? "active-button" : ""}`}
-              onClick={() => selectRole(index)}
-            >
-              {name}
-            </button>
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-
-function DisplaySelectedRole({ role }) {
-  return (
-    <article id="selected-role-section">
-      <h2>{role.name}</h2>
-      <ul className="role-description-container">
-        {role.content.map((paragraph, index) => (
-          <li key={index} className="role-description">
-            {paragraph}
-          </li>
-        ))}
-      </ul>
-    </article>
-  );
-}

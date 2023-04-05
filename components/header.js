@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@components";
-import Link from "next/link"
+import Link from "next/link";
 
 function Header() {
   return (
@@ -14,13 +14,11 @@ function Header() {
       </div>
 
       <div class="pages">
-        <a class="page-link">About</a>
+        <Link href="/">
+          <a class="page-link">About</a>
+        </Link>
         <a class="page-link">Events</a>
-        <Link
-          href="/get-involved"
-          style={{ textDecoration: "none" }}
-          legacyBehavior
-        >
+        <Link href="/get-involved">
           <a className="page-link">Get Involved</a>
         </Link>
         <a class="page-link">Resources</a>
