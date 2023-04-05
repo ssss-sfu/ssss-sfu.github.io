@@ -20,7 +20,7 @@ function Header() {
           Events
         </a>
         <a className="page-link">Get Involved</a>
-        <a className="page-link">Resources</a>
+        <a className="page-link" href="/resources">Resources</a>
       </div>
 
       <div className="socials">
