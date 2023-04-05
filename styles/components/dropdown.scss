@@ -1,0 +1,55 @@
+@import "../variables.scss";
+
+.faq-item {
+  position: relative;
+  background: var(--colour-neutral-1100) 100%;
+  margin: 1.5rem 0;
+  padding: 2rem 1rem 1rem;
+  border-radius: 2rem;
+  height: fit-content;
+
+  input {
+    display: none;
+  }
+
+  label {
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition: color 0.25s;
+
+    img {
+      filter: saturate(0) brightness(2);
+      transition: all 0.25s;
+    }
+  }
+
+  .content {
+    font-size: 1.1rem;
+    overflow: hidden;
+    max-height: 0vh;
+    transition: max-height 0.25s;
+  }
+
+  input:checked {
+    & ~ label {
+      color: var(--colour-sosy-green-500); // tbd
+    }
+
+    & ~ label img {
+      // https://codepen.io/sosuke/pen/Pjoqqp to #24e98b (--color-sosy-green-500)
+      filter: invert(50%) sepia(84%) saturate(391%) hue-rotate(116deg)
+        brightness(93%) contrast(85%);
+      transform: rotate(-180deg);
+    }
+
+    & ~ .content {
+      max-height: 100vh;
+    }
+  }
+}

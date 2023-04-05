@@ -6,10 +6,10 @@
 @use "./pages/events-page.scss";
 @use "./pages/resources-page.scss";
 
-
 @use "./components/button.scss";
 @use "./components/header.scss";
 @use "./components/footer.scss";
+@use "./components/dropdown.scss";
 
 :root {
   --colour-sosy-green-900: #07221c;

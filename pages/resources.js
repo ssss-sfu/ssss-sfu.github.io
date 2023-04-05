@@ -1,6 +1,26 @@
 import { Helmet } from "@components";
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
+import { Dropdown } from "components/Dropdown.jsx";
+
+const links = [
+  { text: "Software Systems Program page", href: "" },
+  { text: "Constitution", href: "" },
+  { text: "Looking to enroll in Software Systems", href: "" },
+  { text: "SoSy 101", href: "" },
+  { text: "Academic Repo", href: "" },
+  { text: "SFU Free Software", href: "" },
+];
+
+const faqs = [
+  { title: "What is Software Systems?", content: "Lorem Lorem Lorem" },
+  {
+    title:
+      "What is the difference between Computer Science and Software Systems?",
+    content: "Lorem Lorem Lorem",
+  },
+  { title: "How do I get on co-op?", content: "Lorem Lorem Lorem" },
+];
 
 export default function ResourcesPage() {
   return (
@@ -17,38 +37,15 @@ export default function ResourcesPage() {
           <header>
             <h2>Resources</h2>
           </header>
-          <br/>
+          <br />
           <ul className="resources-links">
-            <li>
-              <a href="" target="_blank">
-                Software Systems Program page
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank">
-                Constitution
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank">
-                Looking to enroll in Software Systems
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank">
-                SoSy 101
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank">
-                Academic Repo
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank">
-                SFU Free Software
-              </a>
-            </li>
+            {links.map(({ text, href }, id) => (
+              <li key={id}>
+                <a href={href} target="_blank">
+                  {text}
+                </a>
+              </li>
+            ))}
           </ul>
         </article>
 
@@ -56,33 +53,13 @@ export default function ResourcesPage() {
           <header>
             <h2>FAQ</h2>
           </header>
+
+          <div>
+            {faqs.map(({ title, content }, id) => (
+              <Dropdown id={id} title={title} content={content} />
+            ))}
+          </div>
         </article>
-        {/* <section className="annual-events__link-items">
-            <a
-              className="annual-events__link-item"
-              target="_blank"
-              href="https://discord.com/invite/XZUd7amxPq"
-            >
-              <h3>Frosh</h3>
-              <p>The annual first year's kick off week</p>
-            </a>
-            <a
-              className="annual-events__link-item"
-              target="_blank"
-              href="https://systemshacks.sfussss.org/"
-            >
-              <h3>Systems Hacks</h3>
-              <p>The SSSS' annual hackathon - new theme every year!</p>
-            </a>
-            <a
-              className="annual-events__link-item"
-              target="_blank"
-              href="https://systemsfair.ca/"
-            >
-              <h3>Systems Fair</h3>
-              <p>Job fair in collaboration with the MSESSS and SEESS</p>
-            </a>
-          </section> */}
       </main>
       <Footer />
     </div>
