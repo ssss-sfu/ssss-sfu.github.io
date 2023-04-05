@@ -21,7 +21,7 @@ export default function Accordian({ data }) {
     } else {
       openPanel(selectedNode);
       if (
-        previouslyOpenedPanelIndex.current !== indexClicked && 
+        previouslyOpenedPanelIndex.current !== indexClicked &&
         previouslyOpenedPanelIndex.current !== undefined
       ) {
         closePanel(previouslyOpenedNode);
