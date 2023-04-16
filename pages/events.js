@@ -1,6 +1,8 @@
 import { Helmet } from "@components";
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
+import { Hero } from "@components";
+import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
 export default function EventsPage() {
   return (
@@ -8,11 +10,11 @@ export default function EventsPage() {
       <Helmet />
       <Header />
       <main>
-        <header className="container hero">
-          <p>Events</p>
-          <h1>Join and meet other SoSy students</h1>
-        </header>
-
+        <Hero
+          title="Join and meet other SoSy students"
+          subtitle="Events"
+          backgroundImage={HeroImage.src}
+        />
         <article className="container annual-events">
           <header>
             <h2>Annual Events</h2>

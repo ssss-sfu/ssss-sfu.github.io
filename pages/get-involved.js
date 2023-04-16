@@ -2,7 +2,9 @@ import Head from "next/head";
 import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import Accordion from "../components/Accordion";
+import { Hero } from "@components";
 import { useState } from "react";
+import HeroImage from "@images/landing-page/discover-ssss-main.png";
 
 export default function GetInvolved() {
   const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
@@ -14,6 +16,11 @@ export default function GetInvolved() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
+      <Hero
+        title="Join the Software Systems Student Society"
+        subtitle="Get Involved"
+        backgroundImage={HeroImage.src}
+      />
       <main className="container">
         <section className="main-content">
           <h1>SSSS Elections</h1>
