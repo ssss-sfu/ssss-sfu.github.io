@@ -1,5 +1,5 @@
 .accordion {
-  border-radius: 20px;
+  border-radius: 0.75rem;
   background-color: var(--colour-neutral-1100);
 
   button {
@@ -14,8 +14,12 @@
     display: flex;
     flex-direction: column;
 
+    li + li {
+      margin-top: 1rem;
+    }
+
     li {
-      list-style: circle;
+      list-style-image: url("../../public/icons/list-style-check.svg");
       margin-left: 1.5rem;
     }
 
@@ -25,7 +29,7 @@
   }
 
   .card:not(:last-child) {
-    border-bottom: 2px solid var(--colour-neutral-000);
+    border-bottom: 1px solid var(--colour-neutral-1000);
   }
 
   .card-body[data-opened] {
