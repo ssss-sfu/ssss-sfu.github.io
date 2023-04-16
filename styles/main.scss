@@ -3,12 +3,15 @@
 @use "./typography.scss";
 
 @use "./pages/landing-page.scss";
+@use "./pages/get-involved-page.scss";
 @use "./pages/events-page.scss";
 @use "./pages/resources-page.scss";
 
 @use "./components/button.scss";
 @use "./components/header.scss";
 @use "./components/footer.scss";
+@use "./components/accordion.scss";
+@use "./components/hero.scss";
 @use "./components/dropdown.scss";
 
 :root {

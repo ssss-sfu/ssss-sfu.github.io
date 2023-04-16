@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@components";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -13,16 +14,18 @@ function Header() {
       </div>
 
       <div className="pages">
-        <a className="page-link" href="/">
-          About
-        </a>
-        <a className="page-link" href="/events">
-          Events
-        </a>
-        <a className="page-link">Get Involved</a>
-        <a className="page-link" href="/resources">
-          Resources
-        </a>
+        <Link href="/">
+          <a className="page-link">About</a>
+        </Link>
+        <Link href="/events">
+          <a className="page-link">Events</a>
+        </Link>
+        <Link href="/get-involved">
+          <a className="page-link">Get Involved</a>
+        </Link>
+        <Link href="">
+          <a className="page-link">Resources</a>
+        </Link>
       </div>
 
       <div className="socials">
