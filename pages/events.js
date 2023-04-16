@@ -22,6 +22,7 @@ export default function EventsPage() {
           <section className="annual-events__link-items">
             <a
               className="annual-events__link-item"
+              target="_blank"
               href="https://discord.com/invite/XZUd7amxPq"
             >
               <h3>Frosh</h3>
@@ -29,6 +30,7 @@ export default function EventsPage() {
             </a>
             <a
               className="annual-events__link-item"
+              target="_blank"
               href="https://systemshacks.sfussss.org/"
             >
               <h3>Systems Hacks</h3>
@@ -36,6 +38,7 @@ export default function EventsPage() {
             </a>
             <a
               className="annual-events__link-item"
+              target="_blank"
               href="https://systemsfair.ca/"
             >
               <h3>Systems Fair</h3>
