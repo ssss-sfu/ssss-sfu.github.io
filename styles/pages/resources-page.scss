@@ -30,9 +30,15 @@
     }
   }
 
-  ul.resources-links li {
-    margin-left: 2em;
-    color: var(--colour-sosy-green-500);
-    font-size: 1.25em;
+  ul.resources-links {
+    li + li {
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin-left: 2em;
+      color: var(--colour-sosy-green-500);
+      font-size: 1.25em;
+    }
   }
 }

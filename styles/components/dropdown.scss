@@ -4,8 +4,8 @@
   position: relative;
   background: var(--colour-neutral-1100) 100%;
   margin: 1.5rem 0;
-  padding: 2rem 1rem 1rem;
-  border-radius: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
   height: fit-content;
 
   input {
@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
-    margin-bottom: 1rem;
     transition: color 0.25s;
 
     img {
@@ -34,6 +33,7 @@
     overflow: hidden;
     max-height: 0vh;
     transition: max-height 0.25s;
+    margin-top: 0.5rem;
   }
 
   input:checked {

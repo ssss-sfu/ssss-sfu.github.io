@@ -1,21 +1,3 @@
-<svg width="49" height="38" viewBox="0 0 49 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_260_152)">
-<path d="M41 4.63623L24.5 25.6362L8 4.63623" stroke="url(#paint0_linear_260_152)" stroke-width="7.64706" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d_260_152" x="0.1763" y="0.8125" width="48.6474" height="36.6472" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_260_152"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_260_152" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_260_152" x1="24.5" y1="25.1152" x2="24.5" y2="5.15722" gradientUnits="userSpaceOnUse">
-<stop stop-color="#02C8C8"/>
-<stop offset="1" stop-color="#0EF069"/>
-</linearGradient>
-</defs>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.46895 11.6688C8.76899 11.3689 9.17588 11.2004 9.60015 11.2004C10.0244 11.2004 10.4313 11.3689 10.7313 11.6688L16.0001 16.9376L21.2689 11.6688C21.4165 11.516 21.5931 11.3941 21.7883 11.3103C21.9835 11.2264 22.1935 11.1823 22.4059 11.1804C22.6184 11.1786 22.829 11.2191 23.0257 11.2995C23.2223 11.38 23.4009 11.4988 23.5512 11.649C23.7014 11.7992 23.8202 11.9779 23.9007 12.1745C23.9811 12.3711 24.0216 12.5818 24.0197 12.7943C24.0179 13.0067 23.9738 13.2167 23.8899 13.4119C23.8061 13.6071 23.6842 13.7836 23.5313 13.9312L17.1313 20.3312C16.8313 20.6312 16.4244 20.7997 16.0001 20.7997C15.5759 20.7997 15.169 20.6312 14.8689 20.3312L8.46895 13.9312C8.16899 13.6312 8.00049 13.2243 8.00049 12.8C8.00049 12.3758 8.16899 11.9689 8.46895 11.6688Z" fill="white"/>
 </svg>
