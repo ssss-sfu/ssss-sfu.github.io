@@ -1,5 +1,4 @@
-import { Helmet } from "@components";
-import Header from "../components/header.js";
+import { Helmet, HeaderNav } from "@components";
 import Footer from "../components/footer.js";
 import { Dropdown } from "components/Dropdown.jsx";
 
@@ -58,7 +57,7 @@ export default function ResourcesPage() {
   return (
     <div className="resources-page">
       <Helmet />
-      <Header />
+      <HeaderNav />
       <main>
         <header className="container hero">
           <p>Resources</p>
@@ -73,7 +72,7 @@ export default function ResourcesPage() {
           <ul className="resources-links">
             {links.map(({ text, href }, id) => (
               <li key={id}>
-                <a href={href} target="_blank">
+                <a href={href} target="_blank" rel="noreferrer">
                   {text}
                 </a>
               </li>
@@ -88,7 +87,7 @@ export default function ResourcesPage() {
 
           <div>
             {faqs.map(({ title, content }, id) => (
-              <Dropdown id={id} title={title} content={content} />
+              <Dropdown key={id} id={id} title={title} content={content} />
             ))}
           </div>
         </article>
