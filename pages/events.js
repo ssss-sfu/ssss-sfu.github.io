@@ -1,5 +1,4 @@
-import { Helmet } from "@components";
-import Footer from "../components/footer.js";
+import { Helmet, Footer } from "@components";
 import { Hero, HeaderNav } from "@components";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 

@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Footer from "../components/footer.js";
 import Accordion from "../components/Accordion";
-import { Hero, HeaderNav } from "@components";
+import { Hero, HeaderNav, Footer } from "@components";
 import { useState } from "react";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
 
