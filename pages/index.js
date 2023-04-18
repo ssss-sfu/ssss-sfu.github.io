@@ -19,12 +19,16 @@ export default function LandingPage() {
             <h2>Discover the SSSS</h2>
             <Button label="Learn more" type="secondary" />
           </header>
-          <Link href="/about">
-            <a className="discover-ssss__main-link-item">
-              <h3>Learn About Software Systems</h3>
-              <p>About Us</p>
-            </a>
-          </Link>
+          <a
+            className="discover-ssss__main-link-item"
+            href="https://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <h3>Learn About Software Systems</h3>
+            <p>About the program</p>
+          </a>
+
           <section className="discover-ssss__link-items">
             <Link href="/events">
               <a className="discover-ssss__link-item">
