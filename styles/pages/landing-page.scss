@@ -42,7 +42,7 @@
     color: var(--colour-neutral-000);
   }
 
-  .hero {
+  .hero.container {
     position: relative;
     max-width: unset;
     text-align: center;
@@ -102,6 +102,7 @@
 
     .discover-ssss__main-link-item,
     .discover-ssss__link-item {
+      text-decoration: none;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
