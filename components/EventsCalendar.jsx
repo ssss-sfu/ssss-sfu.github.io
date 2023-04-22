@@ -4,7 +4,6 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -42,7 +41,7 @@ export default function EventsCalendar() {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 500 }}
+        style={{ height: 600 }}
         />
     </div>
   );

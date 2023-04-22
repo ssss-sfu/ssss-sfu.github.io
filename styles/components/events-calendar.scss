@@ -1,18 +1,25 @@
+@import 'react-big-calendar/lib/sass/styles';
+
 .eventsCalendar {
-    padding-top: 80px;
+    padding-top: 4rem;
     border: 1px solid #191A1A;
 }
 
 
-.rbc-day-bg {
-    background: #191A1A;
-}
+// .eventsCalendar.rbc-day-bg.rbc-today {
+//     background-color: white;
+// }
 
-.rbc-day-bg.rbc-today {
-    background: #191A1A
-    ;
-}
 
-.rbc-day-bg.rbc-off-range-bg {
-    background: transparent;
-}
+// .rbc-day-bg {
+//     background: #191A1A;
+// }
+
+// .rbc-day-bg.rbc-today {
+//     background: #4B4E4D
+//     ;
+// }
+
+// .rbc-day-bg.rbc-off-range-bg {
+//     background: transparent;
+// }
