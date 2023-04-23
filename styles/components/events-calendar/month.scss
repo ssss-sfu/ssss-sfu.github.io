@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 .rbc-row {
   display: flex;
@@ -8,11 +8,10 @@
 .rbc-row-segment {
   padding: 0 1px 1px 1px;
 
-  
   .rbc-event-content {
     @media screen and (max-width: 768px) {
       font-size: 1rem;
-    } 
+    }
     @media screen and (max-width: 767px) {
       font-size: 0.4rem;
     }

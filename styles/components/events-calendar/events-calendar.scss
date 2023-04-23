@@ -1,12 +1,11 @@
-
-@import 'react-big-calendar/lib/sass/styles';
-@import './variables';
-@import './reset';
-@import './toolbar';
-@import './event';
-@import './month';
-@import './agenda';
-@import './time-grid';
+@import "react-big-calendar/lib/sass/styles";
+@import "./variables";
+@import "./reset";
+@import "./toolbar";
+@import "./event";
+@import "./month";
+@import "./agenda";
+@import "./time-grid";
 
 .rbc-calendar {
   padding-top: 4rem;
@@ -123,4 +122,3 @@
 .rbc-today {
   background-color: inherit;
 }
-
