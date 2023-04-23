@@ -1,5 +1,4 @@
-import { Helmet, HeaderNav } from "@components";
-import Footer from "../components/footer.js";
+import { Helmet, HeaderNav, Footer } from "@components";
 import { Dropdown } from "components/Dropdown.jsx";
 
 const links = [
