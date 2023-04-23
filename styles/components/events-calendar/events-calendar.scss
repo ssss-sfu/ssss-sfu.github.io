@@ -44,11 +44,11 @@
 }
 
 .rbc-off-range {
-  color: #141515;
+  color: inherit;
 }
 
 .rbc-off-range-bg {
-  background: black;
+  background: darken(#141515, 1%);
 }
 
 .rbc-header {
@@ -62,15 +62,16 @@
   font-weight: bold;
   font-size: 90%;
   min-height: 0;
-  border-bottom: 1px solid $cell-border;
+  border-bottom: 0.5rem solid #141515;
 
   & + & {
-    border-left: 1px solid $cell-border;
+    border-left: 0.5rem solid #141515;
+    border-right: 0.5rem solid #141515;
   }
 
   .rbc-rtl & + & {
     border-left-width: 0;
-    border-right: 1px solid $cell-border;
+    border-right: 0.5rem solid #141515;
   }
 
   & > a {
