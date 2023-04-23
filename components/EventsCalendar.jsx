@@ -30,7 +30,7 @@ export default function EventsCalendar() {
         for (const event of data.items) {
           updatedEvents.push({
             title: event.summary,
-    start: new Date(event.start.dateTime),
+       start: new Date(event.start.dateTime),
             end: new Date(event.end.dateTime),
           });
         }
