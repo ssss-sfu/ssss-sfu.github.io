@@ -11,7 +11,6 @@ export const Footer = () => {
             <Logo />
           </a>
         </Link>
-
         <div className="office-address icon-container">
           <div className="gray-backdrop left-icon">
             <Image
