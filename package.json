@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "precommit": "pretty-quick --staged",
-    "prepare": "husky install .husky; chmod +x .husky/pre-commit",
+    "prepare": "husky install .husky",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
