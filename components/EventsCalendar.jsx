@@ -38,6 +38,7 @@ export default function EventsCalendar() {
     <div className='eventsCalendar'>
       <Calendar 
         localizer={localizer}
+        onSelectEvent={ () => {window.open('https://discord.com/invite/XZUd7amxPq', '_blank')} }
         events={events}
         startAccessor="start"
         endAccessor="end"
