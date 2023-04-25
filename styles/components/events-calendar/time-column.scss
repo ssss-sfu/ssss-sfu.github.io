@@ -11,7 +11,7 @@
 }
 
 .rbc-timeslot-group {
-  border-bottom: 1px solid $cell-border;
+  border-bottom: 1px solid #191a1a;
   min-height: 40px;
   display: flex;
   flex-flow: column nowrap;
@@ -75,7 +75,7 @@
   }
 
   .rbc-time-slot {
-    border-top: 1px solid lighten($cell-border, 10%);
+    border-top: 1px solid lighten(#191a1a, 10%);
   }
 }
 
@@ -85,7 +85,7 @@
     position: sticky;
     left: 0;
     background-color: white;
-    border-right: 1px solid $cell-border;
+    border-right: 1px solid #191a1a;
     z-index: 10;
     margin-right: -1px;
   }
