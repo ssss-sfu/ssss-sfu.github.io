@@ -50,7 +50,7 @@ export const Footer = () => {
           <div className="address icon-right-content">
             <h4>Get in Touch</h4>
             <address>
-              <a href="mailto:cmpt-sosy@sfu.ca">cmpt-sosy@sfu.ca</a>
+              <a href="mailto:ssss-exec@sfu.ca">ssss-exec@sfu.ca</a>
             </address>
           </div>
         </div>

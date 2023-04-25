@@ -74,7 +74,7 @@ export const HeaderNav = () => {
                 width={18}
               />
             </a>
-            <a href="mailto:cmpt-sosy@sfu.ca" rel="noreferrer">
+            <a href="mailto:ssss-exec@sfu.ca" rel="noreferrer">
               <Button label="Contact Us" />
             </a>
           </div>
