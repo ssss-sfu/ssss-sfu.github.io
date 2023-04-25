@@ -23,22 +23,25 @@ export default function EventsPage() {
               className="annual-events__link-item"
               target="_blank"
               href="https://discord.com/invite/XZUd7amxPq"
+              rel="noreferrer"
             >
               <h3>Frosh</h3>
-              <p>The annual first year's kick off week</p>
+              <p>The annual first year&apos;s kick off week</p>
             </a>
             <a
               className="annual-events__link-item"
               target="_blank"
               href="https://systemshacks.sfussss.org/"
+              rel="noreferrer"
             >
               <h3>Systems Hacks</h3>
-              <p>The SSSS' annual hackathon - new theme every year!</p>
+              <p>The SSSS&apos; annual hackathon - new theme every year!</p>
             </a>
             <a
               className="annual-events__link-item"
               target="_blank"
               href="https://systemsfair.ca/"
+              rel="noreferrer"
             >
               <h3>Systems Fair</h3>
               <p>Job fair in collaboration with the MSESSS and SEESS</p>
