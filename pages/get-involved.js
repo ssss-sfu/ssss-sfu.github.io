@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
 import Accordion from "../components/Accordion";
-import { Hero } from "@components";
+import { Hero, HeaderNav, Footer } from "@components";
 import { useState } from "react";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
 import Image from "next/image";
@@ -20,7 +18,7 @@ export default function GetInvolved() {
         <title>Software Systems Student Society</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header />
+      <HeaderNav />
       <Hero
         title="Join the Software Systems Student Society"
         subtitle="Get Involved"

@@ -1,14 +1,12 @@
-import { Helmet } from "@components";
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
-import { Hero } from "@components";
+import { Helmet, Footer } from "@components";
+import { Hero, HeaderNav } from "@components";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
 export default function EventsPage() {
   return (
     <div className="events-page">
       <Helmet />
-      <Header />
+      <HeaderNav />
       <main>
         <Hero
           title="Join and meet other SoSy students"
