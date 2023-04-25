@@ -43,7 +43,9 @@
   }
 
   .bulletlist {
-    li {list-style-type: disc}
+    li {
+      list-style-type: disc;
+    }
     padding-left: 2rem;
   }
 
@@ -68,18 +70,17 @@
       padding: 1rem;
     }
 
-    p{
+    p {
       padding-left: 1rem;
       padding-right: 12rem;
       padding-bottom: 0.5rem;
       text-align: left;
-      
     }
-    .access-time{
+    .access-time {
       display: inline-flex;
       vertical-align: top;
       padding-right: 0.2rem;
-      line-height:auto;
+      line-height: auto;
     }
   }
 
@@ -87,20 +88,19 @@
     background-color: #323434;
     padding: 0.4rem;
     margin-bottom: 1rem;
-    color: #E5E6E6;
+    color: #e5e6e6;
     border-radius: 0.5rem;
     display: inline-block;
-    margin-left: 1rem;    
+    margin-left: 1rem;
   }
   .discord-channel-image-text {
     background-color: #323434;
     padding: 0.4rem;
     margin-bottom: 1rem;
-    color: #E5E6E6;
+    color: #e5e6e6;
     border-radius: 0.5rem;
-    display: inline-block;    
+    display: inline-block;
   }
-
 
   .active-button {
     color: var(--colour-sosy-green-500);
@@ -127,80 +127,79 @@
     padding-top: 1rem;
   }
 
-
   @include viewport(desktop) {
-
-  .committee-container {
+    .committee-container {
       display: flex;
       flex-direction: row;
       padding-bottom: 3em;
-    .committee-box {
-      width: 30%;
-      text-align: center;
+      .committee-box {
+        width: 30%;
+        text-align: center;
+      }
     }
-  }
 
     .committee-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .bulletlist {
-    li {list-style-type: disc}
-    padding-left: 2rem;
-  }
-
-  .committee-container {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    .committee-box {
-      width: 30%;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
-    img {
-      border-radius: 0.75rem;
+    .bulletlist {
+      li {
+        list-style-type: disc;
+      }
+      padding-left: 2rem;
     }
 
-    h3 {
-      padding: 1rem;
+    .committee-container {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+      .committee-box {
+        width: 30%;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 0.75rem;
+      }
+
+      h3 {
+        padding: 1rem;
+      }
+
+      p {
+        padding-left: 1rem;
+        padding-right: 4rem;
+        padding-bottom: 1rem;
+        text-align: left;
+      }
+      .access-time {
+        display: inline-flex;
+        vertical-align: top;
+        padding-right: 0.2rem;
+        line-height: auto;
+      }
     }
 
-    p{
-      padding-left: 1rem;
-      padding-right: 4rem;
-      padding-bottom: 1rem;
-      text-align: left;
-      
+    .discord-channel-image-row {
+      background-color: #323434;
+      padding: 0.4rem;
+      margin-bottom: 1rem;
+      color: #e5e6e6;
+      border-radius: 0.5rem;
+      display: inline-block;
+      margin-left: 1rem;
     }
-    .access-time{
-      display: inline-flex;
-      vertical-align: top;
-      padding-right: 0.2rem;
-      line-height:auto;
+    .discord-channel-image-text {
+      background-color: #323434;
+      padding: 0.4rem;
+      margin-bottom: 1rem;
+      color: #e5e6e6;
+      border-radius: 0.5rem;
+      display: inline-block;
     }
-  }
-
-  .discord-channel-image-row {
-    background-color: #323434;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-    color: #E5E6E6;
-    border-radius: 0.5rem;
-    display: inline-block;
-    margin-left: 1rem;    
-  }
-  .discord-channel-image-text {
-    background-color: #323434;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-    color: #E5E6E6;
-    border-radius: 0.5rem;
-    display: inline-block;    
-  }
     .roles-and-selected-role-mobile {
       display: none;
     }

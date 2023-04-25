@@ -4,7 +4,7 @@ import { Hero, HeaderNav, Footer } from "@components";
 import { useState } from "react";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
 import Image from "next/image";
-import academicRepo from '../public/images/get-involved-page/academic-repo.png'
+import academicRepo from "../public/images/get-involved-page/academic-repo.png";
 import merch from "../public/images/get-involved-page/merch.png";
 import website from "../public/images/get-involved-page/website.png";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -67,7 +67,8 @@ export default function GetInvolved() {
             you can help out your student society in a way that works for you.
             <br></br>
             <br></br>
-            To join, go to the <span className="discord-channel-image-text">
+            To join, go to the{" "}
+            <span className="discord-channel-image-text">
               #what-are-commitees
             </span>{" "}
             channel on our{" "}
@@ -91,7 +92,9 @@ export default function GetInvolved() {
               <AccessTimeIcon className="access-time" />
               Meetings TBA
             </p>
-            <span className="discord-channel-image-row">#academic repo</span>{" "}
+            <span className="discord-channel-image-row">
+              #academic repo
+            </span>{" "}
           </div>
 
           <div className="commitee-box">
