@@ -1,5 +1,6 @@
 import { Helmet, Footer } from "@components";
 import { Hero, HeaderNav } from "@components";
+import EventsCalendar from "components/EventsCalendar";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
 export default function EventsPage() {
@@ -42,6 +43,9 @@ export default function EventsPage() {
               <h3>Systems Fair</h3>
               <p>Job fair in collaboration with the MSESSS and SEESS</p>
             </a>
+          </section>
+          <section className="annual-events__events-calendar">
+            <EventsCalendar />
           </section>
         </article>
       </main>
