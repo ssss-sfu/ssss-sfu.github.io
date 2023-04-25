@@ -21,15 +21,14 @@ $active-border: darken($btn-border, 12%);
   }
 
   & button {
-    color: $btn-color;
+    color: var(--colour-neutral-000);
     display: inline-block;
     margin: 0;
     text-align: center;
     vertical-align: middle;
     background: none;
     background-image: none;
-    border: 1px solid $btn-border;
-    // padding: .375rem 1rem;
+    border: 1px solid var(--colour-neutral-1000);
     border-radius: 4px;
     line-height: normal;
     white-space: nowrap;
@@ -40,6 +39,7 @@ $active-border: darken($btn-border, 12%);
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
       background-color: $active-background;
       border-color: $active-border;
+      color: var(--colour-neutral-1200);
 
       &:hover,
       &:focus {
