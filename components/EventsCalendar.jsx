@@ -48,7 +48,7 @@ export default function EventsCalendar() {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 600 }}
+        style={{ height: 750 }}
       />
     </div>
   );
