@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@components";
+import FacebookIcon from "@icons/facebook.svg";
+import InstagramIcon from "@icons/instagram.svg";
+import LinkedInIcon from "@icons/linkedin.svg";
+import DiscordIcon from "@icons/discord.svg";
+import OfficeBuildingIcon from "@icons/office-building.svg";
+import ContactUsIcon from "@icons/contact-us.svg";
 
 export const Footer = () => {
   return (
@@ -14,7 +20,7 @@ export const Footer = () => {
         <div className="office-address icon-container">
           <div className="gray-backdrop left-icon">
             <Image
-              src="/icons/office-building.svg"
+              src={OfficeBuildingIcon.src}
               height={48}
               width={48}
               alt="Office Building Icon"
@@ -41,7 +47,7 @@ export const Footer = () => {
         <div className="get-in-touch icon-container">
           <div className="gray-backdrop left-icon">
             <Image
-              src="/icons/contact-us.svg"
+              src={ContactUsIcon.src}
               height={48}
               width={48}
               alt="Contact Us Icon"
@@ -58,7 +64,7 @@ export const Footer = () => {
         <div className="footer-socials icon-contianer">
           <a href="https://www.facebook.com/ssss.sfu">
             <Image
-              src="/social-media/facebook.svg"
+              src={FacebookIcon.src}
               height={24}
               width={24}
               alt="Facebook Icon"
@@ -66,7 +72,7 @@ export const Footer = () => {
           </a>
           <a href="https://www.linkedin.com/company/ssss-sfu/">
             <Image
-              src="/social-media/linkedin.svg"
+              src={LinkedInIcon.src}
               height={24}
               width={24}
               alt="LinkedIn Icon"
@@ -74,7 +80,7 @@ export const Footer = () => {
           </a>
           <a href="https://www.instagram.com/ssss.sfu/">
             <Image
-              src="/social-media/instagram.svg"
+              src={InstagramIcon.src}
               height={24}
               width={24}
               alt="Instagram Icon"
@@ -82,7 +88,7 @@ export const Footer = () => {
           </a>
           <a href="https://discord.gg/XZUd7amxPq">
             <Image
-              src="/social-media/discord.svg"
+              src={DiscordIcon.src}
               height={24}
               width={24}
               alt="Discord Icon"

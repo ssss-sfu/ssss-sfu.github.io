@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Button, Logo } from "@components";
+import FacebookIcon from "@icons/facebook.svg";
+import InstagramIcon from "@icons/instagram.svg";
+import LinkedInIcon from "@icons/linkedin.svg";
+import DiscordIcon from "@icons/discord.svg";
 import Link from "next/link";
 
 export const HeaderNav = () => {
@@ -44,7 +48,7 @@ export const HeaderNav = () => {
           <div className="socials">
             <a href="https://www.facebook.com/ssss.sfu">
               <Image
-                src="/social-media/facebook.svg"
+                src={FacebookIcon.src}
                 alt="Facebook icon"
                 height={18}
                 width={18}
@@ -52,7 +56,7 @@ export const HeaderNav = () => {
             </a>
             <a href="https://www.linkedin.com/company/ssss-sfu/">
               <Image
-                src="/social-media/linkedin.svg"
+                src={LinkedInIcon.src}
                 alt="LinkedIn icon"
                 height={18}
                 width={18}
@@ -60,7 +64,7 @@ export const HeaderNav = () => {
             </a>
             <a href="https://www.instagram.com/ssss.sfu/">
               <Image
-                src="/social-media/instagram.svg"
+                src={InstagramIcon.src}
                 alt="Instagram icon"
                 height={18}
                 width={18}
@@ -68,7 +72,7 @@ export const HeaderNav = () => {
             </a>
             <a href="https://discord.gg/XZUd7amxPq">
               <Image
-                src="/social-media/discord.svg"
+                src={DiscordIcon.src}
                 alt="Discord icon"
                 height={18}
                 width={18}
