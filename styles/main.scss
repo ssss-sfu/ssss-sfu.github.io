@@ -1,0 +1,64 @@
+@use "./variables.scss" as *;
+
+@use "./typography.scss";
+
+@use "./pages/landing-page.scss";
+@use "./pages/get-involved-page.scss";
+@use "./pages/events-page.scss";
+@use "./pages/resources-page.scss";
+
+@use "./components/button.scss";
+@use "./components/header-nav.scss";
+@use "./components/footer.scss";
+@use "./components/accordion.scss";
+@use "./components/hero.scss";
+@use "./components/dropdown.scss";
+@use "./components//events-calendar/events-calendar.scss";
+
+:root {
+  --colour-sosy-green-900: #07221c;
+  --colour-sosy-green-800: #0e4438;
+  --colour-sosy-green-700: #166553;
+  --colour-sosy-green-600: #1d876f;
+  --colour-sosy-green-500: #24a98b;
+  --colour-sosy-green-400: #50baa2;
+  --colour-sosy-green-300: #7ccbb9;
+  --colour-sosy-green-200: #a7ddd1;
+  --colour-sosy-green-100: #d3eee8;
+
+  --colour-cyber-900: #332d00;
+  --colour-cyber-800: #665900;
+  --colour-cyber-700: #998600;
+  --colour-cyber-600: #ccb200;
+  --colour-cyber-500: #ffdf00;
+  --colour-cyber-400: #ffe533;
+  --colour-cyber-300: #fff18c;
+  --colour-cyber-200: #fff299;
+  --colour-cyber-100: #fff9cc;
+
+  --colour-neutral-1200: #141515;
+  --colour-neutral-1100: #191a1a;
+  --colour-neutral-1000: #323434;
+  --colour-neutral-900: #4b4e4d;
+  --colour-neutral-800: #646867;
+  --colour-neutral-700: #7d8281;
+  --colour-neutral-600: #979b9a;
+  --colour-neutral-500: #b0b5b4;
+  --colour-neutral-400: #cacecd;
+  --colour-neutral-300: #e5e6e6;
+  --colour-neutral-200: #eff0f0;
+  --colour-neutral-100: #f7f8f7;
+  --colour-neutral-000: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  color: var(--colour-neutral-000);
+  // background-color: var(--colour-neutral-1200);
+}
