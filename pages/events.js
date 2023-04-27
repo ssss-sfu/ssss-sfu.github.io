@@ -44,7 +44,7 @@ export default function EventsPage() {
               rel="noreferrer"
             >
               <h3>Systems Fair</h3>
-              <p>Job fair in collaboration with the MSESSS and SEESS</p>
+              <p>Job fair in collaboration with the MSESS and SEESS</p>
             </a>
           </section>
           <section className="annual-events__events-calendar">
