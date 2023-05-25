@@ -9,7 +9,7 @@ import Image from "next/image";
 import academicRepo from '../public/images/get-involved-page/academic-repo.png'
 import merch from "../public/images/get-involved-page/merch.png";
 import website from "../public/images/get-involved-page/website.png";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import clock from "../public/images/get-involved-page/clock.svg";
 
 export default function GetInvolved() {
   const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
@@ -69,7 +69,8 @@ export default function GetInvolved() {
             you can help out your student society in a way that works for you.
             <br></br>
             <br></br>
-            To join, go to the <span className="discord-channel-image-text">
+            To join, go to the{" "}
+            <span className="discord-channel-image-text">
               #what-are-commitees
             </span>{" "}
             channel on our{" "}
@@ -79,9 +80,9 @@ export default function GetInvolved() {
         </section>
 
         <section className="committee-container">
-          <div className="commitee-box">
+          <div className="committee-box">
             <div className="image-alignment">
-              <Image src={academicRepo} height={163} width={377.8} />
+              <Image src={academicRepo} layout="fill" objectFit="cover" />
             </div>
             <h3>Academic Repo Commitee</h3>
             <p>
@@ -90,15 +91,17 @@ export default function GetInvolved() {
               academic journey.
             </p>
             <p>
-              <AccessTimeIcon className="access-time" />
+              <div className="access-time">
+                <Image src={clock} height={18} width={18} alt="Clock" />
+              </div>
               Meetings TBA
             </p>
             <span className="discord-channel-image-row">#academic repo</span>{" "}
           </div>
 
-          <div className="commitee-box">
+          <div className="committee-box">
             <div className="image-alignment">
-              <Image src={merch} height={163} width={377.8} />
+              <Image src={merch} layout="fill" objectFit="cover" />
             </div>
             <h3>Merch Commitee</h3>
             <p>
@@ -107,26 +110,29 @@ export default function GetInvolved() {
               always wanted.
             </p>
             <p>
-              <AccessTimeIcon className="access-time" />
+              <div className="access-time">
+                <Image src={clock} height={18} width={18} alt="Clock" />
+              </div>
               Meetings TBA
             </p>
             <span className="discord-channel-image-row">#merch</span>{" "}
           </div>
-          <div className="commitee-box">
+          <div className="committee-box">
             <div className="image-alignment">
-              <Image src={website} height={163} width={377.8} />
+              <Image src={website} layout="fill" objectFit="cover" />
             </div>
-            <h3>Merch Commitee</h3>
+            <h3>Website Committee</h3>
             <p>
-              Design and sell hoodies, t-shirts, lanyards, and whatever else you
-              think people would want to purchase. Create the cool SoSy swag you
-              always wanted.
+              Help update and maintain our website and figure out what can be
+              done with it.
             </p>
             <p>
-              <AccessTimeIcon className="access-time" />
-              Meetings TBA
+              <div className="access-time">
+                <Image src={clock} height={18} width={18} alt="Clock" />
+              </div>
+              Meetings every 1st and 3rd Thursday at 6:30 pm
             </p>
-            <span className="discord-channel-image-row">#merch</span>{" "}
+            <span className="discord-channel-image-row">#website</span>{" "}
           </div>
         </section>
         <section className="commitee-content">

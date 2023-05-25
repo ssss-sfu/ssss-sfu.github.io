@@ -21,6 +21,7 @@
 
   h1 {
     padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   main {
@@ -50,14 +51,21 @@
   .committee-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     padding-top: 3rem;
     .committee-box {
-      width: 30%;
-      text-align: center;
+      width: 100%;
     }
     .image-alignment {
-      padding-left: 1rem;
+      padding-left: 5rem;
+      width: 100%;
+      height: 163px;
+      position: relative;
+      // & > span {
+      //   display: block;
+
+      // }
+      
     }
 
     img {
@@ -65,12 +73,11 @@
     }
 
     h3 {
-      padding: 1rem;
+      padding: 1rem 0;
     }
 
     p{
-      padding-left: 1rem;
-      padding-right: 12rem;
+      padding-right: 2rem;
       padding-bottom: 0.5rem;
       text-align: left;
       
@@ -86,11 +93,11 @@
   .discord-channel-image-row {
     background-color: #323434;
     padding: 0.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #E5E6E6;
     border-radius: 0.5rem;
     display: inline-block;
-    margin-left: 1rem;    
+    
   }
   .discord-channel-image-text {
     background-color: #323434;
@@ -134,9 +141,14 @@
       display: flex;
       flex-direction: row;
       padding-bottom: 3em;
+      justify-content: space-between;
+      gap: 1rem;
     .committee-box {
-      width: 30%;
-      text-align: center;
+      width: 100%;
+    }
+
+    .image-alignment {
+      padding-left: 1rem;
     }
   }
 
@@ -158,7 +170,6 @@
     padding-top: 3rem;
     .committee-box {
       width: 30%;
-      text-align: center;
     }
 
     img {
@@ -175,12 +186,6 @@
       padding-bottom: 1rem;
       text-align: left;
       
-    }
-    .access-time{
-      display: inline-flex;
-      vertical-align: top;
-      padding-right: 0.2rem;
-      line-height:auto;
     }
   }
 
