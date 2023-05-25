@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@components": ["./components"],
-      "@images/*": ["./public/images/*"]
+      "@images/*": ["./public/images/*"],
+      "@icons/*": ["./public/icons/*"]
     }
   }
 }

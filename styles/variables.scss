@@ -7,6 +7,7 @@ $border-radius: 12px;
 // Animation
 $transition-speed-fast: 0.2s;
 $easing-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easing-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Media queries
 $container-max-width: 1500px;
@@ -40,10 +41,30 @@ $desktop-min-width: 1025px;
   }
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   max-width: $container-max-width;
-  padding: clamp(1rem, 4vw, 6rem);
+  padding-left: clamp(1rem, 4vw, 6rem);
+  padding-right: clamp(1rem, 4vw, 6rem);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin: auto;
+
+  @include viewport(tablet-desktop) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
   &.no-gutter-padding {
     padding-left: 0;

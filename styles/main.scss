@@ -8,11 +8,12 @@
 @use "./pages/resources-page.scss";
 
 @use "./components/button.scss";
-@use "./components/header.scss";
+@use "./components/header-nav.scss";
 @use "./components/footer.scss";
 @use "./components/accordion.scss";
 @use "./components/hero.scss";
 @use "./components/dropdown.scss";
+@use "./components//events-calendar/events-calendar.scss";
 
 :root {
   --colour-sosy-green-900: #07221c;
