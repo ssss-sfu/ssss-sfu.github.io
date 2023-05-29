@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Accordion from "../components/Accordion";
-import { Hero, HeaderNav, Footer } from "@components";
+import { Hero, HeaderNav, Footer, Helmet } from "@components";
 import { useState } from "react";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
 import Image from "next/image";
@@ -8,8 +8,10 @@ import academicRepo from "../public/images/get-involved-page/academic-repo.png";
 import merch from "../public/images/get-involved-page/merch.png";
 import website from "../public/images/get-involved-page/website.png";
 import clock from "../public/images/get-involved-page/clock.svg";
+import { useRouter } from "next/router";
 
 export default function GetInvolved() {
+  const router = useRouter();
   const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
   const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
   return (
@@ -18,6 +20,7 @@ export default function GetInvolved() {
         <title>Software Systems Student Society</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <Hero
         title="Join the Software Systems Student Society"

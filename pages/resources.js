@@ -1,5 +1,6 @@
 import { Helmet, HeaderNav, Footer } from "@components";
 import { Dropdown } from "components/Dropdown.jsx";
+import { useRouter } from "next/router";
 
 const links = [
   {
@@ -53,9 +54,10 @@ const faqs = [
 ];
 
 export default function ResourcesPage() {
+  const router = useRouter();
   return (
     <div className="resources-page">
-      <Helmet />
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <main>
         <header className="container hero">
