@@ -36,8 +36,8 @@ export const Footer = () => {
               >
                 <strong>Software Systems Student Society</strong>
                 <br />
-                12450 102 Ave Unit 250, <br></br>
-                SUR 4016, Galleria 4<br></br>
+                250 - 13450 - 102nd Avenue, <br></br>
+                SYRC 4016, Galleria 4<br></br>
                 Surrey, BC V3T 0A3<br></br>
               </a>
             </address>

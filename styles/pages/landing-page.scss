@@ -2,35 +2,35 @@
 
 @keyframes pop-up {
   0% {
-    transform: translateY(100%);
+    transform: translateY(120%);
   }
 
   8% {
-    transform: translateY(1rem);
+    transform: translateY(16rem);
   }
 
   13% {
-    transform: translateY(0rem);
+    transform: translateY(4rem);
   }
 
   25% {
-    transform: translateY(2rem);
+    transform: translateY(8rem);
   }
 
   75% {
-    transform: translateY(2rem);
+    transform: translateY(8rem);
   }
 
   85% {
-    transform: translateY(0rem);
+    transform: translateY(4rem);
   }
 
   95% {
-    transform: translateY(1rem);
+    transform: translateY(22rem);
   }
 
   100% {
-    transform: translateY(95%);
+    transform: translateY(120%);
   }
 }
 
