@@ -16,10 +16,6 @@ export default function GetInvolved() {
   const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
   return (
     <div className="get-involved-page">
-      <Head>
-        <title>Software Systems Student Society</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
       <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <Hero
@@ -92,9 +88,9 @@ export default function GetInvolved() {
               academic journey.
             </p>
             <p>
-              <div className="access-time">
+              <span className="access-time">
                 <Image src={clock} height={18} width={18} alt="Clock" />
-              </div>
+              </span>
               Meetings TBA
             </p>
             <span className="discord-channel-image-row">#academic repo</span>{" "}
@@ -111,9 +107,9 @@ export default function GetInvolved() {
               always wanted.
             </p>
             <p>
-              <div className="access-time">
+              <span className="access-time">
                 <Image src={clock} height={18} width={18} alt="Clock" />
-              </div>
+              </span>
               Meetings TBA
             </p>
             <span className="discord-channel-image-row">#merch</span>{" "}
@@ -128,9 +124,9 @@ export default function GetInvolved() {
               done with it.
             </p>
             <p>
-              <div className="access-time">
+              <span className="access-time">
                 <Image src={clock} height={18} width={18} alt="Clock" />
-              </div>
+              </span>
               Meetings every 1st and 3rd Thursday at 6:30 pm
             </p>
             <span className="discord-channel-image-row">#website</span>{" "}
