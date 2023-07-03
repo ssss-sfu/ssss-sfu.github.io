@@ -1,4 +1,10 @@
-import { Helmet, Button, HeaderNav, Footer } from "@components";
+import {
+  Helmet,
+  Button,
+  HeaderNav,
+  Footer,
+  EmbedSocialWidget,
+} from "@components";
 import HappySeb from "@images/seb/happy-seb-head.svg";
 import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
 import Link from "next/link.js";
@@ -70,6 +76,9 @@ export default function LandingPage() {
               <Button label="Join the SSSS Discord server" type="secondary" />
             </a>
           </div>
+        </article>
+        <article>
+          <EmbedSocialWidget />
         </article>
       </main>
       <Footer />
