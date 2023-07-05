@@ -2,11 +2,13 @@ import { Helmet, Footer } from "@components";
 import { Hero, HeaderNav } from "@components";
 import EventsCalendar from "components/EventsCalendar";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
+import { useRouter } from "next/router";
 
 export default function EventsPage() {
+  const router = useRouter();
   return (
     <div className="events-page">
-      <Helmet />
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <main>
         <Hero
