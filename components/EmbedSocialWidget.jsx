@@ -17,11 +17,11 @@ export const EmbedSocialWidget = () => {
 
   return (
     <div
-      class="embedsocial-hashtag"
+      className="embedsocial-hashtag"
       data-ref="d99f3c2f5873b36f57baa423a4fcba2ba39839ef"
     >
       <a
-        class="feed-powered-by-es feed-powered-by-es-feed-new"
+        className="feed-powered-by-es feed-powered-by-es-feed-new"
         href="https://embedsocial.com/social-media-aggregator/"
         target="_blank"
         title="Widget by EmbedSocial"
