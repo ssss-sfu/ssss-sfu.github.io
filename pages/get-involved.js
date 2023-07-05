@@ -1,18 +1,22 @@
 import Head from "next/head";
 import Accordion from "../components/Accordion";
-import { Hero, HeaderNav, Footer } from "@components";
+import { Hero, HeaderNav, Footer, Helmet } from "@components";
 import { useState } from "react";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
+import Image from "next/image";
+import academicRepo from "../public/images/get-involved-page/academic-repo.png";
+import merch from "../public/images/get-involved-page/merch.png";
+import website from "../public/images/get-involved-page/website.png";
+import clock from "../public/images/get-involved-page/clock.svg";
+import { useRouter } from "next/router";
 
 export default function GetInvolved() {
+  const router = useRouter();
   const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
   const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
   return (
     <div className="get-involved-page">
-      <Head>
-        <title>Software Systems Student Society</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <Hero
         title="Join the Software Systems Student Society"
@@ -47,6 +51,108 @@ export default function GetInvolved() {
         </section>
         <section className="roles-and-selected-role-mobile">
           <Accordion data={roles} />
+        </section>
+        <section className="commitee-content">
+          <h1>Commitees</h1>
+          <p>
+            Have you ever wanted to help out with the SSSS but might be worried
+            about the time commitment? Or maybe you’re really passionate about
+            merch, web design, or helping your peers out academically? Well the
+            SSSS is excited to announce committees!
+            <br></br>
+            <br></br>
+            What are committees? They’re an extension of the SSSS that focuses
+            on one specific task, and membership is voluntary and automatic so
+            you can help out your student society in a way that works for you.
+            <br></br>
+            <br></br>
+            To join, go to the{" "}
+            <span className="discord-channel-image-text">
+              #what-are-commitees
+            </span>{" "}
+            channel on our{" "}
+            <a href="https://discord.com/invite/hY7WjXt">SSSS Discord Server</a>{" "}
+            to get a role.
+          </p>
+        </section>
+
+        <section className="committee-container">
+          <div className="committee-box">
+            <div className="image-alignment">
+              <Image src={academicRepo} layout="fill" objectFit="cover" />
+            </div>
+            <h3>Academic Repo Commitee</h3>
+            <p>
+              Collecting course notes, professor reviews, and past exams (with
+              the professor’s permission) to better prepare everyone for their
+              academic journey.
+            </p>
+            <p>
+              <span className="access-time">
+                <Image src={clock} height={18} width={18} alt="Clock" />
+              </span>
+              Meetings TBA
+            </p>
+            <span className="discord-channel-image-row">#academic repo</span>{" "}
+          </div>
+
+          <div className="committee-box">
+            <div className="image-alignment">
+              <Image src={merch} layout="fill" objectFit="cover" />
+            </div>
+            <h3>Merch Commitee</h3>
+            <p>
+              Design and sell hoodies, t-shirts, lanyards, and whatever else you
+              think people would want to purchase. Create the cool SoSy swag you
+              always wanted.
+            </p>
+            <p>
+              <span className="access-time">
+                <Image src={clock} height={18} width={18} alt="Clock" />
+              </span>
+              Meetings TBA
+            </p>
+            <span className="discord-channel-image-row">#merch</span>{" "}
+          </div>
+          <div className="committee-box">
+            <div className="image-alignment">
+              <Image src={website} layout="fill" objectFit="cover" />
+            </div>
+            <h3>Website Committee</h3>
+            <p>
+              Help update and maintain our website and figure out what can be
+              done with it.
+            </p>
+            <p>
+              <span className="access-time">
+                <Image src={clock} height={18} width={18} alt="Clock" />
+              </span>
+              Meetings every 1st and 3rd Thursday at 6:30 pm
+            </p>
+            <span className="discord-channel-image-row">#website</span>{" "}
+          </div>
+        </section>
+        <section className="commitee-content">
+          <h1>General Meeting</h1>
+          <p>
+            Join us during our public general meeting in{" "}
+            <span className="discord-channel-image-text">#merch</span> where we
+            discuss updates and matters including the following:
+          </p>
+          <div className="bulletlist">
+            <ul>
+              <li>Event updates and plans</li>
+              <li>Updates from committees</li>
+              <li>SFSS Council updates</li>
+              <li>Upcoming projects</li>
+              <li>Open Floor</li>
+            </ul>
+          </div>
+          <br></br>
+          <p>
+            Watch out for an announcement to find out when our next general
+            meeting will be.
+          </p>
         </section>
       </main>
       <Footer />
