@@ -3,6 +3,73 @@
 .blog-page {
   background-color: var(--colour-neutral-1200);
 
+  .container {
+    .category-title {
+      margin-bottom: 12px;
+    }
+    .posts-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 16px;
+
+      .post {
+        border-radius: 12px;
+
+        .thumbnail {
+          padding: 12px 12px 0 12px;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          // background: linear-gradient(0, #141515 0%, rgba(20, 21, 21, 0.75) 100%),
+          // url("../../public/images/blog-page/hero-blog.jpg");
+          height: 64px;
+        }
+        .text {
+          padding: 12px;
+
+          .title {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+          }
+
+          .meta-info {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            align-items: center;
+            font-size: 0.8em;
+          }
+          .summary {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    .col-1 {
+      flex-direction: column;
+
+      .post {
+        background-color: blue; // dev
+        width: 100%;
+      }
+    }
+    .col-3 {
+      flex-direction: row;
+
+      .post {
+        background-color: red; // dev
+        width: calc((100% - 32px) / 3);
+      }
+    }
+
+    // button
+    .see-more {
+      margin-top: 16px;
+      text-align: right;
+    }
+  }
+
   h2,
   p {
     color: var(--colour-neutral-000);
