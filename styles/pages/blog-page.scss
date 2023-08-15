@@ -15,14 +15,29 @@
 
       .post {
         border-radius: 12px;
+        display: flex;
+        align-items: stretch;
+        background-color: var(--colour-neutral-1000);
+        background-color: var(--colour-neutral-1100);
 
         .thumbnail {
-          padding: 12px 12px 0 12px;
-          border-top-left-radius: 12px;
-          border-top-right-radius: 12px;
-          // background: linear-gradient(0, #141515 0%, rgba(20, 21, 21, 0.75) 100%),
-          // url("../../public/images/blog-page/hero-blog.jpg");
-          height: 64px;
+          border-radius: 12px 12px 0 0;
+          position: relative;
+
+          img {
+            display: block;
+            border-radius: 12px 12px 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
         }
         .text {
           padding: 12px;
@@ -43,6 +58,11 @@
             margin-top: 8px;
           }
         }
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.75;
+        }
       }
     }
 
@@ -50,16 +70,51 @@
       flex-direction: column;
 
       .post {
-        background-color: blue; // dev
         width: 100%;
+        flex-direction: row;
+
+        .thumbnail {
+          flex: 1;
+          display: flex;
+          align-items: stretch;
+
+          img {
+            object-fit: cover;
+            -o-object-fit: cover;
+            border-radius: 12px 0 0 12px;
+          }
+          .overlay {
+            background: linear-gradient(
+              -90deg,
+              var(--colour-neutral-1100) 5%,
+              transparent 100%
+            );
+          }
+        }
+
+        .text {
+          flex: 3;
+        }
       }
     }
     .col-3 {
       flex-direction: row;
 
       .post {
-        background-color: red; // dev
+        flex-direction: column;
+        // background-color: red; // dev
         width: calc((100% - 32px) / 3);
+
+        .thumbnail img {
+          aspect-ratio: 2/1;
+        }
+        .overlay {
+          background: linear-gradient(
+            0,
+            var(--colour-neutral-1100) 5%,
+            transparent 100%
+          );
+        }
       }
     }
 
@@ -67,6 +122,15 @@
     .see-more {
       margin-top: 16px;
       text-align: right;
+      button {
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.75;
+        }
+      }
     }
   }
 

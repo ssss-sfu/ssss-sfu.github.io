@@ -2,11 +2,9 @@ import { Helmet, HeaderNav, Footer } from "@components";
 import Image from "next/image";
 import clock from "../public/images/blog-page/clock.svg";
 import person from "../public/images/blog-page/person.svg";
-import thumbnailPath from "../public/images/blog-page/hero-blog.jpg";
+import thumbnailPath from "../public/images/blog-page/hero-blog.jpg"; // for testing purpose only. to be replace dynamically loaded from list of post info.
 
 export default function ResourcesPage() {
-  // let path = "../public/images/blog-page/hero-blog.jpg"
-
   return (
     <div className="blog-page">
       <Helmet />
@@ -18,12 +16,11 @@ export default function ResourcesPage() {
         </header>
         <section className="container">
           <h3 className="category-title">Featured</h3>
-          <div className="posts-list col-1">
+          <div className="posts-list featured">
             <article className="post">
-              <div
-                className="thumbnail"
-                style={{ backgroundImage: `url(${thumbnailPath.src})` }}
-              ></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+              </div>
               <div className="text">
                 <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
@@ -35,9 +32,8 @@ export default function ResourcesPage() {
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  standard dummr se the 1500s, when an unknown printer took a
+                  galley of type and scrambled it to make a type specimen book.
                 </p>
               </div>
             </article>
@@ -47,7 +43,10 @@ export default function ResourcesPage() {
           <h3 className="category-title">Alumni</h3>
           <div className="posts-list col-3">
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -57,16 +56,17 @@ export default function ResourcesPage() {
                   <p>First Last</p>
                 </div>
                 <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Lorem Ipsum is simply dummy text of the printing and typeser
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.
                 </p>
               </div>
             </article>
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -77,15 +77,18 @@ export default function ResourcesPage() {
                 </div>
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  typesetting induorem Ipsum has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
                 </p>
               </div>
             </article>
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -96,7 +99,7 @@ export default function ResourcesPage() {
                 </div>
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  typesetting industry. Lorempsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
                   specimen book.
@@ -112,7 +115,10 @@ export default function ResourcesPage() {
           <h3 className="category-title">Co-op Experience</h3>
           <div className="posts-list col-1">
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -123,15 +129,18 @@ export default function ResourcesPage() {
                 </div>
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  typesetting in Lorem Ipsum has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
                 </p>
               </div>
             </article>
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -141,11 +150,10 @@ export default function ResourcesPage() {
                   <p>First Last</p>
                 </div>
                 <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Lorem Ipsum is simply dummy text of the printing and standard
+                  dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type specimen
+                  book.
                 </p>
               </div>
             </article>
@@ -158,7 +166,10 @@ export default function ResourcesPage() {
           <h3 className="category-title">Undergraduate Study</h3>
           <div className="posts-list col-3">
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -170,14 +181,17 @@ export default function ResourcesPage() {
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  standard dummy tver since the 1500s, when an unknown printer
+                  took a galley of type and scrambled it to make a type specimen
+                  book.
                 </p>
               </div>
             </article>
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -188,15 +202,17 @@ export default function ResourcesPage() {
                 </div>
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  typesetting industry. Lorem Ipsum has been the industry's r
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book.
                 </p>
               </div>
             </article>
             <article className="post">
-              <div className="thumbnail"></div>
+              <div className="thumbnail">
+                <Image src={thumbnailPath} alt="thumbnail" />
+                <div className="overlay"></div>
+              </div>
               <div className="text">
                 <h4>Title of the blog post</h4>
                 <div className="meta-info">
@@ -207,10 +223,8 @@ export default function ResourcesPage() {
                 </div>
                 <p className="summary">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  typesetting e 1500s, when an unknown printer took a galley of
+                  type and scrambled it to make a type specimen book.
                 </p>
               </div>
             </article>
