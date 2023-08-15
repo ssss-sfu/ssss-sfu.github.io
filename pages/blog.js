@@ -2,7 +2,12 @@ import { Helmet, HeaderNav, Footer } from "@components";
 import Image from "next/image";
 import clock from "../public/images/blog-page/clock.svg";
 import person from "../public/images/blog-page/person.svg";
-import thumbnailPath from "../public/images/blog-page/hero-blog.jpg"; // for testing purpose only. to be replace dynamically loaded from list of post info.
+
+// for testing purpose only. to be replace dynamically loaded from list of post info.
+import thumbnailSample from "../public/images/blog-page/hero-blog.jpg";
+import thumbnailSample1 from "../public/images/blog-page/uploads/post-thumbnail-sample1.jpg";
+import thumbnailSample2 from "../public/images/blog-page/uploads/post-thumbnail-sample2.jpg";
+import thumbnailSample3 from "../public/images/blog-page/uploads/post-thumbnail-sample3.jpg";
 
 export default function ResourcesPage() {
   return (
@@ -19,14 +24,17 @@ export default function ResourcesPage() {
           <div className="posts-list featured">
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample} alt="thumbnail" />
+                <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4 className="title">Title of the blog post</h4>
+                <h4 className="title">
+                  What Makes Software Systems Major Special?
+                </h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -44,15 +52,15 @@ export default function ResourcesPage() {
           <div className="posts-list col-3">
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample2} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -64,15 +72,15 @@ export default function ResourcesPage() {
             </article>
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample3} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -86,15 +94,15 @@ export default function ResourcesPage() {
             </article>
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample2} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -116,15 +124,15 @@ export default function ResourcesPage() {
           <div className="posts-list col-1">
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample3} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -138,15 +146,15 @@ export default function ResourcesPage() {
             </article>
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample2} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -167,15 +175,15 @@ export default function ResourcesPage() {
           <div className="posts-list col-3">
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample3} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -189,15 +197,15 @@ export default function ResourcesPage() {
             </article>
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample1} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
@@ -210,15 +218,15 @@ export default function ResourcesPage() {
             </article>
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailPath} alt="thumbnail" />
+                <Image src={thumbnailSample2} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4>Title of the blog post</h4>
+                <h4 className="title">Title of the blog post</h4>
                 <div className="meta-info">
-                  <Image src={clock} height={18} width={18} alt="Clock" />
+                  <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
-                  <Image src={person} height={18} width={18} alt="Person" />
+                  <Image src={person} height={16} width={16} alt="Person" />
                   <p>First Last</p>
                 </div>
                 <p className="summary">
