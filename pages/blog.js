@@ -76,7 +76,9 @@ export default function ResourcesPage() {
                 <div className="overlay"></div>
               </div>
               <div className="text">
-                <h4 className="title">Title of the blog post</h4>
+                <h4 className="title">
+                  A longer Title of the blog post just for testing purposes
+                </h4>
                 <div className="meta-info">
                   <Image src={clock} height={16} width={16} alt="Clock" />
                   <p>June 6th 2023</p>
@@ -94,7 +96,7 @@ export default function ResourcesPage() {
             </article>
             <article className="post">
               <div className="thumbnail">
-                <Image src={thumbnailSample2} alt="thumbnail" />
+                <Image src={thumbnailSample1} alt="thumbnail" />
                 <div className="overlay"></div>
               </div>
               <div className="text">
