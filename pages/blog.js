@@ -1,15 +1,74 @@
-import { Helmet, HeaderNav, Footer } from "@components";
-import Image from "next/image";
-import clock from "../public/images/blog-page/clock.svg";
-import person from "../public/images/blog-page/person.svg";
+import { Helmet, HeaderNav, Footer, Button, BlogPostList } from "@components";
+import Link from "next/link.js";
 
 // for testing purpose only. to be replace dynamically loaded from list of post info.
 import thumbnailSample from "../public/images/blog-page/hero-blog.jpg";
-import thumbnailSample1 from "../public/images/blog-page/uploads/post-thumbnail-sample1.jpg";
-import thumbnailSample2 from "../public/images/blog-page/uploads/post-thumbnail-sample2.jpg";
-import thumbnailSample3 from "../public/images/blog-page/uploads/post-thumbnail-sample3.jpg";
 
-export default function ResourcesPage() {
+// TEST DATASETS
+let featured = [
+  {
+    id: "23012",
+    category: "alumni",
+    title: "What Makes Software Systems Major Special?",
+    thumbnail: thumbnailSample,
+    date: "June 6th 2023",
+    author: "First Last",
+    summary:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummr se the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
+];
+
+let testListA = [
+  {
+    id: "00000",
+    category: "co-op-exp",
+    title: "Career Benefits of Choosing Software Systems Major",
+    date: "June 6th 2023",
+    author: "Jeffrey Leung",
+    summary:
+      "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  },
+  {
+    id: "23008",
+    category: "co-op-exp",
+    title: "SFU Graduand Surges Forward Into Software Development Career",
+    date: "June 6th 2023",
+    author: "Jeffrey Leung",
+    summary:
+      "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  },
+];
+let testListB = [
+  {
+    id: "23009",
+    category: "alumni",
+    title: "Career Benefits of Choosing Software Systems Major",
+    date: "June 6th 2023",
+    author: "Jeffrey Leung",
+    summary:
+      "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  },
+  {
+    id: "23010",
+    category: "alumni",
+    title: "SFU Graduand Surges Forward Into Software Development Career",
+    date: "June 6th 2023",
+    author: "Jeffrey Leung",
+    summary:
+      "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  },
+  {
+    id: "23011",
+    category: "alumni",
+    title: "SFU Graduand Surges Forward Into Software Development Career",
+    date: "June 6th 2023",
+    author: "Jeffrey Leung",
+    summary:
+      "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  },
+];
+
+export default function Blog() {
   return (
     <div className="blog-page">
       <Helmet />
@@ -22,225 +81,28 @@ export default function ResourcesPage() {
         <section className="container">
           <h3 className="category-title">Featured</h3>
           <div className="posts-list featured">
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">
-                  What Makes Software Systems Major Special?
-                </h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummr se the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </article>
+            <BlogPostList list={featured} style={"featured"} />
           </div>
         </section>
         <section className="container">
           <h3 className="category-title">Alumni</h3>
-          <div className="posts-list col-3">
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample2} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and typeser
-                  since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </article>
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample3} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">
-                  A longer Title of the blog post just for testing purposes
-                </h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting induorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took
-                  a galley of type and scrambled it to make a type specimen
-                  book.
-                </p>
-              </div>
-            </article>
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample1} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorempsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-              </div>
-            </article>
-          </div>
+          <BlogPostList list={testListB} style={"regular"} />
           <p className="see-more">
-            <button>See more</button>
+            <Link href="/blog/alumni">See more</Link>
           </p>
         </section>
         <section className="container">
           <h3 className="category-title">Co-op Experience</h3>
-          <div className="posts-list col-1">
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample3} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting in Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took
-                  a galley of type and scrambled it to make a type specimen
-                  book.
-                </p>
-              </div>
-            </article>
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample2} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and standard
-                  dummy text ever since the 1500s, when an unknown printer took
-                  a galley of type and scrambled it to make a type specimen
-                  book.
-                </p>
-              </div>
-            </article>
-          </div>
+          <BlogPostList list={testListA} style={"wide"} />
           <p className="see-more">
-            <button>See more</button>
+            <Link href="/blog/co-op-exp">See more</Link>
           </p>
         </section>
         <section className="container">
           <h3 className="category-title">Undergraduate Study</h3>
-          <div className="posts-list col-3">
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample3} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy tver since the 1500s, when an unknown printer
-                  took a galley of type and scrambled it to make a type specimen
-                  book.
-                </p>
-              </div>
-            </article>
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample1} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's r
-                  since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </article>
-            <article className="post">
-              <div className="thumbnail">
-                <Image src={thumbnailSample2} alt="thumbnail" />
-                <div className="overlay"></div>
-              </div>
-              <div className="text">
-                <h4 className="title">Title of the blog post</h4>
-                <div className="meta-info">
-                  <Image src={clock} height={16} width={16} alt="Clock" />
-                  <p>June 6th 2023</p>
-                  <Image src={person} height={16} width={16} alt="Person" />
-                  <p>First Last</p>
-                </div>
-                <p className="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting e 1500s, when an unknown printer took a galley of
-                  type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-            </article>
-          </div>
+          <BlogPostList list={testListB} style={"regular"} />
           <p className="see-more">
-            <button>See more</button>
+            <Link href="/blog/undergrad-study">See more</Link>
           </p>
         </section>
       </main>
