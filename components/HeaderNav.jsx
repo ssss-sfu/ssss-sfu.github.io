@@ -31,7 +31,7 @@ export const HeaderNav = () => {
 
         <div className="content">
           <nav className="pages">
-            <Link href="/">
+            <Link href="/about">
               <a className="page-link">About</a>
             </Link>
             <Link href="/events">
