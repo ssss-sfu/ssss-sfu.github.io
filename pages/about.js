@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function About() {
   const router = useRouter();
   return (
-    <div className="get-involved-page">
+    <div className="about-page">
       <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <Hero

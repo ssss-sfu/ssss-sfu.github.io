@@ -1,0 +1,28 @@
+@import "../variables.scss";
+
+.about-page {
+  background-color: var(--colour-neutral-1200);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+  h1 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
