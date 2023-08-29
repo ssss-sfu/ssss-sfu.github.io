@@ -1,0 +1,26 @@
+{
+  "current": [
+    {
+      "name": "Joshua Li",
+      "role": "President",
+      "pronoun": "he/him",
+      "description": "Lorem",
+      "discordTag": "Jugblue#2169",
+      "discordLink": "https://www.google.ca/",
+      "instagramTag": "instagramhandle",
+      "linkedinTag": "Josh Li",
+      "linkedinLink": "https://www.youtube.com/"
+    },
+    {
+      "name": "Kevin Chen",
+      "role": "Vice President",
+      "pronoun": "he/him",
+      "description": "Lorem",
+      "discordTag": "Jugblue#2169",
+      "discordLink": "https://www.google.ca/",
+      "instagramTag": "instagramhandle",
+      "linkedinTag": "Kevin Chen",
+      "linkedinLink": "https://www.youtube.com/"
+    }
+  ]
+}

@@ -1,9 +1,19 @@
 import { Hero, HeaderNav, Footer, Helmet } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import { useRouter } from "next/router";
+import useSWR from "swr";
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function About() {
   const router = useRouter();
+  const { data, error, isLoading } = useSWR("/api/staticdata", fetcher);
+
+  if (error) return <div>Failed to load</div>;
+
+  if (isLoading) return <div>Loading...</div>;
+  console.log("HEY", data);
+  console.log("pony", typeof data);
   return (
     <div className="about-page">
       <Helmet pageTitle={router.pathname} />
@@ -34,6 +44,9 @@ export default function About() {
             their courses.
           </p>
         </section>
+        {data.current.map((item) => (
+          <div key={item.id}>{item.name}</div>
+        ))}
       </main>
       <Footer />
     </div>
