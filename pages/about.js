@@ -1,6 +1,7 @@
 import { Hero, HeaderNav, Footer, Helmet } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import useSWR from "swr";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -45,7 +46,43 @@ export default function About() {
           </p>
         </section>
         {data.current.map((item) => (
-          <div key={item.id}>{item.name}</div>
+          <div
+            key={item.id}
+            style={{
+              display: "flex",
+              flex: "1 2",
+              margin: "1.5em",
+            }}
+          >
+            <img
+              src={item.imgSrc}
+              style={{
+                width: "20em",
+                height: "27.5em",
+                margin: "0 1em",
+              }}
+            ></img>
+            <div
+              className="description"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "1.5em",
+                padding: "1.5em 0",
+                fontSize: "1.2em",
+              }}
+            >
+              <div className="exec-description-title">
+                <p>
+                  <b>{item.role}</b>
+                </p>
+                <p>{item.name}</p>
+                <p>{item.pronoun}</p>
+              </div>
+
+              <p>{item.description}</p>
+            </div>
+          </div>
         ))}
       </main>
       <Footer />
