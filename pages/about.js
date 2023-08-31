@@ -3,6 +3,7 @@ import HeroImage from "@images/about-page/about-hero-background.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import useSWR from "swr";
+import { ProfileCard } from "components/ProfileCard";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -45,19 +46,8 @@ export default function About() {
             their courses.
           </p>
         </section>
-        {data.current.map((item) => (
-          <div key={item.id} className="profile-card">
-            <img src={item.imgSrc}></img>
-            <div className="description">
-              <div className="description-title">
-                <p className="profile-role">{item.role}</p>
-                <p className="profile-name">{item.name}</p>
-                <p className="profile-pronoun">({item.pronoun})</p>
-              </div>
-
-              <p className="profile-description">{item.description}</p>
-            </div>
-          </div>
+        {data.current.map((profile) => (
+          <ProfileCard profile={profile}></ProfileCard>
         ))}
       </main>
       <Footer />
