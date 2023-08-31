@@ -14,7 +14,8 @@
 @use "./components/accordion.scss";
 @use "./components/hero.scss";
 @use "./components/dropdown.scss";
-@use "./components//events-calendar/events-calendar.scss";
+@use "./components/events-calendar/events-calendar.scss";
+@use "./components/profile-card.scss";
 
 :root {
   --colour-sosy-green-900: #07221c;

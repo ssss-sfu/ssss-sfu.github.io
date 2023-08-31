@@ -46,41 +46,16 @@ export default function About() {
           </p>
         </section>
         {data.current.map((item) => (
-          <div
-            key={item.id}
-            style={{
-              display: "flex",
-              flex: "1 2",
-              margin: "1.5em",
-            }}
-          >
-            <img
-              src={item.imgSrc}
-              style={{
-                width: "20em",
-                height: "27.5em",
-                margin: "0 1em",
-              }}
-            ></img>
-            <div
-              className="description"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.5em",
-                padding: "1.5em 0",
-                fontSize: "1.2em",
-              }}
-            >
-              <div className="exec-description-title">
-                <p>
-                  <b>{item.role}</b>
-                </p>
-                <p>{item.name}</p>
-                <p>{item.pronoun}</p>
+          <div key={item.id} className="profile-card">
+            <img src={item.imgSrc}></img>
+            <div className="description">
+              <div className="description-title">
+                <p className="profile-role">{item.role}</p>
+                <p className="profile-name">{item.name}</p>
+                <p className="profile-pronoun">({item.pronoun})</p>
               </div>
 
-              <p>{item.description}</p>
+              <p className="profile-description">{item.description}</p>
             </div>
           </div>
         ))}

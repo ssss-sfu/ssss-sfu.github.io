@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 2;
+  margin: 3em auto;
+  max-width: 90em; // 1440px recommended
+  gap: 2em;
+
+  img {
+    width: 20em;
+    height: 27.5em;
+    border-radius: 1em;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    .description-title {
+      .profile-role {
+        color: var(--colour-sosy-green-500);
+      }
+
+      .profile-name {
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+
+      .profile-pronoun {
+        color: var(--colour-neutral-600);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
