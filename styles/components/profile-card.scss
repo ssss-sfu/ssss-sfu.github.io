@@ -9,7 +9,7 @@
   max-width: 90em; // 1440px recommended
   gap: 2em;
 
-  img {
+  .description-img {
     width: 20em;
     height: 27.5em;
     border-radius: 1em;
@@ -32,6 +32,28 @@
 
       .profile-pronoun {
         color: var(--colour-neutral-600);
+      }
+    }
+
+    .description-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+
+      .description-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-weight: 450;
+
+        .description-social-link {
+          color: var(--colour-neutral-000);
+          text-decoration: none;
+        }
+
+        .description-social-link:hover {
+          color: var(--colour-sosy-green-500);
+        }
       }
     }
   }

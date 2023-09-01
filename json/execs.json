@@ -5,20 +5,23 @@
       "role": "President",
       "pronoun": "he/him",
       "description": "Hello everyone! My name is Joshua Li and I’ll be president of the SSSS for 2023 - 2024. I’m excited to work with the great team of executives on this page and continue doing what the SSSS does best and more! In my free time I enjoy listening to podcasts, playing video games and consuming internet content. Say hi to me if you ever see me in person or shoot me a message online if you want to chat about anything!",
-      "discordTag": "jugblue",
-      "linkedinTag": "Josh Li",
-      "linkedinLink": "https://www.linkedin.com/in/joshuajli/",
-      "imgSrc": "/images/about-page/execs-2023/joshua.jpg"
+      "imgSrc": "/images/about-page/execs-2023/joshua.jpg",
+      "socials": {
+        "discord": "jugblue",
+        "linkedIn": "https://www.linkedin.com/in/joshuajli/",
+        "instagram": "lol"
+      }
     },
     {
       "name": "Kevin Chen",
       "role": "Vice President",
       "pronoun": "he/him",
       "description": "Hi all, I’m Kevin, the Vice President of the SSSS. This will be my fourth year as an SSSS exec and I’m looking forward to working with our amazing new team. I’m a third year student returning from co-op, and outside of studying I’ll spend my time gaming, cooking, or going on walks. You’ll see me around on the SSSS Discord server, so feel free to say hi or ask me any questions!",
-      "discordTag": "krv1335",
-      "linkedinTag": "Kai Feng Kevin Chen",
-      "linkedinLink": "https://www.linkedin.com/in/kaifengkevinchen/",
-      "imgSrc": "/images/about-page/execs-2023/kevin.jpg"
+      "imgSrc": "/images/about-page/execs-2023/kevin.jpg",
+      "socials": {
+        "discord": "krv1335",
+        "linkedIn": "https://www.linkedin.com/in/kaifengkevinchen/"
+      }
     }
   ]
 }
