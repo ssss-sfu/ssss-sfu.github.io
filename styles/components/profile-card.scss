@@ -6,13 +6,14 @@
   align-items: center;
   flex: 1 2;
   margin: 3em auto;
-  max-width: 90em; // 1440px recommended
   gap: 2em;
+  width: 100%;
 
   .description-img {
-    width: 20em;
+    width: 18.5em;
     height: 27.5em;
     border-radius: 1em;
+    object-fit: cover;
   }
 
   .description {

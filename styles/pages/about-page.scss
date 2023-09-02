@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: flex-start;
 
+  .current-exec {
+    margin: 5rem auto;
+    width: min(85vw, 70rem);
+  }
+
   .footer {
     margin-top: auto;
   }

@@ -14,8 +14,7 @@ export default function About() {
   if (error) return <div>Failed to load</div>;
 
   if (isLoading) return <div>Loading...</div>;
-  console.log("HEY", data);
-  console.log("pony", typeof data);
+
   return (
     <div className="about-page">
       <Helmet pageTitle={router.pathname} />
@@ -46,9 +45,11 @@ export default function About() {
             their courses.
           </p>
         </section>
-        {data.current.map((profile) => (
-          <ProfileCard profile={profile}></ProfileCard>
-        ))}
+        <section className="current-exec">
+          {data.current.map((profile) => (
+            <ProfileCard profile={profile}></ProfileCard>
+          ))}
+        </section>
       </main>
       <Footer />
     </div>
