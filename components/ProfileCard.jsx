@@ -29,12 +29,13 @@ export const ProfileCard = ({ profile }) => {
     return lastSegment;
   };
 
-  Object.entries(profile.socials).map((social, socialTag) => {
-    console.log(social, socialTag);
-  });
   return (
     <div key={profile.id} className="profile-card">
-      <img className="description-img" src={profile.imgSrc}></img>
+      <img
+        className="description-img"
+        src={profile.imgSrc}
+        alt={`${profile.name}'s profile image`}
+      ></img>
       <div className="description">
         <div className="description-title">
           <p className="profile-role">{profile.role}</p>
@@ -47,7 +48,10 @@ export const ProfileCard = ({ profile }) => {
           {Object.keys(profile.socials).map((socialType) => {
             const socialTag = profile.socials[socialType];
             return (
-              <div className="description-logo">
+              <div
+                className="description-logo"
+                key={`${profile.name}-${socialType}`}
+              >
                 <Image
                   src={socialIconMap[socialType]}
                   height={24}
@@ -58,6 +62,7 @@ export const ProfileCard = ({ profile }) => {
                   <a
                     href={socialTag}
                     target="_blank"
+                    rel="noreferrer"
                     className="description-social-link"
                   >
                     {getLastSegment(socialTag)}

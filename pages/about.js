@@ -1,7 +1,6 @@
 import { Hero, HeaderNav, Footer, Helmet } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import useSWR from "swr";
 import { ProfileCard } from "components/ProfileCard";
 
@@ -47,7 +46,7 @@ export default function About() {
         </section>
         <section className="current-exec">
           {data.current.map((profile) => (
-            <ProfileCard profile={profile}></ProfileCard>
+            <ProfileCard profile={profile} key={profile.name}></ProfileCard>
           ))}
         </section>
       </main>

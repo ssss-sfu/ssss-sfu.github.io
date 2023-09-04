@@ -79,7 +79,12 @@ export default function GetInvolved() {
         <section className="committee-container">
           <div className="committee-box">
             <div className="image-alignment">
-              <Image src={academicRepo} layout="fill" objectFit="cover" />
+              <Image
+                src={academicRepo}
+                layout="fill"
+                objectFit="cover"
+                alt="Academic repo image"
+              />
             </div>
             <h3>Academic Repo Commitee</h3>
             <p>
@@ -98,7 +103,12 @@ export default function GetInvolved() {
 
           <div className="committee-box">
             <div className="image-alignment">
-              <Image src={merch} layout="fill" objectFit="cover" />
+              <Image
+                src={merch}
+                layout="fill"
+                objectFit="cover"
+                alt="Merch committee image"
+              />
             </div>
             <h3>Merch Commitee</h3>
             <p>
@@ -116,7 +126,12 @@ export default function GetInvolved() {
           </div>
           <div className="committee-box">
             <div className="image-alignment">
-              <Image src={website} layout="fill" objectFit="cover" />
+              <Image
+                src={website}
+                layout="fill"
+                objectFit="cover"
+                alt="Website committee image"
+              />
             </div>
             <h3>Website Committee</h3>
             <p>
