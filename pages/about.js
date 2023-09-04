@@ -1,18 +1,11 @@
 import { Hero, HeaderNav, Footer, Helmet } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import { useRouter } from "next/router";
-import useSWR from "swr";
 import { ProfileCard } from "components/ProfileCard";
-
-const fetcher = (url) => fetch(url).then((res) => res.json());
+import execs from "@jsons/execs.json";
 
 export default function About() {
   const router = useRouter();
-  const { data, error, isLoading } = useSWR("/api/staticdata", fetcher);
-
-  if (error) return <div>Failed to load</div>;
-
-  if (isLoading) return <div>Loading...</div>;
 
   return (
     <div className="about-page">
@@ -45,7 +38,7 @@ export default function About() {
           </p>
         </section>
         <section className="current-exec">
-          {data.current.map((profile) => (
+          {execs.current.map((profile) => (
             <ProfileCard profile={profile} key={profile.name}></ProfileCard>
           ))}
         </section>
