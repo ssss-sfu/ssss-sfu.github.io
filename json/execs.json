@@ -1,0 +1,159 @@
+{
+  "current": [
+    {
+      "name": "Joshua Li",
+      "role": "President",
+      "pronoun": "he/him",
+      "description": "Hello everyone! My name is Joshua Li and I’ll be president of the SSSS for 2023 - 2024. I’m excited to work with the great team of executives on this page and continue doing what the SSSS does best and more! In my free time I enjoy listening to podcasts, playing video games and consuming internet content. Say hi to me if you ever see me in person or shoot me a message online if you want to chat about anything!",
+      "imgSrc": "/images/about-page/execs-2023/joshua.jpg",
+      "socials": {
+        "discord": "jugblue",
+        "linkedIn": "https://www.linkedin.com/in/joshuajli/"
+      }
+    },
+    {
+      "name": "Kevin Chen",
+      "role": "Vice President",
+      "pronoun": "he/him",
+      "description": "Hi all, I’m Kevin, the Vice President of the SSSS. This will be my fourth year as an SSSS exec and I’m looking forward to working with our amazing new team. I’m a third year student returning from co-op, and outside of studying I’ll spend my time gaming, cooking, or going on walks. You’ll see me around on the SSSS Discord server, so feel free to say hi or ask me any questions!",
+      "imgSrc": "/images/about-page/execs-2023/kevin.jpg",
+      "socials": {
+        "discord": "krv1335",
+        "linkedIn": "https://www.linkedin.com/in/kaifengkevinchen/"
+      }
+    },
+    {
+      "name": "Gahee Kim",
+      "role": "Secretary",
+      "pronoun": "she/her",
+      "description": "Hi. I’m Gahee and I am your secretary!!! When I am not spamming the SSSS discord server or studying, I like to pet my dog Lily.",
+      "imgSrc": "/images/about-page/execs-2023/GAHERERR.jpg",
+      "socials": {
+        "discord": "gahee",
+        "linkedIn": "https://www.linkedin.com/in/gahee-kim03/"
+      }
+    },
+    {
+      "name": "Mekdim Dereje",
+      "role": "Treasurer",
+      "pronoun": "he/him",
+      "description": "Hey guys! My name is Mekdim and I will be your Treasurer this term. You’ll usually find me “Listening to Spotify” or hanging out in the study time voice channel on the SSSS server. Feel free to DM me if you have any questions or concerns!",
+      "imgSrc": "/images/about-page/execs-2023/mekdim.jpg",
+      "socials": {
+        "discord": "mekdim",
+        "linkedIn": "https://www.linkedin.com/in/mekdimd/"
+      }
+    },
+    {
+      "name": "Ethan Chou",
+      "role": "Director of Marketing",
+      "pronoun": "he/him",
+      "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y’all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
+      "imgSrc": "/images/about-page/execs-2023/Ethan.jpg",
+      "socials": {
+        "discord": "flatulence",
+        "instagram": "https://www.instagram.com/happyasian.man/",
+        "linkedIn": "https://www.linkedin.com/in/ethanchou128/"
+      }
+    },
+    {
+      "name": "Chloe Yip",
+      "role": "Director of Activities",
+      "pronoun": "she/her",
+      "description": "Hey guys! My name is Chloe and I am your Director of Activities for this school term. I like my ocean ecosystem. If you have any event suggestions feel free to message me 😊❤️",
+      "imgSrc": "/images/about-page/execs-2023/Chloe.jpg",
+      "socials": {
+        "discord": "papaya830",
+        "linkedIn": "https://www.linkedin.com/in/chloe-yip-644162215/"
+      }
+    },
+    {
+      "name": "Max Zhang",
+      "role": "Director of Activities",
+      "pronoun": "he/him",
+      "description": "Hey everyone! I’m Max and one of the Director of Activities for this year. Outside of school I enjoy playing games, chilling on my bed and listening to music. Feel free to dm me for any event ideas you have or if you just wanna chat 😊",
+      "imgSrc": "/images/about-page/execs-2023/max.jpg",
+      "socials": {
+        "discord": "cake.s",
+        "linkedIn": "https://www.linkedin.com/in/maxwell-zhang/"
+      }
+    },
+    {
+      "name": "Iris Au-Yeung",
+      "role": "Director of Visual Design",
+      "pronoun": "she/her",
+      "description": "I can’t wait to make things look pretty 😆",
+      "imgSrc": "/images/about-page/execs-2023/Iris.jpg",
+      "socials": {
+        "discord": "irishy.",
+        "linkedIn": "https://www.linkedin.com/in/irisau-yeung/"
+      }
+    },
+    {
+      "name": "Jamie Chin",
+      "role": "External Representative",
+      "pronoun": "she/her",
+      "description": "Hi! I’m Jamie, and I’m your External Rep (dir. of external relations …?) this year. In my free time I like to go out and get food or bubble tea and window shop. Sometimes I play video games. Please feel free to reach out to me if you have any questions or concerns!",
+      "imgSrc": "/images/about-page/execs-2023/jamie.jpg",
+      "socials": {
+        "discord": "bublychee",
+        "linkedIn": "https://www.linkedin.com/in/jamie-c-841786209/"
+      }
+    },
+    {
+      "name": "Bryan Dang",
+      "role": "Internal Representative",
+      "pronoun": "he/him",
+      "description": "Hi to whoever’s reading this, I’m Bryan and I’m your Internal Rep! I’ll probably be playing games or lying on my bed listening to music or napping (or both) at any given time. Feel free to DM me for any questions, or try to convince me that Piplup isn’t the best starter (you are wrong)",
+      "imgSrc": "/images/about-page/execs-2023/bryan.jpg",
+      "socials": {
+        "discord": "bryan.png",
+        "linkedIn": "https://www.linkedin.com/in/bryanjhdang/"
+      }
+    },
+    {
+      "name": "Andrew Ursu",
+      "role": "Fourth Year Representative",
+      "pronoun": "he/him",
+      "description": "Hey Sosy my name is Andrew and I’m your 4th year rep. Bring any concerns with upper division course to me and I will be more then happy to look into them. Outside of school I am either at the gym or gaming or doing something outdoorsy such as skiing or hiking",
+      "imgSrc": "/images/about-page/execs-2023/andrew.jpg",
+      "socials": {
+        "discord": "andrewwick",
+        "linkedIn": "https://www.linkedin.com/in/andrew-ursu-6424171b7/"
+      }
+    },
+    {
+      "name": "Jerry Deng",
+      "role": "Third Year Representative",
+      "pronoun": "he/him",
+      "description": "Hey there 👋! I’m Jerry and I’m chilling in retirement as the 3rd year rep after my long two years as your Director of Marketing for 2021 & 2022! In my free time you'll find me paddling for SFU’s dragon boat team (@sfushockwave), learning more about tech 💻, or being out and about around Vancouver 🌆. If you have any questions or concerns, feel free to reach out to me on Discord!",
+      "imgSrc": "/images/about-page/execs-2023/Jerry.jpg",
+      "socials": {
+        "discord": "eloiph",
+        "linkedIn": "https://www.linkedin.com/in/jerrydngzh/"
+      }
+    },
+    {
+      "name": "Julie Wu",
+      "role": "Second Year Representative",
+      "pronoun": "she/her",
+      "description": "Hewo everyone ~ I’m Julie and I’ll be your 2nd year rep! Let me know if you have any questions or concerns about 2nd year courses. I’ll do my best to help you out! In my free time, I like to do music and sports. Feel free to check out my music channel, @Joolzmusic, on Youtube!",
+      "imgSrc": "/images/about-page/execs-2023/Julie.jpg",
+      "socials": {
+        "discord": "joolzmusic",
+        "linkedIn": "https://www.linkedin.com/in/julie-wu-14471b218/"
+      }
+    },
+    {
+      "name": "Lynn Nguyen",
+      "role": "SFSS Council Representative",
+      "pronoun": "she/her",
+      "description": "Hello hello, I’m Lynn and I will be your SFSS Council Rep this term. I like to watch kdrama in my free time and one of my favorite ones is The Good Bad Mother. Please feel free to ask me any questions or anything related to kdrama :)",
+      "imgSrc": "/images/about-page/execs-2023/lynn.jpg",
+      "socials": {
+        "discord": "lynn.ng",
+        "linkedIn": "https://www.linkedin.com/in/lynn-nguyen-ba69341b3/"
+      }
+    }
+  ]
+}
