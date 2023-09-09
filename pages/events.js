@@ -33,7 +33,7 @@ export default function EventsPage() {
             <a
               className="annual-events__link-item"
               target="_blank"
-              href="https://systemshacks.sfussss.org/"
+              href="https://systemshacks.com/"
               rel="noreferrer"
             >
               <h3>Systems Hacks</h3>
