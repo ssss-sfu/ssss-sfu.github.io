@@ -52,7 +52,9 @@ View the live site here: https://sfussss.org/
    ```
    git checkout -b kiaanc/read-me-update
    ```
+
    This will create a new branch and check out instantly to that branch. Equivalent with:
+
    ```
    git branch kiaanc/read-me-update
    git checkout kiaanc/read-me-update
@@ -70,9 +72,9 @@ View the live site here: https://sfussss.org/
    localhost:3000
    ```
 
-5. Start coding!
-6. Commit and push your changes
-7. Create a pull request with the following format:
+4. Start coding!
+5. Commit and push your changes
+6. Create a pull request with the following format:
 
    ```
    Target Branch: master
@@ -88,7 +90,7 @@ View the live site here: https://sfussss.org/
    - KiaanCastillo (Kiaan)
    ```
 
-8. Wait for one of the reviewers to take a look and make changes or merge accordingly.
+7. Wait for one of the reviewers to take a look and make changes or merge accordingly.
 
 Thanks for contributing!
 
