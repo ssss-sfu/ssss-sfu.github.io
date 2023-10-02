@@ -27,64 +27,64 @@ export default function BlogCategory() {
     }
   }, [category, postid]);
 
-  let testListA = [
-    {
-      id: "23001",
-      category: "alumni",
-      title: "Career Benefits of Choosing Software Systems Major",
-      date: "June 6th 2023",
-      author: "Jeffrey Leung",
-      summary:
-        "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
-    },
-  ];
-  let testListB = [
-    {
-      id: "23002",
-      category: "alumni",
-      title: "Career Benefits of Choosing Software Systems Major",
-      date: "June 6th 2023",
-      author: "Jeffrey Leung",
-      summary:
-        "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
-    },
-    {
-      id: "23003",
-      category: "alumni",
-      title: "SFU Graduand Surges Forward Into Software Development Career",
-      date: "June 6th 2023",
-      author: "Jeffrey Leung",
-      summary:
-        "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
-    },
-    {
-      id: "23004",
-      category: "alumni",
-      title: "SFU Graduand Surges Forward Into Software Development Career",
-      date: "June 6th 2023",
-      author: "Jeffrey Leung",
-      summary:
-        "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
-    },
-    {
-      id: "23005",
-      category: "alumni",
-      title: "SFU Graduand Surges Forward Into Software Development Career",
-      date: "June 6th 2023",
-      author: "Jeffrey Leung",
-      summary:
-        "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
-    },
-    {
-      id: "23006",
-      category: "alumni",
-      title: "SFU Graduand Surges Forward Into Software Development Career",
-      date: "June 6th 2023",
-      author: "Jeffrey Leung",
-      summary:
-        "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
-    },
-  ];
+  // let testListA = [
+  //   {
+  //     id: "23001",
+  //     category: "alumni",
+  //     title: "Career Benefits of Choosing Software Systems Major",
+  //     date: "June 6th 2023",
+  //     author: "Jeffrey Leung",
+  //     summary:
+  //       "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  //   },
+  // ];
+  // let testListB = [
+  //   {
+  //     id: "23002",
+  //     category: "alumni",
+  //     title: "Career Benefits of Choosing Software Systems Major",
+  //     date: "June 6th 2023",
+  //     author: "Jeffrey Leung",
+  //     summary:
+  //       "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  //   },
+  //   {
+  //     id: "23003",
+  //     category: "alumni",
+  //     title: "SFU Graduand Surges Forward Into Software Development Career",
+  //     date: "June 6th 2023",
+  //     author: "Jeffrey Leung",
+  //     summary:
+  //       "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  //   },
+  //   {
+  //     id: "23004",
+  //     category: "alumni",
+  //     title: "SFU Graduand Surges Forward Into Software Development Career",
+  //     date: "June 6th 2023",
+  //     author: "Jeffrey Leung",
+  //     summary:
+  //       "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  //   },
+  //   {
+  //     id: "23005",
+  //     category: "alumni",
+  //     title: "SFU Graduand Surges Forward Into Software Development Career",
+  //     date: "June 6th 2023",
+  //     author: "Jeffrey Leung",
+  //     summary:
+  //       "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  //   },
+  //   {
+  //     id: "23006",
+  //     category: "alumni",
+  //     title: "SFU Graduand Surges Forward Into Software Development Career",
+  //     date: "June 6th 2023",
+  //     author: "Jeffrey Leung",
+  //     summary:
+  //       "This blog post captures my trials, triumphs, and enlightening moments, offering an unfiltered glimpse into the rigorous academic odyssey of understanding these fundamental computer science concepts.",
+  //   },
+  // ];
 
   const SinglePost = () => {
     return (
@@ -223,4 +223,41 @@ export default function BlogCategory() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps({ params }) {
+  const post = getPostBySlug(params.slug, [
+    "title",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "coverImage",
+  ]);
+
+  const content = await markdownconvert(post.content || "");
+
+  return {
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const posts = getAllPosts(["slug"]);
+
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      };
+    }),
+    fallback: false,
+  };
 }
