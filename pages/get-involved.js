@@ -136,8 +136,10 @@ export default function GetInvolved() {
           <h1>General Meeting</h1>
           <p>
             Join us during our public general meeting in{" "}
-            <span className="discord-channel-image-text">#merch</span> where we
-            discuss updates and matters including the following:
+            <span className="discord-channel-image-text">
+              #room-4016-public{" "}
+            </span>{" "}
+            where we discuss updates and matters including the following:
           </p>
           <div className="bulletlist">
             <ul>
