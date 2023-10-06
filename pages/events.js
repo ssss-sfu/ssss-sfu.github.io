@@ -24,7 +24,7 @@ export default function EventsPage() {
             <a
               className="annual-events__link-item"
               target="_blank"
-              href="https://discord.com/invite/XZUd7amxPq"
+              href="https://discord.com/invite/whdfmJbVF7"
               rel="noreferrer"
             >
               <h3>Frosh</h3>
