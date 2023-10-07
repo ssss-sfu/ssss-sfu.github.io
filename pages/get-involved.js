@@ -31,7 +31,7 @@ export default function GetInvolved() {
             Join the Software Systems Student Society by running for any of the
             elected positions.{" "}
             <a
-              href="https://discord.gg/599e3myXPj"
+              href="https://discord.com/invite/whdfmJbVF7"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,9 @@ export default function GetInvolved() {
               #what-are-commitees
             </span>{" "}
             channel on our{" "}
-            <a href="https://discord.com/invite/hY7WjXt">SSSS Discord Server</a>{" "}
+            <a href="https://discord.com/invite/whdfmJbVF7">
+              SSSS Discord Server
+            </a>{" "}
             to get a role.
           </p>
         </section>

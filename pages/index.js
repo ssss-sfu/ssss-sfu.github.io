@@ -65,7 +65,7 @@ export default function LandingPage() {
               notifications about events, news, and more!
             </p>
             <a
-              href="https://discord.gg/XZUd7amxPq"
+              href="https://discord.com/invite/whdfmJbVF7"
               target="_blank"
               rel="noreferrer"
             >
