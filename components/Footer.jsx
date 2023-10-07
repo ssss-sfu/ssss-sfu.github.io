@@ -86,7 +86,7 @@ export const Footer = () => {
               alt="Instagram Icon"
             />
           </a>
-          <a href="https://discord.gg/XZUd7amxPq">
+          <a href="https://discord.com/invite/whdfmJbVF7">
             <Image
               src={DiscordIcon.src}
               height={24}

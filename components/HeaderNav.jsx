@@ -70,7 +70,7 @@ export const HeaderNav = () => {
                 width={18}
               />
             </a>
-            <a href="https://discord.gg/XZUd7amxPq">
+            <a href="https://discord.com/invite/whdfmJbVF7">
               <Image
                 src={DiscordIcon.src}
                 alt="Discord icon"
