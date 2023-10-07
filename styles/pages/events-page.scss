@@ -84,6 +84,18 @@
       }
     }
 
+    .annual-events__subscribe-button {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+
+      button {
+        background-color: var(--colour-neutral-000);
+        color: var(--colour-neutral-1200);
+      }
+    }
+
     @include viewport(tablet-desktop) {
       header {
         grid-area: header;
@@ -118,6 +130,10 @@
         .annual-events__link-item:nth-child(3)::before {
           background-image: url("../../public/images/landing-page/discover-ssss-main.png");
         }
+      }
+
+      .annual-events__subscribe-button {
+        justify-content: flex-end;
       }
     }
   }

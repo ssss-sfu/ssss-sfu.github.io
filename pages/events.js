@@ -1,5 +1,4 @@
-import { Helmet, Footer } from "@components";
-import { Hero, HeaderNav } from "@components";
+import { Helmet, Footer, Hero, HeaderNav, Button } from "@components";
 import EventsCalendar from "components/EventsCalendar";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 import { useRouter } from "next/router";
@@ -49,6 +48,15 @@ export default function EventsPage() {
               <p>Job fair in collaboration with the MSESS and SEESS</p>
             </a>
           </section>
+          <div className="annual-events__subscribe-button">
+            <a
+              href="https://calendar.google.com/calendar/u/0?cid=ajdxZmNuZ2Q5Y3JiaGVsaWI2dGdkaWhpM2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button label="Subscribe to Events Calendar" type="secondary" />
+            </a>
+          </div>
           <section className="annual-events__events-calendar">
             <EventsCalendar />
           </section>
