@@ -20,7 +20,9 @@
     "react": "18.2.0",
     "react-big-calendar": "^1.6.9",
     "react-calendar": "^4.2.1",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "eslint": "8.22.0",

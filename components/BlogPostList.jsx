@@ -3,6 +3,7 @@ import Image from "next/image";
 import clock from "../public/images/blog-page/clock.svg";
 import person from "../public/images/blog-page/person.svg";
 import { Helmet, HeaderNav, Footer } from "@components";
+import Link from "next/link";
 
 export const BlogPostList = ({
   style,
@@ -23,22 +24,24 @@ export const BlogPostList = ({
       <div className="post">
         <Helmet />
         <HeaderNav />
-        <article className="post">
-          <div className="thumbnail">
-            <Image src={coverImage} alt="thumbnail" layout="fill" />
-            <div className="overlay"></div>
-          </div>
-          <div className="text">
-            <div className="title">{title}</div>
-            <div className="meta-info">
-              <Image src={clock} height={16} width={16} alt="Clock" />
-              <div>{date.toString()}</div>
-              <Image src={person} height={16} width={16} alt="Person" />
-              <div>{author.name}</div>
+        <Link as={`/blog/${slug}`} href="/blog/[slug]">
+          <article className="post">
+            <div className="thumbnail">
+              <Image src={coverImage} alt="thumbnail" layout="fill" />
+              <div className="overlay"></div>
             </div>
-            <div className="summary">{excerpt}</div>
-          </div>
-        </article>
+            <div className="text">
+              <div className="title">{title}</div>
+              <div className="meta-info">
+                <Image src={clock} height={16} width={16} alt="Clock" />
+                <div>{date.toString()}</div>
+                <Image src={person} height={16} width={16} alt="Person" />
+                <div>{author.name}</div>
+              </div>
+              <div className="summary">{excerpt}</div>
+            </div>
+          </article>
+        </Link>
       </div>
     </div>
   );
