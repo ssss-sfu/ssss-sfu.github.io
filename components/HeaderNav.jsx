@@ -4,6 +4,7 @@ import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
 import DiscordIcon from "@icons/discord.svg";
+import GithubIcon from "@icons/github.svg";
 import Link from "next/link";
 
 export const HeaderNav = () => {
@@ -73,6 +74,14 @@ export const HeaderNav = () => {
             <a href="https://discord.com/invite/whdfmJbVF7">
               <Image
                 src={DiscordIcon.src}
+                alt="Discord icon"
+                height={18}
+                width={18}
+              />
+            </a>
+            <a href="https://github.com/ssss-sfu">
+              <Image
+                src={GithubIcon.src}
                 alt="Discord icon"
                 height={18}
                 width={18}
