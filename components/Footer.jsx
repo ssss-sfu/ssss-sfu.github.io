@@ -5,6 +5,7 @@ import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
 import DiscordIcon from "@icons/discord.svg";
+import GithubIcon from "@icons/github.svg";
 import OfficeBuildingIcon from "@icons/office-building.svg";
 import ContactUsIcon from "@icons/contact-us.svg";
 
@@ -92,6 +93,14 @@ export const Footer = () => {
               height={24}
               width={24}
               alt="Discord Icon"
+            />
+          </a>
+          <a href="https://github.com/ssss-sfu">
+            <Image
+              src={GithubIcon.src}
+              alt="Github icon"
+              height={24}
+              width={24}
             />
           </a>
         </div>
