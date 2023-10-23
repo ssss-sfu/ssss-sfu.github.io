@@ -99,7 +99,7 @@ export default function GetInvolved() {
               <span className="access-time">
                 <Image src={clock} height={18} width={18} alt="Clock" />
               </span>
-              Meetings TBA
+              Asynchronous
             </p>
             <span className="discord-channel-image-row">#academic repo</span>{" "}
           </div>
@@ -123,7 +123,7 @@ export default function GetInvolved() {
               <span className="access-time">
                 <Image src={clock} height={18} width={18} alt="Clock" />
               </span>
-              Meetings TBA
+              Asynchronous
             </p>
             <span className="discord-channel-image-row">#merch</span>{" "}
           </div>
@@ -138,14 +138,14 @@ export default function GetInvolved() {
             </div>
             <h3>Website Committee</h3>
             <p>
-              Help update and maintain our website and figure out what can be
-              done with it.
+              Help update and maintain our main, hackathon, and other potential
+              website. Figure out what can be done to help inform the society.
             </p>
             <p>
               <span className="access-time">
                 <Image src={clock} height={18} width={18} alt="Clock" />
               </span>
-              Meetings every 1st and 3rd Thursday at 6:30 pm
+              Asynchronous
             </p>
             <span className="discord-channel-image-row">#website</span>{" "}
           </div>
