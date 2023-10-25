@@ -39,8 +39,8 @@ export default function BlogCategory(post, morePosts, preview) {
           </div>
         </header>
         <section
-          class="post-content"
-          dangerouslySetInnerHTML={createMarkup(text)}
+          class="container blog-content"
+          dangerouslySetInnerHTML={createMarkup(slug_post.content)}
         />
       </main>
       <Footer />
