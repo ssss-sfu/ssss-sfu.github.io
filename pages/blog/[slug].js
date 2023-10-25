@@ -14,6 +14,11 @@ export default function BlogCategory(post, morePosts, preview) {
   if (!router.isFallback && !slug_post?.slug) {
     return console.log(slug_post);
   }
+
+  function createMarkup(text) {
+    return { __html: text };
+  }
+
   return (
     <div className="blog-category-page">
       <Helmet />
@@ -33,7 +38,10 @@ export default function BlogCategory(post, morePosts, preview) {
             </p>
           </div>
         </header>
-        {slug_post.content}
+        <section
+          class="post-content"
+          dangerouslySetInnerHTML={createMarkup(text)}
+        />
       </main>
       <Footer />
     </div>
