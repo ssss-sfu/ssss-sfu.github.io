@@ -5,6 +5,7 @@ import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
 import DiscordIcon from "@icons/discord.svg";
+import GithubIcon from "@icons/github.svg";
 import OfficeBuildingIcon from "@icons/office-building.svg";
 import ContactUsIcon from "@icons/contact-us.svg";
 
@@ -36,8 +37,8 @@ export const Footer = () => {
               >
                 <strong>Software Systems Student Society</strong>
                 <br />
-                12450 102 Ave Unit 250, <br></br>
-                SUR 4016, Galleria 4<br></br>
+                250 - 13450 - 102nd Avenue, <br></br>
+                SYRC 4016, Galleria 4<br></br>
                 Surrey, BC V3T 0A3<br></br>
               </a>
             </address>
@@ -86,12 +87,20 @@ export const Footer = () => {
               alt="Instagram Icon"
             />
           </a>
-          <a href="https://discord.gg/XZUd7amxPq">
+          <a href="https://discord.com/invite/whdfmJbVF7">
             <Image
               src={DiscordIcon.src}
               height={24}
               width={24}
               alt="Discord Icon"
+            />
+          </a>
+          <a href="https://github.com/ssss-sfu">
+            <Image
+              src={GithubIcon.src}
+              alt="Github icon"
+              height={24}
+              width={24}
             />
           </a>
         </div>

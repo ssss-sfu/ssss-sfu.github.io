@@ -19,7 +19,7 @@ const localizer = dateFnsLocalizer({
 
 export default function EventsCalendar() {
   const calendarURL =
-    "https://clients6.google.com/calendar/v3/calendars/j7qfcngd9crbhelib6tgdihi3k@group.calendar.google.com/events?calendarId=j7qfcngd9crbhelib6tgdihi3k%40group.calendar.google.com&singleEvents=true&timeZone=America%2FVancouver&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2023-03-26T00%3A00%3A00-07%3A00&timeMax=2023-05-07T00%3A00%3A00-07%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs";
+    "https://clients6.google.com/calendar/v3/calendars/j7qfcngd9crbhelib6tgdihi3k@group.calendar.google.com/events?calendarId=j7qfcngd9crbhelib6tgdihi3k%40group.calendar.google.com&singleEvents=true&timeZone=America%2FVancouver&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2023-03-26T00%3A00%3A00-07%3A00&timeMax=2024-05-07T00%3A00%3A00-07%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs";
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function EventsCalendar() {
       <Calendar
         localizer={localizer}
         onSelectEvent={() => {
-          window.open("https://discord.com/invite/XZUd7amxPq", "_blank");
+          window.open("https://discord.com/invite/whdfmJbVF7", "_blank");
         }}
         events={events}
         startAccessor="start"

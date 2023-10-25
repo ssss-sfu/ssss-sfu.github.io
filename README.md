@@ -6,15 +6,13 @@ Welcome to the Software Systems Student Society (SSSS) website repo. This projec
 
 To join the committee, go to the [SSSS Discord server](https://discord.gg/XZUd7amxPq), find the `#what-are-committees`, and claim the `@website` role.
 
-> **We hold meetings every 1st and 3rd Wednesday of the month at 7:30pm in the `#website` channel, feel free to join when you're available!**
-
-View the live site here: https://ssss-sfu.github.io/
+View the live site here: https://sfussss.org/
 
 ## Getting Started Contributing
 
 ### Contribute by reporting a bug/suggesting an enhancement
 
-1. Join our [Trello workspace](https://trello.com/invite/b/Qt4lRLAO/de5aad51b8e3ce5222c795090ab638e4/website-committee-summer-term)
+1. Navigate to the [issues](https://github.com/ssss-sfu/ssss-sfu.github.io/issues) page in this repository
 2. Add a new item to the `Backlog` board and give it a clear and concise title and description. Include any other information, images, etc. that may be needed.
 3. Give it an appropriate label
 4. Thank you for your contribution! Before your item is moved to the `Todo` board, the committee will first take a look.
@@ -22,9 +20,8 @@ View the live site here: https://ssss-sfu.github.io/
 ### Contribute as a developer
 
 1. Get access to the repository as a contributor by contacting the website committee on our [our Discord server](https://discord.gg/XZUd7amxPq)
-2. Join our [Trello workspace](https://trello.com/invite/b/Qt4lRLAO/de5aad51b8e3ce5222c795090ab638e4/website-committee-summer-term)
-3. Claim a free task from the `Todo` board
-4. Set up your development environment (terminal instructions):
+2. Claim a free task from the open issues or suggest a new issue
+3. Set up your development environment (terminal instructions):
 
    a. Clone the repository locally in a folder of your choice
 
@@ -44,14 +41,7 @@ View the live site here: https://ssss-sfu.github.io/
    npm i
    ```
 
-   d. Switch to the `develop` branch (this is where we'll be doing most of our work so we need to branch off from here)
-
-   ```
-   git checkout develop
-   git pull
-   ```
-
-   e. Create a new branch in this format:
+   d. Create a new branch in this format:
 
    ```
    [computing ID or GitHub username]/[task-name-concise]
@@ -61,6 +51,13 @@ View the live site here: https://ssss-sfu.github.io/
 
    ```
    git checkout -b kiaanc/read-me-update
+   ```
+
+   This will create a new branch and check out instantly to that branch. Equivalent with:
+
+   ```
+   git branch kiaanc/read-me-update
+   git checkout kiaanc/read-me-update
    ```
 
    f. Run the server locally
@@ -75,12 +72,12 @@ View the live site here: https://ssss-sfu.github.io/
    localhost:3000
    ```
 
-5. Start coding!
-6. Commit and push your changes
-7. Create a pull request with the following format:
+4. Start coding!
+5. Commit and push your changes
+6. Create a pull request with the following format:
 
    ```
-   Target Branch: develop
+   Target Branch: master
 
    Title: Clear and descriptive title relevant to the issue
 
@@ -93,7 +90,7 @@ View the live site here: https://ssss-sfu.github.io/
    - KiaanCastillo (Kiaan)
    ```
 
-8. Wait for one of the reviewers to take a look and make changes or merge accordingly.
+7. Wait for one of the reviewers to take a look and make changes or merge accordingly.
 
 Thanks for contributing!
 
@@ -101,6 +98,7 @@ Thanks for contributing!
 
 |     | Version | Release Date      | Contributors   |
 | --- | ------- | ----------------- | -------------- |
-| ✅  | v3.0    | August 17, 2021   | Kiaan Castillo |
+| ✅  | v4.0    | September 9, 2023 | Brian Rahadi   |
+|     | v3.0    | August 17, 2021   | Kiaan Castillo |
 |     | v2.0    | November 17, 2020 | Andy Wang      |
 |     | v1.0    | January 27, 2020  | Amos Ko        |

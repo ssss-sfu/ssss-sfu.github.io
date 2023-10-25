@@ -1,12 +1,13 @@
-import { Helmet, Footer } from "@components";
-import { Hero, HeaderNav } from "@components";
+import { Helmet, Footer, Hero, HeaderNav, Button } from "@components";
 import EventsCalendar from "components/EventsCalendar";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
+import { useRouter } from "next/router";
 
 export default function EventsPage() {
+  const router = useRouter();
   return (
     <div className="events-page">
-      <Helmet />
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <main>
         <Hero
@@ -22,7 +23,7 @@ export default function EventsPage() {
             <a
               className="annual-events__link-item"
               target="_blank"
-              href="https://discord.com/invite/XZUd7amxPq"
+              href="https://discord.com/invite/whdfmJbVF7"
               rel="noreferrer"
             >
               <h3>Frosh</h3>
@@ -31,7 +32,7 @@ export default function EventsPage() {
             <a
               className="annual-events__link-item"
               target="_blank"
-              href="https://systemshacks.sfussss.org/"
+              href="https://systemshacks.com/"
               rel="noreferrer"
             >
               <h3>Systems Hacks</h3>
@@ -44,9 +45,18 @@ export default function EventsPage() {
               rel="noreferrer"
             >
               <h3>Systems Fair</h3>
-              <p>Job fair in collaboration with the MSESSS and SEESS</p>
+              <p>Job fair in collaboration with the MSESS and SEESS</p>
             </a>
           </section>
+          <div className="annual-events__subscribe-button">
+            <a
+              href="https://calendar.google.com/calendar/u/0?cid=ajdxZmNuZ2Q5Y3JiaGVsaWI2dGdkaWhpM2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button label="Subscribe to Events Calendar" type="secondary" />
+            </a>
+          </div>
           <section className="annual-events__events-calendar">
             <EventsCalendar />
           </section>

@@ -1,0 +1,68 @@
+@import "../variables.scss";
+
+.profile-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex: 1 2;
+  margin: 3em auto;
+  gap: 2em;
+  width: 100%;
+
+  .description-img {
+    width: 18.5em;
+    height: 27.5em;
+    border-radius: 1em;
+    object-fit: cover;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    .description-title {
+      .profile-role {
+        color: var(--colour-sosy-green-500);
+      }
+
+      .profile-name {
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+
+      .profile-pronoun {
+        color: var(--colour-neutral-600);
+      }
+    }
+
+    .description-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+
+      .description-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-weight: 450;
+
+        .description-social-link {
+          color: var(--colour-neutral-000);
+          text-decoration: none;
+        }
+
+        .description-social-link:hover {
+          color: var(--colour-sosy-green-500);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

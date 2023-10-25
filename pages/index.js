@@ -1,12 +1,14 @@
 import { Helmet, Button, HeaderNav, Footer } from "@components";
 import HappySeb from "@images/seb/happy-seb-head.svg";
 import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
+import { useRouter } from "next/router";
 import Link from "next/link.js";
 
 export default function LandingPage() {
+  const router = useRouter();
   return (
     <div className="landing-page">
-      <Helmet />
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <main>
         <header className="container hero">
@@ -63,7 +65,7 @@ export default function LandingPage() {
               notifications about events, news, and more!
             </p>
             <a
-              href="https://discord.gg/XZUd7amxPq"
+              href="https://discord.com/invite/whdfmJbVF7"
               target="_blank"
               rel="noreferrer"
             >
