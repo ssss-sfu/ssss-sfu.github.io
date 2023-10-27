@@ -1,9 +1,18 @@
-import { Helmet, HeaderNav, Footer, Button, BlogPostList } from "@components";
-import Link from "next/link.js";
+import { Helmet, HeaderNav, Footer } from "@components";
+import { BlogPost } from "components/BlogPostPreview";
+import { BlogPostPreviewList } from "components/BlogPostPreviewList";
+import { useState, useEffect } from "react";
 import { getAllPosts } from "../lib/api";
 
 export default function Blog(props) {
-  const heroPost = props.allPosts[0];
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  useEffect(() => {
+    const blogPostObjects = props.allPosts;
+    const blogPosts = blogPostObjects.map(BlogPost.fromObject);
+    setBlogPosts(blogPosts);
+  }, [props]);
+
   return (
     <div className="blog-page">
       <Helmet />
@@ -16,15 +25,7 @@ export default function Blog(props) {
         <section className="container">
           <h3 className="category-title">Featured</h3>
           <div className="posts-list featured">
-            <BlogPostList
-              title={heroPost.title}
-              date={heroPost.date}
-              slug={heroPost.slug}
-              author={heroPost.author}
-              coverImage={heroPost.coverImage}
-              excerpt={heroPost.excerpt}
-              category={heroPost.category}
-            />
+            <BlogPostPreviewList blogPosts={blogPosts} />
           </div>
         </section>
       </main>

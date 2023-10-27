@@ -1,12 +1,20 @@
-import { useRouter } from "next/router";
 import Image from "next/image";
-import clock from "../public/images/blog-page/clock.svg";
-import person from "../public/images/blog-page/person.svg";
-import { Helmet, HeaderNav, Footer } from "@components";
+import clock from "@images/blog-page/clock.svg";
+import person from "@images/blog-page/person.svg";
+import { Helmet, HeaderNav } from "@components";
 import Link from "next/link";
 
 export class BlogPost {
-  constructor(style, title, date, slug, author, coverImage, excerpt, category) {
+  constructor(
+    style = "",
+    title,
+    date,
+    slug,
+    author = "Unknown",
+    coverImage,
+    excerpt,
+    category
+  ) {
     (this.style = style),
       (this.title = title),
       (this.date = date),
@@ -16,13 +24,27 @@ export class BlogPost {
       (this.excerpt = excerpt),
       (this.category = category);
   }
+
+  static fromObject(object) {
+    return new BlogPost(
+      object.style,
+      object.title,
+      object.date,
+      object.slug,
+      object.author,
+      object.coverImage,
+      object.excerpt,
+      object.category
+    );
+  }
 }
 
 /**
- * @param {BlogPost} - blogPost class
+ * @param {BlogPost} blogPost - blogPost class
  * @returns Preview of the blog post
  */
-export const BlogPostPreview = (blogPost) => {
+export const BlogPostPreview = ({ blogPost }) => {
+  console.log("Receiver", blogPost);
   const { style, title, date, slug, author, coverImage, excerpt, category } =
     blogPost;
   return (

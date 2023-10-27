@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useRouter } from "next/router";
-import { Helmet, HeaderNav, Footer, Button, BlogPostList } from "@components";
+import { Helmet, HeaderNav, Footer } from "@components";
 import Image from "next/image";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
-import Link from "next/link";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import markdownToHtml from "./markdownconversion";
 
-export default function BlogCategory(post, morePosts, preview) {
+export default function BlogCategory(post) {
   const slug_post = post.post;
   const router = useRouter();
   if (!router.isFallback && !slug_post?.slug) {
@@ -39,7 +38,7 @@ export default function BlogCategory(post, morePosts, preview) {
           </div>
         </header>
         <section
-          class="container blog-content"
+          className="container blog-content"
           dangerouslySetInnerHTML={createMarkup(slug_post.content)}
         />
       </main>
