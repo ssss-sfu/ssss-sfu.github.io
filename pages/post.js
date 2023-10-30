@@ -43,13 +43,6 @@ export default function Post(props) {
           <p>Blog</p>
           <h1>Learn more about Software Systems at SFU</h1>
         </header>
-        {/* <section className="container">
-        <h3 className="category-title">Featured</h3>
-        <div className="posts-list featured">
-          <BlogPostPreviewList blogPosts={blogPosts} />
-        </div>
-        
-      </section> */}
         <section className="container">
           {posts.length ? (
             <div>

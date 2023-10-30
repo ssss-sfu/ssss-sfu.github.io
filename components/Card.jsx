@@ -3,30 +3,38 @@ import Image from "next/image";
 import { urlForImage } from "../pages/api/sanity.image";
 // import { type Post } from '~/lib/sanity.queries'
 // import { formatDate } from '~/utils'
+import clock from "@images/blog-page/clock.svg";
+import person from "@images/blog-page/person.svg";
+import { Helmet, HeaderNav } from "@components";
+import Link from "next/link";
 
 export default function Card({ post }) {
   console.log("post", post);
   return (
-    <div className="card">
-      {post.mainImage ? (
-        <Image
-          className="card__cover"
-          src={urlForImage(post.mainImage).width(500).height(300).url()}
-          height={300}
-          width={500}
-          alt=""
-        />
-      ) : (
-        <div className="card__cover--none" />
-      )}
-      <div className="card__container">
-        <h3 className="card__title">
-          <a className="card__link" href={`/post/${post.slug.current}`}>
-            {post.title}
-          </a>
-        </h3>
-        <p className="card__excerpt">{post.excerpt}</p>
-        <p className="card__date">{post._createdAt}</p>
+    <div className="posts-list featured">
+      <div className="post">
+        <Link as={`/post/${post.slug.current}`} href="/post/[slug]">
+          <article className="post">
+            <div className="thumbnail">
+              <Image
+                src={urlForImage(post.mainImage).width(500).height(300).url()}
+                alt="thumbnail"
+                layout="fill"
+              />
+              <div className="overlay"></div>
+            </div>
+            <div className="text">
+              <div className="title">{post.title}</div>
+              <div className="meta-info">
+                <Image src={clock} height={16} width={16} alt="Clock" />
+                <div>{post._createdAt}</div>
+                <Image src={person} height={16} width={16} alt="Person" />
+                {/* <div>{post.author}</div> */}
+              </div>
+              <div className="summary">{post.excerpt}</div>
+            </div>
+          </article>
+        </Link>
       </div>
     </div>
   );
