@@ -4,8 +4,6 @@ import { urlForImage } from "../pages/api/sanity.image";
 // import { type Post } from '~/lib/sanity.queries'
 // import { formatDate } from '~/utils'
 import clock from "@images/blog-page/clock.svg";
-import person from "@images/blog-page/person.svg";
-import { Helmet, HeaderNav } from "@components";
 import Link from "next/link";
 
 export default function Card({ post }) {
@@ -28,8 +26,6 @@ export default function Card({ post }) {
               <div className="meta-info">
                 <Image src={clock} height={16} width={16} alt="Clock" />
                 <div>{post._createdAt}</div>
-                <Image src={person} height={16} width={16} alt="Person" />
-                {/* <div>{post.author}</div> */}
               </div>
               <div className="summary">{post.excerpt}</div>
             </div>

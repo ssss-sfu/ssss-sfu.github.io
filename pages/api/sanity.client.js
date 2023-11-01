@@ -3,7 +3,6 @@ import { createClient } from "next-sanity";
 import { apiVersion, dataset, projectId, useCdn } from "./sanity.api";
 
 export function getClient(preview = false) {
-  console.log("LAH", apiVersion, dataset, projectId, useCdn);
   const client = createClient({
     projectId,
     dataset,

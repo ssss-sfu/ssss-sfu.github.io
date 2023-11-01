@@ -1,16 +1,13 @@
 import { PortableText } from "@portabletext/react";
-// import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from "next/image";
 import { useLiveQuery } from "next-sanity/preview";
 
-// import Container from '~/components/Container'
 import { readToken } from "../api/sanity.api";
 import { getClient } from "../api/sanity.client";
 import { urlForImage } from "../api/sanity.image";
 import { Helmet, HeaderNav, Footer } from "@components";
 import {
   getPost,
-  // type Post,
   postBySlugQuery,
   postSlugsQuery,
 } from "../api/sanity.queries";
@@ -18,19 +15,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
-// import type { SharedPageProps } from '~/pages/_app'
-// import { formatDate } from '~/utils'
 
-// interface Query {
-//   [key: string]: string
-// }
-
-// export const getStaticProps: GetStaticProps<
-//   SharedPageProps & {
-//     post: Post
-//   },
-//   Query
-// >
 export const getStaticProps = async ({ draftMode = false, params = {} }) => {
   const client = getClient(draftMode ? { token: readToken } : undefined);
   const post = await getPost(client, params.slug);
@@ -50,13 +35,11 @@ export const getStaticProps = async ({ draftMode = false, params = {} }) => {
   };
 };
 
-// export default function ProjectSlugRoute(
-//   props: InferGetStaticPropsType<typeof getStaticProps>,
-// ) {
 export default function ProjectSlugRoute(props) {
   const [post] = useLiveQuery(props.post, postBySlugQuery, {
     slug: props.post.slug.current,
   });
+  console.log("post", post);
 
   return (
     <div className="blog-category-page">
@@ -86,7 +69,7 @@ export default function ProjectSlugRoute(props) {
             </p>
             <p>
               <Image src={person} height={16} width={16} alt="Person" />
-              <span>Author Name</span>
+              <span>{post.author.name}</span>
             </p>
           </div>
         </header>
