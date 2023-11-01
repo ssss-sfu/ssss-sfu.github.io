@@ -2,6 +2,8 @@
 
 .blog-category-page {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--colour-neutral-1200);
 
   .hero {

@@ -1,8 +1,7 @@
 import Image from "next/image";
 
 import { urlForImage } from "../pages/api/sanity.image";
-// import { type Post } from '~/lib/sanity.queries'
-// import { formatDate } from '~/utils'
+import { formatDate } from "utils/index";
 import clock from "@images/blog-page/clock.svg";
 import Link from "next/link";
 
@@ -25,7 +24,7 @@ export default function Card({ post }) {
               <div className="title">{post.title}</div>
               <div className="meta-info">
                 <Image src={clock} height={16} width={16} alt="Clock" />
-                <div>{post._createdAt}</div>
+                <div>{formatDate(post._createdAt)}</div>
               </div>
               <div className="summary">{post.excerpt}</div>
             </div>

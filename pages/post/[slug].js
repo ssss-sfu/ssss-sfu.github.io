@@ -15,6 +15,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
+import { formatDate } from "utils/index";
 
 export const getStaticProps = async ({ draftMode = false, params = {} }) => {
   const client = getClient(draftMode ? { token: readToken } : undefined);
@@ -36,14 +37,14 @@ export const getStaticProps = async ({ draftMode = false, params = {} }) => {
 };
 
 export default function ProjectSlugRoute(props) {
+  const router = useRouter();
   const [post] = useLiveQuery(props.post, postBySlugQuery, {
     slug: props.post.slug.current,
   });
-  console.log("post", post);
 
   return (
     <div className="blog-category-page">
-      <Helmet />
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <main>
         <header className="container hero">
@@ -65,7 +66,7 @@ export default function ProjectSlugRoute(props) {
           <div className="meta-info">
             <p>
               <Image src={clock} height={16} width={16} alt="Clock" />
-              <span>{post._createdAt}</span>
+              <span>{formatDate(post._createdAt)}</span>
             </p>
             <p>
               <Image src={person} height={16} width={16} alt="Person" />

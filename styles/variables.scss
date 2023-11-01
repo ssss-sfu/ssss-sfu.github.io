@@ -72,3 +72,8 @@ $desktop-min-width: 1025px;
     padding-right: 0;
   }
 }
+
+main {
+  // ensures footer sticks on bottom if not enough main content
+  flex: 1;
+}
