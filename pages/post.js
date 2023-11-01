@@ -8,7 +8,6 @@ import { Helmet, HeaderNav, Footer } from "@components";
 import { useRouter } from "next/router";
 
 export const getStaticProps = async ({ draftMode = false }) => {
-  console.log("readToken", readToken);
   const client = getClient(draftMode ? { token: readToken } : undefined);
   const posts = await getPosts(client);
 

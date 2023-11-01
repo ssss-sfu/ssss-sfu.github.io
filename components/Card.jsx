@@ -6,7 +6,6 @@ import clock from "@images/blog-page/clock.svg";
 import Link from "next/link";
 
 export default function Card({ post }) {
-  console.log("post", post);
   return (
     <div className="posts-list featured">
       <div className="post">
