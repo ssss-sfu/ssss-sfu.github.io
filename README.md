@@ -1,5 +1,14 @@
 # Software Systems Student Society Website
 
+<div align="center">
+    <a href="https://github.com/ssss-sfu/ssss-sfu.github.io/stargazers"><img src="https://img.shields.io/github/stars/ssss-sfu/ssss-sfu.github.io" alt="Stars Badge"/></a>
+    <a href="https://github.com/ssss-sfu/ssss-sfu.github.io/network/members"><img src="https://img.shields.io/github/forks/ssss-sfu/ssss-sfu.github.io" alt="Forks Badge"/></a>
+    <a href="https://github.com/ssss-sfu/ssss-sfu.github.io/pulls"><img src="https://img.shields.io/github/issues-pr/ssss-sfu/ssss-sfu.github.io" alt="Pull Requests Badge"/></a>
+    <a href="https://github.com/ssss-sfu/ssss-sfu.github.io/issues"><img src="https://img.shields.io/github/issues/ssss-sfu/ssss-sfu.github.io" alt="Issues Badge"/></a>
+    <a href="https://github.com/ssss-sfu/ssss-sfu.github.io/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ssss-sfu/ssss-sfu.github.io?color=2b9348"></a>
+    <a href="https://github.com/ssss-sfu/ssss-sfu.github.io/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ssss-sfu/ssss-sfu.github.io?color=2b9348" alt="License Badge"/></a>
+</div>
+
 ## Welcome
 
 Welcome to the Software Systems Student Society (SSSS) website repo. This project is maintained by the website committee.
