@@ -1,86 +1,94 @@
+import { PortableText } from "@portabletext/react";
+import Image from "next/image";
+import { useLiveQuery } from "next-sanity/preview";
+
+import { readToken } from "../api/sanity.api";
+import { getClient } from "../api/sanity.client";
+import { urlForImage } from "../api/sanity.image";
+import { Helmet, HeaderNav, Footer } from "@components";
+import {
+  getPost,
+  postBySlugQuery,
+  postSlugsQuery,
+} from "../api/sanity.queries";
 import React from "react";
 import { useRouter } from "next/router";
-import { Helmet, HeaderNav, Footer } from "@components";
-import Image from "next/image";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
-import { getPostBySlug, getAllPosts } from "../../lib/api";
-import markdownToHtml from "./markdownconversion";
+import { formatDate } from "utils/index";
 
-export default function BlogCategory(post) {
-  const slug_post = post.post;
+export const getStaticProps = async ({ draftMode = false, params = {} }) => {
+  const client = getClient(draftMode ? { token: readToken } : undefined);
+  const post = await getPost(client, params.slug);
+
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      draftMode,
+      token: draftMode ? readToken : "",
+      post,
+    },
+  };
+};
+
+export default function ProjectSlugRoute(props) {
   const router = useRouter();
-  if (!router.isFallback && !slug_post?.slug) {
-    return console.log(slug_post);
-  }
-
-  function createMarkup(text) {
-    return { __html: text };
-  }
+  const [post] = useLiveQuery(props.post, postBySlugQuery, {
+    slug: props.post.slug.current,
+  });
 
   return (
     <div className="blog-category-page">
-      <Helmet />
+      <Helmet pageTitle={router.pathname} />
       <HeaderNav />
       <main>
         <header className="container hero">
-          <p>{slug_post.category}</p>
-          <h1>{slug_post.title}</h1>
+          {post.mainImage ? (
+            <Image
+              className="post__cover"
+              src={urlForImage(post.mainImage).url()}
+              height={231}
+              width={367}
+              alt=""
+            />
+          ) : (
+            <div className="post__cover--none" />
+          )}
+          <div>
+            <h1 className="post__title">{post.title}</h1>
+            <p className="post__excerpt">{post.excerpt}</p>
+          </div>
           <div className="meta-info">
             <p>
               <Image src={clock} height={16} width={16} alt="Clock" />
-              <span>{slug_post.date}</span>
+              <span>{formatDate(post._createdAt)}</span>
             </p>
             <p>
               <Image src={person} height={16} width={16} alt="Person" />
-              <span>{slug_post.author.name}</span>
+              <span>{post.author.name}</span>
             </p>
           </div>
         </header>
-        <section
-          className="container blog-content"
-          dangerouslySetInnerHTML={createMarkup(slug_post.content)}
-        />
+        <div className="container blog-content">
+          <PortableText value={post.body} />
+        </div>
       </main>
       <Footer />
     </div>
   );
 }
 
-export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
-    "author",
-    "content",
-    "coverImage",
-    "category",
-  ]);
-
-  const content = await markdownToHtml(post.content || "");
+export const getStaticPaths = async () => {
+  const client = getClient();
+  const slugs = await client.fetch(postSlugsQuery);
 
   return {
-    props: {
-      post: {
-        ...post,
-        content,
-      },
-    },
+    paths: slugs ? slugs.map(({ slug }) => `/post/${slug}`) : [],
+    fallback: "blocking",
   };
-}
-
-export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
-
-  return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      };
-    }),
-    fallback: false,
-  };
-}
+};
