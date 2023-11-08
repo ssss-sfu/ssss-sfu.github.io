@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Card({ post }) {
   return (
     <div className="post">
-      <Link as={`/post/${post.slug.current}`} href="/post/[slug]">
+      <Link as={`/blog/${post.slug.current}`} href="/post/[slug]">
         <article className="post">
           <div className="thumbnail">
             <Image
