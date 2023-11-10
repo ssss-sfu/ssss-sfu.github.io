@@ -2,16 +2,17 @@
 
 .profile-card {
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   flex: 1 2;
-  margin: 3em auto;
-  gap: 2em;
+  margin: 2em auto;
+  gap: 0.5em;
   width: 100%;
 
   .description-img {
-    width: 18.5em;
-    height: 27.5em;
+    width: 15em;
+    height: 22em;
     border-radius: 1em;
     object-fit: cover;
   }
@@ -22,6 +23,10 @@
     gap: 1.5em;
 
     .description-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
       .profile-role {
         color: var(--colour-sosy-green-500);
       }
@@ -62,7 +67,6 @@
 
 @media screen and (max-width: 768px) {
   .profile-card {
-    flex-direction: column;
     align-items: flex-start;
   }
 }

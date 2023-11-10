@@ -38,6 +38,13 @@ export const ProfileCard = ({ profile }) => {
       ></img>
       <div className="description">
         <div className="description-title">
+          <p className="profile-name">{profile.name}</p>
+          <p className="profile-role">{profile.role}</p>
+          {/* <p className="profile-pronoun">({profile.pronoun})</p> */}
+        </div>
+      </div>
+      {/* <div className="description">
+        <div className="description-title">
           <p className="profile-role">{profile.role}</p>
           <p className="profile-name">{profile.name}</p>
           <p className="profile-pronoun">({profile.pronoun})</p>
@@ -74,7 +81,7 @@ export const ProfileCard = ({ profile }) => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

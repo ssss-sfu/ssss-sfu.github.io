@@ -8,6 +8,10 @@
   justify-content: flex-start;
 
   .current-exec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 5rem auto;
     width: min(85vw, 70rem);
   }
