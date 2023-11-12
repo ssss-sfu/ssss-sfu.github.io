@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+.about-page {
+  background-color: var(--colour-neutral-1200);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .current-exec {
+    margin: 5rem auto;
+    width: min(85vw, 70rem);
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+  h1 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

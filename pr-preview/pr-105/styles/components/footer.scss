@@ -1,0 +1,61 @@
+@import "../variables.scss";
+
+.footer {
+  background-color: var(--colour-neutral-1100);
+  background-image: url("../../public/code-snippet.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    //Stick footer to bottom of screen regardless of scrolling:
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 8rem;
+    position: relative;
+
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      h4 {
+        margin-bottom: 0.25rem;
+      }
+
+      address {
+        font-style: normal;
+
+        a {
+          text-decoration: none;
+          color: var(--colour-neutral-000);
+        }
+      }
+    }
+
+    @include viewport(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 2.5rem;
+      padding-bottom: 4rem;
+
+      .icon-container {
+        flex-direction: row;
+        gap: 1.25rem;
+
+        h4 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
