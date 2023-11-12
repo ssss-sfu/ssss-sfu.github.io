@@ -15,6 +15,8 @@
     height: 22em;
     border-radius: 1em;
     object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth movement */
   }
 
   .description {
@@ -24,6 +26,7 @@
     width: 15em;
     margin-left: 1em;
     gap: 1.5em;
+    position: relative;
 
     .description-title {
       display: flex;
@@ -71,9 +74,30 @@
     display: none;
   }
 
-  .description-main:hover + .description-secondary {
+  .description-main:hover {
+    & .description-img {
+      opacity: 0;
+    }
+
+    & + .description-secondary {
+      display: block;
+      position: absolute;
+      width: 14em;
+      transform: translateY(-2em); /* Move it up by its own height */
+      transition: transform 0.3s ease-in-out; /* Add a transition for smooth movement */
+    }
+  }
+
+  .description-secondary:hover {
     display: block;
-    position: relative;
+    position: absolute;
+    width: 14em;
+    transform: translateY(-2em); /* Move it up by its own height */
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth movement */
+
+    ~ .description-main .description-img {
+      opacity: 0;
+    }
   }
 }
 
