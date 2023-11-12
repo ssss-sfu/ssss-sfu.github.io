@@ -66,6 +66,15 @@
       }
     }
   }
+
+  .description-secondary {
+    display: none;
+  }
+
+  .description-main:hover + .description-secondary {
+    display: block;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 768px) {

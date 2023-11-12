@@ -31,25 +31,21 @@ export const ProfileCard = ({ profile }) => {
 
   return (
     <div key={profile.id} className="profile-card">
-      <img
-        className="description-img"
-        src={profile.imgSrc}
-        alt={`${profile.name}'s profile image`}
-      ></img>
-      <div className="description">
-        <div className="description-title">
-          <p className="profile-name">{profile.name}</p>
-          <p className="profile-role">{profile.role}</p>
-          {/* <p className="profile-pronoun">({profile.pronoun})</p> */}
+      <div className="description-main">
+        <img
+          className="description-img"
+          src={profile.imgSrc}
+          alt={`${profile.name}'s profile image`}
+        ></img>
+        <div className="description">
+          <div className="description-title">
+            <p className="profile-name">{profile.name}</p>
+            <p className="profile-role">{profile.role}</p>
+            {/* <p className="profile-pronoun">({profile.pronoun})</p> */}
+          </div>
         </div>
       </div>
-      {/* <div className="description">
-        <div className="description-title">
-          <p className="profile-role">{profile.role}</p>
-          <p className="profile-name">{profile.name}</p>
-          <p className="profile-pronoun">({profile.pronoun})</p>
-        </div>
-
+      <div className="description-secondary description">
         <p className="description-body">{profile.description}</p>
         <div className="description-socials">
           {Object.keys(profile.socials).map((socialType) => {
@@ -81,7 +77,7 @@ export const ProfileCard = ({ profile }) => {
             );
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
