@@ -20,21 +20,24 @@ export default function About() {
         <section className="main-content">
           <h1>About the SSSS</h1>
           <p>
-            Our mission is to represent students in the Software Systems Program
+            Our mission is to represent students in the Software Systems program
             at SFU.
           </p>
           <p>
-            We help students by addressing Issues and Concerns between the
-            students and faculty, building Community in and around our society,
-            and sharing Resources provided by students and external
+            We help students by addressing issues and concerns between the
+            students and faculty, building community in and around our society,
+            and sharing resources provided by students and external
             organizations.
           </p>
           <p>
-            Our voice has inflenced and improved our Education. Our reach
-            extends to over 700 students, and our annual Hackathon has over 500
-            registrations. We have funded conference fees, created Career
-            Opportunities, and shared insights and materials to help students in
-            their courses.
+            Our voice has inflenced and improved our education. Our reach
+            extends to over 700 students and{" "}
+            <a href="https://systemshacks.com/" target="_blank">
+              our annual hackathon
+            </a>{" "}
+            has over 500 registrations. We have funded conference fees, created
+            career opportunities, and shared insights and materials to help
+            students in their courses.
           </p>
         </section>
         <section className="current-exec">

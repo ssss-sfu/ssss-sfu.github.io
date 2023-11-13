@@ -2,26 +2,37 @@
 
 .profile-card {
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex: 1 2;
-  margin: 3em auto;
-  gap: 2em;
+  margin: 1em auto;
+  gap: 0.5em;
   width: 100%;
 
   .description-img {
-    width: 18.5em;
-    height: 27.5em;
+    width: 18em;
+    height: 24em;
     border-radius: 1em;
     object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth movement */
   }
 
   .description {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 18em;
+    margin-left: 0.5em;
     gap: 1.5em;
+    position: relative;
 
     .description-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
       .profile-role {
         color: var(--colour-sosy-green-500);
       }
@@ -58,11 +69,38 @@
       }
     }
   }
+
+  .description-secondary {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .profile-card:hover {
+    & .description-img {
+      opacity: 0.3;
+    }
+
+    & .description-secondary {
+      display: flex;
+      position: absolute;
+      width: 16.5em;
+      gap: 1em;
+      transform: translateY(-2em);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .profile-card {
-    flex-direction: column;
     align-items: flex-start;
+    gap: 1.5em;
+
+    .description-secondary {
+      display: flex;
+      width: 100%;
+    }
   }
 }
