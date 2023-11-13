@@ -32,7 +32,11 @@ export default function About() {
           <p>
             Our voice has inflenced and improved our education. Our reach
             extends to over 700 students and{" "}
-            <a href="https://systemshacks.com/" target="_blank">
+            <a
+              href="https://systemshacks.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               our annual hackathon
             </a>{" "}
             has over 500 registrations. We have funded conference fees, created
