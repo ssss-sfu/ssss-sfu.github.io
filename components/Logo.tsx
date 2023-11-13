@@ -1,4 +1,6 @@
-export const Logo = () => (
+interface LogoProps {}
+
+export const Logo: React.FC<LogoProps> = () => (
   <svg
     width="188"
     height="36"

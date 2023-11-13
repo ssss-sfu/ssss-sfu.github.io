@@ -1,4 +1,14 @@
-export const Hero = ({ subtitle, title, backgroundImage }) => {
+interface HeroProps {
+  subtitle: string;
+  title: string;
+  backgroundImage: string;
+}
+
+export const Hero: React.FC<HeroProps> = ({
+  subtitle,
+  title,
+  backgroundImage,
+}) => {
   return (
     <header
       className="container hero"
@@ -16,3 +26,5 @@ export const Hero = ({ subtitle, title, backgroundImage }) => {
     </header>
   );
 };
+
+export default Hero;

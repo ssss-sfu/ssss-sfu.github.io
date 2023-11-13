@@ -1,15 +1,19 @@
 import Head from "next/head";
 
-export const Helmet = ({ pageTitle = "" }) => {
+interface HelmetProps {
+  pageTitle?: string;
+}
+
+export const Helmet: React.FC<HelmetProps> = ({ pageTitle = "" }) => {
   pageTitle = pageTitle.replace("/", "");
   pageTitle = pageTitle.replace("-", " ");
   pageTitle = capitalizeWords(pageTitle);
 
-  const defaultTitle = "Software Systems Student Society";
-  const title = `${pageTitle} | SSSS`;
-  const hasPageTitle = pageTitle.trim() !== "";
+  const defaultTitle: string = "Software Systems Student Society";
+  const title: string = `${pageTitle} | SSSS`;
+  const hasPageTitle: boolean = pageTitle.trim() !== "";
 
-  function capitalizeWords(item) {
+  function capitalizeWords(item: string): string {
     return item
       .split(" ")
       .map(function (word) {
@@ -25,3 +29,5 @@ export const Helmet = ({ pageTitle = "" }) => {
     </Head>
   );
 };
+
+export default Helmet;

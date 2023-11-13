@@ -3,14 +3,29 @@ import LinkedInIcon from "@icons/linkedin.svg";
 import DiscordIcon from "@icons/discord.svg";
 import Image from "next/image";
 
-export const ProfileCard = ({ profile }) => {
-  const socialIconMap = {
+type SocialType = "discord" | "instagram" | "linkedIn";
+
+export interface Profile {
+  id: string;
+  imgSrc: string;
+  name: string;
+  role: string;
+  description: string;
+  socials: Map<SocialType, string>;
+}
+
+interface ProfileCardProps {
+  profile: Profile;
+}
+
+export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
+  const socialIconMap: Record<SocialType, string> = {
     discord: DiscordIcon.src,
     linkedIn: LinkedInIcon.src,
     instagram: InstagramIcon.src,
   };
 
-  const isValidHttpUrl = (string) => {
+  const isValidHttpUrl = (string: string): boolean => {
     let url;
     try {
       url = new URL(string);
@@ -20,7 +35,7 @@ export const ProfileCard = ({ profile }) => {
     return url.protocol === "http:" || url.protocol === "https:";
   };
 
-  const getLastSegment = (url) => {
+  const getLastSegment = (url: string): string => {
     const segments = url.split("/");
     const filteredSegments = segments.filter(
       (segment) => segment.trim() !== ""
@@ -28,6 +43,31 @@ export const ProfileCard = ({ profile }) => {
     const lastSegment = filteredSegments[filteredSegments.length - 1];
     return lastSegment;
   };
+
+  function displaySocials(): React.ReactNode {
+    return Object.entries(profile.socials).map(([key, value]) => (
+      <div className="description-logo" key={`${profile.name}-${key}`}>
+        <Image
+          src={socialIconMap[key as SocialType]} // Ensure key is of type SocialType
+          height={24}
+          width={24}
+          alt={`${profile.name}'s ${key}`}
+        />
+        {isValidHttpUrl(value) ? (
+          <a
+            href={value}
+            target="_blank"
+            rel="noreferrer"
+            className="description-social-link"
+          >
+            {getLastSegment(value)}
+          </a>
+        ) : (
+          value
+        )}
+      </div>
+    ));
+  }
 
   return (
     <div key={profile.id} className="profile-card">
@@ -46,36 +86,7 @@ export const ProfileCard = ({ profile }) => {
       </div>
       <div className="description-secondary description">
         <p className="description-body">{profile.description}</p>
-        <div className="description-socials">
-          {Object.keys(profile.socials).map((socialType) => {
-            const socialTag = profile.socials[socialType];
-            return (
-              <div
-                className="description-logo"
-                key={`${profile.name}-${socialType}`}
-              >
-                <Image
-                  src={socialIconMap[socialType]}
-                  height={24}
-                  width={24}
-                  alt={`${profile.name}'s ${socialType}`}
-                />
-                {isValidHttpUrl(socialTag) ? (
-                  <a
-                    href={socialTag}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="description-social-link"
-                  >
-                    {getLastSegment(socialTag)}
-                  </a>
-                ) : (
-                  socialTag
-                )}
-              </div>
-            );
-          })}
-        </div>
+        <div className="description-socials">{displaySocials()}</div>
       </div>
     </div>
   );

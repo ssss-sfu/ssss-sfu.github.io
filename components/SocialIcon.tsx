@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export const SocialIcon = ({ href, src, alt }) => {
+interface SocialIconProps {
+  href: string;
+  src: string;
+  alt: string;
+}
+
+export const SocialIcon: React.FC<SocialIconProps> = ({ href, src, alt }) => {
   return (
     <a
       className="social-icon-wrapper"

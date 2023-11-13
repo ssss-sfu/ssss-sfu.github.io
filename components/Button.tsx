@@ -3,7 +3,7 @@ interface ButtonProps {
   type?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, type = "primary" }) => {
+export const Button: React.FC<ButtonProps> = ({ label, type = "primary" }) => {
   return <button className={`btn ${type}`}>{label}</button>;
 };
 

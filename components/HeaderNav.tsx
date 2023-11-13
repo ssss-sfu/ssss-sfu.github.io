@@ -6,7 +6,9 @@ import DiscordIcon from "@icons/discord.svg";
 import GithubIcon from "@icons/github.svg";
 import Link from "next/link";
 
-export const HeaderNav = () => {
+interface HeaderNavProps {}
+
+export const HeaderNav: React.FC<HeaderNavProps> = () => {
   return (
     <div className="header-nav">
       <div className="container">
@@ -82,3 +84,5 @@ export const HeaderNav = () => {
     </div>
   );
 };
+
+export default HeaderNav;
