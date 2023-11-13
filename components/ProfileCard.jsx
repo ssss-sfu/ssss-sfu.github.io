@@ -41,7 +41,6 @@ export const ProfileCard = ({ profile }) => {
           <div className="description-title">
             <p className="profile-name">{profile.name}</p>
             <p className="profile-role">{profile.role}</p>
-            {/* <p className="profile-pronoun">({profile.pronoun})</p> */}
           </div>
         </div>
       </div>
