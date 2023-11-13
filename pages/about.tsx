@@ -2,7 +2,7 @@ import { Hero, ProfileCard } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import execs from "@jsons/execs.json";
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <div className="page about-page">
       <Hero
@@ -39,11 +39,13 @@ export default function About() {
           </p>
         </section>
         <section className="current-exec">
-          {execs.current.map((profile) => (
+          {execs.current.map((profile: any) => (
             <ProfileCard profile={profile} key={profile.name}></ProfileCard>
           ))}
         </section>
       </main>
     </div>
   );
-}
+};
+
+export default About;

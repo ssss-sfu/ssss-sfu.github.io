@@ -1,7 +1,7 @@
 import { Hero, Button, EventsCalendar } from "@components";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
-export default function EventsPage() {
+const EventsPage: React.FC = () => {
   return (
     <div className="page events-page">
       <main>
@@ -59,4 +59,6 @@ export default function EventsPage() {
       </main>
     </div>
   );
-}
+};
+
+export default EventsPage;

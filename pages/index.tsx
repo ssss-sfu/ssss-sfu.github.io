@@ -1,9 +1,12 @@
+import React, { FC } from "react";
 import { Button } from "@components";
 import HappySeb from "@images/seb/happy-seb-head.svg";
 import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
-import Link from "next/link.js";
+import Link from "next/link";
 
-export default function LandingPage() {
+interface LandingPageProps {}
+
+const LandingPage: FC<LandingPageProps> = () => {
   return (
     <div className="page landing-page">
       <main>
@@ -72,4 +75,6 @@ export default function LandingPage() {
       </main>
     </div>
   );
-}
+};
+
+export default LandingPage;

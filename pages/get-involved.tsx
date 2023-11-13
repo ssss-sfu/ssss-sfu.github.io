@@ -1,5 +1,5 @@
-import { Hero, Accordion } from "@components";
 import { useState } from "react";
+import { Hero, Accordion } from "@components";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
 import Image from "next/image";
 import academicRepo from "../public/images/get-involved-page/academic-repo.png";
@@ -8,9 +8,17 @@ import website from "../public/images/get-involved-page/website.png";
 import clock from "../public/images/get-involved-page/clock.svg";
 import roles from "@jsons/exec-roles.json";
 
-export default function GetInvolved() {
-  const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
-  const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
+interface Role {
+  name: string;
+  content: string[];
+}
+
+interface GetInvolvedProps {}
+
+const GetInvolved: React.FC<GetInvolvedProps> = () => {
+  const [selectedRoleIndex, setSelectedRoleIndex] = useState<number>(0);
+  const selectRole = (roleIndex: number): void =>
+    setSelectedRoleIndex(roleIndex);
   return (
     <div className="page get-involved-page">
       <Hero
@@ -171,9 +179,19 @@ export default function GetInvolved() {
       </main>
     </div>
   );
+};
+
+interface DisplayRolesProps {
+  roles: Role[];
+  selectedRoleId: number;
+  selectRole: (roleIndex: number) => void;
 }
 
-function DisplayRoles({ roles, selectedRoleId, selectRole }) {
+const DisplayRoles: React.FC<DisplayRolesProps> = ({
+  roles,
+  selectedRoleId,
+  selectRole,
+}) => {
   return (
     <ul id="roles-section" className="role-list-container">
       {roles.map(({ name }, index) => {
@@ -192,9 +210,15 @@ function DisplayRoles({ roles, selectedRoleId, selectRole }) {
       })}
     </ul>
   );
+};
+
+interface DisplaySelectedRoleProps {
+  role?: Role;
 }
 
-function DisplaySelectedRole({ role }) {
+const DisplaySelectedRole: React.FC<DisplaySelectedRoleProps> = ({ role }) => {
+  if (!role) return <></>;
+
   return (
     <article id="selected-role-section">
       <h2>{role.name}</h2>
@@ -207,4 +231,6 @@ function DisplaySelectedRole({ role }) {
       </ul>
     </article>
   );
-}
+};
+
+export default GetInvolved;

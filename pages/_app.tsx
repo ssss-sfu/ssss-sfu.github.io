@@ -1,8 +1,14 @@
+import React, { FC } from "react";
 import { HeaderNav, Footer, Helmet } from "@components";
 import { useRouter } from "next/router";
 import "../styles/main.scss";
 
-function MyApp({ Component, pageProps }) {
+interface MyAppProps {
+  Component: FC;
+  pageProps: any;
+}
+
+const MyApp: FC<MyAppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
 
   return (
@@ -13,6 +19,6 @@ function MyApp({ Component, pageProps }) {
       <Footer />
     </>
   );
-}
+};
 
 export default MyApp;
