@@ -1,6 +1,12 @@
 import ChevronDownIcon from "@icons/chevron-down.svg";
 
-export const Dropdown = ({ id, title, content }) => {
+interface DropdownProps {
+  id: string;
+  title: string;
+  content: string;
+}
+
+export const Dropdown: React.FC<DropdownProps> = ({ id, title, content }) => {
   return (
     <div className="faq-item" id={`faq-item-${id}`} key={id}>
       <input type="checkbox" id={`faq-${id}`} />
