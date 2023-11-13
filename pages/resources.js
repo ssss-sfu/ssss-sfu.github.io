@@ -1,15 +1,11 @@
 import { Helmet, HeaderNav, Footer } from "@components";
 import { Dropdown } from "components/Dropdown.jsx";
-import { useRouter } from "next/router";
 import links from "@jsons/links.json";
 import faqs from "@jsons/faqs.json";
 
 export default function ResourcesPage() {
-  const router = useRouter();
   return (
     <div className="resources-page">
-      <Helmet pageTitle={router.pathname} />
-      <HeaderNav />
       <main>
         <header className="container hero">
           <p>Resources</p>
@@ -44,7 +40,6 @@ export default function ResourcesPage() {
           </div>
         </article>
       </main>
-      <Footer />
     </div>
   );
 }
