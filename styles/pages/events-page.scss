@@ -1,21 +1,9 @@
 @import "../variables.scss";
 
 .events-page {
-  background-color: var(--colour-neutral-1200);
-
-  h2,
-  p {
-    color: var(--colour-neutral-000);
-  }
-
   .annual-events {
     padding-top: 4rem;
     padding-bottom: 4rem;
-
-    h3,
-    p {
-      color: var(--colour-neutral-000);
-    }
 
     h3 {
       font-size: 1.5rem;

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export default function Accordian({ data }) {
+export const Accordion = ({ data }) => {
   const previouslyOpenedPanelIndex = useRef();
   const panelsRef = useRef();
   function getIdPanelMap() {
@@ -53,7 +53,7 @@ export default function Accordian({ data }) {
       ))}
     </ul>
   );
-}
+};
 
 function openPanel(node) {
   node.style.maxHeight = `${node.scrollHeight}px`;

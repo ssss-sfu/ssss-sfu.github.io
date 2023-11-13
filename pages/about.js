@@ -1,16 +1,10 @@
-import { Hero, HeaderNav, Footer, Helmet } from "@components";
+import { Hero, ProfileCard } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
-import { useRouter } from "next/router";
-import { ProfileCard } from "components/ProfileCard";
 import execs from "@jsons/execs.json";
 
 export default function About() {
-  const router = useRouter();
-
   return (
-    <div className="about-page">
-      <Helmet pageTitle={router.pathname} />
-      <HeaderNav />
+    <div className="page about-page">
       <Hero
         title="Meet the Software Systems Student Society"
         subtitle="About"
@@ -50,7 +44,6 @@ export default function About() {
           ))}
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
