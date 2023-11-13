@@ -14,7 +14,7 @@ export default function GetInvolved() {
   const [selectedRoleIndex, setSelectedRoleIndex] = useState(0);
   const selectRole = (roleIndex) => setSelectedRoleIndex(roleIndex);
   return (
-    <div className="get-involved-page">
+    <div className="page get-involved-page">
       <Hero
         title="Join the Software Systems Student Society"
         subtitle="Get Involved"

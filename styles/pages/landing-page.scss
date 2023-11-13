@@ -35,13 +35,6 @@
 }
 
 .landing-page {
-  background-color: var(--colour-neutral-1200);
-
-  h2,
-  p {
-    color: var(--colour-neutral-000);
-  }
-
   .hero.container {
     position: relative;
     max-width: unset;
@@ -53,11 +46,6 @@
     padding-top: 12rem;
     overflow: hidden;
     padding-bottom: 0;
-
-    h1,
-    p {
-      color: var(--colour-neutral-000);
-    }
 
     p {
       font-weight: 500;

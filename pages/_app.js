@@ -1,4 +1,4 @@
-import { Hero, HeaderNav, Footer, Helmet } from "@components";
+import { Hero, Page, HeaderNav, Footer, Helmet } from "@components";
 import { useRouter } from "next/router";
 import "../styles/main.scss";
 

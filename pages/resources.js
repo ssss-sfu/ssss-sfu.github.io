@@ -5,7 +5,7 @@ import faqs from "@jsons/faqs.json";
 
 export default function ResourcesPage() {
   return (
-    <div className="resources-page">
+    <div className="page resources-page">
       <main>
         <header className="container hero">
           <p>Resources</p>

@@ -4,7 +4,7 @@ import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
 export default function EventsPage() {
   return (
-    <div className="events-page">
+    <div className="page events-page">
       <main>
         <Hero
           title="Join and meet other SoSy students"

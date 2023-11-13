@@ -5,7 +5,7 @@ import execs from "@jsons/execs.json";
 
 export default function About() {
   return (
-    <div className="about-page">
+    <div className="page about-page">
       <Hero
         title="Meet the Software Systems Student Society"
         subtitle="About"

@@ -6,7 +6,7 @@ import Link from "next/link.js";
 
 export default function LandingPage() {
   return (
-    <div className="landing-page">
+    <div className="page landing-page">
       <main>
         <header className="container hero">
           <p>Welcome to the</p>
