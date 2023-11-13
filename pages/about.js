@@ -1,6 +1,5 @@
-import { Hero, HeaderNav, Footer, Helmet } from "@components";
+import { Hero, ProfileCard } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
-import { ProfileCard } from "components/ProfileCard";
 import execs from "@jsons/execs.json";
 
 export default function About() {

@@ -1,11 +1,10 @@
-import { Button, Logo } from "@components";
+import { Button, Logo, SocialIcon } from "@components";
 import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
 import DiscordIcon from "@icons/discord.svg";
 import GithubIcon from "@icons/github.svg";
 import Link from "next/link";
-import SocialIcon from "./SocialIcon";
 
 export const HeaderNav = () => {
   return (

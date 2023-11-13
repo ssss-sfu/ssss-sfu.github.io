@@ -1,13 +1,6 @@
 @import "../variables.scss";
 
 .resources-page {
-  background-color: var(--colour-neutral-1200);
-
-  h2,
-  p {
-    color: var(--colour-neutral-000);
-  }
-
   .hero {
     position: relative;
     max-width: unset;
@@ -19,15 +12,6 @@
     padding-top: 6rem;
     overflow: hidden;
     padding-bottom: 6rem;
-
-    h1,
-    p {
-      color: var(--colour-neutral-000);
-    }
-
-    p {
-      font-weight: 500;
-    }
   }
 
   ul.resources-links {

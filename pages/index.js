@@ -1,7 +1,6 @@
-import { Button, HeaderNav, Footer } from "@components";
+import { Button } from "@components";
 import HappySeb from "@images/seb/happy-seb-head.svg";
 import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
-import { useRouter } from "next/router";
 import Link from "next/link.js";
 
 export default function LandingPage() {

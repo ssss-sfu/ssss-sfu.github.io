@@ -1,4 +1,3 @@
-import { Helmet, HeaderNav, Footer } from "@components";
 import { Dropdown } from "components/Dropdown.jsx";
 import links from "@jsons/links.json";
 import faqs from "@jsons/faqs.json";

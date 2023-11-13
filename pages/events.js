@@ -1,5 +1,4 @@
-import { Helmet, Footer, Hero, HeaderNav, Button } from "@components";
-import EventsCalendar from "components/EventsCalendar";
+import { Hero, Button, EventsCalendar } from "@components";
 import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
 export default function EventsPage() {
