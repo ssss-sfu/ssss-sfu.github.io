@@ -30,7 +30,7 @@ export default function About() {
             organizations.
           </p>
           <p>
-            Our voice has inflenced and improved our education. Our reach
+            Our voice has influenced and improved our education. Our reach
             extends to over 700 students and{" "}
             <a
               href="https://systemshacks.com/"
