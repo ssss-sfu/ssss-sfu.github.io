@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logo } from "@components";
+import { Logo, SocialIcon } from "@components";
 import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
@@ -8,7 +8,6 @@ import DiscordIcon from "@icons/discord.svg";
 import GithubIcon from "@icons/github.svg";
 import OfficeBuildingIcon from "@icons/office-building.svg";
 import ContactUsIcon from "@icons/contact-us.svg";
-import SocialIcon from "./SocialIcon";
 
 export const Footer = () => {
   return (

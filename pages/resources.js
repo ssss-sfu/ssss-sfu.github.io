@@ -1,4 +1,4 @@
-import { Dropdown } from "components/Dropdown.jsx";
+import { Dropdown } from "@components";
 import links from "@jsons/links.json";
 import faqs from "@jsons/faqs.json";
 

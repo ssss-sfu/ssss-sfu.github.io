@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function SocialIcon({ href, src, alt }) {
+export const SocialIcon = ({ href, src, alt }) => {
   return (
     <a
       className="social-icon-wrapper"
@@ -17,4 +17,4 @@ export default function SocialIcon({ href, src, alt }) {
       />
     </a>
   );
-}
+};

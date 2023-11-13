@@ -1,5 +1,4 @@
-import Accordion from "../components/Accordion";
-import { Hero } from "@components";
+import { Hero, Accordion } from "@components";
 import { useState } from "react";
 import HeroImage from "@images/landing-page/discover-ssss-main.png";
 import Image from "next/image";
