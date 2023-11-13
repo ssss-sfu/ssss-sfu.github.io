@@ -4,7 +4,7 @@ interface AccordionProps {
   data: { name: string; content: string[] }[];
 }
 
-const Accordion: React.FC<AccordionProps> = ({ data }) => {
+export const Accordion: React.FC<AccordionProps> = ({ data }) => {
   const previouslyOpenedPanelIndex = useRef<number>(-1);
   const panelsRef = useRef<Map<number, HTMLUListElement>>();
 
