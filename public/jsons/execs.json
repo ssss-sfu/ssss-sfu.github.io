@@ -171,9 +171,10 @@
       "role": "First Year Representative",
       "pronoun": "he/him",
       "description": "My name is Gabriel Ma and I love linear algebra!",
-      "imgSrc": "/images/about-page/execs-2023/",
+      "imgSrc": "/images/about-page/execs-2023/gabe.jpg",
       "socials": {
-        "discord": "gabech_"
+        "discord": "gabech_",
+        "instagram": "https://instagram.com/gm.5758_"
       }
     }
   ]
