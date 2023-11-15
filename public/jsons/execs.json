@@ -159,9 +159,7 @@
       "name": "Maria León Campos",
       "role": "First Year Representative",
       "pronoun": "she/her",
-      "description": "Hi all! My name is Maria and I am one of the First Year Representatives for the 2023-2024 year!
-      I enjoy cafe-hopping and window shopping in my spare time, along with watching k-dramas!
-      Feel free to reach out if you have any questions, or just want to say hi!",
+      "description": "Hi all! My name is Maria and I am one of the First Year Representatives for the 2023-2024 year! I enjoy cafe-hopping and window shopping in my spare time, along with watching k-dramas! Feel free to reach out if you have any questions, or just want to say hi!",
       "imgSrc": "/images/about-page/execs-2023/maria.jpg",
       "socials": {
         "discord": "alorsbye",
@@ -175,9 +173,8 @@
       "description": "My name is Gabriel Ma and I love linear algebra!",
       "imgSrc": "/images/about-page/execs-2023/",
       "socials": {
-        "discord": "gabech_",
-        "linkedIn": ""
+        "discord": "gabech_"
       }
-    },
+    }
   ]
 }
