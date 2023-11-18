@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React, { useState, useEffect } from "react";
 import { Button, Logo } from "@components";
 import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
@@ -7,8 +8,27 @@ import DiscordIcon from "@icons/discord.svg";
 import Link from "next/link";
 
 export const HeaderNav = () => {
+  const [showHeader, setShowHeader] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const visible = currentScrollPos <= 5;
+
+      setPrevScrollPos(currentScrollPos);
+      setShowHeader(visible);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <div className="header-nav">
+    <div className={`header-nav ${showHeader ? "" : "hide"}`}>
       <div className="container">
         <Link href="/">
           <a>
@@ -42,6 +62,9 @@ export const HeaderNav = () => {
             </Link>
             <Link href="/resources">
               <a className="page-link">Resources</a>
+            </Link>
+            <Link href="/blog">
+              <a className="page-link">Blog</a>
             </Link>
           </nav>
 

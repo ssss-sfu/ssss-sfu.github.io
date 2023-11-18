@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.blog-page {
+  background-color: var(--colour-neutral-1200);
+
+  .container {
+    padding: 32px;
+
+    .category-title {
+      margin-bottom: 12px;
+    }
+
+    // button
+    .see-more {
+      margin-top: 16px;
+      text-align: right;
+      a {
+        text-decoration: none;
+      }
+    }
+    @include viewport(tablet-desktop) {
+      padding: 32px 64px;
+    }
+  }
+
+  h2,
+  p {
+    color: var(--colour-neutral-000);
+  }
+
+  .hero {
+    margin-bottom: 32px;
+    position: relative;
+    max-width: unset;
+    text-align: center;
+    background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0.75) 100%),
+      url("../../public/images/blog-page/hero-blog.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 6rem;
+    overflow: hidden;
+    padding-bottom: 6rem;
+
+    h1,
+    p {
+      color: var(--colour-neutral-000);
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+  .footer {
+    margin-top: 64px;
+  }
+}
