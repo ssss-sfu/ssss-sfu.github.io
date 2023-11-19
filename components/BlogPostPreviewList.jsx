@@ -1,5 +1,6 @@
 import { BlogPostPreview } from "./BlogPostPreview";
 
+// TODO refactor to be used or remove this
 export const BlogPostPreviewList = ({ blogPosts }) =>
   blogPosts.length > 0 ? (
     blogPosts.map((post) => (

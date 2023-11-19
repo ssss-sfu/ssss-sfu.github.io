@@ -4,6 +4,7 @@ import person from "@images/blog-page/person.svg";
 import { Helmet, HeaderNav } from "@components";
 import Link from "next/link";
 
+// TODO refactor to be used or remove this
 export class BlogPost {
   constructor(
     style = "",
