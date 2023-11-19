@@ -43,6 +43,9 @@ export const HeaderNav = () => {
             <Link href="/resources">
               <a className="page-link">Resources</a>
             </Link>
+            <Link href="/blog">
+              <a className="page-link">Blog</a>
+            </Link>
           </nav>
 
           <div className="socials">

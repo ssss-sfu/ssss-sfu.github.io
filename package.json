@@ -13,12 +13,24 @@
     "format:check": "npx prettier --check ."
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.11",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/ui": "^1.8.3",
+    "@sanity/vision": "^3.18.1",
     "date-fns": "^2.29.3",
-    "next": "^12.3.4",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "next": "^14.0.3",
+    "next-sanity": "^5.5.10",
     "react": "18.2.0",
     "react-big-calendar": "^1.6.9",
     "react-calendar": "^4.2.1",
     "react-dom": "18.2.0",
+    "react-is": "^18.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "sanity": "^3.18.1",
+    "styled-components": "5.2",
     "swr": "^2.2.2"
   },
   "devDependencies": {
