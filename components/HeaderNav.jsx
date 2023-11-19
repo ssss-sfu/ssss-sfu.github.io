@@ -41,9 +41,9 @@ export const HeaderNav = () => {
             <Link href="/resources" className="page-link">
               Resources
             </Link>
-            <Link href="/blog" className="page-link">
+            {/* <Link href="/blog" className="page-link">
               Blog
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="socials">
