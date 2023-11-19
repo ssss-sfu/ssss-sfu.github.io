@@ -79,10 +79,6 @@ jobs:
           NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
           NEXT_PUBLIC_SANITY_READ_TOKEN: ${{ secrets.NEXT_PUBLIC_SANITY_READ_TOKEN }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./out
 
   # Deployment job
   deploy:
