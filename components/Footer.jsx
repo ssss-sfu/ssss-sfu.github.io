@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logo } from "@components";
+import { Logo, SocialIcon } from "@components";
 import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
@@ -63,46 +63,31 @@ export const Footer = () => {
         </div>
 
         <div className="footer-socials icon-contianer">
-          <a href="https://www.facebook.com/ssss.sfu">
-            <Image
-              src={FacebookIcon.src}
-              height={24}
-              width={24}
-              alt="Facebook Icon"
-            />
-          </a>
-          <a href="https://www.linkedin.com/company/ssss-sfu/">
-            <Image
-              src={LinkedInIcon.src}
-              height={24}
-              width={24}
-              alt="LinkedIn Icon"
-            />
-          </a>
-          <a href="https://www.instagram.com/ssss.sfu/">
-            <Image
-              src={InstagramIcon.src}
-              height={24}
-              width={24}
-              alt="Instagram Icon"
-            />
-          </a>
-          <a href="https://discord.com/invite/whdfmJbVF7">
-            <Image
-              src={DiscordIcon.src}
-              height={24}
-              width={24}
-              alt="Discord Icon"
-            />
-          </a>
-          <a href="https://github.com/ssss-sfu">
-            <Image
-              src={GithubIcon.src}
-              alt="Github icon"
-              height={24}
-              width={24}
-            />
-          </a>
+          <SocialIcon
+            href="https://www.facebook.com/ssss.sfu"
+            src={FacebookIcon.src}
+            alt="Facebook icon"
+          />
+          <SocialIcon
+            href="https://www.linkedin.com/company/ssss-sfu/"
+            src={LinkedInIcon.src}
+            alt="LinkedIn icon"
+          />
+          <SocialIcon
+            href="https://www.instagram.com/ssss.sfu/"
+            src={InstagramIcon.src}
+            alt="Instagram icon"
+          />
+          <SocialIcon
+            href="https://discord.com/invite/whdfmJbVF7"
+            src={DiscordIcon.src}
+            alt="Discord icon"
+          />
+          <SocialIcon
+            href="https://github.com/ssss-sfu"
+            src={GithubIcon.src}
+            alt="Discord icon"
+          />
         </div>
       </div>
     </div>

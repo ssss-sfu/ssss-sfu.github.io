@@ -1,0 +1,9 @@
+@import "../variables.scss";
+
+.page {
+  background-color: var(--colour-neutral-1200);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

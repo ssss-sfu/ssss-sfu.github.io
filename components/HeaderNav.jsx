@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Button, Logo } from "@components";
+import { Button, Logo, SocialIcon } from "@components";
 import FacebookIcon from "@icons/facebook.svg";
 import InstagramIcon from "@icons/instagram.svg";
 import LinkedInIcon from "@icons/linkedin.svg";
@@ -50,46 +49,33 @@ export const HeaderNav = () => {
           </nav>
 
           <div className="socials">
-            <a href="https://www.facebook.com/ssss.sfu">
-              <Image
-                src={FacebookIcon.src}
-                alt="Facebook icon"
-                height={18}
-                width={18}
-              />
-            </a>
-            <a href="https://www.linkedin.com/company/ssss-sfu/">
-              <Image
-                src={LinkedInIcon.src}
-                alt="LinkedIn icon"
-                height={18}
-                width={18}
-              />
-            </a>
-            <a href="https://www.instagram.com/ssss.sfu/">
-              <Image
-                src={InstagramIcon.src}
-                alt="Instagram icon"
-                height={18}
-                width={18}
-              />
-            </a>
-            <a href="https://discord.com/invite/whdfmJbVF7">
-              <Image
-                src={DiscordIcon.src}
-                alt="Discord icon"
-                height={18}
-                width={18}
-              />
-            </a>
-            <a href="https://github.com/ssss-sfu">
-              <Image
-                src={GithubIcon.src}
-                alt="Discord icon"
-                height={18}
-                width={18}
-              />
-            </a>
+            <SocialIcon
+              href="https://www.facebook.com/ssss.sfu"
+              src={FacebookIcon.src}
+              alt="Facebook icon"
+            />
+            <SocialIcon
+              href="https://www.linkedin.com/company/ssss-sfu/"
+              src={LinkedInIcon.src}
+              alt="LinkedIn icon"
+            />
+            <SocialIcon
+              href="https://www.instagram.com/ssss.sfu/"
+              src={InstagramIcon.src}
+              alt="Instagram icon"
+            />
+            <SocialIcon
+              href="https://discord.com/invite/whdfmJbVF7"
+              src={DiscordIcon.src}
+              alt="Discord icon"
+            />
+            <SocialIcon
+              href="https://github.com/ssss-sfu"
+              src={GithubIcon.src}
+              alt="Discord icon"
+            />
+          </div>
+          <div className="socials">
             <a href="mailto:ssss-exec@sfu.ca" rel="noreferrer">
               <Button label="Contact Us" />
             </a>
