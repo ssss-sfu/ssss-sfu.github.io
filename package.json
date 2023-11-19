@@ -20,7 +20,7 @@
     "date-fns": "^2.29.3",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
-    "next": "^12.3.4",
+    "next": "^14.0.3",
     "next-sanity": "^5.5.10",
     "react": "18.2.0",
     "react-big-calendar": "^1.6.9",
