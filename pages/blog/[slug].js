@@ -86,8 +86,9 @@ export default function ProjectSlugRoute(props) {
 export const getStaticPaths = async () => {
   const client = getClient();
   const slugs = await client.fetch(postSlugsQuery);
+
   return {
-    paths: slugs ? slugs.map(({ slug }) => `/blog/${slug}`) : [],
+    paths: ["first-post", "second-post"],
     fallback: false,
   };
 };
