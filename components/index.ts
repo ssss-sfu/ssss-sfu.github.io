@@ -9,3 +9,4 @@ export { Dropdown } from "./Dropdown";
 export { EventsCalendar } from "./EventsCalendar";
 export { ProfileCard } from "./ProfileCard";
 export { SocialIcon } from "./SocialIcon";
+export { PostCard } from "./PostCard";

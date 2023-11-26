@@ -1,10 +1,9 @@
 import { useLiveQuery } from "next-sanity/preview";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import Card from "components/Card";
 import { readToken } from "@lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { getPosts, type Post, postsQuery } from "@lib/sanity.queries";
-import { Helmet } from "@components";
+import { Helmet, PostCard } from "@components";
 import { useRouter } from "next/router";
 
 export const getStaticProps: GetStaticProps<{
@@ -42,7 +41,7 @@ export default function BlogPage(
               <h3 className="category-title">Featured</h3>
               <div className="posts-list featured">
                 {posts.map((post) => (
-                  <Card key={post._id} post={post} />
+                  <PostCard key={post._id} post={post} />
                 ))}
               </div>
             </div>
