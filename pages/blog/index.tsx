@@ -1,13 +1,15 @@
 import { useLiveQuery } from "next-sanity/preview";
-
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Card from "components/Card";
 import { readToken } from "../api/sanity.api";
 import { getClient } from "../api/sanity.client";
-import { getPosts, postsQuery } from "../api/sanity.queries";
-import { Helmet, HeaderNav, Footer } from "@components";
+import { getPosts, type Post, postsQuery } from "../api/sanity.queries";
+import { Helmet } from "@components";
 import { useRouter } from "next/router";
 
-export const getStaticProps = async ({ draftMode = false }) => {
+export const getStaticProps: GetStaticProps<{
+  posts: Post[];
+}> = async ({ draftMode = false }) => {
   const client = getClient(draftMode ? { token: readToken } : undefined);
   const posts = await getPosts(client);
 
@@ -20,7 +22,9 @@ export const getStaticProps = async ({ draftMode = false }) => {
   };
 };
 
-export default function Post(props) {
+export default function BlogPage(
+  props: InferGetStaticPropsType<typeof getStaticProps>
+) {
   const router = useRouter();
   const [posts] = useLiveQuery(props.posts, postsQuery);
 

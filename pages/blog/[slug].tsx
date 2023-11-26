@@ -1,4 +1,5 @@
 import { PortableText } from "@portabletext/react";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import { useLiveQuery } from "next-sanity/preview";
 
@@ -8,6 +9,7 @@ import { urlForImage } from "../api/sanity.image";
 import { Helmet } from "@components";
 import {
   getPost,
+  type Post,
   postBySlugQuery,
   postSlugsQuery,
 } from "../api/sanity.queries";
@@ -16,7 +18,16 @@ import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
 import { formatDate } from "utils/index";
 
-export const getStaticProps = async ({ draftMode = false, params = {} }) => {
+interface Query {
+  [key: string]: string;
+}
+
+export const getStaticProps: GetStaticProps<
+  {
+    post: Post;
+  },
+  Query
+> = async ({ draftMode = false, params = {} }) => {
   const client = getClient(draftMode ? { token: readToken } : undefined);
   const post = await getPost(client, params.slug);
 
@@ -35,7 +46,9 @@ export const getStaticProps = async ({ draftMode = false, params = {} }) => {
   };
 };
 
-export default function ProjectSlugRoute(props) {
+export default function ProjectSlugRoute(
+  props: InferGetStaticPropsType<typeof getStaticProps>
+) {
   const [post] = useLiveQuery(props.post, postBySlugQuery, {
     slug: props.post.slug.current,
   });
@@ -48,7 +61,7 @@ export default function ProjectSlugRoute(props) {
           {post.mainImage ? (
             <Image
               className="post__cover"
-              src={urlForImage(post.mainImage).url()}
+              src={urlForImage(post.mainImage)!.url()}
               height={231}
               width={367}
               alt=""
@@ -81,8 +94,9 @@ export default function ProjectSlugRoute(props) {
 
 export const getStaticPaths = async () => {
   const client = getClient();
-  const slugs = await client.fetch(postSlugsQuery);
-  const paths = slugs.map((slug) => ({ params: { slug } }));
+  const slugs: Post[] = await client.fetch(postSlugsQuery);
+  const paths = slugs?.map((slug) => ({ params: { slug } })) || [];
+
   return {
     paths,
     fallback: false,
