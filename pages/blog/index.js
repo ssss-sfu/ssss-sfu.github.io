@@ -1,9 +1,9 @@
 import { useLiveQuery } from "next-sanity/preview";
 
 import Card from "components/Card";
-import { readToken } from "./api/sanity.api";
-import { getClient } from "./api/sanity.client";
-import { getPosts, postsQuery } from "./api/sanity.queries";
+import { readToken } from "../api/sanity.api";
+import { getClient } from "../api/sanity.client";
+import { getPosts, postsQuery } from "../api/sanity.queries";
 import { Helmet, HeaderNav, Footer } from "@components";
 import { useRouter } from "next/router";
 
@@ -23,10 +23,10 @@ export const getStaticProps = async ({ draftMode = false }) => {
 export default function Post(props) {
   const router = useRouter();
   const [posts] = useLiveQuery(props.posts, postsQuery);
+
   return (
     <div className="blog-page">
       <Helmet pageTitle={router.pathname} />
-      <HeaderNav />
       <main>
         <header className="container hero">
           <p>Blog</p>
@@ -47,7 +47,6 @@ export default function Post(props) {
           )}
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
