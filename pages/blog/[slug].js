@@ -5,14 +5,13 @@ import { useLiveQuery } from "next-sanity/preview";
 import { readToken } from "../api/sanity.api";
 import { getClient } from "../api/sanity.client";
 import { urlForImage } from "../api/sanity.image";
-import { Helmet, HeaderNav, Footer } from "@components";
+import { Helmet } from "@components";
 import {
   getPost,
   postBySlugQuery,
   postSlugsQuery,
 } from "../api/sanity.queries";
 import React from "react";
-import { useRouter } from "next/router";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
 import { formatDate } from "utils/index";
@@ -37,15 +36,13 @@ export const getStaticProps = async ({ draftMode = false, params = {} }) => {
 };
 
 export default function ProjectSlugRoute(props) {
-  const router = useRouter();
   const [post] = useLiveQuery(props.post, postBySlugQuery, {
     slug: props.post.slug.current,
   });
 
   return (
     <div className="blog-category-page">
-      <Helmet pageTitle={router.pathname} />
-      <HeaderNav />
+      <Helmet pageTitle={post.title} />
       <main>
         <header className="container hero">
           {post.mainImage ? (
@@ -78,7 +75,6 @@ export default function ProjectSlugRoute(props) {
           <PortableText value={post.body} />
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
@@ -86,8 +82,9 @@ export default function ProjectSlugRoute(props) {
 export const getStaticPaths = async () => {
   const client = getClient();
   const slugs = await client.fetch(postSlugsQuery);
+  const paths = slugs.map((slug) => ({ params: { slug } }));
   return {
-    paths: slugs ? slugs.map(({ slug }) => `/blog/${slug}`) : [],
+    paths,
     fallback: false,
   };
 };

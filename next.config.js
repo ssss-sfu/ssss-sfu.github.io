@@ -4,7 +4,12 @@ const nextConfig = {
   swcMinify: true,
   output: "export",
   images: {
-    domains: ["cdn.sanity.io"],
+    remotePatterns: [
+      {
+        hostname: "cdn.sanity.io",
+      },
+    ],
+    unoptimized: true,
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
