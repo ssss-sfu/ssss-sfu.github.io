@@ -3,16 +3,16 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import { useLiveQuery } from "next-sanity/preview";
 
-import { readToken } from "../api/sanity.api";
-import { getClient } from "../api/sanity.client";
-import { urlForImage } from "../api/sanity.image";
+import { readToken } from "../../lib/sanity.api";
+import { getClient } from "@lib/sanity.client";
+import { urlForImage } from "@lib/sanity.image";
 import { Helmet } from "@components";
 import {
   getPost,
   type Post,
   postBySlugQuery,
   postSlugsQuery,
-} from "../api/sanity.queries";
+} from "@lib/sanity.queries";
 import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";

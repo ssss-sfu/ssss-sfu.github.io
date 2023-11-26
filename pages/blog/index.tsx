@@ -1,9 +1,9 @@
 import { useLiveQuery } from "next-sanity/preview";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Card from "components/Card";
-import { readToken } from "../api/sanity.api";
-import { getClient } from "../api/sanity.client";
-import { getPosts, type Post, postsQuery } from "../api/sanity.queries";
+import { readToken } from "@lib/sanity.api";
+import { getClient } from "@lib/sanity.client";
+import { getPosts, type Post, postsQuery } from "@lib/sanity.queries";
 import { Helmet } from "@components";
 import { useRouter } from "next/router";
 
