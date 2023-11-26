@@ -31,23 +31,17 @@ const LandingPage: FC<LandingPageProps> = () => {
           </a>
 
           <section className="discover-ssss__link-items">
-            <Link href="/events">
-              <a className="discover-ssss__link-item">
-                <h3>Events Calendar</h3>
-                <p>Events</p>
-              </a>
+            <Link href="/events" className="discover-ssss__link-item">
+              <h3>Events Calendar</h3>
+              <p>Events</p>
             </Link>
-            <Link href="/get-involved">
-              <a className="discover-ssss__link-item">
-                <h3>Committees</h3>
-                <p>Get Involved</p>
-              </a>
+            <Link href="/get-involved" className="discover-ssss__link-item">
+              <h3>Committees</h3>
+              <p>Get Involved</p>
             </Link>
-            <Link href="/about">
-              <a className="discover-ssss__link-item">
-                <h3>Meet the Exec Team</h3>
-                <p>About Us</p>
-              </a>
+            <Link href="/about" className="discover-ssss__link-item">
+              <h3>Meet the Exec Team</h3>
+              <p>About Us</p>
             </Link>
           </section>
         </article>

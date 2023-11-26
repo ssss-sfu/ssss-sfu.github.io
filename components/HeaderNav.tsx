@@ -13,9 +13,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = () => {
     <div className="header-nav">
       <div className="container">
         <Link href="/">
-          <a>
-            <Logo />
-          </a>
+          <Logo />
         </Link>
 
         <input
@@ -33,18 +31,21 @@ export const HeaderNav: React.FC<HeaderNavProps> = () => {
 
         <div className="content">
           <nav className="pages">
-            <Link href="/about">
-              <a className="page-link">About</a>
+            <Link href="/about" className="page-link">
+              About
             </Link>
-            <Link href="/events">
-              <a className="page-link">Events</a>
+            <Link href="/events" className="page-link">
+              Events
             </Link>
-            <Link href="/get-involved">
-              <a className="page-link">Get Involved</a>
+            <Link href="/get-involved" className="page-link">
+              Get Involved
             </Link>
-            <Link href="/resources">
-              <a className="page-link">Resources</a>
+            <Link href="/resources" className="page-link">
+              Resources
             </Link>
+            {/* <Link href="/blog" className="page-link">
+              Blog
+            </Link> */}
           </nav>
 
           <div className="socials">

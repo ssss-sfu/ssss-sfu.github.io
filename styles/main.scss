@@ -8,6 +8,8 @@
 @use "./pages/get-involved-page.scss";
 @use "./pages/events-page.scss";
 @use "./pages/resources-page.scss";
+@use "./pages/blog-page.scss";
+@use "./pages/category.scss";
 
 @use "./components/button.scss";
 @use "./components/header-nav.scss";
@@ -15,6 +17,7 @@
 @use "./components/accordion.scss";
 @use "./components/hero.scss";
 @use "./components/dropdown.scss";
+@use "./components/blog-post-list.scss";
 @use "./components/events-calendar/events-calendar.scss";
 @use "./components/profile-card.scss";
 

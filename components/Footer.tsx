@@ -16,9 +16,7 @@ export const Footer: React.FC<FooterProps> = () => {
     <div className="footer">
       <div className="container">
         <Link href="/">
-          <a>
-            <Logo />
-          </a>
+          <Logo />
         </Link>
         <div className="office-address icon-container">
           <div className="gray-backdrop left-icon">

@@ -1,0 +1,100 @@
+@import "../variables.scss";
+
+.blog-category-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colour-neutral-1200);
+
+  .hero {
+    position: relative;
+    max-width: unset;
+    text-align: center;
+    background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0.75) 100%),
+      url("../../public/images/blog-page/hero-blog.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 6rem;
+    overflow: hidden;
+    padding-bottom: 6rem;
+
+    h1,
+    p {
+      color: var(--colour-neutral-000);
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    .meta-info {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.8em;
+      opacity: 0.8;
+
+      p {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+  }
+
+  section.container {
+    padding-top: 32px;
+
+    h3 {
+      margin-bottom: 16px;
+    }
+  }
+  .navigation {
+    text-align: right;
+    padding-bottom: 0;
+  }
+  .single-post {
+    padding-bottom: 0;
+    .content {
+      padding: 16px;
+      border-radius: 16px;
+      background-color: var(--colour-neutral-1100);
+      font-size: 16px;
+
+      // post design
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1.17em;
+      }
+      h4 {
+        font-size: 1em;
+      }
+      h5 {
+        font-size: 0.83em;
+      }
+      h6 {
+        font-size: 0.67em;
+      }
+      p {
+        font-size: 1em;
+      }
+
+      @include viewport(tablet-desktop) {
+        padding: 32px;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 64px;
+  }
+}

@@ -15,7 +15,7 @@ const MyApp: FC<MyAppProps> = ({ Component, pageProps }) => {
     <>
       <Helmet pageTitle={router.pathname} />
       <HeaderNav />
-      <Component {...pageProps} />
+      <Component {...pageProps} key={router.asPath} />
       <Footer />
     </>
   );
