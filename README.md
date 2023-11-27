@@ -22,9 +22,9 @@ View the live site here: https://sfussss.org/
 ### Contribute by reporting a bug/suggesting an enhancement
 
 1. Navigate to the [issues](https://github.com/ssss-sfu/ssss-sfu.github.io/issues) page in this repository
-2. Add a new item to the `Backlog` board and give it a clear and concise title and description. Include any other information, images, etc. that may be needed.
+2. Add a new `Issue` and give it a clear and concise title and description. Include any other information, images, etc. that may be needed.
 3. Give it an appropriate label
-4. Thank you for your contribution! Before your item is moved to the `Todo` board, the committee will first take a look.
+4. Thank you for your contribution! The committee may assign the issue as appropriate.
 
 ### Contribute as a developer
 
