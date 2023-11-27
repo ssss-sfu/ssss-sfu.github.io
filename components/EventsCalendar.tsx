@@ -5,7 +5,7 @@ import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 
-const locales: { [key: string]: any } = {
+const locales = {
   "en-US": require("date-fns/locale/en-US"),
 };
 

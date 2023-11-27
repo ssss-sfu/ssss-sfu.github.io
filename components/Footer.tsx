@@ -9,9 +9,7 @@ import GithubIcon from "@icons/github.svg";
 import OfficeBuildingIcon from "@icons/office-building.svg";
 import ContactUsIcon from "@icons/contact-us.svg";
 
-interface FooterProps {}
-
-export const Footer: React.FC<FooterProps> = () => {
+export const Footer: React.FC = () => {
   return (
     <div className="footer">
       <div className="container">
