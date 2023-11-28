@@ -11,7 +11,9 @@ export interface Profile {
   name: string;
   role: string;
   description: string;
-  socials: Map<SocialType, string>;
+  socials: {
+    [key in SocialType]?: string;
+  };
 }
 
 interface ProfileCardProps {
