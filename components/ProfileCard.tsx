@@ -6,7 +6,6 @@ import Image from "next/image";
 type SocialType = "discord" | "instagram" | "linkedIn";
 
 export interface Profile {
-  id: string;
   imgSrc: string;
   name: string;
   role: string;
@@ -72,7 +71,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
   }
 
   return (
-    <div key={profile.id} className="profile-card">
+    <div className="profile-card">
       <div className="description-main">
         <img
           className="description-img"

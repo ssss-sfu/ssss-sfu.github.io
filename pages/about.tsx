@@ -1,8 +1,12 @@
 import { Hero, ProfileCard } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import execs from "@jsons/execs.json";
+import { useEffect } from "react";
+import { Profile } from "components/ProfileCard";
 
 const About: React.FC = () => {
+  useEffect(() => {}, []);
+
   return (
     <div className="page about-page">
       <Hero
