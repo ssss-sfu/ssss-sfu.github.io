@@ -3,7 +3,7 @@ import { HeaderNav, Footer, Helmet } from "@components";
 import { useRouter } from "next/router";
 import "../styles/main.scss";
 
-import type { AppProps } from "next/app"
+import type { AppProps } from "next/app";
 
 const MyApp: FC<MyAppProps> = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
