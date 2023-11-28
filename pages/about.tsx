@@ -1,11 +1,18 @@
 import { Hero, ProfileCard } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import execs from "@jsons/execs.json";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Profile } from "components/ProfileCard";
 
 const About: React.FC = () => {
-  useEffect(() => {}, []);
+  const [currentExecs, setCurrentExecs] = useState<Profile[]>([]);
+
+  // TODO add validation and test cases for future PRs!
+  useEffect(() => {
+    let json: string = JSON.stringify(execs.current);
+    let profiles: Profile[] = JSON.parse(json);
+    setCurrentExecs(profiles);
+  }, []);
 
   return (
     <div className="page about-page">
@@ -43,7 +50,7 @@ const About: React.FC = () => {
           </p>
         </section>
         <section className="current-exec">
-          {execs.current.map((profile: any) => (
+          {currentExecs.map((profile: Profile) => (
             <ProfileCard profile={profile} key={profile.name}></ProfileCard>
           ))}
         </section>
