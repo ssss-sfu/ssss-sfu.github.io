@@ -3,12 +3,9 @@ import { HeaderNav, Footer, Helmet } from "@components";
 import { useRouter } from "next/router";
 import "../styles/main.scss";
 
-interface MyAppProps {
-  Component: FC;
-  pageProps: any;
-}
+import type { AppProps } from "next/app"
 
-const MyApp: FC<MyAppProps> = ({ Component, pageProps }) => {
+const MyApp: FC<MyAppProps> = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   return (
