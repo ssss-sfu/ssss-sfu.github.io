@@ -23,14 +23,6 @@ const Courses: React.FC = () => {
     setRequirements(z.array(RequirementSchema).parse(coursesJson));
   }, []);
 
-  // const [currentExecs, setCurrentExecs] = useState<Profile[]>([]);
-
-  // // TODO add validation and test cases for future PRs!
-  // useEffect(() => {
-  //   let json: string = JSON.stringify(execs.current);
-  //   let profiles: Profile[] = JSON.parse(json);
-  //   setCurrentExecs(profiles);
-  // }, []);
   const renderConditionalCourseShown = () => {
     if (courseShown !== null) {
       return (
@@ -42,10 +34,43 @@ const Courses: React.FC = () => {
                 {courseShown?.info.units})
               </b>
             </p>
-            <h3>{courseShown?.info.title}</h3>
+            <h2>{courseShown?.info.title}</h2>
             <p>{courseShown?.info.description}</p>
             {courseShown?.info.notes && <p>{courseShown.info.notes}</p>}
             <p>Prerequisites: {courseShown?.info.prerequisites}</p>
+          </div>
+          <div className="course-info course-last-sections">
+            <h2>Last available - {courseShown?.last_sections.term}</h2>
+            <p>Sections</p>
+            <div className="sections-container">
+              {courseShown?.last_sections.sections.map((section) => {
+                const instructorNames =
+                  section.info.instructorNames.length > 0
+                    ? section.info.instructorNames
+                    : ["Unknown"];
+                return (
+                  <div className="section-unit" key={section.info.classNumber}>
+                    <p>
+                      {section.info.section} - {instructorNames.join(", ")} -{" "}
+                      {section.info.campus}
+                    </p>
+                    <ul className="schedule-list">
+                      {section.courseSchedule.map((schedule) => {
+                        return (
+                          <li
+                            key={schedule.sectionCode}
+                            className="schedule-unit"
+                          >
+                            {schedule.days.join(", ")} {schedule.startTime} -{" "}
+                            {schedule.endTime}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       );
