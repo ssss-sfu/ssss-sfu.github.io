@@ -12,14 +12,15 @@ import {
   RequirementSchema,
 } from "types/course";
 import { z } from "zod";
+import { info } from "console";
 
 const Courses: React.FC = () => {
   // Parse the JSON data using Zod schemas
+  const [courseShown, setCourseShown] = useState<Course | null>(null);
   const [requirements, setRequirements] = useState<Requirement[]>([]);
 
   useEffect(() => {
     setRequirements(z.array(RequirementSchema).parse(coursesJson));
-    console.log("req", requirements);
   }, []);
 
   // const [currentExecs, setCurrentExecs] = useState<Profile[]>([]);
@@ -30,6 +31,30 @@ const Courses: React.FC = () => {
   //   let profiles: Profile[] = JSON.parse(json);
   //   setCurrentExecs(profiles);
   // }, []);
+  const renderConditionalCourseShown = () => {
+    if (courseShown !== null) {
+      return (
+        <div className="sidebar-course">
+          <div className="course-info">
+            <p>
+              <b>
+                {courseShown?.info.dept} {courseShown?.info.number} (
+                {courseShown?.info.units})
+              </b>
+            </p>
+            <h3>{courseShown?.info.title}</h3>
+            <p>{courseShown?.info.description}</p>
+            {courseShown?.info.notes && <p>{courseShown.info.notes}</p>}
+            <p>Prerequisites: {courseShown?.info.prerequisites}</p>
+          </div>
+        </div>
+      );
+    }
+  };
+
+  const handleClickCourseShown = (course: Course) => {
+    setCourseShown(course !== courseShown ? course : null);
+  };
 
   return (
     <div className="page about-page">
@@ -46,22 +71,26 @@ const Courses: React.FC = () => {
             Software Systems.
           </p>
         </section>
-        <section className="requirements-container">
-          {requirements.map((req) => (
-            <div className="requirement-block" key={req.requirement}>
-              <h2>{req.requirement}</h2>
-              <div className="courses-container">
-                {req.courses.map((course) => (
-                  <div
-                    className="btn secondary course-node"
-                    key={`${course.info.dept}-${course.info.number}`}
-                  >
-                    {`${course.info.dept} ${course.info.number}`}
-                  </div>
-                ))}
+        <section className="requirements-section">
+          <div className="requirements-container">
+            {requirements.map((req) => (
+              <div className="requirement-block" key={req.requirement}>
+                <h2>{req.requirement}</h2>
+                <div className="courses-container">
+                  {req.courses.map((course) => (
+                    <div
+                      className="btn secondary course-node"
+                      key={`${course.info.dept}-${course.info.number}`}
+                      onClick={() => handleClickCourseShown(course)}
+                    >
+                      {`${course.info.dept} ${course.info.number}`}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          {renderConditionalCourseShown()}
         </section>
       </main>
     </div>
