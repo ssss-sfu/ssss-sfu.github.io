@@ -1,5 +1,9 @@
 @import "../variables.scss";
 
+.courses-page {
+  // padding-bottom: 10em;
+}
+
 .requirements-section {
   display: flex;
   flex-direction: row;
@@ -31,9 +35,10 @@
 }
 
 .sidebar-course {
+  z-index: 1;
   position: fixed;
   flex: 0 0 60%;
-  right: 2em;
+  right: 4em;
   top: 6em;
   width: 50%;
   max-height: 75vh;
@@ -48,10 +53,13 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
+  border: 1px solid var(--colour-neutral-1000);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 
   .space-between {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 
     .close-sidebar {
       text-align: center;

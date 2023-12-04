@@ -16,7 +16,7 @@ const Courses: React.FC = () => {
   }, []);
 
   return (
-    <div className="page about-page">
+    <div className="page courses-page">
       <Hero
         title="See the courses available at Software Systems"
         subtitle="Courses"
