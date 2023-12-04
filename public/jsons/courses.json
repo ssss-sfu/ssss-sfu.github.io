@@ -351,191 +351,15 @@
             },
             {
                 "info": {
-                    "term": "Spring 2023",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6669",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Toby Donaldson"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Monday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "13:20"
-                                },
-                                {
-                                    "days": [
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "13:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D101",
-                                "classNumber": "6674",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D102",
-                                "classNumber": "6675",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "9:30",
-                                    "endTime": "10:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D103",
-                                "classNumber": "6676",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "10:30",
-                                    "endTime": "11:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D104",
-                                "classNumber": "6677",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "11:30",
-                                    "endTime": "12:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D105",
-                                "classNumber": "6678",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D106",
-                                "classNumber": "6679",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D107",
-                                "classNumber": "6680",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D108",
-                                "classNumber": "6681",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LAB",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "dept": "CMPT",
+                    "number": "135",
+                    "title": "Introduction to Computer Programming II",
+                    "description": "A second course in systems-oriented programming and computing science that builds upon the foundation set in CMPT 130 using a systems-oriented language such as C or C++. Topics: a review of the basic elements of programming; introduction to object-oriented programming (OOP); techniques for designing and testing programs; use and implementation of elementary data structures and\r\nalgorithms; introduction to embedded systems programming.",
+                    "prerequisites": "CMPT 130 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 125, 126, or 129 may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
                 },
                 "future_sections": {
                     "term": "Spring 2024",
@@ -6181,38 +6005,15 @@
             },
             {
                 "info": {
-                    "term": "Summer 2023",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "4071",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Bobby Chan"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
-                                },
-                                {
-                                    "days": [
-                                        "Friday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "dept": "CMPT",
+                    "number": "372",
+                    "title": "Web II - Server-side Development",
+                    "description": "Introduces students to the fundamentals of server-side web development. Students will gain experience working with backend web frameworks, designing and implementing web APIs, and deploying web systems. Students will be introduced to popular back-end frameworks. The course will focus on the design, creating, implementation, and deployment of backend systems, including APIs.",
+                    "prerequisites": "CMPT 272 and CMPT 225, both with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 470 may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
                 },
                 "future_sections": {
                     "term": "Spring 2024",
@@ -6374,32 +6175,15 @@
             },
             {
                 "info": {
-                    "term": "Spring 2023",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6763",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "dept": "CMPT",
+                    "number": "433",
+                    "title": "Embedded Systems",
+                    "description": "The basics of embedded system organization, hardware-software co-design, and programmable chip technologies are studied. Formal models and specification languages for capturing and analyzing the behavior of embedded systems. The design and use of tools for system partitioning and hardware/software co-design implementation, validation, and verification are also studied.",
+                    "prerequisites": "CMPT 295 and CMPT 300, with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
                 },
                 "future_sections": {
                     "term": "Spring 2024",
@@ -6543,39 +6327,15 @@
             },
             {
                 "info": {
-                    "term": "Fall 2022",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "5358",
-                                "type": "e",
-                                "campus": "Burnaby",
-                                "instructorNames": [
-                                    "Khaled Diab",
-                                    "Mohamed Hefeeda"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "11:30",
-                                    "endTime": "12:20"
-                                },
-                                {
-                                    "days": [
-                                        "Friday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "10:30",
-                                    "endTime": "12:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "dept": "CMPT",
+                    "number": "471",
+                    "title": "Networking II",
+                    "description": "This course covers the fundamentals of higher level network functionality such as remote procedure/object calls, name/address resolution, network file systems, network security and high speed connectivity/bridging/switching.",
+                    "prerequisites": "CMPT 300 and 371, with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
                 },
                 "future_sections": {
                     "term": "Spring 2024",
@@ -6902,38 +6662,15 @@
             },
             {
                 "info": {
-                    "term": "Spring 2019",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6700",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Rob Cameron"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "11:30",
-                                    "endTime": "13:20"
-                                },
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "11:30",
-                                    "endTime": "12:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "dept": "CMPT",
+                    "number": "384",
+                    "title": "Symbolic Computing",
+                    "description": "This course considers modelling and programming techniques appropriate for symbolic data domains such as mathematical expressions, logical formulas, grammars and programming languages. Topics include recursive and functional programming style, grammar-based data abstraction, simplification and reduction transformations, conversions to canonical form, environment data structures and interpreters, metaprogramming, pattern matching and theorem proving.",
+                    "prerequisites": "CMPT 225, and (MACM 101 or ENSC 251 and ENSC 252)).",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
                 },
                 "future_sections": {
                     "term": "Spring 2024",
@@ -6976,38 +6713,15 @@
             },
             {
                 "info": {
-                    "term": "Spring 2023",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6766",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Ouldooz Baghban Karimi"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": [
-                                        "Monday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                },
-                                {
-                                    "days": [
-                                        "Thursday"
-                                    ],
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "dept": "CMPT",
+                    "number": "474",
+                    "title": "Web Systems Architecture",
+                    "description": "Web service based systems are fundamentally different from traditional software systems. The conceptual and methodological differences between a standard software development process and the development of a web service based information system. The technology involved during the construction of their own web service based application in an extensive project.",
+                    "prerequisites": "CMPT 371 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
                 },
                 "future_sections": {
                     "term": "Spring 2024",

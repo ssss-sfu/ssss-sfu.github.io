@@ -13,11 +13,11 @@
     "format:check": "npx prettier --check ."
   },
   "dependencies": {
-    "@types/react-big-calendar": "^1.8.4",
     "@portabletext/react": "^3.0.11",
     "@sanity/image-url": "^1.0.2",
     "@sanity/ui": "^1.8.3",
     "@sanity/vision": "^3.18.1",
+    "@types/react-big-calendar": "^1.8.4",
     "date-fns": "^2.29.3",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
@@ -32,7 +32,8 @@
     "remark-html": "^16.0.1",
     "sanity": "^3.18.1",
     "styled-components": "5.2",
-    "swr": "^2.2.2"
+    "swr": "^2.2.2",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "20.9.0",

@@ -1,0 +1,18 @@
+.requirements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75em;
+  margin: 1.25em;
+}
+
+.course-node {
+  text-align: center;
+}
