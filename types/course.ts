@@ -47,7 +47,7 @@ const SectionsPerTermSchema = z.object({
   sections: z.array(SectionSchema),
 });
 
-type SectionsPerTerm = z.infer<typeof SectionsPerTermSchema>;
+export type SectionsPerTerm = z.infer<typeof SectionsPerTermSchema>;
 
 export const CourseSchema = z.object({
   info: CourseInfoSchema,

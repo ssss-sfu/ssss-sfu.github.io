@@ -6332,5 +6332,3168 @@
                 }
             }
         ]
+    },
+    {
+        "requirement": "Other CMPT Courses",
+        "courses": [
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "120",
+                    "title": "Introduction to Computing Science and Programming I",
+                    "description": "An elementary introduction to computing science and computer programming, suitable for students with little or no programming background. Students will learn fundamental concepts and terminology of computing science, acquire elementary skills for programming in a high-level language, e.g. Python. The students will be exposed to diverse fields within, and applications of computing science. Topics will include: pseudocode; data types and control structures; fundamental algorithms; recursion; reading and writing files; measuring performance of algorithms; debugging tools; basic terminal navigation using shell commands. Treatment is informal and programming is presented as a problem-solving tool. ",
+                    "prerequisites": "BC Math 12 or equivalent is recommended.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 102, 128, 130 or 166 may not take this course for further credit. Students who have taken CMPT 125, 129, 130 or 135 first may not then take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "6887",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Frederick Popowich"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D300",
+                                "classNumber": "6888",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D400",
+                                "classNumber": "6889",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D401",
+                                "classNumber": "6896",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D402",
+                                "classNumber": "6897",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D403",
+                                "classNumber": "6898",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D404",
+                                "classNumber": "6899",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D405",
+                                "classNumber": "6900",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D406",
+                                "classNumber": "6901",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D407",
+                                "classNumber": "6902",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D408",
+                                "classNumber": "6903",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "OPL",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6045",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Nicholas Vincent"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "6046",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D300",
+                                "classNumber": "6047",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D400",
+                                "classNumber": "6048",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D401",
+                                "classNumber": "6051",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D402",
+                                "classNumber": "6052",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D403",
+                                "classNumber": "6053",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D404",
+                                "classNumber": "6054",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D405",
+                                "classNumber": "6055",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D406",
+                                "classNumber": "6056",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D407",
+                                "classNumber": "6057",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D408",
+                                "classNumber": "6058",
+                                "type": "n",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Brian Fraser"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LAB",
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "125",
+                    "title": "Introduction to Computing Science and Programming II",
+                    "description": "A rigorous introduction to computing science and computer programming, suitable for students who already have some background in computing science and programming.  Intended for students who will major in computing science or a related program. Topics include: memory management; fundamental algorithms; formally analyzing the running time of algorithms; abstract data types and elementary data structures; object-oriented programming and software design; specification and program correctness; reading and writing files; debugging tools; shell commands.",
+                    "prerequisites": "CMPT 120 or CMPT 130, with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 126, 129, 135 or CMPT 200 or higher may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6905",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D101",
+                                "classNumber": "6936",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D102",
+                                "classNumber": "6937",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D103",
+                                "classNumber": "6938",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D104",
+                                "classNumber": "6939",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D105",
+                                "classNumber": "6940",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D106",
+                                "classNumber": "6941",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D107",
+                                "classNumber": "7227",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D108",
+                                "classNumber": "6910",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Janice Regan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LAB",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "6909",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "9:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D201",
+                                "classNumber": "6911",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D202",
+                                "classNumber": "6912",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D203",
+                                "classNumber": "6913",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D204",
+                                "classNumber": "6914",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D205",
+                                "classNumber": "6915",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D206",
+                                "classNumber": "6916",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D207",
+                                "classNumber": "6917",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D208",
+                                "classNumber": "6918",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6076",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D101",
+                                "classNumber": "6077",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D102",
+                                "classNumber": "6078",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D103",
+                                "classNumber": "6079",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D104",
+                                "classNumber": "6080",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D105",
+                                "classNumber": "6081",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D106",
+                                "classNumber": "6082",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D107",
+                                "classNumber": "6083",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D108",
+                                "classNumber": "6084",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LAB",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "7928",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "18:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E101",
+                                "classNumber": "7929",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E102",
+                                "classNumber": "7930",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E103",
+                                "classNumber": "7931",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E104",
+                                "classNumber": "7932",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E105",
+                                "classNumber": "7933",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E106",
+                                "classNumber": "7934",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E107",
+                                "classNumber": "7935",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E108",
+                                "classNumber": "7936",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LAB",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "276",
+                    "title": "Introduction to Software Engineering",
+                    "description": "An overview of various techniques used for software development and software project management. Major tasks and phases in modern software development, including requirements, analysis, documentation, design, implementation, testing,and maintenance. Project management issues are also introduced. Students complete a team project using an iterative development process.",
+                    "prerequisites": "One W course, CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (MATH 151 or MATH 150), all with a minimum grade of C-. MATH 154 or MATH 157 with at least a B+ may be substituted for MATH 151 or MATH 150.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 275 may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7020",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Saba Alimadadi Jani"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "7021",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Bobby Chan"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6207",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Saba Alimadadi Jani"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "6208",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Steve Pearce"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D300",
+                                "classNumber": "6209",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Parsa Rajabi"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "305",
+                    "title": "Computer Simulation and Modelling",
+                    "description": "An introduction to the modelling, analysis, and computer simulation of complex systems. Topics include analytic modelling, discrete event simulation, experimental design, random number generation, and statistical analysis.",
+                    "prerequisites": "CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (STAT 270 or STAT 271), all with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7033",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Alaa Alameldeen"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Spring 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6572",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Alaa Alameldeen"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "308",
+                    "title": "Computability and Complexity",
+                    "description": "Formal models of computation such as automata and Turing machines. Decidability and undecidability. Recursion Theorem. Connections between computability and logic (G\u00f6del\u2019s Incompleteness). Time and space complexity classes. NP-completeness.",
+                    "prerequisites": "(MACM 201 or CMPT 210) with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6062",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Valentine Kabanets"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "310",
+                    "title": "Introduction to Artificial Intelligence",
+                    "description": "A survey of modern approaches for artificial intelligence (AI). Provides an introduction to a variety of AI topics and prepares students for upper-level courses. Topics include: problem solving with search; adversarial game playing; probability and Bayesian networks; machine learning; and applications such as robotics, visual computing and natural language.",
+                    "prerequisites": "CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7032",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Steve Pearce"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6137",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Steven Bergner"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "17:30",
+                                    "endTime": "18:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "17:30",
+                                    "endTime": "18:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "18:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "340",
+                    "title": "Biomedical Computing",
+                    "description": "The principles involved in using computers for data acquisition, real-time processing, pattern recognition and experimental control in biology and medicine will be developed. The use of large data bases and simulation will be explored.",
+                    "prerequisites": "Completion of 60 units including one of CMPT 125, 126, 128, 135, with a minimum grade of C- or CMPT 102 with a grade of B or higher.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "Online",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "OL01",
+                                "classNumber": "7036",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Ghassan Hamarneh"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "OLC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "",
+                                    "sectionCode": "OLC",
+                                    "startTime": "None",
+                                    "endTime": "None"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "OL01",
+                                "classNumber": "6490",
+                                "type": "e",
+                                "campus": "None",
+                                "instructorNames": [
+                                    "Ghassan Hamarneh"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "",
+                                    "sectionCode": "OLC",
+                                    "startTime": "None",
+                                    "endTime": "None"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "353",
+                    "title": "Computational Data Science",
+                    "description": "Basic concepts and programming tools for handling and processing data. Includes data acquisition, cleaning data sources, application of machine learning techniques and data analysis techniques, large-scale computation on a computing cluster.",
+                    "prerequisites": "CMPT 225 and (STAT 101, STAT 270, STAT 271, ENSC 280, or MSE 210), with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "7037",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Steven Bergner"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "19:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6139",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Gregory Baker"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "361",
+                    "title": "Introduction to Visual Computing",
+                    "description": "Provides a unified introduction to the fundamentals of computer graphics and computer vision (visual computing). Topics include graphics pipelines, sampling and aliasing, geometric transformations, projection and camera models, meshing, texturing, color theory, image filtering and registration, shading and illumination, raytracing, rasterization, animation, optical flow, and game engines.",
+                    "prerequisites": "CMPT 225 and MATH 232 or 240, all with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7039",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Xue Bin Jason Peng",
+                                    "Yagiz Aksoy"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6141",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Xue Bin Jason Peng",
+                                    "Yagiz Aksoy"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "362",
+                    "title": "Mobile Applications Programming and Design",
+                    "description": "Teaches students how to design and implement smartphone applications. Topics include development environment, phone emulator, key programming paradigms, UI design including views, fragments, and activities, data persistence, threads, services, embedded sensors, and location based services (e.g., Google Maps). Concepts are reinforced through programming assignments and group projects.",
+                    "prerequisites": "CMPT 225 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for IAT 359 may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "6142",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Xingdong Yang"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "19:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "19:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "363",
+                    "title": "User Interface Design",
+                    "description": "This course provides a comprehensive study of user interface design. Topics include: goals and principles of UI design (systems engineering and human factors), historical perspective, current paradigms (widget-based, mental model, graphic design, ergonomics, metaphor, constructivist/iterative approach, and visual languages) and their evaluation, existing tools and packages (dialogue models, event-based systems, prototyping), future paradigms, and the social impact of UI.",
+                    "prerequisites": "CMPT 225 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7042",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Victor Cheung"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "7040",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Parmit Kaur Chilana"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6143",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Lawrence Kim"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "6151",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Lawrence Kim"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "17:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "365",
+                    "title": "Multimedia Systems",
+                    "description": "Multimedia systems design, multimedia hardware and software, issues in effectively representing, processing, and retrieving multimedia data such as text, graphics, sound and music, image and video.",
+                    "prerequisites": "CMPT 225 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "7041",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "19:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6155",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Jiangchuan Liu"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "403",
+                    "title": "System Security and Privacy",
+                    "description": "Starting from cybersecurity principles, students will learn to protect systems from attacks on data confidentiality, integrity, system availability, and user privacy. By modeling system security, students will learn to find weaknesses in software, hardware, networks, data storage systems, and the Internet, and identify current security practices to protect these systems.",
+                    "prerequisites": "CMPT 300 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Summer 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "4877",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": []
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "404",
+                    "title": "Cryptography and Cryptographic Protocols",
+                    "description": "The main cryptographic tools and primitives, their use in cryptographic applications; security and weaknesses of the current protocols. The notion of security, standard encryption schemes, digital signatures, zero-knowledge, selected other topics.",
+                    "prerequisites": "(MACM 201 or CMPT 210) with a minimum grade of C-. CMPT 307 and 308 are recommended.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7049",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Andrei Bulatov"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "11:30",
+                                    "endTime": "12:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Spring 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6712",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Andrei Bulatov"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "405",
+                    "title": "Design and Analysis of Computing Algorithms",
+                    "description": "Models of computation, methods of algorithm design; complexity of algorithms; algorithms on graphs, NP-completeness, approximation algorithms, selected topics.",
+                    "prerequisites": "CMPT 307 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7050",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Qianping Gu"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6777",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Qianping Gu"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "410",
+                    "title": "Machine Learning",
+                    "description": "Machine Learning (ML) is the study of computer algorithms that improve automatically through experience. This course introduces students to the theory and practice of machine learning, and covers mathematical foundations, models such as (generalized) linear models, kernel methods and neural networks, loss functions for classification and regression, and optimization methods.",
+                    "prerequisites": "CMPT 310 and MACM 316, both with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 419 under the title \"Machine Learning\" may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7724",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Mo Chen"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:50"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:50"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6789",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Ke Li"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "411",
+                    "title": "Knowledge Representation",
+                    "description": "Formal and foundational issues dealing with the representation of knowledge in artificial intelligence systems are covered. Questions of semantics, incompleteness, non-monotonicity and others will be examined. As well, particular approaches, such as procedural or semantic network, may be discussed.",
+                    "prerequisites": "Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2019",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "9000",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "James Delgrande"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "412",
+                    "title": "Computer Vision",
+                    "description": "Computational approaches to image and video understanding in relation to theories, the operation of the human visual system, and practical application areas such as robotics. Topics include image classification, object detection, image segmentation based mostly on deep neural network and to some extent classical techniques, and 3D reconstruction. Also covers state-of-the-art deep neural architectures for computer vision applications, such as metric learning, generative adversarial networks, and recurrent neural networks.",
+                    "prerequisites": "CMPT 361 and MATH 152, both with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6797",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Yasutaka Furukawa"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "413",
+                    "title": "Computational Linguistics",
+                    "description": "This course examines the theoretical and applied problems of constructing and modelling systems, which aim to extract and represent the meaning of natural language sentences or of whole discourses, but drawing on contributions from the fields of linguistics, cognitive psychology, artificial intelligence and computing science.",
+                    "prerequisites": "Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7054",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Angel Chang"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2022",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "5252",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Angel Chang"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "417",
+                    "title": "Intelligent Systems",
+                    "description": "Intelligent Systems using modern constraint programming and heuristic search methods. A survey of this rapidly advancing technology as applied to scheduling, planning, design and configuration. An introduction to constraint programming, heuristic search, constructive (backtrack) search, iterative improvement (local) search, mixed-initiative systems and combinatorial optimization.",
+                    "prerequisites": "CMPT 225 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2022",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "5253",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": []
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "441",
+                    "title": "Computational Biology",
+                    "description": "This course introduces students to the computing science principles underlying computational biology. The emphasis is on the design, analysis and implementation of computational techniques. Possible topics include algorithms for sequence alignment, database searching, gene finding, phylogeny and structure analysis. ",
+                    "prerequisites": "CMPT 307 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 341 may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6840",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Kay C Wiese"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "450",
+                    "title": "Computer Architecture",
+                    "description": "Principles of the architecture of computing systems. Topics include: superscalar processor micro-architecture, speculative execution, cache and memory hierarchy, multiprocessors, cache coherence, memory consistency, implications of technology on architecture, parallel architectures (multi-threading, GPUs, vector processors).",
+                    "prerequisites": "CMPT 295 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6844",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Alaa Alameldeen",
+                                    "Arrvindh Shriraman"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "410",
+                    "title": "Machine Learning",
+                    "description": "Machine Learning (ML) is the study of computer algorithms that improve automatically through experience. This course introduces students to the theory and practice of machine learning, and covers mathematical foundations, models such as (generalized) linear models, kernel methods and neural networks, loss functions for classification and regression, and optimization methods.",
+                    "prerequisites": "CMPT 310 and MACM 316, both with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 419 under the title \"Machine Learning\" may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7724",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Mo Chen"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:50"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:50"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6789",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Ke Li"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "411",
+                    "title": "Knowledge Representation",
+                    "description": "Formal and foundational issues dealing with the representation of knowledge in artificial intelligence systems are covered. Questions of semantics, incompleteness, non-monotonicity and others will be examined. As well, particular approaches, such as procedural or semantic network, may be discussed.",
+                    "prerequisites": "Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2019",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "9000",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "James Delgrande"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo, We, Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "412",
+                    "title": "Computer Vision",
+                    "description": "Computational approaches to image and video understanding in relation to theories, the operation of the human visual system, and practical application areas such as robotics. Topics include image classification, object detection, image segmentation based mostly on deep neural network and to some extent classical techniques, and 3D reconstruction. Also covers state-of-the-art deep neural architectures for computer vision applications, such as metric learning, generative adversarial networks, and recurrent neural networks.",
+                    "prerequisites": "CMPT 361 and MATH 152, both with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6797",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Yasutaka Furukawa"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "413",
+                    "title": "Computational Linguistics",
+                    "description": "This course examines the theoretical and applied problems of constructing and modelling systems, which aim to extract and represent the meaning of natural language sentences or of whole discourses, but drawing on contributions from the fields of linguistics, cognitive psychology, artificial intelligence and computing science.",
+                    "prerequisites": "Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7054",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Angel Chang"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2022",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "5252",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Angel Chang"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "417",
+                    "title": "Intelligent Systems",
+                    "description": "Intelligent Systems using modern constraint programming and heuristic search methods. A survey of this rapidly advancing technology as applied to scheduling, planning, design and configuration. An introduction to constraint programming, heuristic search, constructive (backtrack) search, iterative improvement (local) search, mixed-initiative systems and combinatorial optimization.",
+                    "prerequisites": "CMPT 225 with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Fall 2022",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "5253",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": []
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "15:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "461",
+                    "title": "Computational Photography and Image Manipulation",
+                    "description": "Computational Photography is concerned with overcoming the limitations of traditional photography with computation: in optics, sensors, and geometry; and even in composition, style, and human interfaces. The course covers computational techniques to improve the way we process, manipulate, and interact with visual media. The covered topics include image-based lighting and rendering, camera geometry and optics, computational apertures, advanced image filtering operations, high-dynamic range, image blending, texture synthesis and inpainting.",
+                    "prerequisites": "CMPT 361, (MACM 201 or CMPT 210), and MACM 316, all with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 451 may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "7120",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Yagiz Aksoy"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Spring 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6729",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Yagiz Aksoy"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Mo",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                },
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "12:30",
+                                    "endTime": "14:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "464",
+                    "title": "Geometric Modelling in Computer Graphics",
+                    "description": "Covers advanced topics in geometric modelling and processing for computer graphics, such as Bezier and B-spline techniques, subdivision curves and surfaces, solid modelling, implicit representation, surface reconstruction, multi-resolution modelling, digital geometry processing (e.g. mesh smoothing, compression, and parameterization), point-based representation, and procedural modelling.",
+                    "prerequisites": "CMPT 361, MACM 316, both with a minimum grade of C-.",
+                    "corequisites": "",
+                    "notes": "Students with credit for CMPT 469 between 2003 and 2007 or equivalent may not take this course for further credit.",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Spring 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6730",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Andrea Tagliasacchi"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "17:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "466",
+                    "title": "Animation",
+                    "description": "Topics and techniques in animation, including: The history of animation, computers in animation, traditional animation approaches, and computer animation techniques such as geometric modelling, interpolation, camera controls, kinematics, dynamics, constraint-based animation, realistic motion, temporal aliasing, digital effects and post production.",
+                    "prerequisites": "CMPT 361 and MACM 316, with a minimum grade of C- or permission of the instructor.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": []
+                },
+                "last_sections": {
+                    "term": "Spring 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "D100",
+                                "classNumber": "6731",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "KangKang Yin"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "12:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "dept": "CMPT",
+                    "number": "475",
+                    "title": "Requirements Engineering",
+                    "description": "Software succeeds when it is well-matched to its intended purpose. Requirements engineering is the process of discovering that purpose by making requirements explicit and documenting them in a form amenable to analysis, reasoning, and validation, establishing the key attributes of a system prior to its construction. Students will learn methodical approaches to requirements analysis and design specification in early systems development phases, along with best practices and common principles to cope with notoriously changing requirements. ",
+                    "prerequisites": "CMPT 275 or CMPT 276, (MACM 201 or CMPT 210) , all with a minimum grade of C- and 15 units of upper division courses. Recommended: Co-op experience.",
+                    "corequisites": "",
+                    "notes": "",
+                    "deliveryMethod": "In Person",
+                    "units": "3"
+                },
+                "future_sections": {
+                    "term": "Spring 2024",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "7126",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "19:20"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "last_sections": {
+                    "term": "Fall 2023",
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "E200",
+                                "classNumber": "7796",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Dan Ridinger"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "17:30",
+                                    "endTime": "20:20"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
     }
 ]

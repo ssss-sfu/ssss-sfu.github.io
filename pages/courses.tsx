@@ -1,18 +1,10 @@
-import { Hero, ProfileCard } from "@components";
+import { Hero } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
-import execs from "@jsons/execs.json";
 import { useEffect, useState } from "react";
-import { Profile } from "components/ProfileCard";
 import coursesJson from "@jsons/courses.json";
-import {
-  CourseSchema,
-  Course,
-  CourseInfo,
-  Requirement,
-  RequirementSchema,
-} from "types/course";
+import { Course, Requirement, RequirementSchema } from "types/course";
 import { z } from "zod";
-import { info } from "console";
+import { SidebarCourse } from "components/SidebarCourse";
 
 const Courses: React.FC = () => {
   // Parse the JSON data using Zod schemas
@@ -22,123 +14,6 @@ const Courses: React.FC = () => {
   useEffect(() => {
     setRequirements(z.array(RequirementSchema).parse(coursesJson));
   }, []);
-
-  const renderConditionalCourseShown = () => {
-    if (courseShown !== null) {
-      return (
-        <div className="sidebar-course">
-          <div className="course-info">
-            <p>
-              <b>
-                {courseShown?.info.dept} {courseShown?.info.number} (
-                {courseShown?.info.units})
-              </b>
-            </p>
-            <h2>{courseShown?.info.title}</h2>
-            <p>{courseShown?.info.description}</p>
-            {courseShown?.info.notes && <p>{courseShown.info.notes}</p>}
-            <p>Prerequisites: {courseShown?.info.prerequisites}</p>
-          </div>
-          <div className="course-info course-last-sections">
-            <h2>Last available - {courseShown?.last_sections.term}</h2>
-            <div className="sections-container">
-              {courseShown?.last_sections.sections
-                .filter((s) => s.info.type !== "n")
-                .map((section) => {
-                  const instructorNames =
-                    section.info.instructorNames.length > 0
-                      ? section.info.instructorNames
-                      : ["Unknown"];
-                  return (
-                    <div
-                      className="section-unit"
-                      key={section.info.classNumber}
-                    >
-                      <p>
-                        {section.info.section} - {instructorNames.join(", ")}
-                      </p>
-                      {section.info.campus !== "None" && (
-                        <p>{section.info.campus}</p>
-                      )}
-                      <ul className="schedule-list">
-                        {section.courseSchedule
-                          .filter((schedule) => schedule.days !== "")
-                          .map((schedule) => {
-                            return (
-                              <li
-                                key={schedule.sectionCode}
-                                className="schedule-unit"
-                              >
-                                {schedule.days}; {schedule.startTime}-{" "}
-                                {schedule.endTime}
-                              </li>
-                            );
-                          })}
-                      </ul>
-                    </div>
-                  );
-                })}
-            </div>
-          </div>
-          <div className="course-info course-last-sections">
-            {courseShown?.future_sections.sections.length > 0 ? (
-              <>
-                <h2>Next available - {courseShown?.future_sections.term}</h2>
-                <div className="sections-container">
-                  {courseShown?.future_sections.sections
-                    .filter((s) => s.info.type !== "n")
-                    .map((section) => {
-                      const instructorNames =
-                        section.info.instructorNames.length > 0
-                          ? section.info.instructorNames
-                          : ["Unknown"];
-                      return (
-                        <div
-                          className="section-unit"
-                          key={section.info.classNumber}
-                        >
-                          <p>
-                            {section.info.section} -{" "}
-                            {instructorNames.join(", ")}
-                          </p>
-                          {section.info.campus !== "None" && (
-                            <p>{section.info.campus}</p>
-                          )}
-
-                          <ul className="schedule-list">
-                            {section.courseSchedule
-                              .filter((schedule) => schedule.days !== "")
-                              .map((schedule) => {
-                                return (
-                                  <li
-                                    key={schedule.sectionCode}
-                                    className="schedule-unit"
-                                  >
-                                    {schedule.days}; {schedule.startTime}-{" "}
-                                    {schedule.endTime}
-                                  </li>
-                                );
-                              })}
-                          </ul>
-                        </div>
-                      );
-                    })}
-                </div>
-              </>
-            ) : (
-              <h2>
-                Currently not offered for {courseShown?.future_sections.term}
-              </h2>
-            )}
-          </div>
-        </div>
-      );
-    }
-  };
-
-  const handleClickCourseShown = (course: Course) => {
-    setCourseShown(course !== courseShown ? course : null);
-  };
 
   return (
     <div className="page about-page">
@@ -156,16 +31,22 @@ const Courses: React.FC = () => {
           </p>
         </section>
         <section className="requirements-section">
-          <div className="requirements-container">
-            {requirements.map((req) => (
+          <div
+            className={`requirements-container ${
+              courseShown === null ? "full-width" : ""
+            }`}
+          >
+            {requirements.map((req: Requirement) => (
               <div className="requirement-block" key={req.requirement}>
                 <h2>{req.requirement}</h2>
                 <div className="courses-container">
-                  {req.courses.map((course) => (
+                  {req.courses.map((course: Course) => (
                     <div
                       className="btn secondary course-node"
                       key={`${course.info.dept}-${course.info.number}`}
-                      onClick={() => handleClickCourseShown(course)}
+                      onClick={() =>
+                        setCourseShown(course !== courseShown ? course : null)
+                      }
                     >
                       {`${course.info.dept} ${course.info.number}`}
                     </div>
@@ -174,7 +55,12 @@ const Courses: React.FC = () => {
               </div>
             ))}
           </div>
-          {renderConditionalCourseShown()}
+          {courseShown && (
+            <SidebarCourse
+              course={courseShown}
+              closeCourseShown={() => setCourseShown(null)}
+            />
+          )}
         </section>
       </main>
     </div>
