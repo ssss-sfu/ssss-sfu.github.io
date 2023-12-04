@@ -3,7 +3,7 @@ import { z, ZodType } from "zod";
 // Define Zod schemas for each data class
 
 const CourseScheduleSchema = z.object({
-  days: z.array(z.string()),
+  days: z.string(),
   sectionCode: z.string(),
   startTime: z.string(),
   endTime: z.string(),

@@ -41,36 +41,95 @@ const Courses: React.FC = () => {
           </div>
           <div className="course-info course-last-sections">
             <h2>Last available - {courseShown?.last_sections.term}</h2>
-            <p>Sections</p>
             <div className="sections-container">
-              {courseShown?.last_sections.sections.map((section) => {
-                const instructorNames =
-                  section.info.instructorNames.length > 0
-                    ? section.info.instructorNames
-                    : ["Unknown"];
-                return (
-                  <div className="section-unit" key={section.info.classNumber}>
-                    <p>
-                      {section.info.section} - {instructorNames.join(", ")} -{" "}
-                      {section.info.campus}
-                    </p>
-                    <ul className="schedule-list">
-                      {section.courseSchedule.map((schedule) => {
-                        return (
-                          <li
-                            key={schedule.sectionCode}
-                            className="schedule-unit"
-                          >
-                            {schedule.days.join(", ")} {schedule.startTime} -{" "}
-                            {schedule.endTime}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                );
-              })}
+              {courseShown?.last_sections.sections
+                .filter((s) => s.info.type !== "n")
+                .map((section) => {
+                  const instructorNames =
+                    section.info.instructorNames.length > 0
+                      ? section.info.instructorNames
+                      : ["Unknown"];
+                  return (
+                    <div
+                      className="section-unit"
+                      key={section.info.classNumber}
+                    >
+                      <p>
+                        {section.info.section} - {instructorNames.join(", ")}
+                      </p>
+                      {section.info.campus !== "None" && (
+                        <p>{section.info.campus}</p>
+                      )}
+                      <ul className="schedule-list">
+                        {section.courseSchedule
+                          .filter((schedule) => schedule.days !== "")
+                          .map((schedule) => {
+                            return (
+                              <li
+                                key={schedule.sectionCode}
+                                className="schedule-unit"
+                              >
+                                {schedule.days}; {schedule.startTime}-{" "}
+                                {schedule.endTime}
+                              </li>
+                            );
+                          })}
+                      </ul>
+                    </div>
+                  );
+                })}
             </div>
+          </div>
+          <div className="course-info course-last-sections">
+            {courseShown?.future_sections.sections.length > 0 ? (
+              <>
+                <h2>Next available - {courseShown?.future_sections.term}</h2>
+                <div className="sections-container">
+                  {courseShown?.future_sections.sections
+                    .filter((s) => s.info.type !== "n")
+                    .map((section) => {
+                      const instructorNames =
+                        section.info.instructorNames.length > 0
+                          ? section.info.instructorNames
+                          : ["Unknown"];
+                      return (
+                        <div
+                          className="section-unit"
+                          key={section.info.classNumber}
+                        >
+                          <p>
+                            {section.info.section} -{" "}
+                            {instructorNames.join(", ")}
+                          </p>
+                          {section.info.campus !== "None" && (
+                            <p>{section.info.campus}</p>
+                          )}
+
+                          <ul className="schedule-list">
+                            {section.courseSchedule
+                              .filter((schedule) => schedule.days !== "")
+                              .map((schedule) => {
+                                return (
+                                  <li
+                                    key={schedule.sectionCode}
+                                    className="schedule-unit"
+                                  >
+                                    {schedule.days}; {schedule.startTime}-{" "}
+                                    {schedule.endTime}
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                        </div>
+                      );
+                    })}
+                </div>
+              </>
+            ) : (
+              <h2>
+                Currently not offered for {courseShown?.future_sections.term}
+              </h2>
+            )}
           </div>
         </div>
       );

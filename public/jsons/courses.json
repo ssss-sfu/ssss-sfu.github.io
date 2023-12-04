@@ -29,17 +29,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "18:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "19:20"
@@ -63,25 +59,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "18:20"
@@ -100,25 +90,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "18:20"
@@ -159,19 +143,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -190,9 +168,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -211,9 +187,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -232,9 +206,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -253,9 +225,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -274,9 +244,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -295,9 +263,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -316,9 +282,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -337,9 +301,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -376,11 +338,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -399,9 +357,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -420,9 +376,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -441,9 +395,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -462,9 +414,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -483,9 +433,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -504,9 +452,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -525,9 +471,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -546,9 +490,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -572,18 +514,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -600,9 +537,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -619,9 +554,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -638,9 +571,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -657,9 +588,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -676,9 +605,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -695,9 +622,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -714,9 +639,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -733,9 +656,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -772,17 +693,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "11:20"
@@ -806,19 +723,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -855,11 +766,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -883,25 +790,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -938,17 +839,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "15:30",
                                     "endTime": "17:20"
@@ -965,9 +862,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -984,9 +879,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -1003,9 +896,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1022,9 +913,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1041,9 +930,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1060,9 +947,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1079,9 +964,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -1098,9 +981,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -1119,11 +1000,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "18:30"
@@ -1140,9 +1017,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -1159,9 +1034,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -1178,9 +1051,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -1197,9 +1068,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -1216,9 +1085,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -1235,9 +1102,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -1254,9 +1119,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -1273,9 +1136,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -1299,25 +1160,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -1336,9 +1191,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -1357,9 +1210,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -1378,9 +1229,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1399,9 +1248,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1420,9 +1267,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1441,9 +1286,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1462,9 +1305,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -1483,9 +1324,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -1504,17 +1343,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -1533,17 +1368,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -1562,17 +1393,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -1591,17 +1418,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1620,17 +1443,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1649,17 +1468,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1678,17 +1493,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1707,17 +1518,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -1736,17 +1543,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -1783,17 +1586,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1812,17 +1611,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
@@ -1846,25 +1641,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
@@ -1883,25 +1672,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -1920,25 +1703,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -1975,11 +1752,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -1996,9 +1769,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -2015,9 +1786,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -2034,9 +1803,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -2053,9 +1820,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -2072,9 +1837,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -2091,9 +1854,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -2110,9 +1871,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2129,9 +1888,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2148,17 +1905,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -2175,9 +1928,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -2194,9 +1945,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -2213,9 +1962,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2232,9 +1979,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2251,9 +1996,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2270,9 +2013,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2289,9 +2030,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2308,9 +2047,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2335,25 +2072,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -2373,17 +2104,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2403,17 +2130,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2433,17 +2156,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2463,17 +2182,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2493,17 +2208,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2523,17 +2234,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2553,17 +2260,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2583,17 +2286,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2613,17 +2312,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2660,17 +2355,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
@@ -2689,9 +2380,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2710,9 +2399,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -2731,9 +2418,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2752,9 +2437,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2773,9 +2456,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2794,9 +2475,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -2815,9 +2494,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -2836,9 +2513,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -2857,17 +2532,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -2886,9 +2557,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -2907,9 +2576,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -2928,9 +2595,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -2949,9 +2614,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -2970,9 +2633,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -2991,9 +2652,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -3012,9 +2671,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -3033,9 +2690,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -3059,25 +2714,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -3096,9 +2745,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -3117,9 +2764,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -3138,9 +2783,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -3159,9 +2802,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -3180,9 +2821,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -3201,9 +2840,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -3222,9 +2859,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -3243,9 +2878,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -3264,25 +2897,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
@@ -3301,9 +2928,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -3322,9 +2947,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -3343,9 +2966,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -3364,9 +2985,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -3385,9 +3004,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -3406,9 +3023,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -3427,9 +3042,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "17:30",
                                     "endTime": "18:20"
@@ -3448,9 +3061,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LAB",
                                     "startTime": "17:30",
                                     "endTime": "18:20"
@@ -3469,25 +3080,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -3506,17 +3111,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -3535,17 +3136,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -3564,17 +3161,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -3593,17 +3186,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -3622,17 +3211,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -3651,17 +3236,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -3680,17 +3261,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -3709,17 +3286,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -3760,25 +3333,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -3797,17 +3364,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "11:20"
@@ -3826,9 +3389,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LAB",
                                     "startTime": "8:30",
                                     "endTime": "11:20"
@@ -3865,17 +3426,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
@@ -3894,9 +3451,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "TUT",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -3920,25 +3475,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -3957,9 +3506,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "TUT",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -3996,11 +3543,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4017,9 +3560,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4036,9 +3577,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -4055,9 +3594,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -4074,9 +3611,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -4093,9 +3628,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -4112,9 +3645,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -4133,11 +3664,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -4156,9 +3683,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -4177,9 +3702,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -4198,9 +3721,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -4217,7 +3738,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -4251,19 +3772,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4280,17 +3795,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4307,17 +3818,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -4334,17 +3841,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -4361,9 +3864,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -4380,9 +3881,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -4401,19 +3900,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4430,17 +3923,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4457,17 +3946,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -4484,17 +3969,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -4511,9 +3992,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -4530,9 +4009,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "SEM",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
@@ -4551,19 +4028,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4580,17 +4051,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "SEM",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -4607,9 +4074,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "SEM",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -4626,9 +4091,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "SEM",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -4647,19 +4110,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -4678,9 +4135,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "SEM",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -4699,9 +4154,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "SEM",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -4720,9 +4173,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "SEM",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -4739,7 +4190,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -4790,19 +4241,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4821,19 +4266,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4852,19 +4291,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4883,19 +4316,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -4912,7 +4339,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -4959,11 +4386,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -4982,11 +4405,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -5003,11 +4422,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -5026,11 +4441,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -5047,7 +4458,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -5064,7 +4475,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -5088,19 +4499,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -5117,7 +4522,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -5154,11 +4559,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -5175,11 +4576,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -5198,11 +4595,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -5219,7 +4612,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -5253,19 +4646,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -5285,19 +4672,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -5314,7 +4695,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "OPL",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -5366,11 +4747,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -5389,17 +4766,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "19:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "18:20"
@@ -5418,17 +4791,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -5452,19 +4821,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -5483,25 +4846,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "18:50"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "18:50"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "17:30",
                                     "endTime": "18:50"
@@ -5538,17 +4895,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "11:20"
@@ -5567,17 +4920,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
@@ -5601,17 +4950,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -5653,17 +4998,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -5682,9 +5023,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "19:20"
@@ -5708,25 +5047,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -5745,17 +5078,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "19:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "19:20"
@@ -5792,17 +5121,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "15:30",
                                     "endTime": "17:20"
@@ -5826,25 +5151,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -5863,25 +5182,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -5900,19 +5213,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
@@ -5949,9 +5256,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "17:00",
                                     "endTime": "19:50"
@@ -5975,25 +5280,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -6030,17 +5329,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "9:30",
                                     "endTime": "10:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
@@ -6064,17 +5359,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -6111,17 +5402,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -6145,25 +5432,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "9:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "10:20"
@@ -6200,11 +5481,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -6228,11 +5505,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -6269,17 +5542,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "18:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
@@ -6303,19 +5572,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday",
-                                        "Wednesday",
-                                        "Friday"
-                                    ],
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -6350,17 +5613,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -6385,17 +5644,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
@@ -6441,25 +5696,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
@@ -6500,25 +5749,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -6559,25 +5802,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -6614,17 +5851,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
@@ -6648,9 +5881,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "8:30",
                                     "endTime": "11:20"
@@ -6691,17 +5922,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "13:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "11:30",
                                     "endTime": "12:20"
@@ -6738,17 +5965,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "12:20"
                                 },
                                 {
-                                    "days": [
-                                        "Wednesday"
-                                    ],
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
@@ -6772,17 +5995,13 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Monday"
-                                    ],
+                                    "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 },
                                 {
-                                    "days": [
-                                        "Thursday"
-                                    ],
+                                    "days": "Th",
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "16:20"
@@ -6823,25 +6042,19 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Tuesday"
-                                    ],
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": [
-                                        "Friday"
-                                    ],
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
@@ -6881,7 +6094,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -6898,7 +6111,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -6915,7 +6128,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -6940,7 +6153,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -6959,7 +6172,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -6976,7 +6189,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -7013,7 +6226,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -7033,7 +6246,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -7050,7 +6263,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -7074,7 +6287,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -7091,7 +6304,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
@@ -7108,7 +6321,7 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": [],
+                                    "days": "",
                                     "sectionCode": "CAP",
                                     "startTime": "None",
                                     "endTime": "None"
