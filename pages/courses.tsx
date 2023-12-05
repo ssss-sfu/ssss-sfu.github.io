@@ -33,7 +33,7 @@ const Courses: React.FC = () => {
         <section className="requirements-section">
           <div
             className={`requirements-container ${
-              courseShown === null ? "full-width" : ""
+              courseShown !== null ? "half-width" : ""
             }`}
           >
             {requirements.map((req: Requirement) => (

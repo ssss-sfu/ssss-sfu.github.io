@@ -15,10 +15,6 @@
   flex-direction: column;
   gap: 1em;
   margin: 2em 0;
-  flex: 0 0 50%;
-}
-
-.full-width {
   flex: 0 0 100%;
 }
 
@@ -73,15 +69,9 @@
 
       &:hover {
         opacity: 0.9;
-        transform: translateY(-0.1rem);
-      }
-
-      &:active {
-        transform: scale(0.99);
-      }
-
-      &.secondary {
-        background-color: var(--colour-neutral-1000);
+        // transform: translateY(-0.1rem);
+        background-color: var(--colour-neutral-100);
+        color: var(--colour-neutral-1100);
       }
     }
   }
@@ -114,5 +104,22 @@
         }
       }
     }
+  }
+}
+
+@include viewport(tablet-desktop) {
+  .half-width {
+    flex: 0 0 50%;
+  }
+}
+
+@include viewport(mobile) {
+  .sidebar-course {
+    width: 90%;
+    left: 50%;
+    right: 50%;
+    top: 7%;
+    height: 60vh;
+    transform: translateX(-50%);
   }
 }
