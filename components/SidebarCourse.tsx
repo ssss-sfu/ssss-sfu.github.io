@@ -75,15 +75,20 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
         <h2>{course.info.title}</h2>
         <p>{course.info.description}</p>
         {course.info.notes && <p>{course.info.notes}</p>}
-        <p>Prerequisites: {course.info.prerequisites}</p>
+        <p>
+          Prerequisites:{" "}
+          {course.info.prerequisites !== ""
+            ? course.info.prerequisites
+            : "None"}
+        </p>
       </div>
       <SectionsPerTermDisplay
-        title="Last available"
+        title="Last offering"
         sectionsPerTerm={course.last_sections}
       />
       {course.future_sections.sections.length > 0 ? (
         <SectionsPerTermDisplay
-          title="Next available"
+          title="Next offering"
           sectionsPerTerm={course.future_sections}
         />
       ) : (
