@@ -50,16 +50,19 @@ View the live site here: https://sfussss.org/
    npm i
    ```
 
-   d. Create a new branch in this format:
+   d. Create a new branch from Github Issue UI
+
+    ![image](https://github.com/ssss-sfu/ssss-sfu.github.io/assets/70176191/db541fce-a664-4c5a-832a-6158dbd7fabe)
+
 
    ```
-   [computing ID or GitHub username]/[task-name-concise]
+   [issue-number]-[issue-name]
    ```
 
-   e.g. `kiaanc/read-me-update`
+   e.g. `121-poc-implement-course-explorer`
 
    ```
-   git checkout -b kiaanc/read-me-update
+   git checkout -b 121-poc-implement-course-explorer
    ```
 
    This will create a new branch and check out instantly to that branch. Equivalent with:
@@ -69,13 +72,13 @@ View the live site here: https://sfussss.org/
    git checkout kiaanc/read-me-update
    ```
 
-   f. Run the server locally
+   e. Run the server locally
 
    ```
    npm run dev
    ```
 
-   g. View the project in your browser
+   f. View the project in your browser
 
    ```
    localhost:3000
