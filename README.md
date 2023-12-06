@@ -52,8 +52,7 @@ View the live site here: https://sfussss.org/
 
    d. Create a new branch from Github Issue UI
 
-    ![image](https://github.com/ssss-sfu/ssss-sfu.github.io/assets/70176191/db541fce-a664-4c5a-832a-6158dbd7fabe)
-
+   ![image](https://github.com/ssss-sfu/ssss-sfu.github.io/assets/70176191/db541fce-a664-4c5a-832a-6158dbd7fabe)
 
    ```
    [issue-number]-[issue-name]
