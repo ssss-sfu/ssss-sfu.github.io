@@ -41,9 +41,12 @@ export const HeaderNav: React.FC = () => {
             <Link href="/resources" className="page-link">
               Resources
             </Link>
-            {/* <Link href="/blog" className="page-link">
+            <Link href="/blog" className="page-link">
               Blog
-            </Link> */}
+            </Link>
+            <Link href="/courses" className="page-link">
+              Courses
+            </Link>
           </nav>
 
           <div className="socials">
