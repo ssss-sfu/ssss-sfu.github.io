@@ -45,7 +45,7 @@ const Courses: React.FC = () => {
             </a>{" "}
             or{" "}
             <a
-              href="https://www.sfu.ca/computing/current-students/undergraduate-students/for"
+              href="https://www.sfu.ca/computing/current-students/undergraduate-students/forms"
               target="_blank"
               rel="noreferrer"
             >
