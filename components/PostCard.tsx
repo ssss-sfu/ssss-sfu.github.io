@@ -12,7 +12,11 @@ interface PostCardProps {
 export const PostCard: React.FC<PostCardProps> = ({ post }) => {
   return (
     <div className="post">
-      <Link as={`/blog/${post.slug.current}`} href="/blog/[slug]">
+      <Link
+        as={`/blog/${post.slug.current}`}
+        href="/blog/[slug]"
+        className="post-link"
+      >
         <article className="post">
           <div className="thumbnail">
             {post.mainImage ? (
