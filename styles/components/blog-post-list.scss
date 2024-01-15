@@ -6,6 +6,9 @@
   width: 100%;
   gap: 16px;
 
+  .post-link {
+    text-decoration: none;
+  }
   .post {
     border-radius: 12px;
     display: flex;
@@ -34,7 +37,6 @@
     }
     .text {
       padding: 16px;
-
       .title {
         font-size: 1.2em;
         margin-bottom: 12px;
@@ -45,7 +47,7 @@
         flex-direction: row;
         gap: 4px;
         align-items: center;
-        font-size: 0.7em;
+        font-size: 1em;
       }
       .summary {
         margin-top: 8px;

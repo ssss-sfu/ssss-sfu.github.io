@@ -2,7 +2,8 @@ import { PortableText } from "@portabletext/react";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import { useLiveQuery } from "next-sanity/preview";
-
+import urlBuilder from "@sanity/image-url";
+import { getImageDimensions } from "@sanity/asset-utils";
 import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
@@ -17,6 +18,7 @@ import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
 import { formatDate } from "utils/index";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 interface Query {
   [key: string]: string;
@@ -44,6 +46,20 @@ export const getStaticProps: GetStaticProps<
       post,
     },
   };
+};
+
+// Barebones lazy-loaded image component
+const SampleImageComponent = ({ value }: { value: any }) => {
+  const { width, height } = getImageDimensions(value);
+  return (
+    <Image
+      className="post__image"
+      src={urlForImage(value)!.width(400).fit("max").auto("format").url()}
+      height={height * (400 / width)} // Adjust height based on the new width to maintain aspect ratio
+      width={400}
+      alt=""
+    />
+  );
 };
 
 export default function ProjectSlugRoute(
@@ -85,7 +101,14 @@ export default function ProjectSlugRoute(
           </div>
         </header>
         <div className="container blog-content">
-          <PortableText value={post.body} />
+          <PortableText
+            value={post.body}
+            components={{
+              types: {
+                image: SampleImageComponent,
+              },
+            }}
+          />
         </div>
       </main>
     </div>
