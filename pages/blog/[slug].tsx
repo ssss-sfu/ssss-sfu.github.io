@@ -6,7 +6,7 @@ import urlBuilder from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
-import { urlForImage } from "@lib/sanity.image";
+import { getImageProps, urlForImage } from "@lib/sanity.image";
 import { Helmet } from "@components";
 import {
   getPost,
@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps<
 };
 
 // Barebones lazy-loaded image component
-const SampleImageComponent = ({ value }: { value: any }) => {
+const SanityImage = ({ value }: { value: any }) => {
   const { width, height } = getImageDimensions(value);
   return (
     <Image
@@ -69,19 +69,14 @@ export default function ProjectSlugRoute(
     slug: props.post.slug.current,
   });
 
+  // const { width, height } = useNextSanityImage
   return (
     <div className="blog-category-page">
       <Helmet pageTitle={post.title} />
       <main>
         <header className="container hero">
           {post.mainImage ? (
-            <Image
-              className="post__cover"
-              src={urlForImage(post.mainImage)!.url()}
-              height={231}
-              width={367}
-              alt=""
-            />
+            <SanityImage value={post.mainImage} />
           ) : (
             <div className="post__cover--none" />
           )}
@@ -105,7 +100,7 @@ export default function ProjectSlugRoute(
             value={post.body}
             components={{
               types: {
-                image: SampleImageComponent,
+                image: SanityImage,
               },
             }}
           />
