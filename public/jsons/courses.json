@@ -23,9 +23,7 @@
                                 "classNumber": "3993",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": [
-                                    "Herbert Tsang"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -125,9 +123,7 @@
                                 "classNumber": "6100",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -144,9 +140,7 @@
                                 "classNumber": "6102",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -163,9 +157,7 @@
                                 "classNumber": "6103",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -182,9 +174,7 @@
                                 "classNumber": "6104",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -201,9 +191,7 @@
                                 "classNumber": "6105",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -220,9 +208,7 @@
                                 "classNumber": "6108",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -239,9 +225,7 @@
                                 "classNumber": "6109",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -258,9 +242,7 @@
                                 "classNumber": "6110",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Brian Fraser"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -568,13 +550,13 @@
                                     "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
-                                    "endTime": "23:20"
+                                    "endTime": "12:20"
                                 },
                                 {
-                                    "days": "Th",
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
-                                    "endTime": "12:20"
+                                    "endTime": "11:20"
                                 }
                             ]
                         }
@@ -1370,16 +1352,16 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Mo",
+                                    "days": "We",
                                     "sectionCode": "LEC",
-                                    "startTime": "12:30",
+                                    "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": "We",
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
-                                    "endTime": "13:20"
+                                    "endTime": "14:20"
                                 }
                             ]
                         }
@@ -1451,7 +1433,7 @@
                     "corequisites": "",
                     "notes": "",
                     "deliveryMethod": "In Person",
-                    "units": "3"
+                    "units": "4"
                 },
                 "future_sections": {
                     "term": "Summer 2024",
@@ -1633,9 +1615,7 @@
                                 "classNumber": "4044",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1658,9 +1638,7 @@
                                 "classNumber": "4045",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1677,9 +1655,7 @@
                                 "classNumber": "4046",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1696,9 +1672,7 @@
                                 "classNumber": "4047",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1715,9 +1689,7 @@
                                 "classNumber": "4048",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1734,9 +1706,7 @@
                                 "classNumber": "4049",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1753,9 +1723,7 @@
                                 "classNumber": "4050",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Arrvindh Shriraman"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1796,7 +1764,9 @@
                                 "classNumber": "6981",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1813,7 +1783,9 @@
                                 "classNumber": "6982",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1830,7 +1802,9 @@
                                 "classNumber": "6983",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1847,7 +1821,9 @@
                                 "classNumber": "6984",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1864,7 +1840,9 @@
                                 "classNumber": "6985",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1881,7 +1859,9 @@
                                 "classNumber": "6986",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1898,7 +1878,9 @@
                                 "classNumber": "6987",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1915,7 +1897,9 @@
                                 "classNumber": "6988",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Anne Lavergne"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1933,6 +1917,7 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
+                                    "Arrvindh Shriraman",
                                     "Arrvindh Shriraman"
                                 ]
                             },
@@ -1957,7 +1942,9 @@
                                 "classNumber": "6989",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Arrvindh Shriraman"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1974,7 +1961,9 @@
                                 "classNumber": "6990",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Arrvindh Shriraman"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1991,14 +1980,16 @@
                                 "classNumber": "6991",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Arrvindh Shriraman"
+                                ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
                                 }
                             ]
                         },
@@ -2008,82 +1999,16 @@
                                 "classNumber": "6992",
                                 "type": "n",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Arrvindh Shriraman"
+                                ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D205",
-                                "classNumber": "6993",
-                                "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LAB",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D206",
-                                "classNumber": "6994",
-                                "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LAB",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D207",
-                                "classNumber": "6995",
-                                "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LAB",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D208",
-                                "classNumber": "6996",
-                                "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LAB",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
                                 }
                             ]
                         }
@@ -2143,7 +2068,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 }
@@ -2162,7 +2087,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "14:30",
                                     "endTime": "15:20"
                                 }
@@ -2181,7 +2106,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 }
@@ -2200,7 +2125,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "15:30",
                                     "endTime": "16:20"
                                 }
@@ -2219,7 +2144,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 }
@@ -2238,7 +2163,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "16:30",
                                     "endTime": "17:20"
                                 }
@@ -2257,7 +2182,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "17:30",
                                     "endTime": "18:20"
                                 }
@@ -2276,7 +2201,7 @@
                             "courseSchedule": [
                                 {
                                     "days": "We",
-                                    "sectionCode": "LAB",
+                                    "sectionCode": "TUT",
                                     "startTime": "17:30",
                                     "endTime": "18:20"
                                 }
@@ -2471,7 +2396,7 @@
                                 "type": "e",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2689,17 +2614,15 @@
                                 "section": "LAB1",
                                 "classNumber": "1199",
                                 "type": "n",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Mohammad Narimani"
-                                ]
+                                "campus": "Surrey",
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LAB",
-                                    "startTime": "10:30",
-                                    "endTime": "13:20"
+                                    "startTime": "12:30",
+                                    "endTime": "15:20"
                                 }
                             ]
                         },
@@ -2708,17 +2631,15 @@
                                 "section": "LAB2",
                                 "classNumber": "1200",
                                 "type": "n",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Mohammad Narimani"
-                                ]
+                                "campus": "Surrey",
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "13:30",
-                                    "endTime": "16:20"
+                                    "startTime": "12:30",
+                                    "endTime": "15:20"
                                 }
                             ]
                         }
@@ -2764,9 +2685,7 @@
                                 "classNumber": "2272",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Amr Marzouk"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -2789,9 +2708,7 @@
                                 "classNumber": "7592",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": [
-                                    "Amr Marzouk"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -2892,17 +2809,13 @@
                                 "classNumber": "2621",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Mahsa Faizrahnemoon"
+                                ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Mo, We, Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
@@ -3233,9 +3146,7 @@
                                 "classNumber": "7884",
                                 "type": "e",
                                 "campus": "Burnaby",
-                                "instructorNames": [
-                                    "Mahsa Faizrahnemoon"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -3328,7 +3239,9 @@
                                 "classNumber": "2622",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Stephen Choi"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -3406,7 +3319,7 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Daniel Venn"
+                                    "Lyn Ge"
                                 ]
                             },
                             "courseSchedule": [
@@ -3495,7 +3408,9 @@
                                 "classNumber": "2634",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Justin Chan"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -3554,7 +3469,8 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Luis Goddyn"
+                                    "Luis Goddyn",
+                                    "Brenda Davison"
                                 ]
                             },
                             "courseSchedule": [
@@ -3689,7 +3605,7 @@
                                 "type": "e",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Ben Baral"
                                 ]
                             },
                             "courseSchedule": [
@@ -3756,9 +3672,7 @@
                                 "classNumber": "4060",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": [
-                                    "John Edgar"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -3781,7 +3695,9 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Steve Pearce"
+                                    "Steve Pearce",
+                                    "Parsa Rajabi",
+                                    "Chris Kerslake"
                                 ]
                             },
                             "courseSchedule": [
@@ -3806,7 +3722,8 @@
                                 "type": "e",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Parsa Rajabi",
+                                    "Chris Kerslake"
                                 ]
                             },
                             "courseSchedule": [
@@ -4024,14 +3941,14 @@
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LEC",
-                                    "startTime": "10:30",
-                                    "endTime": "11:20"
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
                                 },
                                 {
-                                    "days": "Th",
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
-                                    "startTime": "9:30",
-                                    "endTime": "11:20"
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
                                 }
                             ]
                         }
@@ -4218,7 +4135,9 @@
                                 "classNumber": "4064",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "John Edgar"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -4286,7 +4205,7 @@
                         {
                             "info": {
                                 "section": "D100",
-                                "classNumber": "4065",
+                                "classNumber": "4603",
                                 "type": "e",
                                 "campus": "None",
                                 "instructorNames": []
@@ -4296,13 +4215,13 @@
                                     "days": "Mo",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
-                                    "endTime": "11:20"
+                                    "endTime": "12:20"
                                 },
                                 {
-                                    "days": "Th",
+                                    "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
-                                    "endTime": "12:20"
+                                    "endTime": "11:20"
                                 }
                             ]
                         }
@@ -4317,7 +4236,9 @@
                                 "classNumber": "7129",
                                 "type": "e",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Jianliang Wu"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -4633,33 +4554,7 @@
                 },
                 "future_sections": {
                     "term": "Summer 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "4066",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Ouldooz Baghban Karimi"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "13:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -4827,7 +4722,9 @@
                                 "classNumber": "7130",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Tianzheng Wang"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -4861,7 +4758,9 @@
                                 "classNumber": "7132",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Ke Li"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -5824,7 +5723,7 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -6043,16 +5942,16 @@
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Mo",
+                                    "days": "We",
                                     "sectionCode": "LEC",
-                                    "startTime": "12:30",
+                                    "startTime": "13:30",
                                     "endTime": "14:20"
                                 },
                                 {
-                                    "days": "We",
+                                    "days": "Fr",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
-                                    "endTime": "13:20"
+                                    "endTime": "14:20"
                                 }
                             ]
                         }
@@ -6258,7 +6157,8 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Steve Pearce"
+                                    "Steve Pearce",
+                                    "Ahmadreza Nezami"
                                 ]
                             },
                             "courseSchedule": [
@@ -6490,9 +6390,7 @@
                                 "classNumber": "6142",
                                 "type": "e",
                                 "campus": "Burnaby",
-                                "instructorNames": [
-                                    "Xingdong Yang"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -6518,7 +6416,7 @@
                     "number": "363",
                     "title": "User Interface Design",
                     "description": "This course provides a comprehensive study of user interface design. Topics include: goals and principles of UI design (systems engineering and human factors), historical perspective, current paradigms (widget-based, mental model, graphic design, ergonomics, metaphor, constructivist/iterative approach, and visual languages) and their evaluation, existing tools and packages (dialogue models, event-based systems, prototyping), future paradigms, and the social impact of UI.",
-                    "prerequisites": "CMPT 225 with a minimum grade of C-.",
+                    "prerequisites": "CMPT 225 and CMPT 263, both with a minimum grade of C-.",
                     "corequisites": "",
                     "notes": "",
                     "deliveryMethod": "In Person",
@@ -6662,7 +6560,7 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "David Chou"
                                 ]
                             },
                             "courseSchedule": [
@@ -7175,10 +7073,10 @@
                     "dept": "CMPT",
                     "number": "461",
                     "title": "Computational Photography and Image Manipulation",
-                    "description": "Computational Photography is concerned with overcoming the limitations of traditional photography with computation: in optics, sensors, and geometry; and even in composition, style, and human interfaces. The course covers computational techniques to improve the way we process, manipulate, and interact with visual media. The covered topics include image-based lighting and rendering, camera geometry and optics, computational apertures, advanced image filtering operations, high-dynamic range, image blending, texture synthesis and inpainting.",
-                    "prerequisites": "CMPT 361, (MACM 201 or CMPT 210), and MACM 316, all with a minimum grade of C-.",
+                    "description": "Computational photography is concerned with overcoming the limitations of traditional photography with computation: in optics, sensors, and geometry; and even in composition, style, and human interfaces. The course covers computational techniques to improve the way we process, manipulate, and interact with visual media. The covered topics include intrinsic decomposition, monocular depth estimation, edit propagation, camera geometry and optics, computational apertures, advanced image filtering operations, high-dynamic range, image blending, texture synthesis and inpainting.",
+                    "prerequisites": "CMPT 361 with a minimum grade of C-.",
                     "corequisites": "",
-                    "notes": "Students with credit for CMPT 451 may not take this course for further credit.",
+                    "notes": "",
                     "deliveryMethod": "In Person",
                     "units": "3"
                 },
@@ -7331,7 +7229,7 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Dan Ridinger"
                                 ]
                             },
                             "courseSchedule": [
