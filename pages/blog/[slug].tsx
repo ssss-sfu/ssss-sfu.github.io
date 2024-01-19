@@ -2,11 +2,10 @@ import { PortableText } from "@portabletext/react";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import { useLiveQuery } from "next-sanity/preview";
-import urlBuilder from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
-import { getImageProps, urlForImage } from "@lib/sanity.image";
+import { urlForImage } from "@lib/sanity.image";
 import { Helmet } from "@components";
 import {
   getPost,
@@ -18,7 +17,6 @@ import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
 import { formatDate } from "utils/index";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 interface Query {
   [key: string]: string;
@@ -57,7 +55,7 @@ const SanityImage = ({ value }: { value: any }) => {
       src={urlForImage(value)!.width(400).fit("max").auto("format").url()}
       height={height * (400 / width)} // Adjust height based on the new width to maintain aspect ratio
       width={400}
-      alt=""
+      alt="Post Image"
     />
   );
 };
