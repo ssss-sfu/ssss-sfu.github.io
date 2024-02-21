@@ -85,30 +85,6 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
           <div className="committee-box">
             <div className="image-alignment">
               <Image
-                src={academicRepo}
-                layout="fill"
-                objectFit="cover"
-                alt="Academic repo image"
-              />
-            </div>
-            <h3>Academic Repo Commitee</h3>
-            <p>
-              Collecting course notes, professor reviews, and past exams (with
-              the professor’s permission) to better prepare everyone for their
-              academic journey.
-            </p>
-            <p>
-              <span className="access-time">
-                <Image src={clock} height={18} width={18} alt="Clock" />
-              </span>
-              Asynchronous
-            </p>
-            <span className="discord-channel-image-row">#academic repo</span>{" "}
-          </div>
-
-          <div className="committee-box">
-            <div className="image-alignment">
-              <Image
                 src={merch}
                 layout="fill"
                 objectFit="cover"
