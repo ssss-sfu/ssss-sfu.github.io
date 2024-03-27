@@ -53,6 +53,7 @@ const Courses: React.FC = () => {
             </a>{" "}
             for official resources.
           </p>
+          <p>Last updated: March 27, 2024</p>
         </section>
         <section className="requirements-section">
           <div

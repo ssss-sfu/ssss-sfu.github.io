@@ -22,8 +22,10 @@
                                 "section": "D100",
                                 "classNumber": "3993",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Herbert Tsang"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -463,31 +465,7 @@
                 },
                 "future_sections": {
                     "term": "Summer 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "4013",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -540,7 +518,7 @@
                                 "section": "D100",
                                 "classNumber": "4014",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
                                     "Bobby Chan"
                                 ]
@@ -607,17 +585,17 @@
                                 "section": "D100",
                                 "classNumber": "4015",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
-                                    "startTime": "9:30",
-                                    "endTime": "10:20"
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
                                 }
                             ]
                         },
@@ -628,7 +606,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -647,7 +625,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -666,7 +644,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -685,7 +663,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -704,7 +682,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -723,7 +701,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -742,7 +720,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -761,7 +739,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "John Edgar"
+                                    "Anne Lavergne"
                                 ]
                             },
                             "courseSchedule": [
@@ -778,23 +756,23 @@
                                 "section": "D200",
                                 "classNumber": "4024",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Mo",
+                                    "days": "Tu",
                                     "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
                                 },
                                 {
                                     "days": "Th",
                                     "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "16:20"
+                                    "startTime": "15:30",
+                                    "endTime": "17:20"
                                 }
                             ]
                         },
@@ -805,15 +783,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LAB",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
                                 }
                             ]
                         },
@@ -824,15 +802,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LAB",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
                                 }
                             ]
                         },
@@ -843,15 +821,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LAB",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
                                 }
                             ]
                         },
@@ -862,15 +840,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LAB",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
                                 }
                             ]
                         },
@@ -881,15 +859,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
                                 }
                             ]
                         },
@@ -900,15 +878,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
                                 }
                             ]
                         },
@@ -919,15 +897,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "17:30",
-                                    "endTime": "18:20"
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
                                 }
                             ]
                         },
@@ -938,15 +916,15 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Thomas Shermer"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "Th",
                                     "sectionCode": "LAB",
-                                    "startTime": "17:30",
-                                    "endTime": "18:20"
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
                                 }
                             ]
                         }
@@ -1326,10 +1304,8 @@
                                 "section": "D100",
                                 "classNumber": "4033",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Anne Lavergne"
-                                ]
+                                "campus": "Burnaby",
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -1345,7 +1321,7 @@
                                 "section": "D200",
                                 "classNumber": "4034",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
                                     "Bobby Chan"
                                 ]
@@ -1443,7 +1419,7 @@
                                 "section": "D100",
                                 "classNumber": "4035",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Gregory Baker"
                                 ]
@@ -1606,131 +1582,6 @@
                                     "sectionCode": "TUT",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D200",
-                                "classNumber": "4044",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "14:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D201",
-                                "classNumber": "4045",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "TUT",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D202",
-                                "classNumber": "4046",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "TUT",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D203",
-                                "classNumber": "4047",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "TUT",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D204",
-                                "classNumber": "4048",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "TUT",
-                                    "startTime": "15:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D205",
-                                "classNumber": "4049",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "TUT",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D206",
-                                "classNumber": "4050",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "TUT",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
                                 }
                             ]
                         }
@@ -2035,7 +1886,7 @@
                                 "section": "D100",
                                 "classNumber": "4073",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2044,14 +1895,14 @@
                                 {
                                     "days": "Tu",
                                     "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
                                 },
                                 {
-                                    "days": "Fr",
+                                    "days": "Th",
                                     "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
+                                    "startTime": "9:30",
+                                    "endTime": "11:20"
                                 }
                             ]
                         },
@@ -2060,7 +1911,7 @@
                                 "section": "D101",
                                 "classNumber": "4074",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2079,7 +1930,7 @@
                                 "section": "D102",
                                 "classNumber": "4075",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2098,7 +1949,7 @@
                                 "section": "D103",
                                 "classNumber": "4076",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2117,7 +1968,7 @@
                                 "section": "D104",
                                 "classNumber": "4077",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2136,7 +1987,7 @@
                                 "section": "D105",
                                 "classNumber": "4078",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2155,7 +2006,7 @@
                                 "section": "D106",
                                 "classNumber": "4079",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2174,7 +2025,7 @@
                                 "section": "D107",
                                 "classNumber": "4080",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2193,7 +2044,7 @@
                                 "section": "D108",
                                 "classNumber": "4081",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Steve Pearce"
                                 ]
@@ -2421,7 +2272,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2438,17 +2289,17 @@
                                 "section": "D202",
                                 "classNumber": "6951",
                                 "type": "n",
-                                "campus": "Surrey",
+                                "campus": "None",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "",
                                     "sectionCode": "LAB",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
+                                    "startTime": "None",
+                                    "endTime": "None"
                                 }
                             ]
                         },
@@ -2459,7 +2310,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2478,7 +2329,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2497,7 +2348,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2516,7 +2367,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2535,7 +2386,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2554,7 +2405,7 @@
                                 "type": "n",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Milan Tofiloski"
                                 ]
                             },
                             "courseSchedule": [
@@ -2589,7 +2440,7 @@
                                 "section": "D100",
                                 "classNumber": "1198",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
                                     "Mohammad Narimani"
                                 ]
@@ -2615,7 +2466,9 @@
                                 "classNumber": "1199",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Mohammad Narimani"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -2632,7 +2485,9 @@
                                 "classNumber": "1200",
                                 "type": "n",
                                 "campus": "Surrey",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Mohammad Narimani"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -2808,7 +2663,7 @@
                                 "section": "D100",
                                 "classNumber": "2621",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Mahsa Faizrahnemoon"
                                 ]
@@ -2819,6 +2674,57 @@
                                     "sectionCode": "LEC",
                                     "startTime": "13:30",
                                     "endTime": "14:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D101",
+                                "classNumber": "4781",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": []
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "SEM",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D102",
+                                "classNumber": "4782",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": []
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "SEM",
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "D103",
+                                "classNumber": "4783",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": []
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "SEM",
+                                    "startTime": "10:30",
+                                    "endTime": "11:20"
                                 }
                             ]
                         },
@@ -3238,7 +3144,7 @@
                                 "section": "D100",
                                 "classNumber": "2622",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Stephen Choi"
                                 ]
@@ -3404,10 +3310,10 @@
                     "sections": [
                         {
                             "info": {
-                                "section": "D200",
+                                "section": "D100",
                                 "classNumber": "2634",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
                                     "Justin Chan"
                                 ]
@@ -3556,8 +3462,10 @@
                                 "section": "D100",
                                 "classNumber": "4052",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Thomas Shermer"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -3671,15 +3579,17 @@
                                 "section": "D100",
                                 "classNumber": "4060",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "John Edgar"
+                                ]
                             },
                             "courseSchedule": [
                                 {
                                     "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
-                                    "startTime": "11:30",
-                                    "endTime": "12:20"
+                                    "startTime": "9:30",
+                                    "endTime": "10:20"
                                 }
                             ]
                         }
@@ -3769,8 +3679,10 @@
                                 "section": "D100",
                                 "classNumber": "4051",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Tianzheng Wang"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -3859,23 +3771,17 @@
                                 "section": "D100",
                                 "classNumber": "4055",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Zhengjie Miao"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "We, Fr",
                                     "sectionCode": "LEC",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "14:20"
+                                    "startTime": "15:30",
+                                    "endTime": "16:50"
                                 }
                             ]
                         }
@@ -3932,7 +3838,7 @@
                                 "section": "D100",
                                 "classNumber": "4059",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
                                     "Ouldooz Baghban Karimi"
                                 ]
@@ -3942,7 +3848,7 @@
                                     "days": "Tu",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
-                                    "endTime": "13:20"
+                                    "endTime": "14:20"
                                 },
                                 {
                                     "days": "Fr",
@@ -4134,23 +4040,17 @@
                                 "section": "D100",
                                 "classNumber": "4064",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "John Edgar"
                                 ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Tu",
+                                    "days": "Mo, We, Fr",
                                     "sectionCode": "LEC",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "14:20"
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
                                 }
                             ]
                         }
@@ -4207,21 +4107,17 @@
                                 "section": "D100",
                                 "classNumber": "4603",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Mohamed Hefeeda"
+                                ]
                             },
                             "courseSchedule": [
                                 {
-                                    "days": "Mo",
+                                    "days": "Mo, We",
                                     "sectionCode": "LEC",
-                                    "startTime": "10:30",
-                                    "endTime": "12:20"
-                                },
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LEC",
-                                    "startTime": "10:30",
-                                    "endTime": "11:20"
+                                    "startTime": "15:30",
+                                    "endTime": "16:50"
                                 }
                             ]
                         }
@@ -4436,31 +4332,7 @@
                 },
                 "future_sections": {
                     "term": "Summer 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "4061",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "16:30",
-                                    "endTime": "18:20"
-                                },
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LEC",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -4796,7 +4668,7 @@
                                 "type": "e",
                                 "campus": "None",
                                 "instructorNames": [
-                                    "Ouldooz Baghban Karimi"
+                                    "Tianzheng Wang"
                                 ]
                             },
                             "courseSchedule": [
@@ -4815,8 +4687,7 @@
                                 "type": "e",
                                 "campus": "None",
                                 "instructorNames": [
-                                    "Keval Vora",
-                                    "William Sumner"
+                                    "Yuepeng Wang"
                                 ]
                             },
                             "courseSchedule": [
@@ -4934,7 +4805,7 @@
                                 "section": "D100",
                                 "classNumber": "3994",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Gregory Baker"
                                 ]
@@ -4945,183 +4816,6 @@
                                     "sectionCode": "LEC",
                                     "startTime": "10:30",
                                     "endTime": "11:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D200",
-                                "classNumber": "3995",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "13:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D201",
-                                "classNumber": "3996",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D202",
-                                "classNumber": "3997",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D203",
-                                "classNumber": "3998",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "9:30",
-                                    "endTime": "10:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D204",
-                                "classNumber": "3999",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "9:30",
-                                    "endTime": "10:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D205",
-                                "classNumber": "4000",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "10:30",
-                                    "endTime": "11:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D206",
-                                "classNumber": "4001",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "10:30",
-                                    "endTime": "11:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D207",
-                                "classNumber": "4002",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "11:30",
-                                    "endTime": "12:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D208",
-                                "classNumber": "4003",
-                                "type": "n",
-                                "campus": "Surrey",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LAB",
-                                    "startTime": "11:30",
-                                    "endTime": "12:20"
                                 }
                             ]
                         }
@@ -5374,7 +5068,7 @@
                                 "section": "D100",
                                 "classNumber": "4004",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Anne Lavergne"
                                 ]
@@ -5748,7 +5442,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5767,7 +5461,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5786,7 +5480,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5805,7 +5499,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5824,7 +5518,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5843,7 +5537,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5862,7 +5556,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5881,7 +5575,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Sessional"
+                                    "Amir Daneshpajouh"
                                 ]
                             },
                             "courseSchedule": [
@@ -5916,10 +5610,8 @@
                                 "section": "D100",
                                 "classNumber": "4033",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Anne Lavergne"
-                                ]
+                                "campus": "Burnaby",
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -5935,7 +5627,7 @@
                                 "section": "D200",
                                 "classNumber": "4034",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Surrey",
                                 "instructorNames": [
                                     "Bobby Chan"
                                 ]
@@ -6127,8 +5819,10 @@
                                 "section": "D100",
                                 "classNumber": "4053",
                                 "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Ahmadreza Nezami"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -6246,7 +5940,7 @@
                                 "section": "D100",
                                 "classNumber": "4054",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Gregory Baker"
                                 ]
@@ -6307,31 +6001,7 @@
                 },
                 "future_sections": {
                     "term": "Summer 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "4056",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "21:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -6424,33 +6094,7 @@
                 },
                 "future_sections": {
                     "term": "Summer 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "4057",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": [
-                                    "Victor Cheung"
-                                ]
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "15:30",
-                                    "endTime": "17:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -6528,9 +6172,9 @@
                                 "section": "D100",
                                 "classNumber": "4058",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Jiangchuan Liu"
+                                    "David Chou"
                                 ]
                             },
                             "courseSchedule": [
@@ -6595,7 +6239,7 @@
                                 "section": "D100",
                                 "classNumber": "4062",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Tao Wang"
                                 ]
