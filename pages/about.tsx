@@ -9,7 +9,7 @@ const About: React.FC = () => {
 
   // TODO add validation and test cases for future PRs!
   useEffect(() => {
-    let json: string = JSON.stringify(execs.current);
+    let json: string = JSON.stringify(execs["2024-2025"]);
     let profiles: Profile[] = JSON.parse(json);
     setCurrentExecs(profiles);
   }, []);
