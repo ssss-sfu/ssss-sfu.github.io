@@ -675,7 +675,7 @@
                                 "section": "D101",
                                 "classNumber": "6337",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -694,7 +694,7 @@
                                 "section": "D102",
                                 "classNumber": "6338",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -713,7 +713,7 @@
                                 "section": "D103",
                                 "classNumber": "6339",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -732,7 +732,7 @@
                                 "section": "D104",
                                 "classNumber": "6340",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -776,7 +776,7 @@
                                 "section": "D201",
                                 "classNumber": "6342",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -795,7 +795,7 @@
                                 "section": "D202",
                                 "classNumber": "6343",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -814,7 +814,7 @@
                                 "section": "D203",
                                 "classNumber": "6344",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -833,7 +833,7 @@
                                 "section": "D204",
                                 "classNumber": "6345",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Sharan Vaswani"
                                 ]
@@ -1011,7 +1011,7 @@
                                 "section": "D102",
                                 "classNumber": "6319",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "John Edgar"
                                 ]
@@ -1049,7 +1049,7 @@
                                 "section": "D104",
                                 "classNumber": "6321",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "John Edgar"
                                 ]
@@ -1087,7 +1087,7 @@
                                 "section": "D106",
                                 "classNumber": "6323",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "John Edgar"
                                 ]
@@ -1125,7 +1125,7 @@
                                 "section": "D108",
                                 "classNumber": "6325",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "John Edgar"
                                 ]
@@ -1136,29 +1136,6 @@
                                     "sectionCode": "LAB",
                                     "startTime": "12:30",
                                     "endTime": "13:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D200",
-                                "classNumber": "6327",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "16:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
                                 }
                             ]
                         },
@@ -1696,29 +1673,6 @@
                         },
                         {
                             "info": {
-                                "section": "D200",
-                                "classNumber": "6328",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
                                 "section": "D300",
                                 "classNumber": "7478",
                                 "type": "e",
@@ -2204,9 +2158,9 @@
                                 "section": "D101",
                                 "classNumber": "6365",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2223,9 +2177,9 @@
                                 "section": "D102",
                                 "classNumber": "6366",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2242,9 +2196,9 @@
                                 "section": "D103",
                                 "classNumber": "6367",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2261,9 +2215,9 @@
                                 "section": "D104",
                                 "classNumber": "6368",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2280,9 +2234,9 @@
                                 "section": "D105",
                                 "classNumber": "6369",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2299,9 +2253,9 @@
                                 "section": "D106",
                                 "classNumber": "6370",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2318,9 +2272,9 @@
                                 "section": "D107",
                                 "classNumber": "6371",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2337,9 +2291,9 @@
                                 "section": "D108",
                                 "classNumber": "6372",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Brad Bart"
+                                    "Steve Pearce"
                                 ]
                             },
                             "courseSchedule": [
@@ -2375,7 +2329,7 @@
                                 "section": "D201",
                                 "classNumber": "6373",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2394,7 +2348,7 @@
                                 "section": "D202",
                                 "classNumber": "6374",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2413,7 +2367,7 @@
                                 "section": "D203",
                                 "classNumber": "6375",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2432,7 +2386,7 @@
                                 "section": "D204",
                                 "classNumber": "6376",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2451,7 +2405,7 @@
                                 "section": "D205",
                                 "classNumber": "6377",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2470,7 +2424,7 @@
                                 "section": "D206",
                                 "classNumber": "6378",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2489,7 +2443,7 @@
                                 "section": "D207",
                                 "classNumber": "6379",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -2508,7 +2462,7 @@
                                 "section": "D208",
                                 "classNumber": "6380",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -3072,7 +3026,7 @@
                                 "section": "D102",
                                 "classNumber": "3117",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Gary Parker"
                                 ]
@@ -3091,7 +3045,7 @@
                                 "section": "D103",
                                 "classNumber": "3118",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Gary Parker"
                                 ]
@@ -3194,7 +3148,7 @@
                                 "section": "D101",
                                 "classNumber": "4499",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3211,7 +3165,7 @@
                                 "section": "D102",
                                 "classNumber": "4500",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3228,7 +3182,7 @@
                                 "section": "D103",
                                 "classNumber": "4501",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3245,7 +3199,7 @@
                                 "section": "D104",
                                 "classNumber": "4502",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3262,7 +3216,7 @@
                                 "section": "D105",
                                 "classNumber": "4503",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3296,7 +3250,7 @@
                                 "section": "D201",
                                 "classNumber": "4504",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3313,7 +3267,7 @@
                                 "section": "D202",
                                 "classNumber": "4505",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3330,7 +3284,7 @@
                                 "section": "D203",
                                 "classNumber": "4506",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3347,7 +3301,7 @@
                                 "section": "D204",
                                 "classNumber": "4507",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3364,7 +3318,7 @@
                                 "section": "D205",
                                 "classNumber": "4508",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": []
                             },
                             "courseSchedule": [
@@ -3462,26 +3416,6 @@
                                     "endTime": "None"
                                 }
                             ]
-                        },
-                        {
-                            "info": {
-                                "section": "OP02",
-                                "classNumber": "3945",
-                                "type": "n",
-                                "campus": "",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": []
-                        },
-                        {
-                            "info": {
-                                "section": "OP03",
-                                "classNumber": "4013",
-                                "type": "n",
-                                "campus": "",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": []
                         }
                     ]
                 },
@@ -3652,16 +3586,6 @@
                             "info": {
                                 "section": "OP01",
                                 "classNumber": "5357",
-                                "type": "n",
-                                "campus": "",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": []
-                        },
-                        {
-                            "info": {
-                                "section": "OP02",
-                                "classNumber": "5358",
                                 "type": "n",
                                 "campus": "",
                                 "instructorNames": []
@@ -4274,52 +4198,6 @@
                     "sections": [
                         {
                             "info": {
-                                "section": "D200",
-                                "classNumber": "6278",
-                                "type": "e",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D300",
-                                "classNumber": "6286",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
                                 "section": "E100",
                                 "classNumber": "6277",
                                 "type": "e",
@@ -4637,29 +4515,6 @@
                                     "endTime": "19:20"
                                 }
                             ]
-                        },
-                        {
-                            "info": {
-                                "section": "E200",
-                                "classNumber": "6309",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "16:30",
-                                    "endTime": "17:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "15:30",
-                                    "endTime": "17:20"
-                                }
-                            ]
                         }
                     ]
                 },
@@ -4702,31 +4557,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6303",
-                                "type": "e",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "14:20"
-                                },
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LEC",
-                                    "startTime": "12:30",
-                                    "endTime": "13:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Summer 2024",
@@ -4936,31 +4767,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6289",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Fall 2023",
@@ -5186,7 +4993,7 @@
                                 "section": "D100",
                                 "classNumber": "6305",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Yuepeng Wang"
                                 ]
@@ -5800,7 +5607,7 @@
                     "sections": [
                         {
                             "info": {
-                                "section": "D100",
+                                "section": "E100",
                                 "classNumber": "6210",
                                 "type": "e",
                                 "campus": "Burnaby",
@@ -5812,23 +5619,23 @@
                                 {
                                     "days": "Mo",
                                     "sectionCode": "LEC",
-                                    "startTime": "10:30",
-                                    "endTime": "12:20"
+                                    "startTime": "16:30",
+                                    "endTime": "17:20"
                                 },
                                 {
-                                    "days": "We",
+                                    "days": "Th",
                                     "sectionCode": "LEC",
-                                    "startTime": "10:30",
-                                    "endTime": "11:20"
+                                    "startTime": "16:30",
+                                    "endTime": "18:20"
                                 }
                             ]
                         },
                         {
                             "info": {
-                                "section": "D101",
+                                "section": "E101",
                                 "classNumber": "6213",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Janice Regan"
                                 ]
@@ -5844,10 +5651,10 @@
                         },
                         {
                             "info": {
-                                "section": "D102",
+                                "section": "E102",
                                 "classNumber": "6214",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Janice Regan"
                                 ]
@@ -5863,7 +5670,7 @@
                         },
                         {
                             "info": {
-                                "section": "D103",
+                                "section": "E103",
                                 "classNumber": "6215",
                                 "type": "n",
                                 "campus": "Burnaby",
@@ -5882,10 +5689,10 @@
                         },
                         {
                             "info": {
-                                "section": "D104",
+                                "section": "E104",
                                 "classNumber": "6216",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Janice Regan"
                                 ]
@@ -5901,7 +5708,7 @@
                         },
                         {
                             "info": {
-                                "section": "D105",
+                                "section": "E105",
                                 "classNumber": "6217",
                                 "type": "n",
                                 "campus": "Burnaby",
@@ -5920,10 +5727,10 @@
                         },
                         {
                             "info": {
-                                "section": "D106",
+                                "section": "E106",
                                 "classNumber": "6218",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Janice Regan"
                                 ]
@@ -5939,10 +5746,10 @@
                         },
                         {
                             "info": {
-                                "section": "D107",
+                                "section": "E107",
                                 "classNumber": "6219",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Janice Regan"
                                 ]
@@ -5958,10 +5765,10 @@
                         },
                         {
                             "info": {
-                                "section": "D108",
+                                "section": "E108",
                                 "classNumber": "6220",
                                 "type": "n",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Janice Regan"
                                 ]
@@ -6196,29 +6003,6 @@
                         },
                         {
                             "info": {
-                                "section": "D200",
-                                "classNumber": "6328",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
                                 "section": "D300",
                                 "classNumber": "7478",
                                 "type": "e",
@@ -6355,31 +6139,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6273",
-                                "type": "e",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "9:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Fall 2023",
@@ -6804,48 +6564,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6281",
-                                "type": "e",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo, We, Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "13:30",
-                                    "endTime": "14:20"
-                                }
-                            ]
-                        },
-                        {
-                            "info": {
-                                "section": "D200",
-                                "classNumber": "6287",
-                                "type": "e",
-                                "campus": "Surrey",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Tu",
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "16:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -6924,7 +6643,10 @@
                                 "classNumber": "6282",
                                 "type": "e",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Jiangchuan Liu",
+                                    "Jiangchuan Liu"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -7328,31 +7050,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6308",
-                                "type": "e",
-                                "campus": "None",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "We",
-                                    "sectionCode": "LEC",
-                                    "startTime": "9:30",
-                                    "endTime": "10:20"
-                                },
-                                {
-                                    "days": "Fr",
-                                    "sectionCode": "LEC",
-                                    "startTime": "8:30",
-                                    "endTime": "10:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
@@ -7470,7 +7168,7 @@
                                 "section": "D100",
                                 "classNumber": "6296",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Kay C Wiese"
                                 ]
@@ -7671,7 +7369,7 @@
                                 "section": "D100",
                                 "classNumber": "6300",
                                 "type": "e",
-                                "campus": "None",
+                                "campus": "Burnaby",
                                 "instructorNames": [
                                     "Richard Zhang"
                                 ]
@@ -7732,18 +7430,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6301",
-                                "type": "e",
-                                "campus": "",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": []
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2023",
@@ -7790,31 +7477,7 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": [
-                        {
-                            "info": {
-                                "section": "D100",
-                                "classNumber": "6304",
-                                "type": "e",
-                                "campus": "Burnaby",
-                                "instructorNames": []
-                            },
-                            "courseSchedule": [
-                                {
-                                    "days": "Mo",
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "15:20"
-                                },
-                                {
-                                    "days": "Th",
-                                    "sectionCode": "LEC",
-                                    "startTime": "14:30",
-                                    "endTime": "16:20"
-                                }
-                            ]
-                        }
-                    ]
+                    "sections": []
                 },
                 "last_sections": {
                     "term": "Spring 2024",
