@@ -1673,6 +1673,31 @@
                         },
                         {
                             "info": {
+                                "section": "D200",
+                                "classNumber": "6328",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Parsa Rajabi"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
                                 "section": "D300",
                                 "classNumber": "7478",
                                 "type": "e",
@@ -3867,7 +3892,7 @@
                                 "type": "e",
                                 "campus": "Surrey",
                                 "instructorNames": [
-                                    "Tamon Stephen"
+                                    "Vijaykumar Singh"
                                 ]
                             },
                             "courseSchedule": [
@@ -6003,6 +6028,31 @@
                         },
                         {
                             "info": {
+                                "section": "D200",
+                                "classNumber": "6328",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "Parsa Rajabi"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "10:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "9:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
                                 "section": "D300",
                                 "classNumber": "7478",
                                 "type": "e",
@@ -6867,7 +6917,8 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Oliver Schulte"
+                                    "Oliver Schulte",
+                                    "Steven Bergner"
                                 ]
                             },
                             "courseSchedule": [
