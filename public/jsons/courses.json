@@ -1141,11 +1141,38 @@
                         },
                         {
                             "info": {
+                                "section": "D200",
+                                "classNumber": "6327",
+                                "type": "e",
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "16:20"
+                                },
+                                {
+                                    "days": "Fr",
+                                    "sectionCode": "LEC",
+                                    "startTime": "14:30",
+                                    "endTime": "15:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
                                 "section": "D201",
                                 "classNumber": "6329",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1161,8 +1188,10 @@
                                 "section": "D202",
                                 "classNumber": "6330",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1178,8 +1207,10 @@
                                 "section": "D203",
                                 "classNumber": "6331",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1195,8 +1226,10 @@
                                 "section": "D204",
                                 "classNumber": "6332",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1212,8 +1245,10 @@
                                 "section": "D205",
                                 "classNumber": "6333",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1229,8 +1264,10 @@
                                 "section": "D206",
                                 "classNumber": "6334",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1246,8 +1283,10 @@
                                 "section": "D207",
                                 "classNumber": "6335",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1263,8 +1302,10 @@
                                 "section": "D208",
                                 "classNumber": "6336",
                                 "type": "n",
-                                "campus": "Burnaby",
-                                "instructorNames": []
+                                "campus": "Surrey",
+                                "instructorNames": [
+                                    "David Chou"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -1717,7 +1758,7 @@
                                     "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
-                                    "endTime": "13:20"
+                                    "endTime": "14:20"
                                 }
                             ]
                         }
@@ -3048,6 +3089,25 @@
                         },
                         {
                             "info": {
+                                "section": "D101",
+                                "classNumber": "3116",
+                                "type": "n",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Gary Parker"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Tu",
+                                    "sectionCode": "TUT",
+                                    "startTime": "12:30",
+                                    "endTime": "13:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
                                 "section": "D102",
                                 "classNumber": "3117",
                                 "type": "n",
@@ -3340,8 +3400,8 @@
                         },
                         {
                             "info": {
-                                "section": "D205",
-                                "classNumber": "4508",
+                                "section": "D206",
+                                "classNumber": "7654",
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": []
@@ -3781,7 +3841,9 @@
                                 "classNumber": "3930",
                                 "type": "e",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Lyn Ge"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -3874,7 +3936,9 @@
                                 "classNumber": "3951",
                                 "type": "e",
                                 "campus": "Burnaby",
-                                "instructorNames": []
+                                "instructorNames": [
+                                    "Saieed Akbari Feyzaabaadi"
+                                ]
                             },
                             "courseSchedule": [
                                 {
@@ -4103,6 +4167,25 @@
                                     "sectionCode": "LEC",
                                     "startTime": "14:30",
                                     "endTime": "17:20"
+                                }
+                            ]
+                        },
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "7707",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Sessional"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "17:30",
+                                    "endTime": "20:20"
                                 }
                             ]
                         }
@@ -5103,10 +5186,7 @@
                                 "classNumber": "7284",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": [
-                                    "Keval Vora",
-                                    "William Sumner"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -5123,9 +5203,7 @@
                                 "classNumber": "7286",
                                 "type": "e",
                                 "campus": "None",
-                                "instructorNames": [
-                                    "Ouldooz Baghban Karimi"
-                                ]
+                                "instructorNames": []
                             },
                             "courseSchedule": [
                                 {
@@ -5637,7 +5715,7 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5662,7 +5740,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5681,7 +5759,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5700,7 +5778,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5719,7 +5797,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5738,7 +5816,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5757,7 +5835,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5776,7 +5854,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -5795,7 +5873,7 @@
                                 "type": "n",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Janice Regan"
+                                    "Victor Cheung"
                                 ]
                             },
                             "courseSchedule": [
@@ -6072,7 +6150,7 @@
                                     "days": "We",
                                     "sectionCode": "LEC",
                                     "startTime": "12:30",
-                                    "endTime": "13:20"
+                                    "endTime": "14:20"
                                 }
                             ]
                         }
@@ -6261,6 +6339,25 @@
                                     "endTime": "11:20"
                                 }
                             ]
+                        },
+                        {
+                            "info": {
+                                "section": "D200",
+                                "classNumber": "7678",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Ahmadreza Nezami"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "Th",
+                                    "sectionCode": "LEC",
+                                    "startTime": "8:30",
+                                    "endTime": "11:20"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -6337,7 +6434,7 @@
                     "sections": [
                         {
                             "info": {
-                                "section": "OL01",
+                                "section": "BLS1",
                                 "classNumber": "6275",
                                 "type": "e",
                                 "campus": "Burnaby",
@@ -6346,6 +6443,12 @@
                                 ]
                             },
                             "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "OLC",
+                                    "startTime": "13:30",
+                                    "endTime": "14:20"
+                                },
                                 {
                                     "days": "",
                                     "sectionCode": "OLC",
@@ -6917,7 +7020,6 @@
                                 "type": "e",
                                 "campus": "Burnaby",
                                 "instructorNames": [
-                                    "Oliver Schulte",
                                     "Steven Bergner"
                                 ]
                             },
@@ -7528,7 +7630,27 @@
                 },
                 "future_sections": {
                     "term": "Fall 2024",
-                    "sections": []
+                    "sections": [
+                        {
+                            "info": {
+                                "section": "E100",
+                                "classNumber": "6304",
+                                "type": "e",
+                                "campus": "Burnaby",
+                                "instructorNames": [
+                                    "Dan Ridinger"
+                                ]
+                            },
+                            "courseSchedule": [
+                                {
+                                    "days": "We",
+                                    "sectionCode": "LEC",
+                                    "startTime": "16:30",
+                                    "endTime": "19:20"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 "last_sections": {
                     "term": "Spring 2024",
