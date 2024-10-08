@@ -1,7 +1,6 @@
 import { Hero } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import { useEffect, useState } from "react";
-import coursesJson from "@jsons/courses.json";
 import { Course, Requirement, RequirementSchema } from "types/course";
 import { z } from "zod";
 import { SidebarCourse } from "components/SidebarCourse";
@@ -26,7 +25,6 @@ const Courses: React.FC = () => {
         if (!cachedData) {
           localStorage.setItem("courses", JSON.stringify(json));
         }
-
         setRequirements(z.array(RequirementSchema).parse(json));
       } catch (error) {
         console.error(error);
