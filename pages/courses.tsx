@@ -6,37 +6,13 @@ import { Course, Requirement, RequirementSchema } from "types/course";
 import { z } from "zod";
 import { SidebarCourse } from "components/SidebarCourse";
 
-const COURSES_JSON_URL =
-  "https://raw.githubusercontent.com/ssss-sfu/course-explorer-script/main/result/courses.json/";
-
 const Courses: React.FC = () => {
   // Parse the JSON data using Zod schemas
   const [courseShown, setCourseShown] = useState<Course | null>(null);
   const [requirements, setRequirements] = useState<Requirement[]>([]);
 
   useEffect(() => {
-    const fetchCourses = async () => {
-      try {
-        const response = await fetch(COURSES_JSON_URL, {
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-
-        // if (!response.ok) {
-        //   throw new Error("Failed to fetch courses data");
-        // }
-        const json = await response.json();
-        // console.log(json);
-        // const coursesJson = await response.json();
-        setRequirements(z.array(RequirementSchema).parse(json));
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchCourses();
+    setRequirements(z.array(RequirementSchema).parse(coursesJson));
   }, []);
 
   return (
