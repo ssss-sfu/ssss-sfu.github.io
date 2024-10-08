@@ -7,7 +7,7 @@ import { z } from "zod";
 import { SidebarCourse } from "components/SidebarCourse";
 
 const COURSES_JSON_URL =
-  "https://raw.githubusercontent.com/ssss-sfu/course-explorer-script/main/result/courses.json/";
+  "https://raw.githubusercontent.com/ssss-sfu/course-explorer-script/main/result/courses.json";
 
 const Courses: React.FC = () => {
   // Parse the JSON data using Zod schemas
@@ -17,19 +17,16 @@ const Courses: React.FC = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch(COURSES_JSON_URL, {
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const cachedData = localStorage.getItem("courses");
 
-        // if (!response.ok) {
-        //   throw new Error("Failed to fetch courses data");
-        // }
-        const json = await response.json();
-        // console.log(json);
-        // const coursesJson = await response.json();
+        const json = cachedData
+          ? JSON.parse(cachedData)
+          : await (await fetch(COURSES_JSON_URL)).json();
+
+        if (!cachedData) {
+          localStorage.setItem("courses", JSON.stringify(json));
+        }
+
         setRequirements(z.array(RequirementSchema).parse(json));
       } catch (error) {
         console.error(error);
