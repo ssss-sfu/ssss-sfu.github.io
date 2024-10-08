@@ -13,19 +13,30 @@ const Courses: React.FC = () => {
   const [courseShown, setCourseShown] = useState<Course | null>(null);
   const [requirements, setRequirements] = useState<Requirement[]>([]);
 
+  const ONE_WEEK = 7 * 24 * 60 * 60 * 1000; // One week in milliseconds
+
   useEffect(() => {
     const fetchCourses = async () => {
       try {
         const cachedData = localStorage.getItem("courses");
+        const lastFetchTime = localStorage.getItem("lastFetchTime");
+        const currentTime = Date.now();
 
-        const json = cachedData
-          ? JSON.parse(cachedData)
-          : await (await fetch(COURSES_JSON_URL)).json();
-
-        if (!cachedData) {
+        // Check if the cached data exists and if it's been less than a week since last fetch
+        if (
+          cachedData &&
+          lastFetchTime &&
+          currentTime - new Date(lastFetchTime).getTime() < ONE_WEEK
+        ) {
+          const json = JSON.parse(cachedData);
+          setRequirements(z.array(RequirementSchema).parse(json));
+        } else {
+          // Fetch new data if no cached data or if a week has passed
+          const json = await (await fetch(COURSES_JSON_URL)).json();
           localStorage.setItem("courses", JSON.stringify(json));
+          localStorage.setItem("lastFetchTime", currentTime.toString());
+          setRequirements(z.array(RequirementSchema).parse(json));
         }
-        setRequirements(z.array(RequirementSchema).parse(json));
       } catch (error) {
         console.error(error);
       }
