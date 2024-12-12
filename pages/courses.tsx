@@ -4,14 +4,19 @@ import { useEffect, useState } from "react";
 import { Course, Requirement, RequirementSchema } from "types/course";
 import { z } from "zod";
 import { SidebarCourse } from "components/SidebarCourse";
+import { formatDate } from "utils";
 
 const COURSES_JSON_URL =
   "https://raw.githubusercontent.com/ssss-sfu/course-explorer-script/main/result/courses.json";
+
+const COURSES_API_COMMITS_URL =
+  "https://api.github.com/repos/ssss-sfu/course-explorer-script/commits?per_page=1";
 
 const Courses: React.FC = () => {
   // Parse the JSON data using Zod schemas
   const [courseShown, setCourseShown] = useState<Course | null>(null);
   const [requirements, setRequirements] = useState<Requirement[]>([]);
+  const [lastUpdatedDate, setLastUpdatedDate] = useState<string | null>(null);
 
   const ONE_WEEK = 7 * 24 * 60 * 60 * 1000; // One week in milliseconds
 
@@ -42,7 +47,34 @@ const Courses: React.FC = () => {
       }
     };
 
+    const fetchLastCommitDate = async () => {
+      try {
+        const response = await fetch(COURSES_API_COMMITS_URL, {
+          headers: {
+            Accept: "application/vnd.github.v3+json",
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error(`Error fetching data: ${response.statusText}`);
+        }
+
+        const commits = await response.json();
+
+        if (commits.length === 0) {
+          throw new Error("No commits found.");
+        }
+
+        const lastCommitDate = commits[0].commit.author.date;
+        setLastUpdatedDate(formatDate(lastCommitDate));
+      } catch (error: any) {
+        console.error("Error:", error.message);
+        throw error;
+      }
+    };
+
     fetchCourses();
+    fetchLastCommitDate();
   }, []);
 
   return (
@@ -83,7 +115,7 @@ const Courses: React.FC = () => {
             </a>{" "}
             for official resources.
           </p>
-          <p>Last updated: Oct 8, 2024</p>
+          <p>Last updated: {lastUpdatedDate}</p>
         </section>
         <section className="requirements-section">
           <div
