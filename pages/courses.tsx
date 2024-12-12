@@ -21,33 +21,7 @@ const Courses: React.FC = () => {
   const ONE_WEEK = 7 * 24 * 60 * 60 * 1000; // One week in milliseconds
 
   useEffect(() => {
-    const fetchCourses = async () => {
-      try {
-        const cachedData = localStorage.getItem("courses");
-        const lastFetchTime = localStorage.getItem("lastFetchTime");
-        const currentTime = Date.now();
-
-        // Check if the cached data exists and if it's been less than a week since last fetch
-        if (
-          cachedData &&
-          lastFetchTime &&
-          currentTime - new Date(lastFetchTime).getTime() < ONE_WEEK
-        ) {
-          const json = JSON.parse(cachedData);
-          setRequirements(z.array(RequirementSchema).parse(json));
-        } else {
-          // Fetch new data if no cached data or if a week has passed
-          const json = await (await fetch(COURSES_JSON_URL)).json();
-          localStorage.setItem("courses", JSON.stringify(json));
-          localStorage.setItem("lastFetchTime", currentTime.toString());
-          setRequirements(z.array(RequirementSchema).parse(json));
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    const fetchLastCommitDate = async () => {
+    const fetchLastUpdatedDate = async () => {
       try {
         const response = await fetch(COURSES_API_COMMITS_URL, {
           headers: {
@@ -65,17 +39,38 @@ const Courses: React.FC = () => {
           throw new Error("No commits found.");
         }
 
-        const lastCommitDate = commits[0].commit.author.date;
-        setLastUpdatedDate(formatDate(lastCommitDate));
+        const lastUpdatedDate = commits[0].commit.author.date;
+        localStorage.setItem("lastUpdatedDate", lastUpdatedDate);
+        setLastUpdatedDate(lastUpdatedDate);
       } catch (error: any) {
         console.error("Error:", error.message);
         throw error;
       }
     };
-
-    fetchCourses();
-    fetchLastCommitDate();
+    fetchLastUpdatedDate();
   }, []);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        const lastUpdatedDateLocalStorage =
+          localStorage.getItem("lastUpdatedDate");
+        const cachedCourses = localStorage.getItem("courses");
+
+        let json = "";
+        if (cachedCourses && lastUpdatedDate == lastUpdatedDateLocalStorage) {
+          json = JSON.parse(cachedCourses);
+        } else {
+          json = await (await fetch(COURSES_JSON_URL)).json();
+          localStorage.setItem("courses", JSON.stringify(json));
+        }
+        setRequirements(z.array(RequirementSchema).parse(json));
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchCourses();
+  }, [lastUpdatedDate]);
 
   return (
     <div className="page courses-page">
@@ -115,7 +110,7 @@ const Courses: React.FC = () => {
             </a>{" "}
             for official resources.
           </p>
-          <p>Last updated: {lastUpdatedDate}</p>
+          <p>Last updated: {lastUpdatedDate && formatDate(lastUpdatedDate)}</p>
         </section>
         <section className="requirements-section">
           <div
