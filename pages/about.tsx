@@ -3,6 +3,7 @@ import HeroImage from "@images/about-page/about-hero-background.png";
 import execs from "@jsons/execs.json";
 import { useEffect, useState } from "react";
 import { Profile } from "components/ProfileCard";
+import previousExecs from "@jsons/prev-execs.json";
 
 const About: React.FC = () => {
   const [currentExecs, setCurrentExecs] = useState<Profile[]>([]);
@@ -52,6 +53,20 @@ const About: React.FC = () => {
         <section className="current-exec">
           {currentExecs.map((profile: Profile) => (
             <ProfileCard profile={profile} key={profile.name}></ProfileCard>
+          ))}
+        </section>
+        <section className="previous-exec">
+          {Object.entries(previousExecs).map(([year, profiles]) => (
+            <div key={year} className="year-section">
+              <h2>{year}</h2>
+              <ul>
+                {profiles.map((profile) => (
+                  <li key={profile.name}>
+                    <strong>{profile.role}</strong>: {profile.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </section>
       </main>
