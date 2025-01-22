@@ -19,7 +19,7 @@
         "imgSrc": "/images/about-page/execs-2024/randy.jpg",
         "socials": {
           "discord": "shrompadonk",
-          "instagram": "randy_le_tran",
+          "instagram": "https://instagram.com/randy_le_tran/",
           "linkedIn": "https://www.linkedin.com/in/randy-le-tran"
         }
       },
@@ -70,7 +70,7 @@
       },
       {
         "name": "Dagem Dereje",
-        "role": "Director Of Activities",
+        "role": "Director of Activities",
         "pronoun": "he/him",
         "description": "Hey guys! I'm Dagem, one of the DOAs of SSSS for 2024-2025. I spend most of my time fighting a losing battle against CMPT, MATH, MACM and every other course to exist and binge-watching anime. When I need a break from these, I get dragged by your internal rep to go on hikes and visit beaches.",
         "imgSrc": "/images/about-page/execs-2024/dagem.jpg",
@@ -94,7 +94,7 @@
       },
       {
         "name": "Damon Yiu",
-        "role": "External Representative",
+        "role": "Director of External Relations",
         "pronoun": "he/him",
         "description": "Hello everyone!!! My name is Damon Yiu and I’m the External Rep for 2024-2025! Some unexplainable things about me are my inability to hear and walk straight. As well, I do enjoy listening to music, playing ping pong and sleeping anywhere I can!",
         "imgSrc": "/images/about-page/execs-2024/damon.jpg",
@@ -116,18 +116,6 @@
         }
       },
       {
-        "name": "Sriyathavan Srisathanantham",
-        "role": "Fourth Year Representative",
-        "pronoun": "he/him",
-        "description": "I live my life one coin flip at a time. Live by the coin.",
-        "imgSrc": "/images/about-page/execs-2024/sri.jpg",
-        "socials": {
-          "discord": "yathavan",
-          "instagram": "https://instagram.com/s.yathavan/",
-          "linkedIn": "https://www.linkedin.com/in/sriyathavan/"
-        }
-      },
-      {
         "name": "Julie Wu",
         "role": "Third Year Representative",
         "pronoun": "she/her",
@@ -140,14 +128,36 @@
         }
       },
       {
-        "name": "Gabriel Ma",
-        "role": "Second year Representative",
-        "pronoun": "he/him",
-        "description": "Hello everyone! I’m Gabriel and I'm one of the second year reps. Outside of school, I enjoy playing piano, badminton, and video games. Feel free to message me especially if you are a second year student!",
-        "imgSrc": "/images/about-page/execs-2024/gabriel.jpg",
+        "name": "Jaycie Say",
+        "role": "Second Year Representative",
+        "pronoun": "she/her",
+        "description": "Hey everyone👋 My name is Jaycie and I am excited to be part of the team as the Second Year Rep! During my free time I love to watch sitcoms, bake, crochet, and play the drums. Feel free to reach out if you want to talk :))",
+        "imgSrc": "/images/about-page/execs-2024/jaycie.jpg",
         "socials": {
-          "discord": "gabech_",
-          "instagram": "https://instagram.com/gm.5758_"
+          "discord": "js018",
+          "linkedIn": "https://www.linkedin.com/in/jaycie-say-923611274/"
+        }
+      },
+      {
+        "name": "Aleeza Ahmed",
+        "role": "First Year Representative",
+        "pronoun": "she/her",
+        "description": "Hello everyone! I’m Aleeza, and it’s a pleasure to be one of your FYRs! I enjoy reading, writing, and yapping about whatever hyperfixation is spinning around in my head. I’m excited to meet you all! Feel free to reach out if you ever need anything!",
+        "imgSrc": "/images/about-page/execs-2024/aleeza.jpg",
+        "socials": {
+          "discord": "xsundropxx",
+          "instagram": "https://instagram.com/aleezas.photos"
+        }
+      },
+      {
+        "name": "Swara Bhate",
+        "role": "First Year Representative",
+        "pronoun": "she/her",
+        "description": "Hi everyone! My name is Swara and I’m excited to be one of the FYRs this year! I enjoy napping, reading, and driving in my spare time. Feel free to reach out to me if you have any questions or just want to make a new friend! (:",
+        "imgSrc": "/images/about-page/execs-2024/swara.jpg",
+        "socials": {
+          "discord": "swara_writes",
+          "linkedIn": "http://www.linkedin.com/in/swara-bhate-352938283"
         }
       },
       {
