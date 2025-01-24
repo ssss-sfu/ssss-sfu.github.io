@@ -19,7 +19,7 @@
         "imgSrc": "/images/about-page/execs-2024/randy.jpg",
         "socials": {
           "discord": "shrompadonk",
-          "instagram": "randy_le_tran",
+          "instagram": "https://instagram.com/randy_le_tran/",
           "linkedIn": "https://www.linkedin.com/in/randy-le-tran"
         }
       },
@@ -27,7 +27,7 @@
         "name": "Max Zhang",
         "role": "Secretary",
         "pronoun": "he/him",
-        "description": "Hey y’all! I’m Max and this year’s Secretary of the SSSS. A few things I enjoy doing are watching hockey and shows, and playing games. Hope to see everyone on campus or at our events!",
+        "description": "Hey y'all! I'm Max and this year's Secretary of the SSSS. A few things I enjoy doing are watching hockey and shows, and playing games. Hope to see everyone on campus or at our events!",
         "imgSrc": "/images/about-page/execs-2024/max.jpg",
         "socials": {
           "discord": "cake.s",
@@ -38,7 +38,7 @@
         "name": "Andrew La Grange",
         "role": "Treasurer",
         "pronoun": "he/him",
-        "description": "Hi everyone! My name is Andrew and I am your Treasurer for the upcoming year! When I'm not managing club funds, you’ll probably find me playing video games, reading manga, strumming some guitar tunes, tending to my plants, or listening to music. Feel free to DM me if you have any questions or just want to chat!",
+        "description": "Hi everyone! My name is Andrew and I am your Treasurer for the upcoming year! When I'm not managing club funds, you'll probably find me playing video games, reading manga, strumming some guitar tunes, tending to my plants, or listening to music. Feel free to DM me if you have any questions or just want to chat!",
         "imgSrc": "/images/about-page/execs-2024/andrew.jpg",
         "socials": {
           "discord": "xen0xic",
@@ -50,7 +50,7 @@
         "name": "Ethan Chou",
         "role": "Director of Marketing",
         "pronoun": "he/him",
-        "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y’all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
+        "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y'all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
         "imgSrc": "/images/about-page/execs-2024/ethan.jpg",
         "socials": {
           "discord": "flatulence",
@@ -70,7 +70,7 @@
       },
       {
         "name": "Dagem Dereje",
-        "role": "Director Of Activities",
+        "role": "Director of Activities",
         "pronoun": "he/him",
         "description": "Hey guys! I'm Dagem, one of the DOAs of SSSS for 2024-2025. I spend most of my time fighting a losing battle against CMPT, MATH, MACM and every other course to exist and binge-watching anime. When I need a break from these, I get dragged by your internal rep to go on hikes and visit beaches.",
         "imgSrc": "/images/about-page/execs-2024/dagem.jpg",
@@ -84,7 +84,7 @@
         "name": "Maria León Campos",
         "role": "Director of Visual Design",
         "pronoun": "she/her",
-        "description": "Hi!!! I’m Maria and I am soo happy to come back as y’alls DoVD!!! Aside from drawing, I also like to bake + binge watch kdramas. If you ever wanna chat or have ideas to share, feel free to reach out :).",
+        "description": "Hi!!! I'm Maria and I am soo happy to come back as y'alls DoVD!!! Aside from drawing, I also like to bake + binge watch kdramas. If you ever wanna chat or have ideas to share, feel free to reach out :).",
         "imgSrc": "/images/about-page/execs-2024/maria.jpg",
         "socials": {
           "discord": "alorsbye",
@@ -94,9 +94,9 @@
       },
       {
         "name": "Damon Yiu",
-        "role": "External Representative",
+        "role": "Director of External Relations",
         "pronoun": "he/him",
-        "description": "Hello everyone!!! My name is Damon Yiu and I’m the External Rep for 2024-2025! Some unexplainable things about me are my inability to hear and walk straight. As well, I do enjoy listening to music, playing ping pong and sleeping anywhere I can!",
+        "description": "Hello everyone!!! My name is Damon Yiu and I'm the External Rep for 2024-2025! Some unexplainable things about me are my inability to hear and walk straight. As well, I do enjoy listening to music, playing ping pong and sleeping anywhere I can!",
         "imgSrc": "/images/about-page/execs-2024/damon.jpg",
         "socials": {
           "discord": "damonyiu",
@@ -116,22 +116,10 @@
         }
       },
       {
-        "name": "Sriyathavan Srisathanantham",
-        "role": "Fourth Year Representative",
-        "pronoun": "he/him",
-        "description": "I live my life one coin flip at a time. Live by the coin.",
-        "imgSrc": "/images/about-page/execs-2024/sri.jpg",
-        "socials": {
-          "discord": "yathavan",
-          "instagram": "https://instagram.com/s.yathavan/",
-          "linkedIn": "https://www.linkedin.com/in/sriyathavan/"
-        }
-      },
-      {
         "name": "Julie Wu",
         "role": "Third Year Representative",
         "pronoun": "she/her",
-        "description": "Hi everyone! I’m Julie :D Excited to be part of the team once again and ready to drive change! P.S. I like to do music and sports in my free time :3",
+        "description": "Hi everyone! I'm Julie :D Excited to be part of the team once again and ready to drive change! P.S. I like to do music and sports in my free time :3",
         "imgSrc": "/images/about-page/execs-2024/julie.jpg",
         "socials": {
           "discord": "joolzmusic",
@@ -140,14 +128,36 @@
         }
       },
       {
-        "name": "Gabriel Ma",
-        "role": "Second year Representative",
-        "pronoun": "he/him",
-        "description": "Hello everyone! I’m Gabriel and I'm one of the second year reps. Outside of school, I enjoy playing piano, badminton, and video games. Feel free to message me especially if you are a second year student!",
-        "imgSrc": "/images/about-page/execs-2024/gabriel.jpg",
+        "name": "Jaycie Say",
+        "role": "Second Year Representative",
+        "pronoun": "she/her",
+        "description": "Hey everyone👋 My name is Jaycie and I am excited to be part of the team as the Second Year Rep! During my free time I love to watch sitcoms, bake, crochet, and play the drums. Feel free to reach out if you want to talk :))",
+        "imgSrc": "/images/about-page/execs-2024/jaycie.jpg",
         "socials": {
-          "discord": "gabech_",
-          "instagram": "https://instagram.com/gm.5758_"
+          "discord": "js018",
+          "linkedIn": "https://www.linkedin.com/in/jaycie-say-923611274/"
+        }
+      },
+      {
+        "name": "Aleeza Ahmed",
+        "role": "First Year Representative",
+        "pronoun": "she/her",
+        "description": "Hello everyone! I'm Aleeza, and it's a pleasure to be one of your FYRs! I enjoy reading, writing, and yapping about whatever hyperfixation is spinning around in my head. I'm excited to meet you all! Feel free to reach out if you ever need anything!",
+        "imgSrc": "/images/about-page/execs-2024/aleeza.jpg",
+        "socials": {
+          "discord": "xsundropxx",
+          "instagram": "https://instagram.com/aleezas.photos"
+        }
+      },
+      {
+        "name": "Swara Bhate",
+        "role": "First Year Representative",
+        "pronoun": "she/her",
+        "description": "Hi everyone! My name is Swara and I'm excited to be one of the FYRs this year! I enjoy napping, reading, and driving in my spare time. Feel free to reach out to me if you have any questions or just want to make a new friend! (:",
+        "imgSrc": "/images/about-page/execs-2024/swara.jpg",
+        "socials": {
+          "discord": "swara_writes",
+          "linkedIn": "http://www.linkedin.com/in/swara-bhate-352938283"
         }
       },
       {
@@ -168,7 +178,7 @@
       "name": "Joshua Li",
       "role": "President",
       "pronoun": "he/him",
-      "description": "Hello everyone! My name is Joshua Li and I’ll be president of the SSSS for 2023 - 2024. I’m excited to work with the great team of executives on this page and continue doing what the SSSS does best and more! In my free time I enjoy listening to podcasts, playing video games and consuming internet content. Say hi to me if you ever see me in person or shoot me a message online if you want to chat about anything!",
+      "description": "Hello everyone! My name is Joshua Li and I'll be president of the SSSS for 2023 - 2024. I'm excited to work with the great team of executives on this page and continue doing what the SSSS does best and more! In my free time I enjoy listening to podcasts, playing video games and consuming internet content. Say hi to me if you ever see me in person or shoot me a message online if you want to chat about anything!",
       "imgSrc": "/images/about-page/execs-2023/joshua.jpg",
       "socials": {
         "discord": "jugblue",
@@ -179,7 +189,7 @@
       "name": "Kevin Chen",
       "role": "Vice President",
       "pronoun": "he/him",
-      "description": "Hi all, I’m Kevin, the Vice President of the SSSS. This will be my fourth year as an SSSS exec and I’m looking forward to working with our amazing new team. I’m a third year student returning from co-op, and outside of studying I’ll spend my time gaming, cooking, or going on walks. You’ll see me around on the SSSS Discord server, so feel free to say hi or ask me any questions!",
+      "description": "Hi all, I'm Kevin, the Vice President of the SSSS. This will be my fourth year as an SSSS exec and I'm looking forward to working with our amazing new team. I'm a third year student returning from co-op, and outside of studying I'll spend my time gaming, cooking, or going on walks. You'll see me around on the SSSS Discord server, so feel free to say hi or ask me any questions!",
       "imgSrc": "/images/about-page/execs-2023/kevin.jpg",
       "socials": {
         "discord": "krv1335",
@@ -190,7 +200,7 @@
       "name": "Gahee Kim",
       "role": "Secretary",
       "pronoun": "she/her",
-      "description": "Hi. I’m Gahee and I am your secretary!!! When I am not spamming the SSSS discord server or studying, I like to pet my dog Lily.",
+      "description": "Hi. I'm Gahee and I am your secretary!!! When I am not spamming the SSSS discord server or studying, I like to pet my dog Lily.",
       "imgSrc": "/images/about-page/execs-2023/gahee.jpg",
       "socials": {
         "discord": "gahee",
@@ -201,7 +211,7 @@
       "name": "Mekdim Dereje",
       "role": "Treasurer",
       "pronoun": "he/him",
-      "description": "Hey guys! My name is Mekdim and I will be your Treasurer this term. You’ll usually find me “Listening to Spotify” or hanging out in the study time voice channel on the SSSS server. Feel free to DM me if you have any questions or concerns!",
+      "description": "Hey guys! My name is Mekdim and I will be your Treasurer this term. You'll usually find me “Listening to Spotify” or hanging out in the study time voice channel on the SSSS server. Feel free to DM me if you have any questions or concerns!",
       "imgSrc": "/images/about-page/execs-2023/mekdim.jpg",
       "socials": {
         "discord": "mekdim",
@@ -212,7 +222,7 @@
       "name": "Ethan Chou",
       "role": "Director of Marketing",
       "pronoun": "he/him",
-      "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y’all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
+      "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y'all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
       "imgSrc": "/images/about-page/execs-2023/ethan.jpg",
       "socials": {
         "discord": "flatulence",
@@ -235,7 +245,7 @@
       "name": "Max Zhang",
       "role": "Director of Activities",
       "pronoun": "he/him",
-      "description": "Hey everyone! I’m Max and one of the Director of Activities for this year. Outside of school I enjoy playing games, chilling on my bed and listening to music. Feel free to dm me for any event ideas you have or if you just wanna chat 😊",
+      "description": "Hey everyone! I'm Max and one of the Director of Activities for this year. Outside of school I enjoy playing games, chilling on my bed and listening to music. Feel free to dm me for any event ideas you have or if you just wanna chat 😊",
       "imgSrc": "/images/about-page/execs-2023/max.jpg",
       "socials": {
         "discord": "cake.s",
@@ -246,7 +256,7 @@
       "name": "Iris Au-Yeung",
       "role": "Director of Visual Design",
       "pronoun": "she/her",
-      "description": "I can’t wait to make things look pretty 😆",
+      "description": "I can't wait to make things look pretty 😆",
       "imgSrc": "/images/about-page/execs-2023/iris.jpg",
       "socials": {
         "discord": "irishy.",
@@ -257,7 +267,7 @@
       "name": "Jamie Chin",
       "role": "External Representative",
       "pronoun": "she/her",
-      "description": "Hi! I’m Jamie, and I’m your External Rep (dir. of external relations …?) this year. In my free time I like to go out and get food or bubble tea and window shop. Sometimes I play video games. Please feel free to reach out to me if you have any questions or concerns!",
+      "description": "Hi! I'm Jamie, and I'm your External Rep (dir. of external relations …?) this year. In my free time I like to go out and get food or bubble tea and window shop. Sometimes I play video games. Please feel free to reach out to me if you have any questions or concerns!",
       "imgSrc": "/images/about-page/execs-2023/jamie.jpg",
       "socials": {
         "discord": "bublychee",
@@ -268,7 +278,7 @@
       "name": "Bryan Dang",
       "role": "Internal Representative",
       "pronoun": "he/him",
-      "description": "Hi to whoever’s reading this, I’m Bryan and I’m your Internal Rep! I’ll probably be playing games or lying on my bed listening to music or napping (or both) at any given time. Feel free to DM me for any questions, or try to convince me that Piplup isn’t the best starter (you are wrong)",
+      "description": "Hi to whoever's reading this, I'm Bryan and I'm your Internal Rep! I'll probably be playing games or lying on my bed listening to music or napping (or both) at any given time. Feel free to DM me for any questions, or try to convince me that Piplup isn't the best starter (you are wrong)",
       "imgSrc": "/images/about-page/execs-2023/bryan.jpg",
       "socials": {
         "discord": "bryan.png",
@@ -290,7 +300,7 @@
       "name": "Jerry Deng",
       "role": "Third Year Representative",
       "pronoun": "he/him",
-      "description": "Hey there 👋! I’m Jerry and I’m chilling in retirement as the 3rd year rep after my long two years as your Director of Marketing for 2021 & 2022! In my free time you'll find me paddling for SFU’s dragon boat team (@sfushockwave), learning more about tech 💻, or being out and about around Vancouver 🌆. If you have any questions or concerns, feel free to reach out to me on Discord!",
+      "description": "Hey there 👋! I'm Jerry and I'm chilling in retirement as the 3rd year rep after my long two years as your Director of Marketing for 2021 & 2022! In my free time you'll find me paddling for SFU's dragon boat team (@sfushockwave), learning more about tech 💻, or being out and about around Vancouver 🌆. If you have any questions or concerns, feel free to reach out to me on Discord!",
       "imgSrc": "/images/about-page/execs-2023/jerry.jpg",
       "socials": {
         "discord": "eloiph",
@@ -301,7 +311,7 @@
       "name": "Julie Wu",
       "role": "Second Year Representative",
       "pronoun": "she/her",
-      "description": "Hewo everyone ~ I’m Julie and I’ll be your 2nd year rep! Let me know if you have any questions or concerns about 2nd year courses. I’ll do my best to help you out! In my free time, I like to do music and sports. Feel free to check out my music channel, @Joolzmusic, on Youtube!",
+      "description": "Hewo everyone ~ I'm Julie and I'll be your 2nd year rep! Let me know if you have any questions or concerns about 2nd year courses. I'll do my best to help you out! In my free time, I like to do music and sports. Feel free to check out my music channel, @Joolzmusic, on Youtube!",
       "imgSrc": "/images/about-page/execs-2023/julie.jpg",
       "socials": {
         "discord": "joolzmusic",
@@ -312,7 +322,7 @@
       "name": "Tal Zaloilov",
       "role": "SFSS Council Representative",
       "pronoun": "she/her",
-      "description": "Heyo, I’m Tal. I’m a 4th year SoSy student, and am looking forward to being the voice of the SSSS on SFU’s Student Council (SFSS). In my free time, you can find me laying down some sweet guitar or saxophone riffs with my band, burning omelets, or going through the 5 stages of grief getting Unity code to compile",
+      "description": "Heyo, I'm Tal. I'm a 4th year SoSy student, and am looking forward to being the voice of the SSSS on SFU's Student Council (SFSS). In my free time, you can find me laying down some sweet guitar or saxophone riffs with my band, burning omelets, or going through the 5 stages of grief getting Unity code to compile",
       "imgSrc": "/images/about-page/execs-2023/tal.jpg",
       "socials": {
         "discord": "tal_zal",
