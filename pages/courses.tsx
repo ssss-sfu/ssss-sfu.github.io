@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Course, Requirement, RequirementSchema } from "types/course";
 import { z } from "zod";
 import { SidebarCourse } from "components/SidebarCourse";
+import CourseTree from "components/CourseTree";
 import { formatDate } from "utils";
 
 const COURSES_JSON_URL =
@@ -143,6 +144,10 @@ const Courses: React.FC = () => {
               closeCourseShown={() => setCourseShown(null)}
             />
           )}
+        </section>
+        <section>
+          <h2>Course Tree For Spring 2025</h2>
+          <CourseTree />
         </section>
       </main>
     </div>
