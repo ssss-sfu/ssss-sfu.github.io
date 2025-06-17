@@ -29,15 +29,15 @@ export const Footer: React.FC = () => {
             <h4>Office Address</h4>
             <address>
               <a
-                href="https://goo.gl/maps/2wMi25z6FqiZ6NC57"
+                href="https://maps.app.goo.gl/AkVazVCLNbaur4iB7"
                 target="_blank"
                 rel="noreferrer"
               >
                 <strong>Software Systems Student Society</strong>
                 <br />
-                250 - 13450 - 102nd Avenue, <br></br>
-                SYRC 4016, Galleria 4<br></br>
-                Surrey, BC V3T 0A3<br></br>
+                10285 University Drive<br></br>
+                SYRC 3006.3, Level 3000<br></br>
+                Surrey, BC V3T 0N1<br></br>
               </a>
             </address>
           </div>

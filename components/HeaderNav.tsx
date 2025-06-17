@@ -47,6 +47,9 @@ export const HeaderNav: React.FC = () => {
             <Link href="/courses" className="page-link">
               Courses
             </Link>
+            <Link href="https://merch.sfussss.org/" className="page-link">
+              Merch
+            </Link>
           </nav>
 
           <div className="socials">
