@@ -1,178 +1,338 @@
 {
-  "2024-2025": [
-      {
-        "name": "Mekdim Dereje",
-        "role": "President",
-        "pronoun": "he/him",
-        "description": "Hi everyone! My name is Mekdim and I will be your president this term. After over 2 years at the SSSS, I have stepped up to become president! I am so excited to work with so many of the bright spirits on the new executive team. In my free time, I love watching shows and sitcoms like Suits, Modern Family, B99, The Office, etc.",
-        "imgSrc": "/images/about-page/execs-2024/mekdim.jpg",
-        "socials": {
-          "discord": "mekdim",
-          "linkedIn": "https://www.linkedin.com/in/mekdimd/"
-        }
-      },
-      {
-        "name": "Randy Le Tran",
-        "role": "Vice President",
-        "pronoun": "he/him",
-        "description": "Hello! Excited to be back for another year :)) I enjoy anime, kpop, fitness, gaming, and pop culture. Feel free to hit me up if you ever wanna chat!!",
-        "imgSrc": "/images/about-page/execs-2024/randy.jpg",
-        "socials": {
-          "discord": "shrompadonk",
-          "instagram": "https://instagram.com/randy_le_tran/",
-          "linkedIn": "https://www.linkedin.com/in/randy-le-tran"
-        }
-      },
-      {
-        "name": "Max Zhang",
-        "role": "Secretary",
-        "pronoun": "he/him",
-        "description": "Hey y'all! I'm Max and this year's Secretary of the SSSS. A few things I enjoy doing are watching hockey and shows, and playing games. Hope to see everyone on campus or at our events!",
-        "imgSrc": "/images/about-page/execs-2024/max.jpg",
-        "socials": {
-          "discord": "cake.s",
-          "linkedIn": "https://www.linkedin.com/in/maxwell-zhang/"
-        }
-      },
-      {
-        "name": "Andrew La Grange",
-        "role": "Treasurer",
-        "pronoun": "he/him",
-        "description": "Hi everyone! My name is Andrew and I am your Treasurer for the upcoming year! When I'm not managing club funds, you'll probably find me playing video games, reading manga, strumming some guitar tunes, tending to my plants, or listening to music. Feel free to DM me if you have any questions or just want to chat!",
-        "imgSrc": "/images/about-page/execs-2024/andrew.jpg",
-        "socials": {
-          "discord": "xen0xic",
-          "instagram": "https://www.instagram.com/and.lg.rew/",
-          "linkedIn": "https://www.linkedin.com/in/andrew-la-grange-1754a6308/"
-        }
-      },
-      {
-        "name": "Ethan Chou",
-        "role": "Director of Marketing",
-        "pronoun": "he/him",
-        "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y'all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
-        "imgSrc": "/images/about-page/execs-2024/ethan.jpg",
-        "socials": {
-          "discord": "flatulence",
-          "instagram": "https://www.instagram.com/happyasian.man/",
-          "linkedIn": "https://www.linkedin.com/in/ethanchou128/"
-        }
-      },
-      {
-        "name": "Jennifer Huang",
-        "role": "Director of Activities",
-        "pronoun": "she/her",
-        "description": "HEY SOSY! It is an honour to be one of your Directors of Activities and Merch Committee Lead this year. I look forward to collaborating with the team to create fun and engaging events, as well as new merch for everyone to enjoy!! Aside from my roles, I usually spend my off time studying at cafes, or exploring the world with my friends. That is all from me, I hope to enjoy another great year with the new SSSS team! ☀️",
-        "imgSrc": "/images/about-page/execs-2024/jennifer.jpg",
-        "socials": {
-          "discord": "jnn4"
-        }
-      },
-      {
-        "name": "Dagem Dereje",
-        "role": "Director of Activities",
-        "pronoun": "he/him",
-        "description": "Hey guys! I'm Dagem, one of the DOAs of SSSS for 2024-2025. I spend most of my time fighting a losing battle against CMPT, MATH, MACM and every other course to exist and binge-watching anime. When I need a break from these, I get dragged by your internal rep to go on hikes and visit beaches.",
-        "imgSrc": "/images/about-page/execs-2024/dagem.jpg",
-        "socials": {
-          "discord": "moosock.",
-          "instagram": "https://instagram.com/___dagem___/",
-          "linkedIn": "https://www.linkedin.com/in/dagem-dereje-605833298/"
-        }
-      },
-      {
-        "name": "Maria León Campos",
-        "role": "Director of Visual Design",
-        "pronoun": "she/her",
-        "description": "Hi!!! I'm Maria and I am soo happy to come back as y'alls DoVD!!! Aside from drawing, I also like to bake + binge watch kdramas. If you ever wanna chat or have ideas to share, feel free to reach out :).",
-        "imgSrc": "/images/about-page/execs-2024/maria.jpg",
-        "socials": {
-          "discord": "alorsbye",
-          "instagram": "https://www.instagram.com/stoiyo/",
-          "linkedIn": "https://www.linkedin.com/in/maria-león-campos"
-        }
-      },
-      {
-        "name": "Damon Yiu",
-        "role": "Director of External Relations",
-        "pronoun": "he/him",
-        "description": "Hello everyone!!! My name is Damon Yiu and I'm the External Rep for 2024-2025! Some unexplainable things about me are my inability to hear and walk straight. As well, I do enjoy listening to music, playing ping pong and sleeping anywhere I can!",
-        "imgSrc": "/images/about-page/execs-2024/damon.jpg",
-        "socials": {
-          "discord": "damonyiu",
-          "instagram": "https://instagram.com/damonyiu_/"
-        }
-      },
-      {
-        "name": "Htet Wai Yan (Ash) Aung",
-        "role": "Director of Internal Relations",
-        "pronoun": "he/him",
-        "description": "Hey guys! I'm Ash, the Director of Internal Relations of SSSS for 2024-2025. I spend most of my time fighting a losing battle against courses under CMPT, MATH, MACM, and STAT (probably) and binge-watching sitcom shows. When I need a break from these, I go on hikes and visit beaches.",
-        "imgSrc": "/images/about-page/execs-2024/ash.jpg",
-        "socials": {
-          "discord": "doomed_ash",
-          "instagram": "https://instagram.com/doomed_ash/",
-          "linkedIn": "https://www.linkedin.com/in/htet-wai-yan-aung-352979303/"
-        }
-      },
-      {
-        "name": "Julie Wu",
-        "role": "Third Year Representative",
-        "pronoun": "she/her",
-        "description": "Hi everyone! I'm Julie :D Excited to be part of the team once again and ready to drive change! P.S. I like to do music and sports in my free time :3",
-        "imgSrc": "/images/about-page/execs-2024/julie.jpg",
-        "socials": {
-          "discord": "joolzmusic",
-          "instagram": "https://instagram.com/julie.wuu/",
-          "linkedIn": "https://www.linkedin.com/in/julie-wu-14471b218/"
-        }
-      },
-      {
-        "name": "Jaycie Say",
-        "role": "Second Year Representative",
-        "pronoun": "she/her",
-        "description": "Hey everyone👋 My name is Jaycie and I am excited to be part of the team as the Second Year Rep! During my free time I love to watch sitcoms, bake, crochet, and play the drums. Feel free to reach out if you want to talk :))",
-        "imgSrc": "/images/about-page/execs-2024/jaycie.jpg",
-        "socials": {
-          "discord": "js018",
-          "linkedIn": "https://www.linkedin.com/in/jaycie-say-923611274/"
-        }
-      },
-      {
-        "name": "Aleeza Ahmed",
-        "role": "First Year Representative",
-        "pronoun": "she/her",
-        "description": "Hello everyone! I'm Aleeza, and it's a pleasure to be one of your FYRs! I enjoy reading, writing, and yapping about whatever hyperfixation is spinning around in my head. I'm excited to meet you all! Feel free to reach out if you ever need anything!",
-        "imgSrc": "/images/about-page/execs-2024/aleeza.jpg",
-        "socials": {
-          "discord": "xsundropxx",
-          "instagram": "https://instagram.com/aleezas.photos"
-        }
-      },
-      {
-        "name": "Swara Bhate",
-        "role": "First Year Representative",
-        "pronoun": "she/her",
-        "description": "Hi everyone! My name is Swara and I'm excited to be one of the FYRs this year! I enjoy napping, reading, and driving in my spare time. Feel free to reach out to me if you have any questions or just want to make a new friend! (:",
-        "imgSrc": "/images/about-page/execs-2024/swara.jpg",
-        "socials": {
-          "discord": "swara_writes",
-          "linkedIn": "http://www.linkedin.com/in/swara-bhate-352938283"
-        }
-      },
-      {
-        "name": "Fabian Jonathan Siswanto",
-        "role": "SFSS Council Representative",
-        "pronoun": "he/him",
-        "description": "Hello everyone! I'm Fabian, your SFSS Council Rep for the 2024/2025 period. When I'm not attending SFSS council meetings, you can find me listening to music, whether I'm working on school assignments or just relaxing. I also like to stay updated with the latest trends in the tech field.",
-        "imgSrc": "/images/about-page/execs-2024/fabian.jpg",
-        "socials": {
-          "discord": "chro_nox",
-          "instagram": "https://instagram.com/fabian.jonn/",
-          "linkedIn": "https://www.linkedin.com/in/fabiansiswanto/"
-        }
+  "2025-2026": [
+    {
+      "name": "Jaycie Say",
+      "role": "Co-President",
+      "pronoun": "she/her",
+      "description": "Hey everyone!! I'm Jaycie and I am so excited to be your Co-President this year! During my free time you can find me watching sitcoms, cafe hopping and baking. Please reach out if you have any questions, concerns or just want to talk 🫶🤩",
+      "imgSrc": "/images/about-page/execs-2025/jc.webp",
+      "socials": {
+        "discord": "js018"
       }
-    ],
+    },
+    {
+      "name": "Ash Aung",
+      "role": "Co-President",
+      "pronoun": "",
+      "description": "Hey guys! This is Ash, and I'm back again — this time as president! Still hiking too much, beach-hopping, then cramming everything the night before exams (it's still not working 😭). When I'm not outdoors, I'm binging movies or sitcoms. My Fav movie right now is The Grand Budapest Hotel.",
+      "imgSrc": "/images/about-page/execs-2025/ash.webp",
+      "socials": {
+        "discord": "doomed_ash",
+        "linkedIn": "https://www.linkedin.com/in/ash-aung"
+      }
+    },
+    {
+      "name": "Jennifer Huang",
+      "role": "Secretary",
+      "pronoun": "",
+      "description": "HEYYY! My name is Jennifer, and I am so glad to be back as the secretary this year! When I am not busy typing awayyyyy, I will probably be at Trees ordering an XXL Iced Americano 😭. Can't wait to see y'all at future events! 😌",
+      "imgSrc": "/images/about-page/execs-2025/jennifer.webp",
+      "socials": {
+        "discord": "jnn4",
+        "instagram": "https://instagram.com/jenniferhuanng/"
+      }
+    },
+    {
+      "name": "Brandon Chattha",
+      "role": "Treasurer",
+      "pronoun": "",
+      "description": "I tried staying silent while driving with a friend (quiet game omg yay!) and lost by spitting out my drink thinking of a line from Borderlands 2. Cleanup took a while. I enjoy bike rides and spicy foods (not a good combo). Give me a free meal from Timmie's and I'll do my best to help you out in any course.",
+      "imgSrc": "/images/about-page/execs-2025/brandon.webp",
+      "socials": {
+        "discord": "",
+        "instagram": "https://instagram.com/cartooncanuck1615/",
+        "linkedIn": "https://www.linkedin.com/in/brandon-chattha"
+      }
+    },
+    {
+      "name": "Andrew La Grange",
+      "role": "Director of Activities",
+      "pronoun": "",
+      "description": "Hi everyone! My name is Andrew, and this is my second year with the SSSS! I was the Treasurer for the SSSS, and now I am a DoA! I am a self-taught guitar and piano player, and I have played ping pong for many years and love it! Feel free to message me about questions, concerns, or what awesome songs I can learn for my guitar or piano practice!",
+      "imgSrc": "/images/about-page/execs-2025/andrew.webp",
+      "socials": {
+        "discord": "xen0xic",
+        "instagram": "https://instagram.com/and.lg.rew/",
+        "linkedIn": "https://www.linkedin.com/in/andrew-la-grange-1754a6308"
+      }
+    },
+    {
+      "name": "Noah Zakaib",
+      "role": "Director of Activities",
+      "pronoun": "",
+      "description": "Hey, I'm Noah and I'm excited to run some great events as DOA. I really like playing strategy games when I'm trying to relax and I love hiking (when I need to touch grass).",
+      "imgSrc": "/images/about-page/execs-2025/noah.webp",
+      "socials": {
+        "discord": "fluked1"
+      }
+    },
+    {
+      "name": "Maria León",
+      "role": "Director of Marketing",
+      "pronoun": "",
+      "description": "HELLO SOSY!!! I'm Maria and I'm so excited to be back this year, this time as your Director of Marketing! Whenever I'm not making silly reels, y'all can find me reading or going on nature walks 😆",
+      "imgSrc": "/images/about-page/execs-2025/maria.webp",
+      "socials": {
+        "discord": "alorsbye",
+        "instagram": "https://instagram.com/stoiyo/",
+        "linkedIn": "https://www.linkedin.com/in/maria-león-campos"
+      }
+    },
+    {
+      "name": "An Nguyen",
+      "role": "Director of Visual Design",
+      "pronoun": "",
+      "description": "Hewoooo ૮ ˶ᵔ ᵕ ᵔ˶ ა I'm An and I'm excited to be your DoVD this year. I love survival, thriller and romance genres — top pick: Alice in Borderland. Feel free to reach out to chat or share ideas 💬",
+      "imgSrc": "/images/about-page/execs-2025/an.webp",
+      "socials": {
+        "discord": "annguyenn",
+        "instagram": "https://instagram.com/an._.nguyenn/",
+        "linkedIn": "https://www.linkedin.com/in/an-nguyen"
+      }
+    },
+    {
+      "name": "Philip Ho",
+      "role": "Director of Internal Relations",
+      "pronoun": "",
+      "description": "Yo, I'm Philip, your Director of Internal Relations. You can find me at the gym, going to hackathons, and obviously not getting enough sleep. Free feel to hit me up if you wanna talk about the gym, tech, music, or anime.",
+      "imgSrc": "/images/about-page/execs-2025/philip.webp",
+      "socials": {
+        "discord": "phights",
+        "instagram": "https://instagram.com/philupho/"
+      }
+    },
+    {
+      "name": "Matthew Philip Widjaja",
+      "role": "SFSS Council Representative",
+      "pronoun": "",
+      "description": "Hello everyone, I'm Matthew and I'll be your SFSS council rep this time 😄. I have collected a bunch of useless knowledge about geography and languages, in part due to my fondness of historical strategy games. If you like Fujii Kaze please hit me up so we can make a tier list of his songs.",
+      "imgSrc": "/images/about-page/execs-2025/matthew.webp",
+      "socials": {
+        "discord": "scansy",
+        "instagram": "https://instagram.com/matthew_philipz/"
+      }
+    },
+    {
+      "name": "Mehar Saini",
+      "role": "Upper Year Representative",
+      "pronoun": "",
+      "description": "Hello, I'm Mehar, your upper year representative 😀🔥 If I'm not at school (this summer semester at Burnaby) or at the gym, I'm most likely at home playing games, listening to music, and reading (yes at the same time.) I love to travel and learn different things. If you have any questions or just want to chat, feel free to hit me up 🔥👍",
+      "imgSrc": "/images/about-page/execs-2025/mehar.webp",
+      "socials": {
+        "discord": "leftslipper",
+        "instagram": "https://instagram.com/mehar__gg/"
+      }
+    },
+    {
+      "name": "Oak Soe Si Thu",
+      "role": "Lower Year Representative",
+      "pronoun": "",
+      "description": "I'm Paul, a second-year Software Systems major. I like coding… up to the point where I feel like it's too hard for me 💀",
+      "imgSrc": "/images/about-page/execs-2025/paul.webp",
+      "socials": {
+        "discord": "paul_999",
+        "instagram": "https://instagram.com/paul_in_abyss/",
+        "linkedIn": "https://www.linkedin.com/in/oak-soe-si-thu"
+      }
+    },
+    {
+      "name": "Swara Bhate",
+      "role": "First Year Representative",
+      "pronoun": "",
+      "description": "Hi! I'm Swara, one of your first year reps! I enjoy writing and reading in my spare time and I have a toxic relationship with Buldak Ramen. If you have any questions or just want to make a new friend, feel free to hit me up!",
+      "imgSrc": "/images/about-page/execs-2025/swara.webp",
+      "socials": {
+        "discord": "swara_writes",
+        "instagram": "https://instagram.com/swervinswara/",
+        "linkedIn": "https://www.linkedin.com/in/swara-bhate"
+      }
+    },
+    {
+      "name": "Aleeza Ahmed",
+      "role": "First Year Representative",
+      "pronoun": "",
+      "description": "Hihi! I'm Aleeza, one of your first year reps! I love writing & indulging myself in the wonderful world of fantasy. A fun fact about me is that I love playing badminton! Excited to see you guys at events, and feel free to reach out if you ever wanna chat!",
+      "imgSrc": "/images/about-page/execs-2025/aleeza.webp",
+      "socials": {
+        "discord": "xsundropxx",
+        "instagram": "https://instagram.com/aleezas.photos/"
+      }
+    }
+  ],
+  "2024-2025": [
+    {
+      "name": "Mekdim Dereje",
+      "role": "President",
+      "pronoun": "he/him",
+      "description": "Hi everyone! My name is Mekdim and I will be your president this term. After over 2 years at the SSSS, I have stepped up to become president! I am so excited to work with so many of the bright spirits on the new executive team. In my free time, I love watching shows and sitcoms like Suits, Modern Family, B99, The Office, etc.",
+      "imgSrc": "/images/about-page/execs-2024/mekdim.jpg",
+      "socials": {
+        "discord": "mekdim",
+        "linkedIn": "https://www.linkedin.com/in/mekdimd/"
+      }
+    },
+    {
+      "name": "Randy Le Tran",
+      "role": "Vice President",
+      "pronoun": "he/him",
+      "description": "Hello! Excited to be back for another year :)) I enjoy anime, kpop, fitness, gaming, and pop culture. Feel free to hit me up if you ever wanna chat!!",
+      "imgSrc": "/images/about-page/execs-2024/randy.jpg",
+      "socials": {
+        "discord": "shrompadonk",
+        "instagram": "https://instagram.com/randy_le_tran/",
+        "linkedIn": "https://www.linkedin.com/in/randy-le-tran"
+      }
+    },
+    {
+      "name": "Max Zhang",
+      "role": "Secretary",
+      "pronoun": "he/him",
+      "description": "Hey y'all! I'm Max and this year's Secretary of the SSSS. A few things I enjoy doing are watching hockey and shows, and playing games. Hope to see everyone on campus or at our events!",
+      "imgSrc": "/images/about-page/execs-2024/max.jpg",
+      "socials": {
+        "discord": "cake.s",
+        "linkedIn": "https://www.linkedin.com/in/maxwell-zhang/"
+      }
+    },
+    {
+      "name": "Andrew La Grange",
+      "role": "Treasurer",
+      "pronoun": "he/him",
+      "description": "Hi everyone! My name is Andrew and I am your Treasurer for the upcoming year! When I'm not managing club funds, you'll probably find me playing video games, reading manga, strumming some guitar tunes, tending to my plants, or listening to music. Feel free to DM me if you have any questions or just want to chat!",
+      "imgSrc": "/images/about-page/execs-2024/andrew.jpg",
+      "socials": {
+        "discord": "xen0xic",
+        "instagram": "https://www.instagram.com/and.lg.rew/",
+        "linkedIn": "https://www.linkedin.com/in/andrew-la-grange-1754a6308/"
+      }
+    },
+    {
+      "name": "Ethan Chou",
+      "role": "Director of Marketing",
+      "pronoun": "he/him",
+      "description": "Hello everyone, My name is Ethan and I am the Director of Marketing for this year. Y'all have probably seen me around the past year planning events during my tenure as a Director of Events :). I love eating, playing games, sports, and hiking when the weather cooperates",
+      "imgSrc": "/images/about-page/execs-2024/ethan.jpg",
+      "socials": {
+        "discord": "flatulence",
+        "instagram": "https://www.instagram.com/happyasian.man/",
+        "linkedIn": "https://www.linkedin.com/in/ethanchou128/"
+      }
+    },
+    {
+      "name": "Jennifer Huang",
+      "role": "Director of Activities",
+      "pronoun": "she/her",
+      "description": "HEY SOSY! It is an honour to be one of your Directors of Activities and Merch Committee Lead this year. I look forward to collaborating with the team to create fun and engaging events, as well as new merch for everyone to enjoy!! Aside from my roles, I usually spend my off time studying at cafes, or exploring the world with my friends. That is all from me, I hope to enjoy another great year with the new SSSS team! ☀️",
+      "imgSrc": "/images/about-page/execs-2024/jennifer.jpg",
+      "socials": {
+        "discord": "jnn4"
+      }
+    },
+    {
+      "name": "Dagem Dereje",
+      "role": "Director of Activities",
+      "pronoun": "he/him",
+      "description": "Hey guys! I'm Dagem, one of the DOAs of SSSS for 2024-2025. I spend most of my time fighting a losing battle against CMPT, MATH, MACM and every other course to exist and binge-watching anime. When I need a break from these, I get dragged by your internal rep to go on hikes and visit beaches.",
+      "imgSrc": "/images/about-page/execs-2024/dagem.jpg",
+      "socials": {
+        "discord": "moosock.",
+        "instagram": "https://instagram.com/___dagem___/",
+        "linkedIn": "https://www.linkedin.com/in/dagem-dereje-605833298/"
+      }
+    },
+    {
+      "name": "Maria León Campos",
+      "role": "Director of Visual Design",
+      "pronoun": "she/her",
+      "description": "Hi!!! I'm Maria and I am soo happy to come back as y'alls DoVD!!! Aside from drawing, I also like to bake + binge watch kdramas. If you ever wanna chat or have ideas to share, feel free to reach out :).",
+      "imgSrc": "/images/about-page/execs-2024/maria.jpg",
+      "socials": {
+        "discord": "alorsbye",
+        "instagram": "https://www.instagram.com/stoiyo/",
+        "linkedIn": "https://www.linkedin.com/in/maria-león-campos"
+      }
+    },
+    {
+      "name": "Damon Yiu",
+      "role": "Director of External Relations",
+      "pronoun": "he/him",
+      "description": "Hello everyone!!! My name is Damon Yiu and I'm the External Rep for 2024-2025! Some unexplainable things about me are my inability to hear and walk straight. As well, I do enjoy listening to music, playing ping pong and sleeping anywhere I can!",
+      "imgSrc": "/images/about-page/execs-2024/damon.jpg",
+      "socials": {
+        "discord": "damonyiu",
+        "instagram": "https://instagram.com/damonyiu_/"
+      }
+    },
+    {
+      "name": "Htet Wai Yan (Ash) Aung",
+      "role": "Director of Internal Relations",
+      "pronoun": "he/him",
+      "description": "Hey guys! I'm Ash, the Director of Internal Relations of SSSS for 2024-2025. I spend most of my time fighting a losing battle against courses under CMPT, MATH, MACM, and STAT (probably) and binge-watching sitcom shows. When I need a break from these, I go on hikes and visit beaches.",
+      "imgSrc": "/images/about-page/execs-2024/ash.jpg",
+      "socials": {
+        "discord": "doomed_ash",
+        "instagram": "https://instagram.com/doomed_ash/",
+        "linkedIn": "https://www.linkedin.com/in/htet-wai-yan-aung-352979303/"
+      }
+    },
+    {
+      "name": "Julie Wu",
+      "role": "Third Year Representative",
+      "pronoun": "she/her",
+      "description": "Hi everyone! I'm Julie :D Excited to be part of the team once again and ready to drive change! P.S. I like to do music and sports in my free time :3",
+      "imgSrc": "/images/about-page/execs-2024/julie.jpg",
+      "socials": {
+        "discord": "joolzmusic",
+        "instagram": "https://instagram.com/julie.wuu/",
+        "linkedIn": "https://www.linkedin.com/in/julie-wu-14471b218/"
+      }
+    },
+    {
+      "name": "Jaycie Say",
+      "role": "Second Year Representative",
+      "pronoun": "she/her",
+      "description": "Hey everyone👋 My name is Jaycie and I am excited to be part of the team as the Second Year Rep! During my free time I love to watch sitcoms, bake, crochet, and play the drums. Feel free to reach out if you want to talk :))",
+      "imgSrc": "/images/about-page/execs-2024/jaycie.jpg",
+      "socials": {
+        "discord": "js018",
+        "linkedIn": "https://www.linkedin.com/in/jaycie-say-923611274/"
+      }
+    },
+    {
+      "name": "Aleeza Ahmed",
+      "role": "First Year Representative",
+      "pronoun": "she/her",
+      "description": "Hello everyone! I'm Aleeza, and it's a pleasure to be one of your FYRs! I enjoy reading, writing, and yapping about whatever hyperfixation is spinning around in my head. I'm excited to meet you all! Feel free to reach out if you ever need anything!",
+      "imgSrc": "/images/about-page/execs-2024/aleeza.jpg",
+      "socials": {
+        "discord": "xsundropxx",
+        "instagram": "https://instagram.com/aleezas.photos"
+      }
+    },
+    {
+      "name": "Swara Bhate",
+      "role": "First Year Representative",
+      "pronoun": "she/her",
+      "description": "Hi everyone! My name is Swara and I'm excited to be one of the FYRs this year! I enjoy napping, reading, and driving in my spare time. Feel free to reach out to me if you have any questions or just want to make a new friend! (:",
+      "imgSrc": "/images/about-page/execs-2024/swara.jpg",
+      "socials": {
+        "discord": "swara_writes",
+        "linkedIn": "http://www.linkedin.com/in/swara-bhate-352938283"
+      }
+    },
+    {
+      "name": "Fabian Jonathan Siswanto",
+      "role": "SFSS Council Representative",
+      "pronoun": "he/him",
+      "description": "Hello everyone! I'm Fabian, your SFSS Council Rep for the 2024/2025 period. When I'm not attending SFSS council meetings, you can find me listening to music, whether I'm working on school assignments or just relaxing. I also like to stay updated with the latest trends in the tech field.",
+      "imgSrc": "/images/about-page/execs-2024/fabian.jpg",
+      "socials": {
+        "discord": "chro_nox",
+        "instagram": "https://instagram.com/fabian.jonn/",
+        "linkedIn": "https://www.linkedin.com/in/fabiansiswanto/"
+      }
+    }
+  ],
   "2023-2024": [
     {
       "name": "Joshua Li",
