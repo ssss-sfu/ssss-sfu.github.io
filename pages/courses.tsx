@@ -1,9 +1,10 @@
 import { Hero } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Course, Requirement } from "types/course";
 import { SidebarCourse } from "components/SidebarCourse";
 import { formatDate } from "utils";
+import ClipLoader from "react-spinners/ClipLoader";
 
 // API endpoint for SFU Courses
 const SFU_COURSES_API_BASE = "https://api.sfucourses.com/v1/rest/outlines";
@@ -79,8 +80,48 @@ const Courses: React.FC = () => {
   );
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [lastDataUpdate, setLastDataUpdate] = useState<string | null>(null);
 
-  // Fetch a single course from the API and show in sidebar
+  useEffect(() => {
+    fetch("https://api.sfucourses.com/health")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.lastDataUpdate) {
+          setLastDataUpdate(data.lastDataUpdate);
+        }
+      });
+  }, []);
+
+  function formatHealthDate(dateString: string): string {
+    const date = new Date(dateString);
+    const options: Intl.DateTimeFormatOptions = {
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      year: "numeric",
+      hour12: true,
+      timeZone: "America/Los_Angeles",
+    };
+    return date.toLocaleString("en-US", options) + " PST";
+  }
+
+  function formatRelativeTime(dateString: string): string {
+    const now = new Date();
+    const then = new Date(dateString);
+    const diffMs = now.getTime() - then.getTime();
+    const diffMins = Math.floor(diffMs / 60000);
+    if (diffMins < 60) {
+      return `(${diffMins} min${diffMins === 1 ? "" : "s"} ago)`;
+    }
+    const diffHours = Math.floor(diffMins / 60);
+    if (diffHours < 24) {
+      return `(${diffHours} hour${diffHours === 1 ? "" : "s"} ago)`;
+    }
+    const diffDays = Math.floor(diffHours / 24);
+    return `(${diffDays} day${diffDays === 1 ? "" : "s"} ago)`;
+  }
+
   const handleCourseClick = async (dept: string, number: string) => {
     setLoading(true);
     setError(null);
@@ -151,6 +192,13 @@ const Courses: React.FC = () => {
             >
               api.sfucourses.com
             </a>
+            {lastDataUpdate && (
+              <>
+                {" as of "}
+                {formatHealthDate(lastDataUpdate)}{" "}
+                {formatRelativeTime(lastDataUpdate)}
+              </>
+            )}
           </p>
         </section>
         <section className="requirements-section">
@@ -182,6 +230,15 @@ const Courses: React.FC = () => {
           </div>
           {loading && (
             <div className="sidebar-course">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  margin: "16px 0",
+                }}
+              >
+                <ClipLoader size={32} color="#555" />
+              </div>
               <p>Loading course data...</p>
             </div>
           )}

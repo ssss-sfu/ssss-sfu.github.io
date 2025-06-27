@@ -51,7 +51,6 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
         <ul>
           {course.offerings &&
             course.offerings.map((offering) => {
-              // Parse term like 'Spring 2025' to '2025/spring'
               const [semester, year] = offering.term.split(" ");
               const semesterLower = semester.toLowerCase();
               const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
