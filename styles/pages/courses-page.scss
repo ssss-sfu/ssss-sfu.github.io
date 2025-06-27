@@ -75,31 +75,18 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+  }
 
-    .sections-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 1.5em;
-      width: 100%;
+  .offerings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: -1em;
+    margin-left: 1em;
 
-      .section-unit {
-        width: fit-content;
-        flex: 1;
-        line-height: 1.25em;
-        border: 1px solid var(--colour-neutral-800);
-        padding: 0.75em;
-        border-radius: 0.75rem;
-        height: fit-content;
-
-        .schedule-list {
-          .schedule-unit {
-            margin-left: 1em;
-            white-space: nowrap;
-          }
-        }
-      }
-    }
+    // .offering {
+    //   line-height: 0.5em;
+    // }
   }
 }
 
