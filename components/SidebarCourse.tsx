@@ -1,99 +1,70 @@
+import { SFUCourseResponse } from "pages/courses";
 import { Dispatch, MouseEventHandler, SetStateAction } from "react";
 import { Course, SectionsPerTerm } from "types/course";
 
 interface SidebarCourseProps {
-  course: Course;
+  course: SFUCourseResponse;
   closeCourseShown: MouseEventHandler<HTMLSpanElement>;
 }
 
-interface SectionsPerTermProps {
-  title: string;
-  sectionsPerTerm: SectionsPerTerm;
+interface OfferingPerTerm {
+  offering: {
+    instructors: string[];
+    term: string;
+  };
 }
-
-const SectionsPerTermDisplay: React.FC<SectionsPerTermProps> = ({
-  title,
-  sectionsPerTerm,
-}) => {
-  return (
-    <div className="course-info course-last-sections">
-      <h2>
-        {title} - {sectionsPerTerm.term}
-      </h2>
-      <div className="sections-container">
-        {sectionsPerTerm.sections
-          .filter((s) => s.info.type !== "n")
-          .map((section) => {
-            const instructorNames =
-              section.info.instructorNames.length > 0
-                ? section.info.instructorNames
-                : ["Unknown"];
-            return (
-              <div className="section-unit" key={section.info.classNumber}>
-                <p>
-                  {section.info.section} - {instructorNames.join(", ")}
-                </p>
-                {section.info.campus !== "None" && <p>{section.info.campus}</p>}
-                <ul className="schedule-list">
-                  {section.courseSchedule
-                    .filter((schedule) => schedule.days !== "")
-                    .map((schedule) => {
-                      return (
-                        <li
-                          key={schedule.sectionCode}
-                          className="schedule-unit"
-                        >
-                          {schedule.days}; {schedule.startTime}-{" "}
-                          {schedule.endTime}
-                        </li>
-                      );
-                    })}
-                </ul>
-              </div>
-            );
-          })}
-      </div>
-    </div>
-  );
-};
 
 export const SidebarCourse: React.FC<SidebarCourseProps> = ({
   course,
   closeCourseShown,
 }) => {
   return (
-    <div className="sidebar-course">
+    <div
+      className="sidebar-course"
+      key={course.dept + course.number + course.title}
+    >
       <div className="course-info">
         <p className="space-between">
-          <b>
-            {course.info.dept} {course.info.number} ({course.info.units})
-          </b>
+          <a
+            href={`https://sfucourses.com/explore/${course.dept.toLowerCase()}-${
+              course.number
+            }`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {course.dept} {course.number} ({course.units})
+          </a>
           <span className="close-sidebar" onClick={closeCourseShown}>
             Close
           </span>
         </p>
-        <h2>{course.info.title}</h2>
-        <p>{course.info.description}</p>
-        {course.info.notes && <p>{course.info.notes}</p>}
+        <h2>{course.title}</h2>
+        <p>{course.description}</p>
+        {course.notes && <p>{course.notes}</p>}
         <p>
           Prerequisites:{" "}
-          {course.info.prerequisites !== ""
-            ? course.info.prerequisites
-            : "None"}
+          {course.prerequisites !== "" ? course.prerequisites : "None"}
         </p>
       </div>
-      <SectionsPerTermDisplay
-        title="Last offering"
-        sectionsPerTerm={course.last_sections}
-      />
-      {course.future_sections.sections.length > 0 ? (
-        <SectionsPerTermDisplay
-          title="Next offering"
-          sectionsPerTerm={course.future_sections}
-        />
-      ) : (
-        <h2>Currently not offered for {course.future_sections.term}</h2>
-      )}
+      <h2>Offerings</h2>
+      <div className="offerings-container">
+        <ul>
+          {course.offerings &&
+            course.offerings.map((offering) => {
+              const [semester, year] = offering.term.split(" ");
+              const semesterLower = semester.toLowerCase();
+              const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
+              return (
+                <li className="offering" key={offering.term}>
+                  <a href={calendarUrl} target="_blank" rel="noreferrer">
+                    {offering.term}
+                  </a>
+                  &nbsp;-&nbsp;{offering.instructors.join(", ") || "N/A"}
+                </li>
+              );
+            })}
+        </ul>
+      </div>
     </div>
   );
 };

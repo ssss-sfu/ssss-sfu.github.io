@@ -28,6 +28,7 @@
     "react-calendar": "^4.2.1",
     "react-dom": "18.2.0",
     "react-is": "^18.2.0",
+    "react-spinners": "^0.17.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "sanity": "^3.18.1",
