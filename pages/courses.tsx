@@ -81,6 +81,9 @@ const Courses: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [lastDataUpdate, setLastDataUpdate] = useState<string | null>(null);
+  const [otherCmptCourses, setOtherCmptCourses] = useState<
+    { dept: string; number: string }[]
+  >([]);
 
   useEffect(() => {
     fetch("https://api.sfucourses.com/health")
@@ -89,6 +92,28 @@ const Courses: React.FC = () => {
         if (data.lastDataUpdate) {
           setLastDataUpdate(data.lastDataUpdate);
         }
+      });
+
+    // Fetch all CMPT courses and populate 'Other CMPT Courses'
+    fetch("https://api.sfucourses.com/v1/rest/outlines/cmpt")
+      .then((res) => res.json())
+      .then((allCourses) => {
+        // Flatten all requirement courses into a set of 'dept-number'
+        const requiredSet = new Set(
+          Object.values(REQUIREMENT_COURSES)
+            .flat()
+            .map((c) => `${c.dept.toUpperCase()}-${c.number.toUpperCase()}`)
+        );
+        // Filter out courses already in requirements
+        const others = allCourses
+          .filter(
+            (c: any) =>
+              !requiredSet.has(
+                `${c.dept.toUpperCase()}-${c.number.toUpperCase()}`
+              )
+          )
+          .map((c: any) => ({ dept: c.dept, number: c.number }));
+        setOtherCmptCourses(others);
       });
   }, []);
 
@@ -143,6 +168,11 @@ const Courses: React.FC = () => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const allRequirementCourses = {
+    ...REQUIREMENT_COURSES,
+    "Other CMPT Courses": otherCmptCourses,
   };
 
   return (
@@ -207,7 +237,7 @@ const Courses: React.FC = () => {
               courseShown !== null ? "half-width" : ""
             }`}
           >
-            {Object.entries(REQUIREMENT_COURSES).map(
+            {Object.entries(allRequirementCourses).map(
               ([requirement, courseList]) => (
                 <div className="requirement-block" key={requirement}>
                   <h2>{requirement}</h2>
