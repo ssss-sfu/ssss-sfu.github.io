@@ -95,7 +95,7 @@ const Courses: React.FC = () => {
       });
 
     // Fetch all CMPT courses and populate 'Other CMPT Courses'
-    fetch("https://api.sfucourses.com/v1/rest/outlines/cmpt")
+    fetch("https://api.sfucourses.com/v1/rest/outlines?dept=cmpt")
       .then((res) => res.json())
       .then((allCourses) => {
         // Flatten all requirement courses into a set of 'dept-number'
@@ -152,7 +152,7 @@ const Courses: React.FC = () => {
     setError(null);
     try {
       const response = await fetch(
-        `${SFU_COURSES_API_BASE}/${dept.toLowerCase()}/${number}`
+        `${SFU_COURSES_API_BASE}?dept=${dept.toLowerCase()}&number=${number}`
       );
       if (!response.ok) {
         setError(`Failed to fetch ${dept} ${number}: ${response.statusText}`);
@@ -160,8 +160,8 @@ const Courses: React.FC = () => {
         setLoading(false);
         return;
       }
-      const data: SFUCourseResponse = await response.json();
-      setCourseShown(data);
+      const data = await response.json();
+      setCourseShown(data[0]);
     } catch (err) {
       setError("Failed to fetch course data. Please try again later.");
       setCourseShown(null);
