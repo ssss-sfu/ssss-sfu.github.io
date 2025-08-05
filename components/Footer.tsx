@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
                 <strong>Software Systems Student Society</strong>
                 <br />
                 10285 University Drive<br></br>
-                SYRC 3006.3, Level 3000<br></br>
+                SYRE 3006.3, Level 3000<br></br>
                 Surrey, BC V3T 0N1<br></br>
               </a>
             </address>
