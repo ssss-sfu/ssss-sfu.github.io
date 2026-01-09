@@ -4,6 +4,9 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
+import addMonths from "date-fns/addMonths";
+import subMonths from "date-fns/subMonths";
+import isToday from "date-fns/isToday";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -18,25 +21,54 @@ const localizer = dateFnsLocalizer({
 });
 
 export const EventsCalendar: React.FC = () => {
-  const calendarURL: string =
-    "https://clients6.google.com/calendar/v3/calendars/j7qfcngd9crbhelib6tgdihi3k@group.calendar.google.com/events?calendarId=j7qfcngd9crbhelib6tgdihi3k%40group.calendar.google.com&singleEvents=true&timeZone=America%2FVancouver&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2023-03-26T00%3A00%3A00-07%3A00&timeMax=2024-05-07T00%3A00%3A00-07%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs";
+  const googleCalendarID =
+    "j7qfcngd9crbhelib6tgdihi3k%40group.calendar.google.com";
+  const apiKey = "AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs";
   const [events, setEvents] = useState<any[]>([]);
 
   useEffect(() => {
+    // Will fetch events from Google Calendar API
+    // Within a time range of 3 months in the past to 6 months in the future
+    const now = new Date();
+    const timeMin = subMonths(now, 3).toISOString();
+    const timeMax = addMonths(now, 6).toISOString();
+
+    const calendarURL = `https://www.googleapis.com/calendar/v3/calendars/${googleCalendarID}/events?key=${apiKey}&timeMin=${timeMin}&timeMax=${timeMax}&singleEvents=true&orderBy=startTime`;
+
     fetch(calendarURL)
       .then((response) => response.json())
       .then((data) => {
         const updatedEvents: any[] = [];
-        for (const event of data.items) {
-          updatedEvents.push({
-            title: event.summary,
-            start: new Date(event.start.dateTime),
-            end: new Date(event.end.dateTime),
-          });
+        if (data.items) {
+          for (const event of data.items) {
+            // Handles both all-day and timed events
+            const start = event.start?.dateTime || event.start?.date;
+            const end = event.end?.dateTime || event.end?.date;
+            if (start && end) {
+              updatedEvents.push({
+                title: event.summary,
+                start: new Date(start),
+                end: new Date(end),
+              });
+            }
+          }
         }
         setEvents(updatedEvents);
+      })
+      // catch block to display errors
+      .catch((error) => {
+        console.error("Error fetching calendar events:", error);
       });
   }, []);
+
+  const dayPropGetter = (date: Date) => {
+    if (isToday(date)) {
+      return {
+        className: "today",
+      };
+    }
+    return {};
+  };
 
   return (
     <div className="eventsCalendar">
@@ -49,6 +81,7 @@ export const EventsCalendar: React.FC = () => {
         startAccessor="start"
         endAccessor="end"
         style={{ height: 750 }}
+        dayPropGetter={dayPropGetter}
       />
     </div>
   );

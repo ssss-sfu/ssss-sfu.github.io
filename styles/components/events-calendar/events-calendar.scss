@@ -118,7 +118,32 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+// Highlight today's date cell
+.today-cell {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffdf00;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
 
 .rbc-today {
-  background-color: inherit;
+  .rbc-date-cell {
+    color: #ffdf00;
+    font-weight: bold;
+  }
+  background-color: rgba(
+    36,
+    169,
+    139,
+    0.25
+  ); // light green with some transparency;
 }
