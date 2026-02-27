@@ -9,8 +9,13 @@ import { useRouter } from "next/router";
 export const getStaticProps: GetStaticProps<{
   posts: Post[];
 }> = async ({ draftMode = false }) => {
-  const client = getClient(draftMode ? { token: readToken } : undefined);
-  const posts = await getPosts(client);
+  let posts: Post[] = [];
+  try {
+    const client = getClient(draftMode ? { token: readToken } : undefined);
+    posts = await getPosts(client);
+  } catch (_) {
+    // Sanity not configured; return empty posts
+  }
 
   return {
     props: {
@@ -46,7 +51,7 @@ export default function BlogPage(
               </div>
             </div>
           ) : (
-            <div>No post at the moment</div>
+            <div>No posts found. This probably means Sanity is not set up.</div>
           )}
         </section>
       </main>
