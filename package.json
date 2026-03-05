@@ -31,7 +31,7 @@
     "react-spinners": "^0.17.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sanity": "^3.18.1",
+    "sanity": "^3.99.0",
     "styled-components": "5.2",
     "swr": "^2.2.2",
     "zod": "^3.22.4"
