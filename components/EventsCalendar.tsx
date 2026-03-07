@@ -23,7 +23,7 @@ const localizer = dateFnsLocalizer({
 export const EventsCalendar: React.FC = () => {
   const googleCalendarID =
     "j7qfcngd9crbhelib6tgdihi3k%40group.calendar.google.com";
-  const apiKey = "AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs";
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY;
   const [events, setEvents] = useState<any[]>([]);
 
   useEffect(() => {
