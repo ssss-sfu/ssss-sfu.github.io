@@ -28,8 +28,13 @@ export const getStaticProps: GetStaticProps<
   },
   Query
 > = async ({ draftMode = false, params = {} }) => {
-  const client = getClient(draftMode ? { token: readToken } : undefined);
-  const post = await getPost(client, params.slug);
+  let post: Post | null = null;
+  try {
+    const client = getClient(draftMode ? { token: readToken } : undefined);
+    post = await getPost(client, params.slug);
+  } catch (_) {
+    // Sanity not configured
+  }
 
   if (!post) {
     return {
@@ -109,9 +114,14 @@ export default function ProjectSlugRoute(
 }
 
 export const getStaticPaths = async () => {
-  const client = getClient();
-  const slugs: Post[] = await client.fetch(postSlugsQuery);
-  const paths = slugs?.map((slug) => ({ params: { slug } })) || [];
+  let paths: { params: { slug: string } }[] = [];
+  try {
+    const client = getClient();
+    const slugs: string[] = await client.fetch(postSlugsQuery);
+    paths = slugs?.map((slug) => ({ params: { slug } })) || [];
+  } catch (_) {
+    // Sanity not configured
+  }
 
   return {
     paths,
