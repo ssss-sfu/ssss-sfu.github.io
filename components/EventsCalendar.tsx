@@ -4,9 +4,7 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import addMonths from "date-fns/addMonths";
-import subMonths from "date-fns/subMonths";
-import isToday from "date-fns/isToday";
+import { addMonths, isToday, subMonths } from "date-fns";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),

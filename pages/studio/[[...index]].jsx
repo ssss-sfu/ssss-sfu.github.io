@@ -1,17 +1,14 @@
-import Head from "next/head";
 import { NextStudio } from "next-sanity/studio";
-import { metadata } from "next-sanity/studio/metadata";
-import config from "../../sanity.config";
 
 export default function StudioPage() {
-  return (
-    <>
-      <Head>
-        {Object.entries(metadata).map(([key, value]) => (
-          <meta key={key} name={key} content={value} />
-        ))}
-      </Head>
-      <NextStudio config={config} />
-    </>
-  );
+  const hasSanityConfig =
+    Boolean(process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) &&
+    Boolean(process.env.NEXT_PUBLIC_SANITY_DATASET);
+
+  if (!hasSanityConfig) {
+    return <div>Sanity Studio is not configured.</div>;
+  }
+
+  const config = require("../../sanity.config").default;
+  return <NextStudio config={config} />;
 }

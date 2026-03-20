@@ -3,6 +3,10 @@ import { createClient, type SanityClient } from "next-sanity";
 import { apiVersion, dataset, projectId, useCdn } from "./sanity.api";
 
 export function getClient(preview?: { token: string }): SanityClient {
+  if (!projectId || !dataset) {
+    throw new Error("Sanity is not configured");
+  }
+
   const client = createClient({
     projectId,
     dataset,

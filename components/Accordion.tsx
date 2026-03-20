@@ -6,7 +6,7 @@ interface AccordionProps {
 
 export const Accordion: React.FC<AccordionProps> = ({ data }) => {
   const previouslyOpenedPanelIndex = useRef<number>(-1);
-  const panelsRef = useRef<Map<number, HTMLUListElement>>();
+  const panelsRef = useRef<Map<number, HTMLUListElement> | null>(null);
 
   function getIdPanelMap(): Map<number, HTMLUListElement> {
     if (panelsRef.current) {

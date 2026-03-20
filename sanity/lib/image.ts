@@ -1,13 +1,25 @@
 import createImageUrlBuilder from "@sanity/image-url";
+import type { Image } from "sanity";
 
 import { dataset, projectId } from "../env";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
-const imageBuilder = createImageUrlBuilder({
-  projectId: projectId || "",
-  dataset: dataset || "",
-});
+function getImageBuilder() {
+  if (!projectId || !dataset) {
+    return null;
+  }
 
-export const urlForImage = (source: SanityImageSource) => {
+  return createImageUrlBuilder({
+    projectId,
+    dataset,
+  });
+}
+
+export const urlForImage = (source: Image) => {
+  const imageBuilder = getImageBuilder();
+
+  if (!imageBuilder) {
+    return undefined;
+  }
+
   return imageBuilder?.image(source).auto("format").fit("max");
 };
