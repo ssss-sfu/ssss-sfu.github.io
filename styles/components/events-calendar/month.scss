@@ -1,4 +1,6 @@
-@import "./variables";
+@use "sass:color";
+@use "variables";
+@use "utilities";
 
 .rbc-row {
   display: flex;
@@ -15,7 +17,7 @@
     @media screen and (max-width: 767px) {
       font-size: 0.4rem;
     }
-    @extend .rbc-ellipsis;
+    @include utilities.ellipsis;
   }
 }
 
@@ -24,17 +26,17 @@
 }
 
 .rbc-show-more {
-  @extend .rbc-ellipsis;
+  @include utilities.ellipsis;
   background-color: rgba(255, 255, 255, 0.3);
-  z-index: $event-zindex;
+  z-index: variables.$event-zindex;
   font-weight: bold;
   font-size: 85%;
   height: auto;
   line-height: normal;
-  color: $event-bg;
+  color: variables.$event-bg;
   &:hover,
   &:focus {
-    color: darken($event-bg, 10%);
+    color: color.adjust(variables.$event-bg, $lightness: -10%);
   }
 }
 
@@ -94,7 +96,7 @@
 }
 
 .rbc-row-bg {
-  @extend .rbc-abs-full;
+  @include utilities.abs-full;
   display: flex;
   flex-direction: row;
   flex: 1 0 0;
@@ -116,7 +118,7 @@
 
 .rbc-overlay {
   position: absolute;
-  z-index: $event-zindex + 1;
+  z-index: variables.$event-zindex + 1;
   border: 1px solid #e5e5e5;
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);

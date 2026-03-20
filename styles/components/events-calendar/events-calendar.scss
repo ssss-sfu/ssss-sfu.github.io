@@ -1,11 +1,12 @@
-@import "react-big-calendar/lib/sass/styles";
-@import "./variables";
-@import "./reset";
-@import "./toolbar";
-@import "./event";
-@import "./month";
-@import "./agenda";
-@import "./time-grid";
+@use "sass:color";
+@use "variables";
+@use "reset";
+@use "toolbar";
+@use "event";
+@use "month";
+@use "agenda";
+@use "time-grid";
+@use "utilities";
 
 .rbc-calendar {
   padding-top: 4rem;
@@ -23,19 +24,11 @@
 }
 
 .rbc-abs-full {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  @include utilities.abs-full;
 }
 
 .rbc-ellipsis {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  @include utilities.ellipsis;
 }
 
 .rbc-rtl {
@@ -47,7 +40,7 @@
 }
 
 .rbc-off-range-bg {
-  background: darken(#141515, 1%);
+  background: color.adjust(#141515, $lightness: -1%);
 }
 
 .rbc-header {

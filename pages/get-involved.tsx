@@ -86,8 +86,10 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
             <div className="image-alignment">
               <Image
                 src={merch}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
                 alt="Merch committee image"
               />
             </div>
@@ -109,8 +111,10 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
             <div className="image-alignment">
               <Image
                 src={website}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{
+                  objectFit: "cover", // cover, contain, none
+                }}
                 alt="Website committee image"
               />
             </div>

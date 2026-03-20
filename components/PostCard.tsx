@@ -26,7 +26,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
                   .height(300)!
                   .url()}
                 alt="thumbnail"
-                layout="fill"
+                fill
               />
             ) : (
               <div className="post__cover--none" />

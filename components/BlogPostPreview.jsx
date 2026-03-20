@@ -16,14 +16,14 @@ export class BlogPost {
     excerpt,
     category
   ) {
-    (this.style = style),
+    ((this.style = style),
       (this.title = title),
       (this.date = date),
       (this.slug = slug),
       (this.author = author),
       (this.coverImage = coverImage),
       (this.excerpt = excerpt),
-      (this.category = category);
+      (this.category = category));
   }
 
   static fromObject(object) {
@@ -57,7 +57,7 @@ export const BlogPostPreview = ({ post }) => {
         <Link as={`/blog/${slug}`} href="/blog/[slug]">
           <article className="post">
             <div className="thumbnail">
-              <Image src={coverImage} alt="thumbnail" layout="fill" />
+              <Image src={coverImage} alt="thumbnail" fill />
               <div className="overlay"></div>
             </div>
             <div className="text">

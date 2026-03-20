@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@use "../variables.scss";
 
 .get-involved-page {
   .footer {
@@ -112,7 +112,7 @@
     padding-top: 1rem;
   }
 
-  @include viewport(desktop) {
+  @include variables.viewport(desktop) {
     .committee-container {
       display: flex;
       flex-direction: row;

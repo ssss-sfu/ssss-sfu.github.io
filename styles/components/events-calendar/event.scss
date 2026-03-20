@@ -1,14 +1,15 @@
-@import "./variables";
+@use "variables";
+@use "utilities";
 
 .rbc-event {
   border: none;
   box-sizing: border-box;
   box-shadow: none;
   margin: 0;
-  padding: $event-padding;
+  padding: variables.$event-padding;
   background-color: #24a98b;
   border-radius: 10px;
-  color: $event-color;
+  color: variables.$event-color;
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -23,12 +24,12 @@
   }
 
   &:focus {
-    outline: 10px auto $event-outline;
+    outline: 10px auto variables.$event-outline;
   }
 }
 
 .rbc-event-label {
-  @extend .rbc-ellipsis;
+  @include utilities.ellipsis;
   font-size: 80%;
 }
 

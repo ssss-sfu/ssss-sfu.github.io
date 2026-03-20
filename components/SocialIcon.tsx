@@ -20,6 +20,7 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ href, src, alt }) => {
         alt={alt}
         width={24}
         height={24}
+        loading="eager"
       />
     </a>
   );

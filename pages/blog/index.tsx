@@ -1,8 +1,7 @@
-import { useLiveQuery } from "next-sanity/preview";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { readToken } from "@lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
-import { getPosts, type Post, postsQuery } from "@lib/sanity.queries";
+import { getPosts, type Post } from "@lib/sanity.queries";
 import { Helmet, PostCard } from "@components";
 import { useRouter } from "next/router";
 
@@ -30,7 +29,7 @@ export default function BlogPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const router = useRouter();
-  const [posts] = useLiveQuery(props.posts, postsQuery);
+  const posts = props.posts;
 
   return (
     <div className="blog-page">

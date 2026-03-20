@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@use "../variables.scss";
 
 .footer {
   background-color: var(--colour-neutral-1100);
@@ -43,7 +43,7 @@
       }
     }
 
-    @include viewport(desktop) {
+    @include variables.viewport(desktop) {
       flex-direction: row;
       justify-content: space-between;
       padding-top: 2.5rem;

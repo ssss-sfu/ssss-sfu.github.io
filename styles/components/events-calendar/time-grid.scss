@@ -1,11 +1,11 @@
-@import "./variables";
-@import "./time-column";
+@use "variables";
+@use "time-column";
 
 .rbc-slot-selection {
   z-index: 10;
   position: absolute;
-  background-color: $time-selection-bg-color;
-  color: $time-selection-color;
+  background-color: variables.$time-selection-bg-color;
+  color: variables.$time-selection-color;
   font-size: 75%;
   width: 100%;
   padding: 3px;

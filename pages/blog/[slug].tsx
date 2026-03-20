@@ -1,18 +1,12 @@
 import { PortableText } from "@portabletext/react";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
-import { useLiveQuery } from "next-sanity/preview";
 import { getImageDimensions } from "@sanity/asset-utils";
 import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
 import { Helmet } from "@components";
-import {
-  getPost,
-  type Post,
-  postBySlugQuery,
-  postSlugsQuery,
-} from "@lib/sanity.queries";
+import { getPost, type Post, postSlugsQuery } from "@lib/sanity.queries";
 import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
 import person from "../../public/images/blog-page/person.svg";
@@ -68,9 +62,7 @@ const SanityImage = ({ value }: { value: any }) => {
 export default function ProjectSlugRoute(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  const [post] = useLiveQuery(props.post, postBySlugQuery, {
-    slug: props.post.slug.current,
-  });
+  const post = props.post;
 
   // const { width, height } = useNextSanityImage
   return (

@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@use "../variables.scss";
 
 .posts-list {
   display: flex;
@@ -109,7 +109,7 @@
           rgba(10, 9, 0, 0) 100%
         );
       }
-      @include viewport(tablet-desktop) {
+      @include variables.viewport(tablet-desktop) {
         width: 70%;
       }
     }
@@ -121,7 +121,7 @@
   }
 }
 .wide {
-  @include viewport(desktop) {
+  @include variables.viewport(desktop) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -155,7 +155,7 @@
     }
   }
 
-  @include viewport(tablet-desktop) {
+  @include variables.viewport(tablet-desktop) {
     flex-direction: row;
 
     .post {
