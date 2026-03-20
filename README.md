@@ -32,6 +32,14 @@ View the live site here: https://sfussss.org/
 2. Claim a free task from the open issues or suggest a new issue
 3. Set up your development environment (terminal instructions):
 
+   Quick context:
+   - Bun is the package manager/runtime used in this repo. You can think of it like npm, but faster.
+   - Husky runs automatic checks when you commit (for example formatting checks) so bad commits are caught early.
+
+   Prerequisites:
+   - Install Node.js 20+ (recommended LTS)
+   - Install Bun from [bun.sh](https://bun.sh)
+
    a. Clone the repository locally in a folder of your choice
 
    ```
@@ -44,10 +52,16 @@ View the live site here: https://sfussss.org/
    cd ssss-sfu.github.io
    ```
 
-   c. Install node modules
+   c. Install dependencies
 
    ```
-   npm i
+   bun install
+   ```
+
+   Husky hooks are set up automatically after install. If they do not run on commit, run:
+
+   ```
+   bunx husky
    ```
 
    d. Create a new branch from Github Issue UI
@@ -74,7 +88,7 @@ View the live site here: https://sfussss.org/
    e. Run the server locally
 
    ```
-   npm run dev
+   bun run dev
    ```
 
    f. View the project in your browser
@@ -95,10 +109,7 @@ View the live site here: https://sfussss.org/
    Description: Any relevant information about the changes made
 
    Reviewers:
-   - megarage90000 (John)
-   - artymiz (Art)
-   - bendjukastein (Ben)
-   - KiaanCastillo (Kiaan)
+   - Highfire1 (Anderson)
    ```
 
 7. Wait for one of the reviewers to take a look and make changes or merge accordingly.
@@ -109,7 +120,8 @@ Thanks for contributing!
 
 |     | Version | Release Date      | Contributors   |
 | --- | ------- | ----------------- | -------------- |
-| ✅  | v4.0    | September 9, 2023 | Brian Rahadi   |
+| ✅  | v5.0    | March 20, 2026    | Anderson Tseng |
+|     | v4.0    | September 9, 2023 | Brian Rahadi   |
 |     | v3.0    | August 17, 2021   | Kiaan Castillo |
 |     | v2.0    | November 17, 2020 | Andy Wang      |
 |     | v1.0    | January 27, 2020  | Amos Ko        |
