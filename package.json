@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "precommit": "pretty-quick --staged",
-    "prepare": "husky install .husky",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format:write": "npx prettier --write .",
-    "format:check": "npx prettier --check ."
+    "format:write": "bunx prettier --write .",
+    "format:check": "bunx prettier --check ."
   },
   "dependencies": {
     "@portabletext/react": "^6.0.3",

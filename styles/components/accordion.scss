@@ -42,6 +42,8 @@
     border-radius: 10px;
     overflow-y: hidden;
     max-height: 0;
-    transition: max-height 250ms ease-in-out, padding 250ms ease-in-out;
+    transition:
+      max-height 250ms ease-in-out,
+      padding 250ms ease-in-out;
   }
 }
