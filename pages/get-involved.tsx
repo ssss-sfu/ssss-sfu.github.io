@@ -60,9 +60,7 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
           <h1>General Meeting</h1>
           <p>
             Join us during our public general meeting in{" "}
-            <span className="discord-channel-image-text">
-              #room-4016-public{" "}
-            </span>{" "}
+            <span className="discord-channel-image-text">#room-3006-3 </span>{" "}
             where we discuss updates and matters including the following:
           </p>
           <div className="bulletlist">
