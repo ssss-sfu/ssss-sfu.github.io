@@ -59,7 +59,7 @@ export const EventsCalendar: React.FC = () => {
       .catch((error) => {
         console.error("Error fetching calendar events:", error);
       });
-  }, []);
+  }, [apiKey]);
 
   const dayPropGetter = (date: Date) => {
     if (isToday(date)) {
