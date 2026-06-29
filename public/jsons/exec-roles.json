@@ -2,56 +2,55 @@
   {
     "name": "All Executive Members",
     "content": [
-      "Write a continuity report at the end of their term for the next executive member who will fill the position, explaining details about ongoing activities and an overview of responsibilities.",
       "Share responsibility for the day-to-day operations of the SSSS and its resources.",
-      "Commit to a minimum of 1 hour per week, with the exact commitment varying depending on the specific role.",
-      "Make every effort to attend all executive and general meetings of the SSSS and provide a report on their activities at each meeting.",
-      "Notify the executive team or Co-president(s) in advance if unable to attend a meeting.",
-      "Make every effort to attend all SSSS events and initiatives, including but not limited to social events, workshops, and seminars.",
+      "Commit to a minimum of one (1) hour per week to the SSSS, with exact commitments varying by role.",
+      "Make every effort to attend all SSSS events, initiatives, and scheduled meetings (executive and general). If a member is unable to attend a meeting, they must notify the executive team or Co-president(s) in advance.",
+      "Have one-year term of office.",
+      "Provide a report on their recent activities at each meeting.",
+      "Initiate planning for Systems Events at least one semester in advance.",
+      "Help maintain the cleanliness and organization of the office and respect the communal space.",
+      "Complete a smooth transition of power at the end of their term by holding a transition meeting with their successor and writing a continuity report. This report must detail ongoing activities and provide an overview of the year’s responsibilities.",
       "Strive to maintain a high standard of work; repeated failure to meet expectations may lead to removal from the executive team.",
-      "Initiate planning for Systems Events at least one semester in advance."
+      "Retain the right to voice concerns and refuse extraneous tasks outside their standard duties after a consultation with the Co-Presidents."
     ]
   },
   {
     "name": "Co-President(s)",
     "content": [
-      "Consist of at least one (1) co-president and at most two (2) co-presidents.",
-      "Carry out the business of the Software Systems Student Society as directed by decisions of the membership, and in accordance with the constitution, by delegation of duties to other members of the Society as necessary in order to ensure the well being of the Society.",
+      "Consist of at least one (1) President and at most two (2) Co-Presidents.",
+      "Carry out the business of the SSSS as directed by decisions of the membership, and in accordance with the Constitution. This includes delegating duties to other executives to ensure the well being of the Society.",
       "Be responsible for calling regular and special general meetings, and serving as the chairperson(s) for all meetings.",
       "Be a member of all committees that the Software Systems Student Society is part of.",
       "Act as official spokesperson and representative for the Software Systems Student Society.",
-      "Be the official contact with the School of Computing Science and its representatives.",
-      "Be the official contact with the Software Systems program staff and its representatives.",
-      "Be the official contact with the Simon Fraser Student Society and its representatives.",
-      "Be responsible for monitoring all projects funded through the society, including the creation and operation of committees.",
-      "Perform public relations tasks on behalf of the SSSS in order to promote the SSSS and expand its membership.",
-      "Plan initiatives to create a positive and inclusive environment for SSSS members and boost morale for executive members."
+      "Serve as the official spokesperson and primary liaison between the SSSS and the SFSS, School of Computing Science, and the Software Systems program staff.",
+      "Attend all Faculty of Applied Sciences (FAS), Undergraduate Program Chair and School of Computer Science monthly meetings to represent the SSSS.",
+      "Monitor all SSSS-funded projects, including the creation and operation of committees.",
+      "Perform public relations tasks to promote the SSSS, expand its membership, and plan initiatives that foster a positive, inclusive environment while boosting executive morale.",
+      "Hold ownership of SSSS Discord Server and key(s) to the SSSS office (SRYE 3006.3).",
+      "Have the authority to temporarily appoint another executive to assume their duties (e.g. chairing meetings) in the event both Co-Presidents are briefly unable to perform them."
     ]
   },
   {
     "name": "Secretary",
     "content": [
-      "Be responsible for presenting items of interest at the regular meetings as well as supplying a copy of the meeting's minutes to the executive members.",
+      "Announce weekly executive meetings and send reminders to the executive council one day in advance.",
       "Ensure that proper notice of general and special general meetings is given, as specified by this constitution.",
-      "Keep and reproduce minutes of Software Systems Student Society meetings and written records of all decisions made at properly constituted meetings of the society.",
+      "Be responsible for presenting items of interest at the regular meetings as well as remind executives of meetings one day prior.",
+      "Record meeting minutes for all meetings and manage their distribution. This includes providing the minutes to the SSSS Discord at least one day prior to the next meeting, uploading them to the SFSS portal, and publishing them on SSSS website (if available).",
+      "Monitor the official SSSS email accounts (ssss-exec@sfu.ca and ssss.exec@gmail.com) and respond to all correspondence promptly.",
       "Maintain records of all correspondence between the society and other organizations.",
-      "Make the minutes of all meetings available to the public, including the Member Services Coordinator – Student Unions & Groups.",
-      "Upload minutes to the SFSS portal and optionally, other mediums (i.e. the SSSS website), and inform SSSS members about the public access of minutes.",
-      "Compile semester executive, representative, and committee membership lists along with maintaining the mailing lists.",
-      "Compile a semester contact list of the executive members for the School of Computing Science, the Software Systems program staff, and the Member Services Coordinator – Student Unions & Groups.",
-      "Maintain the records of the SSSS, including but not limited to the minutes archive and the Google Drive.",
-      "Manage and regularly update the internal SSSS wiki (SSSS Hub) to ensure it remains a reliable and comprehensive resource for all members.",
-      "Aim to compile and distribute a monthly newsletter to SSSS members, highlighting key initiatives, upcoming events, and important updates.",
-      "Maintain and regularly update an SSSS Events calendar and Executive calendar to ensure all members are aware of upcoming events and meetings.",
-      "Assume the role of Co-President(s) and perform all necessary duties, in the event that both Co-President(s) are unavailable to perform their responsibilities."
+      "Compile and distribute a semesterly executive contact list to the School of Computing Science, the Software Systems program staff, and the Member Services Coordinator – Student Unions & Groups.",
+      "Maintain and organize all SSSS records, including but not limited to the minutes archive and the Google Drive, ensuring the meeting minutes folder remains accessible to all SSSS members.",
+      "Maintain and regularly update an SSSS Events calendar to ensure all members are aware of upcoming events and meetings.",
+      "Aim to compile and distribute a monthly newsletter in the first week of each month to SSSS members, highlighting key initiatives, upcoming events, and important updates."
     ]
   },
   {
     "name": "Treasurer",
     "content": [
-      "Maintain all financial records of the SSSS, including but not limited to the Society's trust account (as well as the external Bank Account if one exists), and a record of submitted, approved and rejected reimbursements both from grant proposals and trust.",
-      "Be responsible for filling out and submitting grant requests as approved by meeting minutes.",
-      "Be responsible for filling out and submitting reimbursement requests.",
+      "Maintain all financial records of the SSSS, including but not limited to the Society’s trust, core, and external bank accounts, and a record of submitted, approved and rejected reimbursements both from grant proposals and trust.",
+      "Hold official access to all SSSS bank accounts.",
+      "Prepare, fill out, and submit all grant and reimbursement requests as approved by meeting minutes.",
       "Maintain a record of reimbursements using an appropriate tracking system (e.g. Trello, Taiga) and ensure that all reimbursements are processed in a timely manner.",
       "Coordinate external finance transactions such as sponsorships from companies or other SFU groups.",
       "Make regular reports to the membership regarding the current state of the SSSS finances and the status of all grant proposals and reimbursements."
@@ -60,92 +59,77 @@
   {
     "name": "Director(s) of Activities",
     "content": [
-      "Plan, organize, and execute all SSSS-sponsored events and fundraisers, sharing joint and equal responsibility for these tasks, or delegate such responsibilities as necessary.",
-      "Organize a minimum of four (4) events a semester, including in-person and online events, split amongst both Directors.",
-      "Ensure at least one event per semester is a technical event, which is defined as an event that is primarily focused on technical content, such as a workshop or seminar.",
-      "Work closely with the Treasurer to coordinate grant proposals, reimbursements and event budgets.",
-      "Write a report containing procedures and contacts for each class of event for future SSSS members.",
-      "Aim to plan all events at least one month in advance to ensure timely reimbursements, marketing and newsletter content.",
-      "Work closely with the Director of Marketing and Director of Visual Design to create promotional content for the event.",
-      "Delegate responsibilities to other executive members and/or the events committee as necessary."
+      "Share joint and equal responsibility to plan, organize, and execute SSSS-sponsored events and fundraisers. The Directors may delegate such responsibilities to other executive members or the events committee as necessary.",
+      "Organize a minimum of four (4) events a semester, including in-person, collab and online events. Of these four events, at least one must be technical in nature (e.g., a workshop or seminar), and collaborative events may only count towards this quota once per semester.",
+      "Aim to plan all events at least one month in advance to ensure sufficient time for marketing, newsletter inclusion, funding approvals, and reimbursements.",
+      "Collaborate with the Treasurer on event budgets, grants, and reimbursements, and with the Directors of Marketing and Visual Design to create promotional content.",
+      "Collaborate externally with other student club executives to organize and execute joint events.",
+      "Ensure at least one photograph is taken at every event to fulfill the FAS Funding Year-End Report requirements."
     ]
   },
   {
-    "name": "Director of External Relations",
+    "name": "Director(s) of Relations",
     "content": [
-      "Work with Director(s) of Activities, Director of Marketing, and Director of Visual Design in recruiting sponsorships.",
-      "Work closely with the Internal Representative to make sure the society's needs for representation outside of the school and SFSS are being met.",
-      "Work closely with the Director(s) of Activities to support event initiatives and leverage networking opportunities that may arise.",
-      "Attend meetings external to the SSSS and the SFSS as a representative of this Society, in cases when another representative is not going.",
-      "Attend events such as SFSS Clubs Day alongside the Director of Internal Relationships to represent the SSSS."
-    ]
-  },
-  {
-    "name": "Director of Internal Relations",
-    "content": [
-      "Work closely with the External Representative to make sure the society's needs for representation within the school and SFSS are being met.",
-      "Attend meetings internal to the SFSS as a representative of this Society, in cases when another representative is not going.",
-      "Be responsible for representing the SSSS to other bodies within SFU, such as coordinating with other student societies, faculties, and the SFU.",
-      "Be responsible for ensuring the administration of maintenance, upkeep and smooth operation of all SSSS resources – including but not limited to common room(s), computer(s), the office, and merchandise, such that these resources remain in good working order and are usable by the membership.",
-      "Attend all Faculty of Applied Sciences (FAS) and SFSS events and monthly meetings to represent the SSSS.",
-      "Assist the Director of Activities with the planning and execution of all SSSS events, including but not limited to social events, workshops, and seminars."
+      "Actively seek out sponsorships throughout the year, with a particular focus on large-scale events such as SystemHacks.",
+      "Create and manage all sponsorship documentation, including agreements, guidelines, and the official sponsorship package, coordinating with the Director of Visual Design for updates.",
+      "Serve as the primary representative for the SSSS in all partnerships. All official correspondence with sponsors must carbon copy (CC) the official SSSS executive email.",
+      "Represent the SSSS to external bodies within SFU, coordinating with other student societies and faculties.",
+      "Attend meetings internal and external to the SSSS as a representative of this Society, in cases when another representative is not going.",
+      "Collaborate with the Director(s) of Activities to support general event initiatives, leverage networking opportunities, and assist with the planning and execution of social events, workshops, and seminars.",
+      "Assist in handling logistics for large-scale collaborative events, including but not limited to: FAS Formal, SystemsFair, and Frosh."
     ]
   },
   {
     "name": "Director of Marketing",
     "content": [
-      "Be responsible for the distribution of appropriate posters, online notifications, and other advertising materials on all SSSS social mediums pursuant to the creation of awareness about the Society and its events or delegate such responsibilities as necessary.",
-      "Maintain a consistent presence on social media and regularly create promotional content to highlight SSSS initiatives.",
-      "Exclusively manage all social media accounts, including but not limited to Instagram, LinkedIn and Discord.",
-      "Coordinate with Director(s) of Activities and Director of Visual Design to create promotional content for all SSSS-sponsored events.",
-      "Announce all event promotions at least one week before the event, with regular reminders leading up to the event.",
-      "Post a final announcement reminder the day before, on the day of, and during the event.",
-      "Make every effort to attend all SSSS events with the goal of creating promotional content, including photography and videography, to document the event proceedings.",
-      "Delegate event documentation responsibility to another executive member or volunteer if unable to attend.",
-      "Work closely with the Director of Visual Design to create recap posts after each event, and coordinate to produce monthly recap posts on social media platforms.",
-      "Respond to inquiries on social media platforms in a timely manner."
+      "Exclusively manage all social media accounts (including but not limited to Instagram, LinkedIn and Discord), maintaining a consistent online presence and responding to inquiries in a timely manner.",
+      "Distribute appropriate posters, online notifications, and other promotional materials to build awareness of the Society. This includes coordinating with the Director(s) of Activities and the Director of Visual Design to create content for all SSSS-sponsored events.",
+      "Announce all event promotions at least one week before the event, with regular reminders leading up to the date of the event. A final reminder must be posted the on day before, the day of, or during the event, and an event recap may be posted afterwards.",
+      "Make every effort to attend all SSSS events with the goal of creating promotional content, including photography and videography, to document the event proceedings. If unable to attend, they must delegate this documentation responsibility to the Director(s) of Activities, another executive member, or a volunteer.",
+      "Regularly update the SSSS linktree and utilize access to the SSSS mailing lists to distribute official announcements and advertisements."
     ]
   },
   {
     "name": "Council Representative",
     "content": [
       "Sit on the executive council of the SSSS and be elected in the SSSS general election, unless otherwise filled – or previously specified to be filled – during the course of the SFSS general election.",
-      "Follow all Simon Fraser Student Society requirements for a Student Union Council Representative.",
-      "Act to further the best interests of the Software Systems Student Society as directed by the membership, within the Simon Fraser Student Society Council.",
-      "Provide regular updates on the activities of the Simon Fraser Student Society Council at all SSSS meetings when an update is available."
+      "Follow all SFSS requirements for a Student Union Council Representative.",
+      "Act to further the best interests of the Software Systems Student Society as directed by the membership, within the SFSS.",
+      "Provide regular updates on the activities of the SFSS Council at all SSSS meetings when an update is available."
     ]
   },
   {
     "name": "Director of Visual Design",
     "content": [
       "Produce art and graphics for events, meetings, merchandise, promotional materials and any other materials the Society may require.",
-      "Maintain communication with relevant officers to keep the content of the graphics relevant and updated.",
-      "Update and follow the guidelines outlined in the SSSS branding document and oversee all designs to ensure quality and consistency of SSSS branding.",
-      "Oversee graphical components created by SSSS committees and branding uses by other external groups (eg. sponsorships, promotional material)."
+      "Maintain regular communication with the Director of Marketing and Director(s) of Activities to ensure all content is accurate and up-to-date.",
+      "Update and follow the guidelines outlined in the SSSS branding document and oversee all designs to ensure quality and consistency of SSSS branding - including, and not limited to graphical components created by SSSS committees and branding used by other external groups (e.g. sponsorships, promotional material)",
+      "Collaborate with the Merch Lead to produce official Society merchandise.",
+      "Be eligible for appointment to oversee all merchandise operations and assume the duties of the Merch Lead in the event that the position becomes vacant."
     ]
   },
   {
     "name": "Year Representatives",
     "content": [
-      "Consists of Lower Division Representative (1), Upper Division Representative (1), and First Year Representative (2).",
-      "Lower Division Representative will represent all members with less than 60 credits.",
-      "Upper Division Representative will represent all members between 60 to 120 credits.",
-      "First Year Representatives will represent all students entering their First Year of Studies at SFU.",
-      "Meet eligibility criteria: First Year Representative (less than 30 credits and in their first year), Lower Division Representative (less than 60 credits), Upper Division Representative (60 to 120 credits).",
-      "Make sure post-secondary education is well represented within the executive team and the society as a whole.",
-      "Assist with all SSSS events and initiatives and provide support to Executives when additional help is required.",
-      "First Year Representatives must aim to create and market their own First Year events via social media."
+      "Consist of two (2) First-Year Representatives, one (1) Lower Division Representative, and one (1) Upper Division Representative.",
+      "Meet the following eligibility criteria and advocate for their respective student cohorts:",
+      "- First-Year Representatives: Must be in their first year of studies at SFU and hold fewer than 30 credits.",
+      "- Lower Division Representative: Must hold fewer than 60 credits.",
+      "- Upper Division Representative: Must hold at least 60 credits.",
+      "Ensure post-secondary education is well represented within the executive team and the society as a whole.",
+      "Act as a flexible member of the executive council, prepared to take on miscellaneous or last-minute tasks to support other executives when additional help is required.",
+      "Assist the Director(s) of Activities with the setup, execution, and cleanup of SSSS events and initiatives.",
+      "First-Year Representatives Only: Aim to organize, market, and execute at least one (1) event per semester specifically dedicated to first-year students."
     ]
   },
   {
     "name": "Discord Moderators",
     "content": [
-      "Ensure that the SSSS Discord server is a safe, healthy environment for everyone.",
-      "Ensure that server activities align both with SFU's Student Academic Integrity Policy as well as Discord's Community Guidelines.",
-      "Have the power to moderate/delete messages as well as issue warnings to problematic members of the community.",
-      "Keep screenshots of all messages they delete in the appropriate place as defined by the Co-President(s).",
-      "Have a responsibility to escalate (to SSSS executives) issues and concerns that are beyond the scope of the Moderator role.",
-      "Are required to keep evidence for any of their actions in the appropriate place as defined by the Co-President(s)."
+      "Ensure the SSSS Discord server remains a safe, healthy, and welcoming environment for all members.",
+      "Ensure all server activities align with SFU’s Student Academic Integrity Policy and Discord’s official Community Guidelines.",
+      "Exercise Authority to moderate or delete inappropriate messages and issue formal warnings to problematic community members.",
+      "Retain screenshots and clear evidence of all deleted messages or disciplinary actions in an appropriate secure location designated by the Co-Presidents.",
+      "Escalate (to the SSSS executive team) any issues, disputes, or concerns that fall beyond the scope of the Moderator role directly."
     ]
   }
 ]

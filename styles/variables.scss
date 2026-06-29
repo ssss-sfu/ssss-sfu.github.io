@@ -17,6 +17,8 @@ $nav-height: 3.81rem;
 $tablet-min-width: 768px;
 $desktop-min-width: 1025px;
 
+$nav-collapse-max-width: 1199px;
+
 @mixin viewport($media) {
   @if $media == mobile {
     @media only screen and (max-width: $tablet-min-width - 1) {
