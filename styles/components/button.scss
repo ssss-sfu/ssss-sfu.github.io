@@ -1,6 +1,9 @@
 @import "../variables.scss";
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 1.5rem;
   background-color: var(--colour-sosy-green-500);
   border: none;
@@ -10,6 +13,7 @@
   font-size: 0.875rem;
   transition: all $transition-speed-fast $easing-bounce;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.9;

@@ -1,150 +1,164 @@
 @import "../variables.scss";
 
 .header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  height: calc(#{$nav-height} + 1rem);
   background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0) 100%);
-  .container {
-    color: var(--colour-neutral-000);
+  transition: background $transition-speed-fast $easing-cubic-bezier;
+
+  &.is-scrolled {
+    background: var(--colour-neutral-1100);
+  }
+
+  &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
-    left: 0;
-    right: 0;
+    height: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    padding-left: clamp(1rem, 4vw, 6rem);
+    padding-right: clamp(1rem, 4vw, 6rem);
+  }
 
-    & > a {
-      cursor: pointer;
-      z-index: 20;
+  &__logo {
+    cursor: pointer;
+    z-index: 21;
+    flex-shrink: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+    z-index: 21;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $nav-collapse-max-width) {
+      display: block;
+      margin-left: auto;
+    }
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 0.75rem;
+
+    .line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: var(--colour-neutral-000);
+      transition: all 0.3s $easing-cubic-bezier;
     }
 
-    &.container {
-      padding-top: 1rem;
-      padding-bottom: 0rem;
-    }
+    &--open {
+      .line:first-child {
+        transform: rotate(225deg) translate(-3px, -4px);
+      }
 
-    input[type="checkbox"] {
+      .line:last-child {
+        transform: rotate(-225deg) translate(-3px, 4px);
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s $easing-cubic-bezier;
+
+    @media screen and (max-width: $nav-collapse-max-width) {
       display: none;
 
-      @media screen and (max-width: 869px) {
-        &:checked {
-          & ~ label .menu-icon .line {
-            &:first-child {
-              transform: rotate(225deg) translate(-3px, -4px);
-            }
-
-            &:last-child {
-              transform: rotate(-225deg) translate(-3px, 4px);
-            }
-          }
-
-          & ~ .content {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            background-color: var(--colour-neutral-1100);
-            inset: 0;
-            height: 100vh;
-            width: 100vw;
-            justify-content: center;
-            visibility: visible;
-            opacity: 1;
-
-            .pages {
-              font-size: 2rem;
-              flex-direction: column;
-              align-items: center;
-
-              & > * {
-                opacity: 0;
-                animation: fade-up 0.5s $easing-cubic-bezier forwards;
-
-                &:nth-child(2) {
-                  animation-delay: 0.1s;
-                }
-                &:nth-child(3) {
-                  animation-delay: 0.2s;
-                }
-                &:nth-child(4) {
-                  animation-delay: 0.3s;
-                }
-                &:nth-child(5) {
-                  animation-delay: 0.3s;
-                }
-                &:nth-child(6) {
-                  animation-delay: 0.4s;
-                }
-              }
-            }
-
-            .socials {
-              opacity: 0;
-              animation: fade-up 0.5s $easing-cubic-bezier forwards;
-              animation-delay: 0.4s;
-            }
-          }
-        }
-      }
-    }
-
-    label {
-      z-index: 20;
-
-      .menu-icon {
+      &.content--open {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 2rem;
-        height: 0.75rem;
-        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--colour-neutral-1100);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        overflow-y: auto;
+        padding: 5rem 1.5rem 2rem;
 
-        .line {
-          width: 100%;
-          height: 20%;
-          background-color: var(--colour-neutral-000);
-          transition: all 0.3s $easing-cubic-bezier;
+        .pages {
+          font-size: 2rem;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+
+          .page-link {
+            opacity: 0;
+            animation: fade-up 0.5s $easing-cubic-bezier forwards;
+
+            @for $i from 1 through 7 {
+              &:nth-child(#{$i}) {
+                animation-delay: #{($i - 1) * 0.08}s;
+              }
+            }
+          }
         }
 
-        @media screen and (min-width: 869px) {
-          display: none;
+        .content-actions {
+          flex-direction: column;
+          gap: 1.75rem;
+          opacity: 0;
+          animation: fade-up 0.5s $easing-cubic-bezier 0.5s forwards;
         }
       }
     }
 
-    .content {
+    .pages {
+      display: flex;
+      justify-content: space-evenly;
+
+      .page-link {
+        color: var(--colour-neutral-000);
+        padding: 10px;
+        text-decoration: none;
+        white-space: nowrap;
+
+        @media screen and (max-width: $nav-collapse-max-width) {
+          white-space: normal;
+        }
+      }
+    }
+
+    .content-actions {
       display: flex;
       align-items: center;
-      transition: opacity 0.3s $easing-cubic-bezier;
+    }
 
-      @media screen and (max-width: 869px) {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-      }
+    .socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0 10px;
+    }
 
-      .pages {
-        display: flex;
-        justify-content: space-evenly;
-
-        .page-link {
-          color: var(--colour-neutral-000);
-          padding: 10px;
-          text-decoration: none;
-        }
-      }
-
-      .socials {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-
-        a {
-          margin: 1px;
-          padding-right: 10px;
-        }
-      }
+    .nav-contact-btn {
+      margin-left: 0.25rem;
+      white-space: nowrap;
     }
   }
 }
