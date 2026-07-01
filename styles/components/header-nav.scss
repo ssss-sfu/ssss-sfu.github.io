@@ -22,7 +22,7 @@
     max-width: $container-max-width;
     margin: 0 auto;
     padding-top: 1rem;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     padding-left: clamp(1rem, 4vw, 6rem);
     padding-right: clamp(1rem, 4vw, 6rem);
   }

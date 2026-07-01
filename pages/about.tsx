@@ -1,19 +1,22 @@
-import { Hero, ProfileCard } from "@components";
+import { Hero, PastExecsAccordion, ProfileCard } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import execs from "@jsons/execs.json";
-import { useEffect, useState } from "react";
+import prevExecs from "@jsons/prev-exec.json";
 import { Profile } from "components/ProfileCard";
 
+// sorting execs by year in a descending order. 
+// newest year is the current year. Everything after the first year is past execs.
+const currentYear = Object.keys(execs).sort((a, b) => b.localeCompare(a))[0];
+const currentExecs = execs[currentYear as keyof typeof execs] as Profile[];
+// sorting past execs by year in a descending order.
+const pastExecYears = Object.keys(prevExecs)
+  .sort((a, b) => b.localeCompare(a))
+  .map((year) => ({
+    year,
+    execs: prevExecs[year as keyof typeof prevExecs],
+  }));
+
 const About: React.FC = () => {
-  const [currentExecs, setCurrentExecs] = useState<Profile[]>([]);
-
-  // TODO add validation and test cases for future PRs!
-  useEffect(() => {
-    let json: string = JSON.stringify(execs["2025-2026"]);
-    let profiles: Profile[] = JSON.parse(json);
-    setCurrentExecs(profiles);
-  }, []);
-
   return (
     <div className="page about-page">
       <Hero
@@ -54,6 +57,12 @@ const About: React.FC = () => {
             <ProfileCard profile={profile} key={profile.name}></ProfileCard>
           ))}
         </section>
+        {pastExecYears.length > 0 && (
+          <section className="past-execs">
+            <h2>Past Executives</h2>
+            <PastExecsAccordion data={pastExecYears} />
+          </section>
+        )}
       </main>
     </div>
   );
