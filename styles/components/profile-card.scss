@@ -1,6 +1,7 @@
 @use "../variables.scss";
 
 .profile-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +73,15 @@
 
   .description-secondary {
     display: none;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .description-body {
+    line-height: 1.4;
+    margin: 0;
+    flex-shrink: 1;
+    min-height: 0;
   }
 }
 
@@ -85,6 +95,7 @@
       display: flex;
       position: absolute;
       width: 16.5em;
+      max-height: 23em;
       gap: 1em;
       transform: translateY(-2em);
       transition: transform 0.3s ease-in-out;

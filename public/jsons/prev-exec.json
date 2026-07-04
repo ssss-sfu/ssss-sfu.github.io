@@ -1,0 +1,378 @@
+{
+    "2020-2021": [
+        {
+            "name": "Andy Wang",
+            "role": "President"
+        },
+        {
+            "name": "Jarod Forbes",
+            "role": "Vice President"
+        },
+        {
+            "name": "Avneet Toor",
+            "role": "Secretary"
+        },
+        {
+            "name": "Kevin Chen",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Ben Reedel",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Arjun Shokar",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Devin Lu",
+            "role": "Director of Marketing"
+        },
+        {
+            "name": "Kristina Castillo",
+            "role": "Director of Visual Design"
+        },
+        {
+            "name": "Riya Dariwal",
+            "role": "Internal Representative"
+        },
+        {
+            "name": "Quice Bielka",
+            "role": "External Representative"
+        },
+        {
+            "name": "Eric Reyes",
+            "role": "3rd Year Representative"
+        },
+        {
+            "name": "Dina Zeng",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Benjamin Djukastein",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Mahek Khan",
+            "role": "Council Representative"
+        }
+    ],
+    "2021-2022": [
+        {
+            "name": "Quice Bielka",
+            "role": "President"
+        },
+        {
+            "name": "Riya Dariwal",
+            "role": "Vice President"
+        },
+        {
+            "name": "Kevin Chen",
+            "role": "Secretary"
+        },
+        {
+            "name": "Mahek Khan",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Bryan Dang",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Joshua Li",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Jerry Zhu",
+            "role": "Director of Marketing"
+        },
+        {
+            "name": "Rina Ryu",
+            "role": "Director of Visual Design"
+        },
+        {
+            "name": "Lynn Nguyen",
+            "role": "Internal Representative"
+        },
+        {
+            "name": "Dina Zeng",
+            "role": "External Representative"
+        },
+        {
+            "name": "Ben Reedel",
+            "role": "3rd Year Representative"
+        },
+        {
+            "name": "Jonathan Kang",
+            "role": "2nd Year Representative"
+        },
+        {
+            "name": "Iris Au-Yeung",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Gahee Kim",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Shanks Thanalapati",
+            "role": "Council Representative"
+        }
+    ],
+    "2022-2023": [
+        {
+            "name": "John Ordoyo",
+            "role": "President"
+        },
+        {
+            "name": "Art Yang",
+            "role": "Vice President"
+        },
+        {
+            "name": "Joshua Li",
+            "role": "Secretary"
+        },
+        {
+            "name": "Kevin Chen",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Ethan Chou",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Randy Le Tran",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Jerry Zhu",
+            "role": "Director of Marketing"
+        },
+        {
+            "name": "Gahee Kim",
+            "role": "Director of Visual Design"
+        },
+        {
+            "name": "Mekdim Dereje",
+            "role": "Internal Representative"
+        },
+        {
+            "name": "Andrew Ursu",
+            "role": "External Representative"
+        },
+        {
+            "name": "Benjamin Djukastein",
+            "role": "4th Year Represenative"
+        },
+        {
+            "name": "Jamie Chin",
+            "role": "3rd Year Representative"
+        },
+        {
+            "name": "Chloe Yip",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Curmehar Singh",
+            "role": "Council Representative"
+        }
+    ],
+    "2023-2024": [
+        {
+            "name": "Joshua Li",
+            "role": "President"
+        },
+        {
+            "name": "Kevin Chen",
+            "role": "Vice President"
+        },
+        {
+            "name": "Gahee Kim",
+            "role": "Secretary"
+        },
+        {
+            "name": "Mekdim Dereje",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Chloe Yip",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Max Zhang",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Ethan Chou",
+            "role": "Director of Marketing"
+        },
+        {
+            "name": "Iris Au-Yeung",
+            "role": "Director of Visual Design"
+        },
+        {
+            "name": "Bryan Dang",
+            "role": "Internal Representative"
+        },
+        {
+            "name": "Jamie Chin",
+            "role": "External Representative"
+        },
+        {
+            "name": "Andy Wang",
+            "role": "4th Year Represenative"
+        },
+        {
+            "name": "Jerry Zhu",
+            "role": "3rd Year Representative"
+        },
+        {
+            "name": "Julie Wu",
+            "role": "2nd Year Representative"
+        },
+        {
+            "name": "Maria Leon Campos",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Maria Leon Campos",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Jennifer Huang",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Gabriel Ma",
+            "role": "1st Year Representative"
+        },
+        {
+            "name": "Tal Zaloilov",
+            "role": "Council Representative"
+        }
+    ],
+    "2024-2025": [
+        {
+            "name": "Mekdim Dereje",
+            "role": "President"
+        },
+        {
+            "name": "Randy Le Tran",
+            "role": "Vice President"
+        },
+        {
+            "name": "Max Zhang",
+            "role": "Secretary"
+        },
+        {
+            "name": "Andrew La Grange",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Ethan Chou",
+            "role": "Director of Marketing"
+        },
+        {
+            "name": "Jennifer Huang",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Dagem Dereje",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Maria León Campos",
+            "role": "Director of Visual Design"
+        },
+        {
+            "name": "Damon Yiu",
+            "role": "Director of External Relations"
+        },
+        {
+            "name": "Htet Wai Yan (Ash) Aung",
+            "role": "Director of Internal Relations"
+        },
+        {
+            "name": "Julie Wu",
+            "role": "Third Year Representative"
+        },
+        {
+            "name": "Jaycie Say",
+            "role": "Second Year Representative"
+        },
+        {
+            "name": "Aleeza Ahmed",
+            "role": "First Year Representative"
+        },
+        {
+            "name": "Swara Bhate",
+            "role": "First Year Representative"
+        },
+        {
+            "name": "Fabian Jonathan Siswanto",
+            "role": "SFSS Council Representative"
+        }
+    ],
+    "2025-2026": [
+        {
+            "name": "Jaycie Say",
+            "role": "Co-President"
+        },
+        {
+            "name": "Ash Aung",
+            "role": "Co-President"
+        },
+        {
+            "name": "Jennifer Huang",
+            "role": "Secretary"
+        },
+        {
+            "name": "Brandon Chattha",
+            "role": "Treasurer"
+        },
+        {
+            "name": "Andrew La Grange",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Noah Zakaib",
+            "role": "Director of Activities"
+        },
+        {
+            "name": "Maria León",
+            "role": "Director of Marketing"
+        },
+        {
+            "name": "An Nguyen",
+            "role": "Director of Visual Design"
+        },
+        {
+            "name": "Meyer Kaur Sarna",
+            "role": "Director of External Relations"
+        },
+        {
+            "name": "Philip Ho",
+            "role": "Director of Internal Relations"
+        },
+        {
+            "name": "Matthew Philip Widjaja",
+            "role": "SFSS Council Representative"
+        },
+        {
+            "name": "Mehar Saini",
+            "role": "Upper Year Representative"
+        },
+        {
+            "name": "Aleeza Ahmed",
+            "role": "Lower Year Representative"
+        },
+        {
+            "name": "Manpreet Singh Parmar",
+            "role": "First Year Representative"
+        },
+        {
+            "name": "Courtney Lung",
+            "role": "First Year Representative"
+        }
+    ]
+}

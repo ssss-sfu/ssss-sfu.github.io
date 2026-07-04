@@ -1,6 +1,10 @@
 @use "../variables.scss";
 
 .about-page {
+  main.container {
+    padding-bottom: 0;
+  }
+
   .current-exec {
     display: flex;
     flex-wrap: wrap;
@@ -14,5 +18,14 @@
   h1 {
     padding-bottom: 1rem;
     padding-top: 1rem;
+  }
+
+  .past-execs {
+    margin: 3rem 0 5rem;
+    width: 100%;
+
+    h2 {
+      padding-bottom: 1.5rem;
+    }
   }
 }

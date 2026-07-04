@@ -1,0 +1,106 @@
+@use "../variables.scss" as *;
+
+.past-exec-row {
+  .past-exec-row-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .past-exec-row-name {
+    font-weight: 600;
+  }
+
+  .past-exec-row-role {
+    color: var(--colour-sosy-green-500);
+    font-size: 0.9rem;
+  }
+}
+
+.past-execs-accordion {
+  width: 100%;
+
+  .past-execs-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, max-content));
+    gap: 1.5rem 2rem;
+    align-items: start;
+    justify-content: start;
+
+    @include viewport(mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  .past-execs-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    min-width: 9rem;
+
+    @include viewport(mobile) {
+      min-width: unset;
+      width: 100%;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--colour-neutral-1000);
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .past-execs-year-btn {
+    background: transparent;
+    border: 1px solid var(--colour-neutral-700);
+    border-radius: 999px;
+    padding: 0.45rem 1rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: var(--colour-neutral-000);
+    white-space: nowrap;
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease;
+
+    &:hover {
+      border-color: var(--colour-sosy-green-500);
+    }
+
+    &[data-opened] {
+      border-color: var(--colour-sosy-green-500);
+      color: var(--colour-sosy-green-500);
+    }
+  }
+
+  .past-execs-panel {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 250ms ease-in-out;
+
+    &[data-opened] {
+      max-height: 3000px;
+    }
+
+    li {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    li + li {
+      margin-top: 0.75rem;
+    }
+  }
+}
