@@ -10,6 +10,6 @@ export { EventsCalendar } from "./EventsCalendar";
 export { ProfileCard } from "./ProfileCard";
 export { PastExecRow } from "./PastExecRow";
 export { PastExecsAccordion } from "./PastExecsAccordion";
-    export { SocialIcon } from "./SocialIcon";
+export { SocialIcon } from "./SocialIcon";
 export { PostCard } from "./PostCard";
 export { SidebarCourse } from "./SidebarCourse";

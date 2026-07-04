@@ -51,28 +51,30 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
   // decrease the font size of the text if it exceeds the container.
   const fitDescriptionText = useCallback(() => {
     const text = descriptionRef.current;
-    const container = secondaryRef.current; 
+    const container = secondaryRef.current;
     if (!text || !container) {
       return;
     }
 
-    text.style.fontSize = ""; 
+    text.style.fontSize = "";
     const socials = container.querySelector(".description-socials");
     let socialsHeight: number = 0; // default height of socials is 0.
     if (socials) {
       socialsHeight = socials.getBoundingClientRect().height; // gets the current height of the socials container
-    } 
+    }
     const gap = parseFloat(getComputedStyle(container).rowGap || "0"); // gap between the description and socials
     const maxHeight = container.clientHeight - socialsHeight - gap; // max height of the description container
 
-    if (maxHeight <= 0) { // if the max height is not larger than 0, text will fit in the container
+    if (maxHeight <= 0) {
+      // if the max height is not larger than 0, text will fit in the container
       return; // dont need to resize the text
     }
 
     let fontSize = parseFloat(getComputedStyle(text).fontSize); // get current font size
     const minFontSize = 10;
 
-    while (text.scrollHeight > maxHeight && fontSize > minFontSize) { // decrease font size until it fits.
+    while (text.scrollHeight > maxHeight && fontSize > minFontSize) {
+      // decrease font size until it fits.
       fontSize -= 0.5;
       text.style.fontSize = `${fontSize}px`;
     }
@@ -89,8 +91,8 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
     // resize observer if the container changes its size.
     const resizeObserver = new ResizeObserver(fitDescriptionText);
     resizeObserver.observe(container);
-    
-    // if the window is resized, 
+
+    // if the window is resized,
     // window.addEventListener("resize", fitDescriptionText);
     return () => {
       resizeObserver.disconnect();

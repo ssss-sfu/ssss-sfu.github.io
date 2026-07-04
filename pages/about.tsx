@@ -4,7 +4,7 @@ import execs from "@jsons/execs.json";
 import prevExecs from "@jsons/prev-exec.json";
 import { Profile } from "components/ProfileCard";
 
-// sorting execs by year in a descending order. 
+// sorting execs by year in a descending order.
 // newest year is the current year. Everything after the first year is past execs.
 const currentYear = Object.keys(execs).sort((a, b) => b.localeCompare(a))[0];
 const currentExecs = execs[currentYear as keyof typeof execs] as Profile[];

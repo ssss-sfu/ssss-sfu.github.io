@@ -11,10 +11,7 @@ export type PastExec = PastExecRowProps;
  * @param role - The role of the executive.
  * @returns A React component that renders a row for a past executive.
  */
-export const PastExecRow: React.FC<PastExecRowProps> = ({
-  name,
-  role,
-}) => {
+export const PastExecRow: React.FC<PastExecRowProps> = ({ name, role }) => {
   return (
     <div className="past-exec-row">
       <div className="past-exec-row-info">
