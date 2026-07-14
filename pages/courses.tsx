@@ -184,51 +184,27 @@ const Courses: React.FC = () => {
       />
       <main className="container">
         <section className="main-content">
-          <h1>Courses at Software Systems</h1>
+          <h1>Software Systems BSc Degree Requirements</h1>
           <p>
-            Mandatory and semi-mandatory courses offered as part of the degree
-            requirement of SFU Software Systems.
+            This page summarizes the courses requirements for the Software Systems major.<br />
+            Click any course to view more information about it, including a description, prerequisites, and recent offerings.
           </p>
           <p>
-            Note: Not all the courses are mandatory. In the Systems or Software
-            Engineering requirements, students only need to take 3 or 2 out of
-            the listed courses as example.
-          </p>
-          <p>
-            Refer to Software Systems{" "}
-            <a
-              href="https://www.sfu.ca/students/calendar/2024/spring/programs/software-systems/major/bachelor-of-science.html"
-              target="_blank"
-              rel="noreferrer"
-            >
+            Note: This is a sudent friendly summary, not the official program requirement document. <br />
+            For more authoratative requirements, please refer to the {" "}
+            <a 
+              href="https://www.sfu.ca/students/calendar/2026/fall/programs/software-systems/major/bachelor-of-science.html" 
+              target="_blank" 
+              rel="noreferrer">
               program calendar site
-            </a>{" "}
-            or{" "}
+            </a> {" "} or contact an {" "}
             <a
-              href="https://www.sfu.ca/computing/current-students/undergraduate-students/forms"
+              href="https://www.sfu.ca/fas/study/support-services/academic-advising.html"
               target="_blank"
               rel="noreferrer"
             >
-              forms site
-            </a>{" "}
-            for official resources.
-          </p>
-          <p>
-            Data powered by{" "}
-            <a
-              href="https://api.sfucourses.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              api.sfucourses.com
+               Applied Sciences Advisor.
             </a>
-            {lastDataUpdate && (
-              <>
-                {" as of "}
-                {formatHealthDate(lastDataUpdate)}{" "}
-                {formatRelativeTime(lastDataUpdate)}
-              </>
-            )}
           </p>
         </section>
         <section className="requirements-section">
@@ -280,6 +256,25 @@ const Courses: React.FC = () => {
               />
             </div>
           )}
+        </section>
+        <section className="data-section">
+        <p>
+            Data powered by{" "}
+            <a
+              href="https://api.sfucourses.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              api.sfucourses.com
+            </a>
+            {lastDataUpdate && (
+              <>
+                {" as of "}
+                {formatHealthDate(lastDataUpdate)}{" "}
+                {formatRelativeTime(lastDataUpdate)}
+                </>
+              )}
+            </p>
         </section>
       </main>
     </div>
