@@ -1,9 +1,4 @@
-import { Logo, SocialIcon } from "@components";
-import FacebookIcon from "@icons/facebook.svg";
-import InstagramIcon from "@icons/instagram.svg";
-import LinkedInIcon from "@icons/linkedin.svg";
-import DiscordIcon from "@icons/discord.svg";
-import GithubIcon from "@icons/github.svg";
+import { Logo } from "@components";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
@@ -76,33 +71,6 @@ export const HeaderNav: React.FC = () => {
           </nav>
 
           <div className="content-actions">
-            <div className="socials">
-              <SocialIcon
-                href="https://www.facebook.com/ssss.sfu"
-                src={FacebookIcon.src}
-                alt="Facebook icon"
-              />
-              <SocialIcon
-                href="https://www.linkedin.com/company/ssss-sfu/"
-                src={LinkedInIcon.src}
-                alt="LinkedIn icon"
-              />
-              <SocialIcon
-                href="https://www.instagram.com/ssss.sfu/"
-                src={InstagramIcon.src}
-                alt="Instagram icon"
-              />
-              <SocialIcon
-                href="https://discord.com/invite/whdfmJbVF7"
-                src={DiscordIcon.src}
-                alt="Discord icon"
-              />
-              <SocialIcon
-                href="https://github.com/ssss-sfu"
-                src={GithubIcon.src}
-                alt="GitHub icon"
-              />
-            </div>
             <a
               href="mailto:ssss-exec@sfu.ca"
               className="btn nav-contact-btn"
