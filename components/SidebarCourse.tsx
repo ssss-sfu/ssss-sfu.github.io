@@ -1,6 +1,5 @@
 import { SFUCourseResponse } from "pages/courses";
-import { Dispatch, MouseEventHandler, SetStateAction } from "react";
-import { Course, SectionsPerTerm } from "types/course";
+import { MouseEventHandler } from "react";
 
 interface SidebarCourseProps {
   course: SFUCourseResponse;
@@ -12,6 +11,18 @@ interface OfferingPerTerm {
     instructors: string[];
     term: string;
   };
+}
+
+function isWithinTwoYears(term: string): boolean {
+  const [semester, yearStr] = term.split(" ");
+  // Approximate term end: Spring Apr, Summer Aug, Fall Dec
+  const month = { Spring: 3, Summer: 7, Fall: 11 }[semester] ?? 0;
+  const offeringDate = new Date(Number(yearStr), month, 1);
+
+  const cutoff = new Date();
+  cutoff.setFullYear(cutoff.getFullYear() - 2);
+
+  return offeringDate >= cutoff;
 }
 
 export const SidebarCourse: React.FC<SidebarCourseProps> = ({
@@ -50,7 +61,9 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
       <div className="offerings-container">
         <ul>
           {course.offerings &&
-            course.offerings.map((offering) => {
+            course.offerings
+              .filter((offering) => isWithinTwoYears(offering.term))
+              .map((offering) => {
               const [semester, year] = offering.term.split(" ");
               const semesterLower = semester.toLowerCase();
               const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
