@@ -30,7 +30,7 @@
       border-radius: variables.$border-radius;
       padding: 1rem;
       background:
-        linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
+        linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
         url("../../public/images/landing-page/discover-ssss-main.png");
       background-size: cover;
       background-position: center;
@@ -43,21 +43,21 @@
 
       .annual-events__link-item:nth-child(1) {
         background:
-          linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
+          linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
           url("../../public/images/events-page/annual-events-frosh.jpeg");
         background-size: cover;
         background-position: center;
       }
       .annual-events__link-item:nth-child(2) {
         background:
-          linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
+          linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
           url("../../public/images/landing-page/discover-ssss-about-us.png");
         background-size: cover;
         background-position: center;
       }
       .annual-events__link-item:nth-child(3) {
         background:
-          linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
+          linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
           url("../../public/images/landing-page/discover-ssss-main.png");
         background-size: cover;
         background-position: center;

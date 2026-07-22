@@ -38,7 +38,7 @@
 
   input:checked {
     & ~ label {
-      color: var(--colour-sosy-green-500); // tbd
+      color: var(--colour-sosy-green-500);
     }
 
     & ~ label img {

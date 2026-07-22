@@ -6,7 +6,11 @@
   left: 0;
   right: 0;
   z-index: 20;
-  background: linear-gradient(180deg, #141515 0%, rgba(20, 21, 21, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--colour-neutral-1200) 0%,
+    transparent 100%
+  );
   transition: background $transition-speed-fast $easing-cubic-bezier;
 
   &.is-scrolled {
