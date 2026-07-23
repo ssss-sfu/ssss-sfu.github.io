@@ -37,10 +37,11 @@
   --colour-sosy-green-200: #a7ddd1;
   --colour-sosy-green-100: #d3eee8;
 
-  // dark neutral scale
+  // Two surfaces (page + raised) — mid greys stay for text/borders
   --colour-neutral-1200: #141515;
+  --colour-neutral-1200-rgb: 20, 21, 21;
   --colour-neutral-1100: #191a1a;
-  --colour-neutral-1000: #323434;
+  --colour-neutral-1000: #1c1d1d;
   --colour-neutral-900: #4b4e4d;
   --colour-neutral-800: #646867;
   --colour-neutral-700: #7d8281;
@@ -51,19 +52,24 @@
   --colour-neutral-200: #eff0f0;
   --colour-neutral-100: #f7f8f7;
   --colour-neutral-000: #fff;
-  
-  // photo overlays
+
+  // Photo panels
   --colour-image-overlay: #141515;
   --colour-on-image: #fff;
+
+  // Hero mask: original dark (solid → ~75% / #141515bf)
+  --colour-hero-mask-start: 1;
+  --colour-hero-mask-end: 0.75;
+  --colour-hero-text: var(--colour-on-image);
 }
 
 html[data-theme="light"] {
   color-scheme: light;
 
-  // light neutral scale
-  --colour-neutral-1200: #f7f8f7; // page bg
-  --colour-neutral-1100: #eff0f0; // surfaces
-  --colour-neutral-1000: #e5e6e6;
+  --colour-neutral-1200: #faf9f5;
+  --colour-neutral-1200-rgb: 250, 249, 245;
+  --colour-neutral-1100: #e8e6dc;
+  --colour-neutral-1000: #e8e6dc;
   --colour-neutral-900: #cacecd;
   --colour-neutral-800: #b0b5b4;
   --colour-neutral-700: #979b9a;
@@ -73,11 +79,15 @@ html[data-theme="light"] {
   --colour-neutral-300: #323434;
   --colour-neutral-200: #191a1a;
   --colour-neutral-100: #141515;
-  --colour-neutral-000: #141515;  // primary text on light
+  --colour-neutral-000: #141515;
 
-  // photo overlays (always dark)
-  --colour-image-overlay: #141515;
-  --colour-on-image: #fff;
+
+  --colour-image-overlay: #faf9f5;
+  --colour-on-image: #141515;
+
+  // Softer cream wash — keeps more photo detail than the dark-mode curve
+  --colour-hero-mask-start: 0.4;
+  --colour-hero-mask-end: 0.62;
 }
 
 *,

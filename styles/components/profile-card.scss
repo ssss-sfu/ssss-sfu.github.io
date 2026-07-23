@@ -132,9 +132,9 @@ html[data-theme="light"] .profile-card .description-logo img {
     }
   }
 
-  // Overlay is always dark — restore white icons on hover
+  // Overlay text uses --colour-on-image (dark in light mode) — keep icons black
   html[data-theme="light"] .profile-card:hover .description-logo img {
-    filter: none;
+    filter: brightness(0);
   }
 }
 

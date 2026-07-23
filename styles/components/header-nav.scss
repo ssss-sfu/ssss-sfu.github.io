@@ -18,13 +18,12 @@
   }
 }
 
-// Light mode: keep the scrim opaque through the nav row, then fade out lower because its hard to read by default
+// Light mode: softer top fade now that heroes wash to the page background
 html[data-theme="light"] .header-nav:not(.is-scrolled) {
   background: linear-gradient(
     180deg,
     var(--colour-neutral-1200) 0%,
-    var(--colour-neutral-1200) 42%,
-    color-mix(in srgb, var(--colour-neutral-1200) 55%, transparent) 72%,
+    color-mix(in srgb, var(--colour-neutral-1200) 70%, transparent) 55%,
     transparent 100%
   );
 }

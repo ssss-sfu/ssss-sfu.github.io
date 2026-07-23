@@ -4,6 +4,13 @@ interface HeroProps {
   backgroundImage: string;
 }
 
+/** Same stack as hero-image-stack */
+const heroOverlayGradient = `linear-gradient(
+  180deg,
+  rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-start)) 0%,
+  rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-end)) 100%
+)`;
+
 export const Hero: React.FC<HeroProps> = ({
   subtitle,
   title,
@@ -13,12 +20,10 @@ export const Hero: React.FC<HeroProps> = ({
     <header
       className="container hero"
       style={{
-        backgroundImage: `linear-gradient(
-    180deg,
-    var(--colour-image-overlay) 0%,
-    color-mix(in srgb, var(--colour-image-overlay) 75%, transparent) 100%
-  ),
-  url("${backgroundImage}")`,
+        backgroundImage: `${heroOverlayGradient}, url("${backgroundImage}")`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <p>{subtitle}</p>

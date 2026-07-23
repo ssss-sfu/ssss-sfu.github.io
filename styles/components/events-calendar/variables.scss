@@ -23,9 +23,9 @@ $event-border-radius: 5px !default;
 $event-padding: 2px 5px !default;
 $event-zindex: 4 !default;
 
-$btn-color: #373a3c !default;
-$btn-bg: #fff !default;
-$btn-border: #ccc !default;
+$btn-color: var(--colour-neutral-000) !default;
+$btn-bg: var(--colour-neutral-1100) !default;
+$btn-border: transparent !default;
 
 $current-time-color: #74ad31 !default;
 

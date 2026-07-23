@@ -1,4 +1,4 @@
-import { Hero } from "@components";
+import { Hero, Dropdown } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
 import { useState, useEffect } from "react";
 import { SidebarCourse } from "components/SidebarCourse";
@@ -368,10 +368,11 @@ const Courses: React.FC = () => {
     description: string;
     groups: RequirementGroup[];
   }) => (
-    <details className="requirement-block" key={section.heading}>
-      <summary>
-        <h2>{section.heading}</h2>
-      </summary>
+    <Dropdown
+      key={section.heading}
+      id={section.heading.toLowerCase().replace(/\s+/g, "-")}
+      title={<h2>{section.heading}</h2>}
+    >
       <div className="requirement-block-content">
         <p className="requirement-description">{section.description}</p>
         {section.groups.map((group) => (
@@ -395,17 +396,18 @@ const Courses: React.FC = () => {
           </div>
         ))}
       </div>
-    </details>
+    </Dropdown>
   );
 
   const renderTextSection = (
     section: TextRequirementSection,
     electiveCourses?: CourseRef[]
   ) => (
-    <details className="requirement-block" key={section.heading}>
-      <summary>
-        <h2>{section.heading}</h2>
-      </summary>
+    <Dropdown
+      key={section.heading}
+      id={section.heading.toLowerCase().replace(/\s+/g, "-")}
+      title={<h2>{section.heading}</h2>}
+    >
       <div className="requirement-block-content">
         <p className="requirement-description">{section.description}</p>
         {section.rules.map((rule) => (
@@ -438,7 +440,7 @@ const Courses: React.FC = () => {
           <p className="requirement-footnote">{section.footnote}</p>
         )}
       </div>
-    </details>
+    </Dropdown>
   );
 
   return (
@@ -488,10 +490,10 @@ const Courses: React.FC = () => {
             {renderTextSection(DEPTH_REQUIREMENTS, depthElectiveCourses)}
 
             {otherCmptCourses.length > 0 && (
-              <details className="requirement-block">
-                <summary>
-                  <h2>Other CMPT Courses</h2>
-                </summary>
+              <Dropdown
+                id="other-cmpt-courses"
+                title={<h2>Other CMPT Courses</h2>}
+              >
                 <div className="requirement-block-content">
                   <p className="requirement-description">
                     Lower-level CMPT courses not listed in the degree
@@ -511,7 +513,7 @@ const Courses: React.FC = () => {
                     ))}
                   </div>
                 </div>
-              </details>
+              </Dropdown>
             )}
           </div>
           {loading && (

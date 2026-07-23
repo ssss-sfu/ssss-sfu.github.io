@@ -10,22 +10,14 @@
     position: relative;
     max-width: unset;
     text-align: center;
-    background:
-      linear-gradient(
-        180deg,
-        var(--colour-image-overlay) 0%,
-        color-mix(in srgb, var(--colour-image-overlay) 75%, transparent) 100%
-      ),
-      url("../../public/images/blog-page/hero-blog.jpg");
-    background-position: center;
-    background-size: cover;
+    @include variables.hero-image-stack("/images/blog-page/hero-blog.jpg");
     padding-top: 6rem;
     overflow: hidden;
     padding-bottom: 6rem;
 
     h1,
     p {
-      color: var(--colour-on-image);
+      color: var(--colour-hero-text);
     }
 
     p {

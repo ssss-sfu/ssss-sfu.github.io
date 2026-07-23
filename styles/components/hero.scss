@@ -1,19 +1,16 @@
-@use "../variables.scss";
+@use "../variables.scss" as *;
 
 .hero.container {
   position: relative;
   max-width: unset;
   text-align: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 10rem;
   overflow: hidden;
   padding-bottom: 6rem;
 
   h1,
   p {
-    color: var(--colour-on-image);
+    color: var(--colour-hero-text);
   }
 
   p {

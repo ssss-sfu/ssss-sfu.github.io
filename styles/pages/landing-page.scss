@@ -39,18 +39,15 @@
     position: relative;
     max-width: unset;
     text-align: center;
-    background:
-      linear-gradient(
-        180deg,
-        var(--colour-image-overlay) 0%,
-        color-mix(in srgb, var(--colour-image-overlay) 75%, transparent) 100%
-      ),
-      url("../../public/images/landing-page-hero.jpg");
-    background-position: center;
-    background-size: cover;
+    @include variables.hero-image-stack("/images/landing-page-hero.jpg");
     padding-top: 12rem;
     overflow: hidden;
     padding-bottom: 0;
+
+    h1,
+    p {
+      color: var(--colour-hero-text);
+    }
 
     img {
       transform: translateY(100%);
@@ -121,7 +118,11 @@
 
       .discover-ssss__link-item:nth-child(1) {
         background:
-          linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            var(--colour-image-overlay) 100%
+          ),
           url("../../public/images/landing-page/discover-ssss-events.png");
         background-size: cover;
         background-position: center;
@@ -191,7 +192,7 @@
           padding-left: 1.5rem;
           padding-right: 1.5rem;
           margin: 0 0 1rem 0;
-          background: var(--colour-neutral-1100);
+          background: var(--colour-neutral-1000);
 
           // Solid surface (not a photo card) — use theme text, not on-image white
           h3,
