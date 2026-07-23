@@ -1,5 +1,5 @@
 import { Hero, Button, EventsCalendar } from "@components";
-import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
+import HeroImage from "@images/landing-page/discover-ssss-events.png";
 
 const EventsPage: React.FC = () => {
   return (

@@ -34,9 +34,9 @@ const LandingPage: FC<LandingPageProps> = () => {
               <h3>Events Calendar</h3>
               <p>Events</p>
             </Link>
-            <Link href="/get-involved" className="discover-ssss__link-item">
-              <h3>Committees</h3>
-              <p>Get Involved</p>
+            <Link href="/courses" className="discover-ssss__link-item">
+              <h3>Course Explorer</h3>
+              <p>Courses</p>
             </Link>
             <Link href="/about" className="discover-ssss__link-item">
               <h3>Meet the Exec Team</h3>

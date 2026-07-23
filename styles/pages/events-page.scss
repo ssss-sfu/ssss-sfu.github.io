@@ -69,7 +69,7 @@
             transparent 0%,
             var(--colour-image-overlay) 100%
           ),
-          url("../../public/images/landing-page/discover-ssss-about-us.png");
+          url("../../public/images/events-page/annual-events-systemshacks.png");
         background-size: cover;
         background-position: center;
       }
@@ -125,7 +125,7 @@
         }
 
         .annual-events__link-item:nth-child(2)::before {
-          background-image: url("../../public/images/landing-page/discover-ssss-about-us.png");
+          background-image: url("../../public/images/events-page/annual-events-systemshacks.png");
         }
 
         .annual-events__link-item:nth-child(3)::before {
