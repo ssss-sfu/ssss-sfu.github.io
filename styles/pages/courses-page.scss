@@ -63,8 +63,19 @@
   margin: 0.5rem 0 0;
 }
 
-.course-node {
+.course-node.btn.secondary {
   text-align: center;
+  background-color: transparent;
+  color: var(--colour-neutral-000);
+  border: 1.5px solid var(--colour-neutral-700);
+
+  &:hover,
+  &.is-selected {
+    background-color: var(--colour-sosy-green-500);
+    border-color: var(--colour-sosy-green-500);
+    color: #fff;
+    opacity: 1;
+  }
 }
 
 .data-section {

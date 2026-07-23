@@ -50,14 +50,7 @@
   }
 
   input:checked {
-    & ~ label {
-      color: var(--colour-sosy-green-500);
-    }
-
     & ~ label img {
-      // https://codepen.io/sosuke/pen/Pjoqqp to #24a98b (--colour-sosy-green-500)
-      filter: invert(50%) sepia(84%) saturate(391%) hue-rotate(116deg)
-        brightness(93%) contrast(85%);
       transform: rotate(-180deg);
     }
 
@@ -68,12 +61,7 @@
   }
 }
 
-// Light mode: black chevron when collapsed (same pattern as footer / profile icons)
+// Light mode: black chevron
 html[data-theme="light"] .dropdown-item label img {
   filter: brightness(0);
-}
-
-html[data-theme="light"] .dropdown-item input:checked ~ label img {
-  filter: invert(50%) sepia(84%) saturate(391%) hue-rotate(116deg)
-    brightness(93%) contrast(85%);
 }

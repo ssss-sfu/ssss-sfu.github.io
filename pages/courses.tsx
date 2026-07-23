@@ -232,6 +232,10 @@ const Courses: React.FC = () => {
   const [courseShown, setCourseShown] = useState<SFUCourseResponse | null>(
     null
   );
+  // Which chip stays green while its panel is open (e.g. "CMPT-105W")
+  const [selectedCourseKey, setSelectedCourseKey] = useState<string | null>(
+    null
+  );
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [lastDataUpdate, setLastDataUpdate] = useState<string | null>(null);
@@ -340,9 +344,14 @@ const Courses: React.FC = () => {
     return `(${diffDays} day${diffDays === 1 ? "" : "s"} ago)`;
   }
 
+
   const handleCourseClick = async (dept: string, number: string) => {
+    const key = courseKey(dept, number);
+    // highlight immediately so the chip feels selected before the fetch finishes
+    setSelectedCourseKey(key);
     setLoading(true);
     setError(null);
+
     try {
       const response = await fetch(
         `${SFU_COURSES_API_BASE}?dept=${dept.toLowerCase()}&number=${number}`
@@ -350,7 +359,7 @@ const Courses: React.FC = () => {
       if (!response.ok) {
         setError(`Failed to fetch ${dept} ${number}: ${response.statusText}`);
         setCourseShown(null);
-        setLoading(false);
+        setSelectedCourseKey(null);
         return;
       }
       const data = await response.json();
@@ -358,10 +367,23 @@ const Courses: React.FC = () => {
     } catch (err) {
       setError("Failed to fetch course data. Please try again later.");
       setCourseShown(null);
+      setSelectedCourseKey(null); // revert UI to original state
     } finally {
       setLoading(false);
     }
   };
+
+  // Close clears both the panel and the green chip
+  const closeCourse = () => {
+    setCourseShown(null);
+    setSelectedCourseKey(null);
+  };
+
+  // shared chip class: green sticks when this course matches selectedCourseKey
+  const courseChipClass = (dept: string, number: string) =>
+    `btn secondary course-node${
+      selectedCourseKey === courseKey(dept, number) ? " is-selected" : ""
+    }`;
 
   const renderCourseSection = (section: {
     heading: string;
@@ -382,7 +404,7 @@ const Courses: React.FC = () => {
             <div className="courses-container">
               {group.courses.map((course) => (
                 <div
-                  className="btn secondary course-node"
+                  className={courseChipClass(course.dept, course.number)}
                   key={courseKey(course.dept, course.number)}
                   onClick={() => handleCourseClick(course.dept, course.number)}
                 >
@@ -426,7 +448,7 @@ const Courses: React.FC = () => {
             <div className="courses-container">
               {electiveCourses.map((course) => (
                 <div
-                  className="btn secondary course-node"
+                  className={courseChipClass(course.dept, course.number)}
                   key={courseKey(course.dept, course.number)}
                   onClick={() => handleCourseClick(course.dept, course.number)}
                 >
@@ -502,7 +524,7 @@ const Courses: React.FC = () => {
                   <div className="courses-container">
                     {otherCmptCourses.map((course) => (
                       <div
-                        className="btn secondary course-node"
+                        className={courseChipClass(course.dept, course.number)}
                         key={courseKey(course.dept, course.number)}
                         onClick={() =>
                           handleCourseClick(course.dept, course.number)
@@ -534,7 +556,7 @@ const Courses: React.FC = () => {
             <div>
               <SidebarCourse
                 course={courseShown}
-                closeCourseShown={() => setCourseShown(null)}
+                closeCourseShown={closeCourse}
               />
             </div>
           )}
