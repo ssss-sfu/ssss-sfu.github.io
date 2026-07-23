@@ -173,7 +173,7 @@
             "role": "1st Year Representative"
         },
         {
-            "name": "Curmehar Singh",
+            "name": "Gurmehar Singh",
             "role": "Council Representative"
         }
     ],
@@ -235,10 +235,6 @@
             "role": "1st Year Representative"
         },
         {
-            "name": "Maria Leon Campos",
-            "role": "1st Year Representative"
-        },
-        {
             "name": "Jennifer Huang",
             "role": "1st Year Representative"
         },
@@ -294,23 +290,23 @@
         },
         {
             "name": "Julie Wu",
-            "role": "Third Year Representative"
+            "role": "3rd Year Representative"
         },
         {
             "name": "Jaycie Say",
-            "role": "Second Year Representative"
+            "role": "2nd Year Representative"
         },
         {
             "name": "Aleeza Ahmed",
-            "role": "First Year Representative"
+            "role": "1st Year Representative"
         },
         {
             "name": "Swara Bhate",
-            "role": "First Year Representative"
+            "role": "1st Year Representative"
         },
         {
             "name": "Fabian Jonathan Siswanto",
-            "role": "SFSS Council Representative"
+            "role": "Council Representative"
         }
     ],
     "2025-2026": [
@@ -356,23 +352,23 @@
         },
         {
             "name": "Matthew Philip Widjaja",
-            "role": "SFSS Council Representative"
+            "role": "Council Representative"
         },
         {
             "name": "Mehar Saini",
-            "role": "Upper Year Representative"
+            "role": "Upper Div Representative"
         },
         {
             "name": "Aleeza Ahmed",
-            "role": "Lower Year Representative"
+            "role": "Lower Div Representative"
         },
         {
             "name": "Manpreet Singh Parmar",
-            "role": "First Year Representative"
+            "role": "1st Year Representative"
         },
         {
             "name": "Courtney Lung",
-            "role": "First Year Representative"
+            "role": "1st Year Representative"
         }
     ]
 }
