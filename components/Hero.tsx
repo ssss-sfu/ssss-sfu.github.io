@@ -15,8 +15,8 @@ export const Hero: React.FC<HeroProps> = ({
       style={{
         backgroundImage: `linear-gradient(
     180deg,
-    var(--colour-neutral-1200) 0%,
-    color-mix(in srgb, var(--colour-neutral-1200) 75%, transparent) 100%
+    var(--colour-image-overlay) 0%,
+    color-mix(in srgb, var(--colour-image-overlay) 75%, transparent) 100%
   ),
   url("${backgroundImage}")`,
       }}

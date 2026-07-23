@@ -5,6 +5,11 @@
   background-image: url("../../public/code-snippet.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
+  color: var(--colour-neutral-000);
+
+  a {
+    color: inherit;
+  }
 
   .container {
     display: flex;
@@ -21,6 +26,8 @@
 
     .footer-socials {
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 1rem;
     }
 
@@ -31,6 +38,7 @@
 
       h4 {
         margin-bottom: 0.25rem;
+        color: var(--colour-neutral-000);
       }
 
       address {
@@ -39,6 +47,10 @@
         a {
           text-decoration: none;
           color: var(--colour-neutral-000);
+
+          &:hover {
+            opacity: 0.75;
+          }
         }
       }
     }
@@ -59,4 +71,9 @@
       }
     }
   }
+}
+
+// White-filled social SVGs need to invert for light surfaces
+html[data-theme="light"] .footer .social-icon {
+  filter: brightness(0);
 }

@@ -42,8 +42,8 @@
     background:
       linear-gradient(
         180deg,
-        var(--colour-neutral-1200) 0%,
-        color-mix(in srgb, var(--colour-neutral-1200) 75%, transparent) 100%
+        var(--colour-image-overlay) 0%,
+        color-mix(in srgb, var(--colour-image-overlay) 75%, transparent) 100%
       ),
       url("../../public/images/landing-page-hero.jpg");
     background-position: center;
@@ -93,12 +93,23 @@
       height: 14rem;
       border-radius: variables.$border-radius;
       padding: 1rem;
+      color: var(--colour-on-image);
       background:
-        linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
+        linear-gradient(
+          180deg,
+          transparent 0%,
+          var(--colour-image-overlay) 100%
+        ),
         url("../../public/images/landing-page/discover-ssss-main.png");
       background-size: cover;
       background-position: center;
       cursor: pointer;
+
+      // typography.scss sets h*/p to --colour-neutral-000; override for photo cards
+      h3,
+      p {
+        color: var(--colour-on-image);
+      }
     }
 
     .discover-ssss__link-items {
@@ -117,14 +128,22 @@
       }
       .discover-ssss__link-item:nth-child(2) {
         background:
-          linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            var(--colour-image-overlay) 100%
+          ),
           url("../../public/images/landing-page/discover-ssss-get-involved.png");
         background-size: cover;
         background-position: center;
       }
       .discover-ssss__link-item:nth-child(3) {
         background:
-          linear-gradient(180deg, transparent 0%, var(--colour-neutral-1200) 100%),
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            var(--colour-image-overlay) 100%
+          ),
           url("../../public/images/landing-page/discover-ssss-about-us.png");
         background-size: cover;
         background-position: center;
@@ -174,6 +193,12 @@
           margin: 0 0 1rem 0;
           background: var(--colour-neutral-1100);
 
+          // Solid surface (not a photo card) — use theme text, not on-image white
+          h3,
+          p {
+            color: var(--colour-neutral-000);
+          }
+
           &::before {
             content: "";
             background-size: cover;
@@ -212,9 +237,16 @@
       background-color: var(--colour-neutral-1100);
       padding: 2.5rem 2rem;
 
-      img {
+      // White SVG mark → themed via mask (works on light mobile + dark desktop)
+      .discord-mark {
+        width: min(100%, 322px);
+        aspect-ratio: 322 / 103;
         margin-bottom: 2.5rem;
-        max-width: 100%;
+        background-color: var(--colour-neutral-000);
+        mask: url("../../public/images/landing-page/ssss-on-discord.svg")
+          center / contain no-repeat;
+        -webkit-mask: url("../../public/images/landing-page/ssss-on-discord.svg")
+          center / contain no-repeat;
       }
 
       .status-tags {
@@ -265,11 +297,35 @@
         background:
           linear-gradient(
             95.56deg,
-            #181b1a 37.95%,
-            rgba(24, 27, 26, 0.16) 104.54%
+            var(--colour-image-overlay) 37.95%,
+            color-mix(in srgb, var(--colour-image-overlay) 16%, transparent)
+              104.54%
           ),
           url("../../public/images/landing-page/discord-screenshot.png");
         background-position: center left;
+
+        .discord-mark {
+          background-color: var(--colour-on-image);
+        }
+
+        h2,
+        p {
+          color: var(--colour-on-image);
+        }
+
+        .status-tag {
+          color: var(--colour-on-image);
+          background-color: color-mix(
+            in srgb,
+            var(--colour-on-image) 14%,
+            transparent
+          );
+        }
+
+        button {
+          background-color: var(--colour-on-image);
+          color: var(--colour-image-overlay);
+        }
       }
     }
   }

@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { Button } from "@components";
 import HappySeb from "@images/seb/happy-seb-head.svg";
-import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
 import Link from "next/link";
 
 interface LandingPageProps {}
@@ -47,7 +46,11 @@ const LandingPage: FC<LandingPageProps> = () => {
         </article>
         <article className="container discord-banner">
           <div className="banner">
-            <img src={SSSSOnDiscord.src} alt="SSSS on Discord" />
+            <div
+              className="discord-mark"
+              role="img"
+              aria-label="SSSS on Discord"
+            />
             <h2>We’re on Discord!</h2>
             <div className="status-tags">
               <div className="status-tag">Join other SoSy Students</div>

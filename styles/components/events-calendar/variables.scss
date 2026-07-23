@@ -3,10 +3,10 @@
 $out-of-range-color: color.adjust(#333, $lightness: 40%) !default;
 $out-of-range-bg-color: color.adjust(#333, $lightness: 70%) !default;
 
-$calendar-border: #191a1a !default;
-$cell-border: #191a1a !default;
+$calendar-border: var(--colour-neutral-1100) !default;
+$cell-border: var(--colour-neutral-1100) !default;
 
-$border-color: #191a1a !default;
+$border-color: var(--colour-neutral-1100) !default;
 
 // Each calendar segment is 1/7th.
 $segment-width: 0.14286% !default;

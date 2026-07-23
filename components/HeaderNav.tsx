@@ -2,16 +2,25 @@ import { Logo } from "@components";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { getTheme, toggleTheme, type Theme } from "@lib/theme";
 
 export const HeaderNav: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
+  const [theme, setTheme] = useState<Theme>("dark");
 
+
+  /**
+   * Close the menu when the route changes
+   */
   useEffect(() => {
     setMenuOpen(false);
   }, [router.asPath]);
 
+  /**
+   * Handle the menu open state
+   */
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
@@ -19,12 +28,32 @@ export const HeaderNav: React.FC = () => {
     };
   }, [menuOpen]);
 
+  /**
+   * Handle the scroll state
+   */
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  /**
+   * Handle the theme state
+   */
+  useEffect(() => {
+    const fromDom = document.documentElement.dataset.theme;
+    const initial = 
+      fromDom === "light" || fromDom === "dark"
+        ? fromDom
+        : getTheme();
+    setTheme(initial);
+    document.documentElement.dataset.theme = initial;
+  }, []);
+
+  const onToggleTheme = () => {
+    setTheme((prev) => toggleTheme(prev));
+  };
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -71,6 +100,18 @@ export const HeaderNav: React.FC = () => {
           </nav>
 
           <div className="content-actions">
+            <button
+              type="button"
+              className="theme-toggle"
+              aria-label={
+                theme === "dark"
+                  ? "Switch to light mode"
+                  : "Switch to dark mode"
+              }
+              onClick={onToggleTheme}
+            >
+             {theme === "dark"? <SunIcon /> : <MoonIcon />}
+            </button>
             <a
               href="mailto:ssss-exec@sfu.ca"
               className="btn nav-contact-btn"
@@ -99,4 +140,40 @@ export const HeaderNav: React.FC = () => {
   );
 };
 
+function SunIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+    </svg>
+  );
+}
 export default HeaderNav;

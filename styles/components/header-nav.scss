@@ -16,7 +16,20 @@
   &.is-scrolled {
     background: var(--colour-neutral-1100);
   }
+}
 
+// Light mode: keep the scrim opaque through the nav row, then fade out lower because its hard to read by default
+html[data-theme="light"] .header-nav:not(.is-scrolled) {
+  background: linear-gradient(
+    180deg,
+    var(--colour-neutral-1200) 0%,
+    var(--colour-neutral-1200) 42%,
+    color-mix(in srgb, var(--colour-neutral-1200) 55%, transparent) 72%,
+    transparent 100%
+  );
+}
+
+.header-nav {
   &__inner {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -124,14 +137,39 @@
         }
 
         .content-actions {
-          flex-direction: column;
-          gap: 1.75rem;
+          display:flex;
+          align-items: center;
+          gap: 0.75rem;
+          grid-area: actions;
+          justify-self: end;
           opacity: 0;
           animation: fade-up 0.5s $easing-cubic-bezier 0.5s forwards;
         }
       }
     }
 
+    // Theme toggle button
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height:2.5rem;
+      padding: 0;
+      border:none;
+      border-radius: 999px; //circle
+      background:transparent;
+      color: var(--colour-neutral-000);
+      cursor: pointer;
+
+      &:hover {
+        background: color-mix(in srgb, var(--colour-neutral-000) 10%, transparent);
+      }
+
+      svg{
+        display: block;
+      }
+    }
     .pages {
       display: flex;
       justify-content: center;
@@ -154,6 +192,7 @@
     .content-actions {
       display: flex;
       align-items: center;
+      gap: 0.75rem;
       grid-area: actions;
       justify-self: end;
     }
@@ -162,4 +201,8 @@
       white-space: nowrap;
     }
   }
+}
+
+.header-nav__logo{
+  color: var(--colour-neutral-000);
 }

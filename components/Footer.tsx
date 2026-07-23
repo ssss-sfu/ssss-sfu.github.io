@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="footer-socials icon-container">
+        <div className="footer-socials">
           <SocialIcon
             href="https://www.facebook.com/ssss.sfu"
             src={FacebookIcon.src}
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
           <SocialIcon
             href="https://github.com/ssss-sfu"
             src={GithubIcon.src}
-            alt="Discord icon"
+            alt="GitHub icon"
           />
         </div>
       </div>
