@@ -3,7 +3,7 @@ import { MouseEventHandler } from "react";
 
 interface SidebarCourseProps {
   course: SFUCourseResponse;
-  closeCourseShown: MouseEventHandler<HTMLSpanElement>;
+  closeCourseShown: MouseEventHandler<HTMLButtonElement>;
 }
 
 interface OfferingPerTerm {
@@ -45,9 +45,14 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
           >
             {course.dept} {course.number} ({course.units})
           </a>
-          <span className="close-sidebar" onClick={closeCourseShown}>
+          <button
+            type="button"
+            className="close-sidebar"
+            onClick={closeCourseShown}
+            aria-label="Close course details"
+          >
             Close
-          </span>
+          </button>
         </p>
         <h2>{course.title}</h2>
         <p>{course.description}</p>

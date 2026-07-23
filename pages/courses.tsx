@@ -248,6 +248,8 @@ const Courses: React.FC = () => {
 
   // reference to the requirements section for scroll management
   const requirementsSectionRef = useRef<HTMLElement | null>(null);
+  // bumps on close / new click so a late fetch can't reopen a dismissed panel
+  const fetchGenerationRef = useRef(0);
 
   useEffect(() => {
     fetch("https://api.sfucourses.com/health")
@@ -349,18 +351,46 @@ const Courses: React.FC = () => {
     return `(${diffDays} day${diffDays === 1 ? "" : "s"} ago)`;
   }
 
+  // Close clears panel, selection, loading, and error; invalidates in-flight fetch
+  const closeCourse = () => {
+    fetchGenerationRef.current += 1; // bump the fetch generation
+    setCourseShown(null);
+    setSelectedCourseKey(null);
+    setLoading(false);
+    setError(null);
+  };
+
+  useEffect(() => {
+    if (!courseShown && !loading && !error) {
+      return;
+    }
+    // close the course panel when the Escape key is pressed
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        closeCourse(); 
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [courseShown, loading, error]);
 
   const handleCourseClick = async (dept: string, number: string) => {
     const key = courseKey(dept, number);
+    const generation = ++fetchGenerationRef.current; // bump the fetch generation
     // highlight immediately so the chip feels selected before the fetch finishes
     setSelectedCourseKey(key);
     setLoading(true);
-    setError(null);
+    setError(null); // clear any previous error
 
     try {
       const response = await fetch(
         `${SFU_COURSES_API_BASE}?dept=${dept.toLowerCase()}&number=${number}`
       );
+      if (generation !== fetchGenerationRef.current) {
+        return; // if the fetch generation has changed, the course has been closed
+      }
       if (!response.ok) {
         setError(`Failed to fetch ${dept} ${number}: ${response.statusText}`);
         setCourseShown(null);
@@ -368,26 +398,29 @@ const Courses: React.FC = () => {
         return;
       }
       const data = await response.json();
+      if (generation !== fetchGenerationRef.current) {
+        return;
+      }
       setCourseShown(data[0]);
       scrollPanelIntoView();
     } catch (err) {
+      if (generation !== fetchGenerationRef.current) {
+        return;
+      }
       setError("Failed to fetch course data. Please try again later.");
       setCourseShown(null);
       setSelectedCourseKey(null); // revert UI to original state
     } finally {
-      setLoading(false);
+      if (generation === fetchGenerationRef.current) {
+        setLoading(false);
+      }
     }
-  };
-
-  // Close clears both the panel and the green chip
-  const closeCourse = () => {
-    setCourseShown(null);
-    setSelectedCourseKey(null);
   };
 
   // shared chip class: green sticks when this course matches selectedCourseKey
   const courseChipClass = (dept: string, number: string) =>
-    `btn secondary course-node${selectedCourseKey === courseKey(dept, number) ? " is-selected" : ""
+    `btn secondary course-node${
+      selectedCourseKey === courseKey(dept, number) ? " is-selected" : ""
     }`;
 
   const renderCourseSection = (section: {
@@ -554,7 +587,7 @@ const Courses: React.FC = () => {
               </Dropdown>
             )}
           </div>
-          {(loading || courseShown) && (
+          {(loading || courseShown || error) && (
             <aside className="course-panel-column" aria-live="polite">
               {loading ? (
                 <div className="sidebar-course">
@@ -568,6 +601,21 @@ const Courses: React.FC = () => {
                     <ClipLoader size={32} color="#555" />
                   </div>
                   <p>Loading course data...</p>
+                </div>
+              ) : error ? (
+                <div className="sidebar-course course-panel-error">
+                  <p className="space-between">
+                    <span>Couldn’t load course</span>
+                    <button
+                      type="button"
+                      className="close-sidebar"
+                      onClick={closeCourse}
+                      aria-label="Dismiss error"
+                    >
+                      Close
+                    </button>
+                  </p>
+                  <p>{error}</p>
                 </div>
               ) : (
                 courseShown && (
