@@ -48,7 +48,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
     return filteredSegments[filteredSegments.length - 1];
   };
 
-  // decrease the font size of the text if it exceeds the container.
+  // Shrink bio text so bio + socials fit inside the overlay, including bottom padding.
   const fitDescriptionText = useCallback(() => {
     const text = descriptionRef.current;
     const container = secondaryRef.current;
@@ -62,10 +62,16 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
     if (socials) {
       socialsHeight = socials.getBoundingClientRect().height; // gets the current height of the socials container
     }
-    const gap = parseFloat(getComputedStyle(container).rowGap || "0"); // gap between the description and socials
-    const maxHeight = container.clientHeight - socialsHeight - gap; // max height of the description container
+    const styles = getComputedStyle(container);
+    const gap = parseFloat(styles.rowGap || "0");
+    const paddingTop = parseFloat(styles.paddingTop || "0");
+    const paddingBottom = parseFloat(styles.paddingBottom || "0");
+    // clientHeight includes padding — reserve top + bottom so socials aren't flush
+    const availableHeight =
+      container.clientHeight - paddingTop - paddingBottom;
+    const maxTextHeight = availableHeight - socialsHeight - gap;
 
-    if (maxHeight <= 0) {
+    if (maxTextHeight <= 0) {
       // if the max height is not larger than 0, text will fit in the container
       return; // dont need to resize the text
     }
@@ -73,7 +79,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
     let fontSize = parseFloat(getComputedStyle(text).fontSize); // get current font size
     const minFontSize = 10;
 
-    while (text.scrollHeight > maxHeight && fontSize > minFontSize) {
+    while (text.scrollHeight > maxTextHeight && fontSize > minFontSize) {
       // decrease font size until it fits.
       fontSize -= 0.5;
       text.style.fontSize = `${fontSize}px`;
