@@ -25,13 +25,13 @@ export interface SFUCourseResponse {
   }>;
 }
 
-type CourseRef={
+type CourseRef = {
   dept: string;
   number: string;
   note?: string;
 };
 
-type RequirementGroup ={
+type RequirementGroup = {
   title: string;
   rule: string;
   courses: CourseRef[];
@@ -114,7 +114,7 @@ const LOWER_DIVISION_REQUIREMENTS: {
   ],
 };
 
-const UPPER_DIVISION_REQUIREMENTS:{
+const UPPER_DIVISION_REQUIREMENTS: {
   heading: string;
   description: string;
   groups: RequirementGroup[];
@@ -381,8 +381,7 @@ const Courses: React.FC = () => {
 
   // shared chip class: green sticks when this course matches selectedCourseKey
   const courseChipClass = (dept: string, number: string) =>
-    `btn secondary course-node${
-      selectedCourseKey === courseKey(dept, number) ? " is-selected" : ""
+    `btn secondary course-node${selectedCourseKey === courseKey(dept, number) ? " is-selected" : ""
     }`;
 
   const renderCourseSection = (section: {
@@ -502,11 +501,7 @@ const Courses: React.FC = () => {
           </p>
         </section>
         <section className="requirements-section">
-          <div
-            className={`requirements-container ${
-              courseShown !== null ? "half-width" : ""
-            }`}
-          >
+          <div className="requirements-container">
             {renderCourseSection(LOWER_DIVISION_REQUIREMENTS)}
             {renderCourseSection(UPPER_DIVISION_REQUIREMENTS)}
             {renderTextSection(DEPTH_REQUIREMENTS, depthElectiveCourses)}
@@ -538,27 +533,30 @@ const Courses: React.FC = () => {
               </Dropdown>
             )}
           </div>
-          {loading && (
-            <div className="sidebar-course">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  margin: "16px 0",
-                }}
-              >
-                <ClipLoader size={32} color="#555" />
-              </div>
-              <p>Loading course data...</p>
-            </div>
-          )}
-          {courseShown && !loading && (
-            <div>
-              <SidebarCourse
-                course={courseShown}
-                closeCourseShown={closeCourse}
-              />
-            </div>
+          {(loading || courseShown) && (
+            <aside className="course-panel-column" aria-live="polite">
+              {loading ? (
+                <div className="sidebar-course">
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      margin: "16px 0",
+                    }}
+                  >
+                    <ClipLoader size={32} color="#555" />
+                  </div>
+                  <p>Loading course data...</p>
+                </div>
+              ) : (
+                courseShown && (
+                  <SidebarCourse
+                    course={courseShown}
+                    closeCourseShown={closeCourse}
+                  />
+                )
+              )}
+            </aside>
           )}
         </section>
         <section className="data-section">

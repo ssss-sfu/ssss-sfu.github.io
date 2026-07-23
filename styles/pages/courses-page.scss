@@ -3,6 +3,7 @@
 .requirements-section {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   gap: 1em;
 }
 
@@ -11,12 +12,27 @@
   flex-direction: column;
   gap: 0;
   margin: 2em 0;
-  flex: 0 0 100%;
+  flex: 1 1 0;
+  min-width: 0;
 
-  // Match FAQ spacing — first item shouldn't double the page gap
-  > .dropdown-item:first-child {
+  >.dropdown-item:first-child {
     margin-top: 0;
   }
+}
+
+.course-panel-column {
+  flex: 1 1 0;
+  min-width: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center; // keeps the card in the vertical middle of the screen
+  z-index: 10; // above dropdown cards, below header-nav
+  align-self: flex-start;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .requirement-block-content {
@@ -85,14 +101,10 @@
 }
 
 .sidebar-course {
-  z-index: 1;
-  position: fixed;
-  right: 3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: min(38rem, 50vw);
-  max-height: 70vh;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  position: relative;
+  width: 100%;
+  max-height: calc(100vh - variables.$nav-height - 3em);
+  overflow-x: hidden; // prevent horizontal overflow
   overflow-y: auto;
   flex-wrap: nowrap;
   line-height: 1.25em;
@@ -104,7 +116,7 @@
   flex-direction: column;
   gap: 2em;
   border: 1px solid var(--colour-neutral-1000);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
 
   .sidebar-course-scroll {
     display: flex;
@@ -139,6 +151,7 @@
       }
     }
   }
+
   .course-info {
     display: flex;
     flex-direction: column;
@@ -158,24 +171,42 @@
   }
 }
 
-@include variables.viewport(tablet-desktop) {
-  .half-width {
-    flex: 0 0 50%;
-  }
-}
-
 @include variables.viewport(mobile) {
+  .requirements-section {
+    flex-direction: column;
+  }
+
+  // Full-viewport overlay: flex-centers the card so tall content can't clip off-screen
+  .course-panel-column {
+    position: fixed;
+    inset: 0;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(variables.$nav-height + 0.75rem) 1rem 1rem;
+    box-sizing: border-box;
+    z-index: 15; // keep under header-nav
+    pointer-events: none; // clicks pass through empty overlay area
+  }
+
   .sidebar-course {
-    width: 90%;
-    left: 50%;
-    right: auto;
-    top: 50%;
-    max-height: 70vh;
-    height: fit-content;
-    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    width: 100%;
+    max-width: 28rem;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 
     .sidebar-course-scroll {
-      max-height: calc(70vh - 2rem);
+      max-height: none;
     }
   }
 }
