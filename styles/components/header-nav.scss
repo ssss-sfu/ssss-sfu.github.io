@@ -9,6 +9,7 @@
   background: linear-gradient(
     180deg,
     var(--colour-neutral-1200) 0%,
+    var(--colour-neutral-1200) 70%,
     transparent 100%
   );
   transition: background $transition-speed-fast $easing-cubic-bezier;
@@ -18,12 +19,13 @@
   }
 }
 
-// Light mode: softer top fade now that heroes wash to the page background
+// Light mode: same structure as dark mode but slightly softer mid-stop
 html[data-theme="light"] .header-nav:not(.is-scrolled) {
   background: linear-gradient(
     180deg,
     var(--colour-neutral-1200) 0%,
-    color-mix(in srgb, var(--colour-neutral-1200) 70%, transparent) 55%,
+    var(--colour-neutral-1200) 65%,
+    color-mix(in srgb, var(--colour-neutral-1200) 85%, transparent) 80%,
     transparent 100%
   );
 }

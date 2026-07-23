@@ -17,11 +17,11 @@ const LandingPage: FC<LandingPageProps> = () => {
         <article className="container discover-ssss">
           <header>
             <h2>Discover the SSSS</h2>
-            <Button label="Learn more" type="secondary" />
+
           </header>
           <a
             className="discover-ssss__main-link-item"
-            href="https://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html"
+            href="https://www.sfu.ca/fas/study/future-undergraduates/programs/major/software-systems-bachelor-science.html"
             rel="noreferrer"
             target="_blank"
           >

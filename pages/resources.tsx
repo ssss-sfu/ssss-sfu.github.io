@@ -1,11 +1,18 @@
 import React, { FC } from "react";
-import { Dropdown } from "@components";
-import links from "@jsons/links.json";
+import { Dropdown, Hero } from "@components";
+import HeroImage from "@images/resources-page/hero-laptop.jpeg";
+import linkGroups from "@jsons/links.json";
 import faqs from "@jsons/faqs.json";
 
-interface Link {
-  text: string;
+interface ResourceLink {
+  title: string;
+  description: string;
   href: string;
+}
+
+interface LinkGroup {
+  title: string;
+  links: ResourceLink[];
 }
 
 interface FAQ {
@@ -13,47 +20,87 @@ interface FAQ {
   content: string;
 }
 
+type ResourceRow =
+  | { type: "single"; group: LinkGroup }
+  | { type: "pair"; groups: [LinkGroup, LinkGroup] };
+
+/** Pair consecutive one-link groups so they sit side by side on wide screens. */
+function buildResourceRows(groups: LinkGroup[]): ResourceRow[] {
+  const rows: ResourceRow[] = [];
+  let i = 0;
+
+  while (i < groups.length) {
+    const current = groups[i];
+    const next = groups[i + 1];
+
+    if (current.links.length === 1 && next?.links.length === 1) {
+      rows.push({ type: "pair", groups: [current, next] });
+      i += 2;
+      continue;
+    }
+
+    rows.push({ type: "single", group: current });
+    i += 1;
+  }
+
+  return rows;
+}
+
+const ResourceGroup: FC<{ group: LinkGroup }> = ({ group }) => (
+  <section className="resources-group">
+    <h2>{group.title}</h2>
+    <ul className="resources-links">
+      {group.links.map(({ title, description, href }) => (
+        <li key={href}>
+          <a href={href} target="_blank" rel="noreferrer">
+            <span className="resources-links__title">{title}</span>
+            <span className="resources-links__description">{description}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+);
+
 const ResourcesPage: FC = () => {
+  const rows = buildResourceRows(linkGroups as LinkGroup[]);
+
   return (
     <div className="page resources-page">
-      <main>
-        <header className="container hero">
-          <p>Resources</p>
-          <h1>Useful links and software</h1>
-        </header>
+      <Hero
+        title="Useful links and software"
+        subtitle="Resources"
+        backgroundImage={HeroImage.src}
+      />
+      <main className="container">
+        {rows.map((row) =>
+          row.type === "pair" ? (
+            <div
+              key={row.groups.map((group) => group.title).join("-")}
+              className="resources-groups-pair"
+            >
+              {row.groups.map((group) => (
+                <ResourceGroup key={group.title} group={group} />
+              ))}
+            </div>
+          ) : (
+            <ResourceGroup key={row.group.title} group={row.group} />
+          )
+        )}
 
-        <article className="container">
-          <header>
-            <h2>Resources</h2>
-          </header>
-          <br />
-          <ul className="resources-links">
-            {links.map(({ text, href }: Link, id: number) => (
-              <li key={id}>
-                <a href={href} target="_blank" rel="noreferrer">
-                  {text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </article>
-
-        <article className="container">
-          <header>
-            <h2>FAQs</h2>
-          </header>
-
+        <section className="resources-faqs">
+          <h2>FAQs</h2>
           <div>
-            {faqs.map(({ title, content }: FAQ, id: number) => (
+            {(faqs as FAQ[]).map(({ title, content }, id) => (
               <Dropdown
-                key={id}
+                key={title}
                 id={id.toString()}
                 title={title}
                 content={content}
               />
             ))}
           </div>
-        </article>
+        </section>
       </main>
     </div>
   );

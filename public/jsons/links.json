@@ -1,30 +1,52 @@
 [
   {
-    "text": "Software Systems Main page",
-    "href": "https://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html"
+    "title": "Program",
+    "links": [
+      {
+        "title": "Software Systems",
+        "description": "Program overview from Computing Science",
+        "href": "https://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html"
+      },
+      {
+        "title": "Degree requirements",
+        "description": "Calendar requirements for the BSc major",
+        "href": "https://www.sfu.ca/students/calendar/programs/software-systems/major/bachelor-of-science.html"
+      }
+    ]
   },
   {
-    "text": "Software Systems Program Requirements page",
-    "href": "http://www.sfu.ca/students/calendar/2023/summer/programs/software-systems/major/bachelor-of-science.html"
+    "title": "Co-op",
+    "links": [
+      {
+        "title": "Prospective co-op",
+        "description": "How to enroll in Software Systems co-op",
+        "href": "https://www.sfu.ca/coop/programs/sosy/prospective.html"
+      }
+    ]
   },
   {
-    "text": "Constitution",
-    "href": "https://drive.google.com/file/d/1mBa4k8c8WsS_eRt4epjfDSHhGfOIL9Yl/view?usp=sharing"
+    "title": "Society",
+    "links": [
+      {
+        "title": "Constitution",
+        "description": "SSSS constitution and bylaws",
+        "href": "https://drive.google.com/file/d/1DPYDXMCRSVL6wfFSpkNbqLv90xoTotxZ/view?usp=sharing"
+      }
+    ]
   },
   {
-    "text": "Looking to enroll in Software Systems",
-    "href": "https://www.sfu.ca/coop/programs/sosy/prospective.html"
-  },
-  {
-    "text": "SoSy 101",
-    "href": "https://www.reddit.com/r/simonfraser/comments/bmt2zc/software_systems_program_bsc_masterpost/"
-  },
-  {
-    "text": "SFU Free Software",
-    "href": "https://www.sfu.ca/information-systems/services/software/list-of-software-at-sfu.html"
-  },
-  {
-    "text": "Software Systems Co-op program",
-    "href": "https://www.sfu.ca/coop/programs/sosy.html"
+    "title": "Tools & community",
+    "links": [
+      {
+        "title": "SFU free software",
+        "description": "Software available to SFU students",
+        "href": "https://www.sfu.ca/information-systems/services/software/list-of-software-at-sfu.html"
+      },
+      {
+        "title": "SoSy 101",
+        "description": "Community masterpost for the program",
+        "href": "https://www.reddit.com/r/simonfraser/comments/bmt2zc/software_systems_program_bsc_masterpost/"
+      }
+    ]
   }
 ]
