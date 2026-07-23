@@ -1,11 +1,13 @@
 import { Hero, Dropdown } from "@components";
 import HeroImage from "@images/about-page/about-hero-background.png";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { SidebarCourse } from "components/SidebarCourse";
 import ClipLoader from "react-spinners/ClipLoader";
 
 // API endpoint for SFU Courses
 const SFU_COURSES_API_BASE = "https://api.sfucourses.com/v1/rest/outlines";
+
+const NAV_HEIGHT = 80;
 
 export interface SFUCourseResponse {
   dept: string;
@@ -244,6 +246,9 @@ const Courses: React.FC = () => {
   );
   const [otherCmptCourses, setOtherCmptCourses] = useState<CourseRef[]>([]);
 
+  // reference to the requirements section for scroll management
+  const requirementsSectionRef = useRef<HTMLElement | null>(null);
+
   useEffect(() => {
     fetch("https://api.sfucourses.com/health")
       .then((res) => res.json())
@@ -364,6 +369,7 @@ const Courses: React.FC = () => {
       }
       const data = await response.json();
       setCourseShown(data[0]);
+      scrollPanelIntoView();
     } catch (err) {
       setError("Failed to fetch course data. Please try again later.");
       setCourseShown(null);
@@ -464,6 +470,21 @@ const Courses: React.FC = () => {
     </Dropdown>
   );
 
+  // only scrolls the page if its needed: if the hero covers the top of the viewport
+  function scrollPanelIntoView() {
+    const section = requirementsSectionRef.current;
+    const hero = document.querySelector(".courses-page .hero");
+    if (!section || !hero) {
+      return;
+    }
+    const heroBottom = hero.getBoundingClientRect().bottom;
+    if (heroBottom <= NAV_HEIGHT) {
+      return;
+    }
+    const y = section.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+
   return (
     <div className="page courses-page">
       <Hero
@@ -500,7 +521,7 @@ const Courses: React.FC = () => {
             .
           </p>
         </section>
-        <section className="requirements-section">
+        <section className="requirements-section" ref={requirementsSectionRef}>
           <div className="requirements-container">
             {renderCourseSection(LOWER_DIVISION_REQUIREMENTS)}
             {renderCourseSection(UPPER_DIVISION_REQUIREMENTS)}
