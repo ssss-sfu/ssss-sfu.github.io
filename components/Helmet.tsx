@@ -1,31 +1,34 @@
 import Head from "next/head";
+import {
+  DEFAULT_TITLE,
+  DEFAULT_DESCRIPTION,
+  absoluteURL,
+} from "@lib/seo.config";
 
 interface HelmetProps {
-  pageTitle?: string;
+  title?: string;
+  description?: string;
+  path: string; // path of the page "/about", "/blog/post-title"
+  image?: string; // unused for now
+  type?: "website" | "article";
+  noIndex?: boolean;
 }
 
-export const Helmet: React.FC<HelmetProps> = ({ pageTitle = "" }) => {
-  pageTitle = pageTitle.replace("/", "");
-  pageTitle = pageTitle.replace("-", " ");
-  pageTitle = capitalizeWords(pageTitle);
-
-  const defaultTitle: string = "Software Systems Student Society";
-  const title: string = `${pageTitle} | SSSS`;
-  const hasPageTitle: boolean = pageTitle.trim() !== "";
-
-  function capitalizeWords(item: string): string {
-    return item
-      .split(" ")
-      .map(function (word) {
-        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-      })
-      .join(" ");
-  }
+export const Helmet: React.FC<HelmetProps> = ({
+  title = DEFAULT_TITLE,
+  description = DEFAULT_DESCRIPTION,
+  path = "/",
+  noIndex = false,
+}) => {
+  const canonical = absoluteURL(path);
 
   return (
     <Head>
-      <title>{hasPageTitle ? title : defaultTitle}</title>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={canonical} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
     </Head>
   );
 };

@@ -6,6 +6,7 @@ import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
 import { Helmet } from "@components";
+import { DEFAULT_DESCRIPTION } from "@lib/seo.config";
 import { getPost, type Post, postSlugsQuery } from "@lib/sanity.queries";
 import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
@@ -67,7 +68,11 @@ export default function ProjectSlugRoute(
   // const { width, height } = useNextSanityImage
   return (
     <div className="blog-category-page">
-      <Helmet pageTitle={post.title} />
+      <Helmet
+        title={post.title ? `${post.title} | SSSS` : undefined}
+        description={post.excerpt || DEFAULT_DESCRIPTION}
+        path={`/blog/${post.slug.current}`}
+      />
       <main>
         <header className="container hero">
           {post.mainImage ? (
