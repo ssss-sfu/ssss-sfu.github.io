@@ -36,9 +36,11 @@
       flex-direction: column;
       gap: 0.5rem;
 
-      h4 {
+      h2 {
         margin-bottom: 0.25rem;
         color: var(--colour-neutral-000);
+        font-size: 1rem;
+        font-weight: 700;
       }
 
       address {
@@ -66,7 +68,7 @@
         flex-direction: row;
         gap: 1.25rem;
 
-        h4 {
+        h2 {
           margin-bottom: 1rem;
         }
       }

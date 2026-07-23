@@ -42,7 +42,7 @@ export default function BlogPage(
         <section className="container">
           {posts.length ? (
             <div>
-              <h3 className="category-title">Featured</h3>
+              <h2 className="category-title">Featured</h2>
               <div className="posts-list featured">
                 {posts.map((post) => (
                   <PostCard key={post._id} post={post} />

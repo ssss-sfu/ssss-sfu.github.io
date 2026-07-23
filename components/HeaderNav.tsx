@@ -60,12 +60,17 @@ export const HeaderNav: React.FC = () => {
   return (
     <header className={`header-nav${scrolled ? " is-scrolled" : ""}`}>
       <div className="header-nav__inner">
-        <Link href="/" className="header-nav__logo" onClick={closeMenu}>
+        <Link
+          href="/"
+          className="header-nav__logo"
+          aria-label="Software Systems Student Society home"
+          onClick={closeMenu}
+        >
           <Logo />
         </Link>
 
         <div className={`content${menuOpen ? " content--open" : ""}`}>
-          <nav className="pages">
+          <nav className="pages" aria-label="Main">
             <Link href="/about" className="page-link" onClick={closeMenu}>
               About
             </Link>

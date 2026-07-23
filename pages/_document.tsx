@@ -15,7 +15,7 @@ const themeInitScript = `
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html data-theme="dark">
+      <Html lang="en" data-theme="dark">
         <Head />
         <body>
           {/* dangerouslySetInnerHTML used to inject the theme initialization script into the document */}
