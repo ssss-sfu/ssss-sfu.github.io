@@ -81,3 +81,74 @@ export function absoluteURL(path: string): string {
   }
   return `${SITE_URL}${clean}`;
 }
+
+export const SOCIAL_SAME_AS = [
+  "https://www.facebook.com/ssss.sfu",
+  "https://www.linkedin.com/company/ssss-sfu/",
+  "https://www.instagram.com/ssss.sfu/",
+  "https://discord.com/invite/whdfmJbVF7",
+  "https://github.com/ssss-sfu",
+];
+
+export function organizationJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: ORGANIZATION_NAME,
+    alternateName: "SSSS",
+    url: SITE_URL,
+    logo: `${SITE_URL}/favicon.ico`,
+    sameAs: SOCIAL_SAME_AS,
+  };
+}
+
+export function websiteJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "SSSS",
+    url: SITE_URL,
+  };
+}
+
+// JSON-LD for blog posts
+type BlogPostingInput = {
+  title?: string;
+  excerpt?: string;
+  slug: { current: string };
+  _createdAt: string;
+  author?: { name?: string };
+};
+
+// JSON-LD for blog posts
+export function articleJsonLd(
+  post: BlogPostingInput,
+  ogImage: string
+): Record<string, unknown> {
+  const canonical = absoluteURL(`/blog/${post.slug.current}`);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: [ogImage],
+    datePublished: post._createdAt,
+    author: {
+      "@type": "Person",
+      name: post.author?.name,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "SSSS",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/favicon.ico`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonical,
+    },
+  };
+}

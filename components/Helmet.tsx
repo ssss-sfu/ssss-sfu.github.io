@@ -44,6 +44,7 @@ export const Helmet: React.FC<HelmetProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+      <meta name="google-site-verification" content="SN3sAlX7OnA_eUivT3q1mOAzlUroosCjWRmjjjtnXlw" />
     </Head>
   );
 };

@@ -5,8 +5,12 @@ import { getImageDimensions } from "@sanity/asset-utils";
 import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
-import { Helmet } from "@components";
-import { DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE } from "@lib/seo.config";
+import { Helmet, JsonLd } from "@components";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_OG_IMAGE,
+  articleJsonLd,
+} from "@lib/seo.config";
 import { getPost, type Post, postSlugsQuery } from "@lib/sanity.queries";
 import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
@@ -81,6 +85,7 @@ export default function ProjectSlugRoute(
         image={ogImage}
         type="article"
       />
+      <JsonLd data={articleJsonLd(post, ogImage)} />
       <main>
         <header className="container hero">
           {post.mainImage ? (
