@@ -5,6 +5,7 @@
   "scripts": {
     "precommit": "pretty-quick --staged",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

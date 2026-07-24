@@ -35,3 +35,6 @@ next-env.d.ts
 
 # husky
 .husky/_/*
+
+# generated at build time
+/public/sitemap.xml
