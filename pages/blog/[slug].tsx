@@ -6,7 +6,7 @@ import { readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
 import { Helmet } from "@components";
-import { DEFAULT_DESCRIPTION } from "@lib/seo.config";
+import { DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE } from "@lib/seo.config";
 import { getPost, type Post, postSlugsQuery } from "@lib/sanity.queries";
 import React from "react";
 import clock from "../../public/images/blog-page/clock.svg";
@@ -64,6 +64,12 @@ export default function ProjectSlugRoute(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const post = props.post;
+  const imageBuilder = post.mainImage
+    ? urlForImage(post.mainImage)
+    : undefined;
+  const ogImage = imageBuilder
+    ? imageBuilder.width(1200).height(630).fit("crop").url()
+    : DEFAULT_OG_IMAGE;
 
   // const { width, height } = useNextSanityImage
   return (
@@ -72,6 +78,8 @@ export default function ProjectSlugRoute(
         title={post.title ? `${post.title} | SSSS` : undefined}
         description={post.excerpt || DEFAULT_DESCRIPTION}
         path={`/blog/${post.slug.current}`}
+        image={ogImage}
+        type="article"
       />
       <main>
         <header className="container hero">
