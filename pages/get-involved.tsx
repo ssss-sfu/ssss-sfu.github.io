@@ -28,7 +28,7 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
       />
       <main className="container">
         <section className="main-content">
-          <h1>SSSS Elections</h1>
+          <h2>SSSS Elections</h2>
           <p>
             Join the Software Systems Student Society by running for any of the
             elected positions.{" "}
@@ -57,7 +57,7 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
         </section>
 
         <section className="commitee-content">
-          <h1>General Meeting</h1>
+          <h2>General Meeting</h2>
           <p>
             Join us during our public general meeting in{" "}
             <span className="discord-channel-image-text">#room-3006-3 </span>{" "}

@@ -26,7 +26,7 @@ const About: React.FC = () => {
       />
       <main className="container">
         <section className="main-content">
-          <h1>About the SSSS</h1>
+          <h2>About the SSSS</h2>
           <p>
             Our mission is to represent students in the Software Systems program
             at SFU.

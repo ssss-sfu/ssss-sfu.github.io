@@ -527,7 +527,7 @@ const Courses: React.FC = () => {
       />
       <main className="container">
         <section className="main-content">
-          <h1>Software Systems Course Requirements</h1>
+          <h2>Software Systems Course Requirements</h2>
           <p>
             This page summarizes the course requirements for the Software
             Systems major. Click any course to view its description,
