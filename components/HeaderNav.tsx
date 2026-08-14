@@ -1,22 +1,25 @@
 import { Logo } from "@components";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { useRouter } from "next/router";
-import { getTheme, toggleTheme, type Theme } from "@lib/theme";
+import { subscribeTheme, getThemeSnapshot, getServerThemeSnapshot, toggleTheme } from "@lib/theme";
 
 export const HeaderNav: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
-  const [theme, setTheme] = useState<Theme>("dark");
+  // this now reads the data-theme that _document init script sets before, so there isnt a flash when you open the website and no state effect
+  const theme = useSyncExternalStore(subscribeTheme,getThemeSnapshot,getServerThemeSnapshot);
 
 
   /**
    * Close the menu when the route changes
    */
   useEffect(() => {
-    setMenuOpen(false);
-  }, [router.asPath]);
+    const close = setMenuOpen(false);
+    router.events.on("routeChangeComplete", close);
+    return() => router.events.off("routeChangeComplete", close);
+  }, [router.events]);
 
   /**
    * Handle the menu open state
@@ -51,9 +54,7 @@ export const HeaderNav: React.FC = () => {
     document.documentElement.dataset.theme = initial;
   }, []);
 
-  const onToggleTheme = () => {
-    setTheme((prev) => toggleTheme(prev));
-  };
+  const onToggleTheme = () => toggleTheme(theme);
 
   const closeMenu = () => setMenuOpen(false);
 

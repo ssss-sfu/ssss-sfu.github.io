@@ -30,7 +30,7 @@ export const Helmet: React.FC<HelmetProps> = ({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonical} />
+      <link rel="canonical" href={canonical} key="canonical" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
       <meta property="og:site_name" content={DEFAULT_TITLE} />

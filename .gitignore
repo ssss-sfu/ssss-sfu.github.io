@@ -6,6 +6,11 @@
 /.pnp
 .pnp.js
 
+# bun is the only supported package manager — see CONTRIBUTING.md
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
 # testing
 /coverage
 

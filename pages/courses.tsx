@@ -246,6 +246,9 @@ const Courses: React.FC = () => {
   );
   const [otherCmptCourses, setOtherCmptCourses] = useState<CourseRef[]>([]);
 
+  const [courseListError, setCourseListError]=useState(false);
+
+
   // reference to the requirements section for scroll management
   const requirementsSectionRef = useRef<HTMLElement | null>(null);
   // bumps on close / new click so a late fetch can't reopen a dismissed panel
@@ -258,7 +261,7 @@ const Courses: React.FC = () => {
         if (data.lastDataUpdate) {
           setLastDataUpdate(data.lastDataUpdate);
         }
-      });
+      }).catch(() =>{});
 
     const upperRequiredSet = new Set(
       flattenRequirementCourses([UPPER_DIVISION_REQUIREMENTS]).map((c) =>
@@ -318,6 +321,8 @@ const Courses: React.FC = () => {
 
       setDepthElectiveCourses(depthElectives);
       setOtherCmptCourses(otherCmpt);
+    }).catch(() =>{
+      setCourseListError(true);
     });
   }, []);
 
@@ -441,13 +446,14 @@ const Courses: React.FC = () => {
             <p className="rule-description">{group.rule}</p>
             <div className="courses-container">
               {group.courses.map((course) => (
-                <div
-                  className={courseChipClass(course.dept, course.number)}
-                  key={courseKey(course.dept, course.number)}
-                  onClick={() => handleCourseClick(course.dept, course.number)}
+                <button
+                  type="button"
+                  className={courseChipClass(course.dept,course.number)}
+                  key={courseKey(course.dept,course.number)}
+                  onClick={() => handleCourseClick(course.dept,course.number)}
                 >
                   {`${course.dept} ${course.number}`}
-                </div>
+                </button>
               ))}
             </div>
             {group.footnote && (
@@ -587,7 +593,7 @@ const Courses: React.FC = () => {
               </Dropdown>
             )}
           </div>
-          {(loading || courseShown || error) && (
+          {(loading || courseShown || error || courseListError) && (
             <aside className="course-panel-column" aria-live="polite">
               {loading ? (
                 <div className="sidebar-course">
@@ -602,7 +608,7 @@ const Courses: React.FC = () => {
                   </div>
                   <p>Loading course data...</p>
                 </div>
-              ) : error ? (
+              ) : error || courseListError ? (
                 <div className="sidebar-course course-panel-error">
                   <p className="space-between">
                     <span>Couldn’t load course</span>
