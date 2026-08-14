@@ -1,6 +1,6 @@
 // Script to generate a sitemap.xml file for the website
 // It helps search engines index the website
-import { writeFile } from "fs/promises";
+import { writeFile } from "node:fs/promises";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
@@ -15,6 +15,16 @@ const STATIC_PATHS = [
   "/courses",
   "/blog",
 ];
+
+// escape XML characters to avoid parsing errors
+function escapeXml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
 
 function todayIsoDate() {
   return new Date().toISOString().slice(0, 10);
@@ -61,7 +71,7 @@ function buildXml(urls) {
   const body = urls
     .map(
       ({ loc, lastmod, priority }) => `  <url>
-    <loc>${loc}</loc>
+    <loc>${escapeXml(loc)}</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>${priority}</priority>
   </url>`
