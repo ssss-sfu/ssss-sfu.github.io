@@ -10,10 +10,9 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const path = router.asPath.split("?")[0]; // remove query parameters
   const lookup = PAGE_SEO[router.pathname]; // get the SEO configuration for the page
 
-
   return (
     <>
-      <Helmet 
+      <Helmet
         title={lookup?.title}
         description={lookup?.description}
         path={path}

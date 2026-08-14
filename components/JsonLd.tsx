@@ -7,7 +7,7 @@ interface JsonLdProps {
 
 export function JsonLd({ data }: JsonLdProps) {
   // replace < to avoid JSON parsing errors in HTML tags
-  const json = JSON.stringify(data).replace(/</g, '\\u003c');
+  const json = JSON.stringify(data).replace(/</g, "\\u003c");
   return (
     <script
       type="application/ld+json"

@@ -17,7 +17,6 @@ const LandingPage: FC<LandingPageProps> = () => {
         <article className="container discover-ssss">
           <header>
             <h2>Discover the SSSS</h2>
-
           </header>
           <a
             className="discover-ssss__main-link-item"

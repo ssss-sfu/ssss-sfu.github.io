@@ -67,8 +67,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
     const paddingTop = parseFloat(styles.paddingTop || "0");
     const paddingBottom = parseFloat(styles.paddingBottom || "0");
     // clientHeight includes padding — reserve top + bottom so socials aren't flush
-    const availableHeight =
-      container.clientHeight - paddingTop - paddingBottom;
+    const availableHeight = container.clientHeight - paddingTop - paddingBottom;
     const maxTextHeight = availableHeight - socialsHeight - gap;
 
     if (maxTextHeight <= 0) {

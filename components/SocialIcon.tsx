@@ -6,11 +6,7 @@ interface SocialIconProps {
   label: string;
 }
 
-export const SocialIcon: React.FC<SocialIconProps> = ({
-  href,
-  src,
-  label,
-}) => {
+export const SocialIcon: React.FC<SocialIconProps> = ({ href, src, label }) => {
   return (
     <a
       className="social-icon-wrapper"

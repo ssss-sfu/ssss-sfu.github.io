@@ -69,18 +69,18 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
             course.offerings
               .filter((offering) => isWithinTwoYears(offering.term))
               .map((offering) => {
-              const [semester, year] = offering.term.split(" ");
-              const semesterLower = semester.toLowerCase();
-              const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
-              return (
-                <li className="offering" key={offering.term}>
-                  <a href={calendarUrl} target="_blank" rel="noreferrer">
-                    {offering.term}
-                  </a>
-                  &nbsp;-&nbsp;{offering.instructors.join(", ") || "N/A"}
-                </li>
-              );
-            })}
+                const [semester, year] = offering.term.split(" ");
+                const semesterLower = semester.toLowerCase();
+                const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
+                return (
+                  <li className="offering" key={offering.term}>
+                    <a href={calendarUrl} target="_blank" rel="noreferrer">
+                      {offering.term}
+                    </a>
+                    &nbsp;-&nbsp;{offering.instructors.join(", ") || "N/A"}
+                  </li>
+                );
+              })}
         </ul>
       </div>
     </div>

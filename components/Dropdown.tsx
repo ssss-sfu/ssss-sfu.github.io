@@ -20,7 +20,11 @@ export const Dropdown: React.FC<DropdownProps> = ({
 
   return (
     <div className="dropdown-item" id={`dropdown-item-${id}`}>
-      <input type="checkbox" id={`dropdown-${id}`} defaultChecked={defaultOpen} />
+      <input
+        type="checkbox"
+        id={`dropdown-${id}`}
+        defaultChecked={defaultOpen}
+      />
       <label htmlFor={`dropdown-${id}`}>
         {title}
         <img src={ChevronDownIcon.src} alt="" aria-hidden="true" />

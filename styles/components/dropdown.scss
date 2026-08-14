@@ -32,7 +32,9 @@
     img {
       // SVG is white fill — keep white in dark mode
       filter: saturate(0) brightness(2);
-      transition: filter 0.25s, transform 0.25s;
+      transition:
+        filter 0.25s,
+        transform 0.25s;
     }
   }
 
@@ -43,18 +45,18 @@
     transition: grid-template-rows 0.25s ease;
     margin-top: 0;
 
-    >.content-inner {
+    > .content-inner {
       overflow: hidden;
       min-height: 0;
     }
   }
 
   input:checked {
-    &~label img {
+    & ~ label img {
       transform: rotate(-180deg);
     }
 
-    &~.content {
+    & ~ .content {
       grid-template-rows: 1fr;
       margin-top: 0.5rem;
     }

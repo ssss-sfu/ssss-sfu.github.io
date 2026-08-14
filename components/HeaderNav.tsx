@@ -2,15 +2,23 @@ import { Logo } from "@components";
 import Link from "next/link";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { useRouter } from "next/router";
-import { subscribeTheme, getThemeSnapshot, getServerThemeSnapshot, toggleTheme } from "@lib/theme";
+import {
+  subscribeTheme,
+  getThemeSnapshot,
+  getServerThemeSnapshot,
+  toggleTheme,
+} from "@lib/theme";
 
 export const HeaderNav: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
   // this now reads the data-theme that _document init script sets before, so there isnt a flash when you open the website and no state effect
-  const theme = useSyncExternalStore(subscribeTheme,getThemeSnapshot,getServerThemeSnapshot);
-
+  const theme = useSyncExternalStore(
+    subscribeTheme,
+    getThemeSnapshot,
+    getServerThemeSnapshot
+  );
 
   /**
    * Close the menu when the route changes
@@ -18,7 +26,7 @@ export const HeaderNav: React.FC = () => {
   useEffect(() => {
     const close = () => setMenuOpen(false);
     router.events.on("routeChangeComplete", close);
-    return() => router.events.off("routeChangeComplete", close);
+    return () => router.events.off("routeChangeComplete", close);
   }, [router.events]);
 
   /**
@@ -103,7 +111,7 @@ export const HeaderNav: React.FC = () => {
               }
               onClick={onToggleTheme}
             >
-             {theme === "dark"? <SunIcon /> : <MoonIcon />}
+              {theme === "dark" ? <SunIcon /> : <MoonIcon />}
             </button>
             <a
               href="mailto:ssss-exec@sfu.ca"

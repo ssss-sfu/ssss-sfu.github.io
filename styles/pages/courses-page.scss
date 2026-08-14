@@ -15,7 +15,7 @@
   flex: 1 1 0;
   min-width: 0;
 
-  >.dropdown-item:first-child {
+  > .dropdown-item:first-child {
     margin-top: 0;
   }
 }
@@ -206,11 +206,7 @@
     z-index: 15; // keep under header-nav
     pointer-events: none; // clicks pass through empty overlay area
     // Dim the page so the card reads as a modal
-    background: color-mix(
-      in srgb,
-      var(--colour-neutral-1200) 55%,
-      transparent
-    );
+    background: color-mix(in srgb, var(--colour-neutral-1200) 55%, transparent);
   }
 
   .sidebar-course {

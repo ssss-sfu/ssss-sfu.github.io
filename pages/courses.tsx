@@ -246,8 +246,7 @@ const Courses: React.FC = () => {
   );
   const [otherCmptCourses, setOtherCmptCourses] = useState<CourseRef[]>([]);
 
-  const [courseListError, setCourseListError]=useState(false);
-
+  const [courseListError, setCourseListError] = useState(false);
 
   // reference to the requirements section for scroll management
   const requirementsSectionRef = useRef<HTMLElement | null>(null);
@@ -261,7 +260,8 @@ const Courses: React.FC = () => {
         if (data.lastDataUpdate) {
           setLastDataUpdate(data.lastDataUpdate);
         }
-      }).catch(() =>{});
+      })
+      .catch(() => {});
 
     const upperRequiredSet = new Set(
       flattenRequirementCourses([UPPER_DIVISION_REQUIREMENTS]).map((c) =>
@@ -282,48 +282,53 @@ const Courses: React.FC = () => {
       fetch(`${SFU_COURSES_API_BASE}?dept=macm`).then(
         (res) => res.json() as Promise<{ dept: string; number: string }[]>
       ),
-    ]).then(([cmptCourses, macmCourses]) => {
-      const toCourseRef = (c: { dept: string; number: string }): CourseRef => ({
-        dept: c.dept.toUpperCase(),
-        number: c.number.toUpperCase(),
-      });
+    ])
+      .then(([cmptCourses, macmCourses]) => {
+        const toCourseRef = (c: {
+          dept: string;
+          number: string;
+        }): CourseRef => ({
+          dept: c.dept.toUpperCase(),
+          number: c.number.toUpperCase(),
+        });
 
-      const uniqueByKey = (courses: CourseRef[]) =>
-        courses.filter(
-          (course, index, list) =>
-            list.findIndex(
+        const uniqueByKey = (courses: CourseRef[]) =>
+          courses.filter(
+            (course, index, list) =>
+              list.findIndex(
+                (c) =>
+                  courseKey(c.dept, c.number) ===
+                  courseKey(course.dept, course.number)
+              ) === index
+          );
+
+        const depthElectives = uniqueByKey(
+          [...cmptCourses, ...macmCourses]
+            .map(toCourseRef)
+            .filter(
               (c) =>
-                courseKey(c.dept, c.number) ===
-                courseKey(course.dept, course.number)
-            ) === index
-        );
+                (c.dept === "CMPT" || c.dept === "MACM") &&
+                isUpperLevelCourse(c.number) &&
+                !upperRequiredSet.has(courseKey(c.dept, c.number))
+            )
+        ).sort(sortCourses);
 
-      const depthElectives = uniqueByKey(
-        [...cmptCourses, ...macmCourses]
-          .map(toCourseRef)
-          .filter(
-            (c) =>
-              (c.dept === "CMPT" || c.dept === "MACM") &&
-              isUpperLevelCourse(c.number) &&
-              !upperRequiredSet.has(courseKey(c.dept, c.number))
-          )
-      ).sort(sortCourses);
+        const otherCmpt = uniqueByKey(
+          cmptCourses
+            .map(toCourseRef)
+            .filter(
+              (c) =>
+                !allRequiredSet.has(courseKey(c.dept, c.number)) &&
+                !isUpperLevelCourse(c.number)
+            )
+        ).sort(sortCourses);
 
-      const otherCmpt = uniqueByKey(
-        cmptCourses
-          .map(toCourseRef)
-          .filter(
-            (c) =>
-              !allRequiredSet.has(courseKey(c.dept, c.number)) &&
-              !isUpperLevelCourse(c.number)
-          )
-      ).sort(sortCourses);
-
-      setDepthElectiveCourses(depthElectives);
-      setOtherCmptCourses(otherCmpt);
-    }).catch(() =>{
-      setCourseListError(true);
-    });
+        setDepthElectiveCourses(depthElectives);
+        setOtherCmptCourses(otherCmpt);
+      })
+      .catch(() => {
+        setCourseListError(true);
+      });
   }, []);
 
   function formatHealthDate(dateString: string): string {
@@ -372,7 +377,7 @@ const Courses: React.FC = () => {
     // close the course panel when the Escape key is pressed
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        closeCourse(); 
+        closeCourse();
       }
     };
     window.addEventListener("keydown", onKeyDown);
@@ -448,9 +453,9 @@ const Courses: React.FC = () => {
               {group.courses.map((course) => (
                 <button
                   type="button"
-                  className={courseChipClass(course.dept,course.number)}
-                  key={courseKey(course.dept,course.number)}
-                  onClick={() => handleCourseClick(course.dept,course.number)}
+                  className={courseChipClass(course.dept, course.number)}
+                  key={courseKey(course.dept, course.number)}
+                  onClick={() => handleCourseClick(course.dept, course.number)}
                 >
                   {`${course.dept} ${course.number}`}
                 </button>

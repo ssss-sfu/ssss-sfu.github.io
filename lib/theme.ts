@@ -10,7 +10,7 @@ export const DEFAULT_THEME: Theme = "dark";
  * @param value - The value to check
  * @returns True if the value is a valid theme, false otherwise
  */
-export function isTheme(value:unknown): value is Theme {
+export function isTheme(value: unknown): value is Theme {
   return value === "dark" || value === "light";
 }
 
@@ -29,7 +29,7 @@ export function getTheme(): Theme {
   }
   if (window.matchMedia?.("(prefers-color-scheme: light)").matches) {
     return "light";
-  }else{
+  } else {
     return DEFAULT_THEME;
   }
 }
@@ -60,7 +60,7 @@ export function toggleTheme(current: Theme): Theme {
 }
 
 /**
- * subscribe to theme changes. 
+ * subscribe to theme changes.
  * basically, it adds the callback to the listeners set and returns a function to remove the callback.
  */
 export function subscribeTheme(onStoreChange: () => void): () => void {

@@ -18,12 +18,7 @@ export const Footer: React.FC = () => {
         </Link>
         <div className="office-address icon-container">
           <div className="gray-backdrop left-icon">
-            <Image
-              src={OfficeBuildingIcon.src}
-              height={48}
-              width={48}
-              alt=""
-            />
+            <Image src={OfficeBuildingIcon.src} height={48} width={48} alt="" />
           </div>
           <div className="address icon-right-content">
             <h2>Office Address</h2>
@@ -45,12 +40,7 @@ export const Footer: React.FC = () => {
 
         <div className="get-in-touch icon-container">
           <div className="gray-backdrop left-icon">
-            <Image
-              src={ContactUsIcon.src}
-              height={48}
-              width={48}
-              alt=""
-            />
+            <Image src={ContactUsIcon.src} height={48} width={48} alt="" />
           </div>
           <div className="address icon-right-content">
             <h2>Get in Touch</h2>
