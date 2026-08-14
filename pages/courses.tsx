@@ -341,8 +341,9 @@ const Courses: React.FC = () => {
       year: "numeric",
       hour12: true,
       timeZone: "America/Los_Angeles",
+      timeZoneName: "short",
     };
-    return date.toLocaleString("en-US", options) + " PST";
+    return date.toLocaleString("en-US", options);
   }
 
   function formatRelativeTime(dateString: string): string {
