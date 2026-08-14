@@ -7,7 +7,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 // API endpoint for SFU Courses
 const SFU_COURSES_API_BASE = "https://api.sfucourses.com/v1/rest/outlines";
 
-const NAV_HEIGHT = 80;
+const NAV_HEIGHT = 61;
 
 export interface SFUCourseResponse {
   dept: string;
@@ -365,6 +365,7 @@ const Courses: React.FC = () => {
   const closeCourse = () => {
     fetchGenerationRef.current += 1; // bump the fetch generation
     setCourseShown(null);
+    setCourseListError(false);
     setSelectedCourseKey(null);
     setLoading(false);
     setError(null);
@@ -496,13 +497,14 @@ const Courses: React.FC = () => {
             </p>
             <div className="courses-container">
               {electiveCourses.map((course) => (
-                <div
+                <button
+                  type="button"
                   className={courseChipClass(course.dept, course.number)}
                   key={courseKey(course.dept, course.number)}
                   onClick={() => handleCourseClick(course.dept, course.number)}
                 >
                   {`${course.dept} ${course.number}`}
-                </div>
+                </button>
               ))}
             </div>
           </div>
@@ -583,15 +585,14 @@ const Courses: React.FC = () => {
                   </p>
                   <div className="courses-container">
                     {otherCmptCourses.map((course) => (
-                      <div
-                        className={courseChipClass(course.dept, course.number)}
-                        key={courseKey(course.dept, course.number)}
-                        onClick={() =>
-                          handleCourseClick(course.dept, course.number)
-                        }
-                      >
+                      <button
+                      type="button"
+                      className={courseChipClass(course.dept, course.number)}
+                      key={courseKey(course.dept, course.number)}
+                      onClick={() => handleCourseClick(course.dept, course.number)}
+                    >
                         {`${course.dept} ${course.number}`}
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -616,7 +617,9 @@ const Courses: React.FC = () => {
               ) : error || courseListError ? (
                 <div className="sidebar-course course-panel-error">
                   <p className="space-between">
-                    <span>Couldn’t load course</span>
+                    <span>
+                      { error ? "Couldn’t load course" : "Course list unavailable"} 
+                    </span>
                     <button
                       type="button"
                       className="close-sidebar"
@@ -626,7 +629,7 @@ const Courses: React.FC = () => {
                       Close
                     </button>
                   </p>
-                  <p>{error}</p>
+                  <p>{error ?? "Live data is unavailable. The requirement list above is still accurate."}</p>
                 </div>
               ) : (
                 courseShown && (
