@@ -16,7 +16,7 @@ export const HeaderNav: React.FC = () => {
    * Close the menu when the route changes
    */
   useEffect(() => {
-    const close = setMenuOpen(false);
+    const close = () => setMenuOpen(false);
     router.events.on("routeChangeComplete", close);
     return() => router.events.off("routeChangeComplete", close);
   }, [router.events]);
@@ -39,19 +39,6 @@ export const HeaderNav: React.FC = () => {
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  /**
-   * Handle the theme state
-   */
-  useEffect(() => {
-    const fromDom = document.documentElement.dataset.theme;
-    const initial = 
-      fromDom === "light" || fromDom === "dark"
-        ? fromDom
-        : getTheme();
-    setTheme(initial);
-    document.documentElement.dataset.theme = initial;
   }, []);
 
   const onToggleTheme = () => toggleTheme(theme);
