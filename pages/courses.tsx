@@ -587,11 +587,13 @@ const Courses: React.FC = () => {
                   <div className="courses-container">
                     {otherCmptCourses.map((course) => (
                       <button
-                      type="button"
-                      className={courseChipClass(course.dept, course.number)}
-                      key={courseKey(course.dept, course.number)}
-                      onClick={() => handleCourseClick(course.dept, course.number)}
-                    >
+                        type="button"
+                        className={courseChipClass(course.dept, course.number)}
+                        key={courseKey(course.dept, course.number)}
+                        onClick={() =>
+                          handleCourseClick(course.dept, course.number)
+                        }
+                      >
                         {`${course.dept} ${course.number}`}
                       </button>
                     ))}
@@ -619,7 +621,9 @@ const Courses: React.FC = () => {
                 <div className="sidebar-course course-panel-error">
                   <p className="space-between">
                     <span>
-                      { error ? "Couldn’t load course" : "Course list unavailable"} 
+                      {error
+                        ? "Couldn’t load course"
+                        : "Course list unavailable"}
                     </span>
                     <button
                       type="button"
@@ -630,7 +634,10 @@ const Courses: React.FC = () => {
                       Close
                     </button>
                   </p>
-                  <p>{error ?? "Live data is unavailable. The requirement list above is still accurate."}</p>
+                  <p>
+                    {error ??
+                      "Live data is unavailable. The requirement list above is still accurate."}
+                  </p>
                 </div>
               ) : (
                 courseShown && (
