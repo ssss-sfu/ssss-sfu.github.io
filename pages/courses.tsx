@@ -7,7 +7,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 // API endpoint for SFU Courses
 const SFU_COURSES_API_BASE = "https://api.sfucourses.com/v1/rest/outlines";
 
-const NAV_HEIGHT = 61;
+const NAV_HEIGHT = 91;
 
 export interface SFUCourseResponse {
   dept: string;

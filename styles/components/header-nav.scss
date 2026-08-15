@@ -6,28 +6,11 @@
   left: 0;
   right: 0;
   z-index: 20;
-  background: linear-gradient(
-    180deg,
-    var(--colour-neutral-1200) 0%,
-    var(--colour-neutral-1200) 70%,
-    transparent 100%
-  );
   transition: background $transition-speed-fast $easing-cubic-bezier;
 
   &.is-scrolled {
     background: var(--colour-neutral-1100);
   }
-}
-
-// Light mode: same structure as dark mode but slightly softer mid-stop
-html[data-theme="light"] .header-nav:not(.is-scrolled) {
-  background: linear-gradient(
-    180deg,
-    var(--colour-neutral-1200) 0%,
-    var(--colour-neutral-1200) 65%,
-    color-mix(in srgb, var(--colour-neutral-1200) 85%, transparent) 80%,
-    transparent 100%
-  );
 }
 
 .header-nav {
