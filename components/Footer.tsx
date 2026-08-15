@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
             <Image src={OfficeBuildingIcon.src} height={48} width={48} alt="" />
           </div>
           <div className="address icon-right-content">
-            <h2>Office Address</h2>
+            <h3>Office Address</h3>
             <address>
               <a
                 href="https://maps.app.goo.gl/AkVazVCLNbaur4iB7"
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
             <Image src={ContactUsIcon.src} height={48} width={48} alt="" />
           </div>
           <div className="address icon-right-content">
-            <h2>Get in Touch</h2>
+            <h3>Get in Touch</h3>
             <address>
               <a href="mailto:ssss-exec@sfu.ca">ssss-exec@sfu.ca</a>
             </address>
