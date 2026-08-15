@@ -137,6 +137,8 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
           className="description-img"
           src={profile.imgSrc}
           alt={`${profile.name}'s profile image`}
+          loading="lazy"
+          decoding="async"
         ></img>
         <div className="description">
           <div className="description-title">

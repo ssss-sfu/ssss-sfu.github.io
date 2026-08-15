@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Hero, Accordion } from "@components";
-import HeroImage from "@images/landing-page/discover-ssss-main.png";
 import Image from "next/image";
 import academicRepo from "../public/images/get-involved-page/academic-repo.png";
 import merch from "../public/images/get-involved-page/merch.png";
@@ -24,7 +23,7 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
       <Hero
         title="Join the Software Systems Student Society"
         subtitle="Get Involved"
-        backgroundImage={HeroImage.src}
+        backgroundImage="/images/landing-page/discover-ssss-main.png"
       />
       <main className="container">
         <section className="main-content">

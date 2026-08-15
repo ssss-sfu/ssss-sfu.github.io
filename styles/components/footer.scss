@@ -2,7 +2,7 @@
 
 .footer {
   background-color: var(--colour-neutral-1100);
-  background-image: url("../../public/code-snippet.svg");
+  background-image: url("/code-snippet.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
   color: var(--colour-neutral-000);
@@ -78,7 +78,7 @@
 
 // White-filled social SVGs need to invert for light surfaces
 html[data-theme="light"] .footer {
-  background-image: url("../../public/code-snippet-light.svg");
+  background-image: url("/code-snippet-light.svg");
 
   .social-icon {
     filter: brightness(0);

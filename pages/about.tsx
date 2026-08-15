@@ -1,5 +1,4 @@
 import { Hero, PastExecsAccordion, ProfileCard } from "@components";
-import HeroImage from "@images/about-page/about-hero-background.png";
 import execs from "@jsons/execs.json";
 import prevExecs from "@jsons/prev-exec.json";
 import { Profile } from "components/ProfileCard";
@@ -22,7 +21,7 @@ const About: React.FC = () => {
       <Hero
         title="Meet the Software Systems Student Society"
         subtitle="About"
-        backgroundImage={HeroImage.src}
+        backgroundImage="/images/about-page/about-hero-background.png"
       />
       <main className="container">
         <section className="main-content">

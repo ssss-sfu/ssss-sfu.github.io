@@ -1,5 +1,4 @@
 import { Hero, Button, EventsCalendar } from "@components";
-import HeroImage from "@images/landing-page/discover-ssss-events.png";
 
 const EventsPage: React.FC = () => {
   return (
@@ -8,7 +7,7 @@ const EventsPage: React.FC = () => {
         <Hero
           title="Join and meet other SoSy students"
           subtitle="Events"
-          backgroundImage={HeroImage.src}
+          backgroundImage="/images/landing-page/discover-ssss-events.png"
         />
         <article className="container annual-events">
           <header>

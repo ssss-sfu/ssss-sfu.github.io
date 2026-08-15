@@ -1,5 +1,4 @@
 import { Hero, Dropdown } from "@components";
-import HeroImage from "@images/about-page/about-hero-background.png";
 import { useState, useEffect, useRef } from "react";
 import { SidebarCourse } from "components/SidebarCourse";
 import ClipLoader from "react-spinners/ClipLoader";
@@ -537,7 +536,7 @@ const Courses: React.FC = () => {
       <Hero
         title="See the courses available at Software Systems"
         subtitle="Courses"
-        backgroundImage={HeroImage.src}
+        backgroundImage="/images/about-page/about-hero-background.png"
       />
       <main className="container">
         <section className="main-content">

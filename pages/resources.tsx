@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { Dropdown, Hero } from "@components";
-import HeroImage from "@images/resources-page/hero-laptop.jpeg";
 import linkGroups from "@jsons/links.json";
 import faqs from "@jsons/faqs.json";
 
@@ -70,7 +69,7 @@ const ResourcesPage: FC = () => {
       <Hero
         title="Useful links and software"
         subtitle="Resources"
-        backgroundImage={HeroImage.src}
+        backgroundImage="/images/resources-page/hero-laptop.jpeg"
       />
       <main className="container">
         {rows.map((row) =>

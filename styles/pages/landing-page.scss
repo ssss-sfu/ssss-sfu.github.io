@@ -98,7 +98,7 @@
           transparent 0%,
           var(--colour-image-overlay) 100%
         ),
-        url("../../public/images/landing-page/discover-ssss-main.png");
+        url("/images/landing-page/discover-ssss-main.png");
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -124,7 +124,7 @@
             transparent 0%,
             var(--colour-image-overlay) 100%
           ),
-          url("../../public/images/landing-page/discover-ssss-events.png");
+          url("/images/landing-page/discover-ssss-events.png");
         background-size: cover;
         background-position: center;
       }
@@ -135,7 +135,7 @@
             transparent 0%,
             var(--colour-image-overlay) 100%
           ),
-          url("../../public/images/landing-page/discover-ssss-courses.png");
+          url("/images/landing-page/discover-ssss-courses.png");
         background-size: cover;
         background-position: center;
       }
@@ -146,7 +146,7 @@
             transparent 0%,
             var(--colour-image-overlay) 100%
           ),
-          url("../../public/images/landing-page/discover-ssss-about-us.png");
+          url("/images/landing-page/discover-ssss-about-us.png");
         background-size: cover;
         background-position: center;
       }
@@ -215,15 +215,15 @@
         }
 
         .discover-ssss__link-item:nth-child(1)::before {
-          background-image: url("../../public/images/landing-page/discover-ssss-events.png");
+          background-image: url("/images/landing-page/discover-ssss-events.png");
         }
 
         .discover-ssss__link-item:nth-child(2)::before {
-          background-image: url("../../public/images/landing-page/discover-ssss-courses.png");
+          background-image: url("/images/landing-page/discover-ssss-courses.png");
         }
 
         .discover-ssss__link-item:nth-child(3)::before {
-          background-image: url("../../public/images/landing-page/discover-ssss-about-us.png");
+          background-image: url("/images/landing-page/discover-ssss-about-us.png");
         }
       }
     }
@@ -245,10 +245,10 @@
         aspect-ratio: 322 / 103;
         margin-bottom: 2.5rem;
         background-color: var(--colour-neutral-000);
-        mask: url("../../public/images/landing-page/ssss-on-discord.svg")
-          center / contain no-repeat;
-        -webkit-mask: url("../../public/images/landing-page/ssss-on-discord.svg")
-          center / contain no-repeat;
+        mask: url("/images/landing-page/ssss-on-discord.svg") center / contain
+          no-repeat;
+        -webkit-mask: url("/images/landing-page/ssss-on-discord.svg") center /
+          contain no-repeat;
       }
 
       .status-tags {
@@ -303,7 +303,7 @@
             color-mix(in srgb, var(--colour-image-overlay) 16%, transparent)
               104.54%
           ),
-          url("../../public/images/landing-page/discord-screenshot.png");
+          url("/images/landing-page/discord-screenshot.png");
         background-position: center left;
 
         .discord-mark {
