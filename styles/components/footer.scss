@@ -2,9 +2,14 @@
 
 .footer {
   background-color: var(--colour-neutral-1100);
-  background-image: url("../../public/code-snippet.svg");
+  background-image: url("/code-snippet.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
+  color: var(--colour-neutral-000);
+
+  a {
+    color: inherit;
+  }
 
   .container {
     display: flex;
@@ -21,6 +26,8 @@
 
     .footer-socials {
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 1rem;
     }
 
@@ -29,8 +36,11 @@
       flex-direction: column;
       gap: 0.5rem;
 
-      h4 {
+      h2 {
         margin-bottom: 0.25rem;
+        color: var(--colour-neutral-000);
+        font-size: 1rem;
+        font-weight: 700;
       }
 
       address {
@@ -39,6 +49,10 @@
         a {
           text-decoration: none;
           color: var(--colour-neutral-000);
+
+          &:hover {
+            opacity: 0.75;
+          }
         }
       }
     }
@@ -46,17 +60,27 @@
     @include variables.viewport(desktop) {
       flex-direction: row;
       justify-content: space-between;
+      align-items: flex-start;
       padding-top: 2.5rem;
-      padding-bottom: 4rem;
+      padding-bottom: 3rem;
 
       .icon-container {
         flex-direction: row;
         gap: 1.25rem;
 
-        h4 {
+        h2 {
           margin-bottom: 1rem;
         }
       }
     }
+  }
+}
+
+// White-filled social SVGs need to invert for light surfaces
+html[data-theme="light"] .footer {
+  background-image: url("/code-snippet-light.svg");
+
+  .social-icon {
+    filter: brightness(0);
   }
 }

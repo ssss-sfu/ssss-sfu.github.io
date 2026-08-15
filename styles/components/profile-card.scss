@@ -11,13 +11,16 @@
   gap: 0.5em;
   max-width: fit-content;
 
+  .description-main {
+    position: relative;
+  }
+
   .description-img {
     width: 18em;
     height: 25.5em;
     border-radius: 1em;
     object-fit: cover;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth movement */
+    display: block;
   }
 
   .description {
@@ -37,36 +40,36 @@
       .profile-role {
         color: var(--colour-sosy-green-500);
       }
-
-      .profile-name {
-        font-size: 1.75em;
-        font-weight: bold;
-      }
-
-      .profile-pronoun {
-        color: var(--colour-neutral-600);
-      }
     }
 
-    .description-socials {
+    .profile-name {
+      font-size: 1.75em;
+      font-weight: bold;
+    }
+
+    .profile-pronoun {
+      color: var(--colour-neutral-600);
+    }
+  }
+
+  .description-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+
+    .description-logo {
       display: flex;
-      flex-direction: column;
-      gap: 0.75em;
+      align-items: center;
+      gap: 0.5em;
+      font-weight: 450;
 
-      .description-logo {
-        display: flex;
-        align-items: center;
-        gap: 0.5em;
-        font-weight: 450;
+      .description-social-link {
+        color: inherit;
+        text-decoration: none;
+      }
 
-        .description-social-link {
-          color: var(--colour-neutral-000);
-          text-decoration: none;
-        }
-
-        .description-social-link:hover {
-          color: var(--colour-sosy-green-500);
-        }
+      .description-social-link:hover {
+        color: var(--colour-sosy-green-500);
       }
     }
   }
@@ -85,10 +88,28 @@
   }
 }
 
+// White-filled social SVGs need to invert on light page surfaces
+html[data-theme="light"] .profile-card .description-logo img {
+  filter: brightness(0);
+}
+
 @media screen and (min-width: 769px) {
   .profile-card:hover {
-    & .description-img {
-      opacity: 0.3;
+    & .description-main::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18em;
+      height: 25.5em;
+      border-radius: 1em;
+      background: color-mix(
+        in srgb,
+        var(--colour-image-overlay) 72%,
+        transparent
+      );
+      pointer-events: none;
+      z-index: 0;
     }
 
     & .description-secondary {
@@ -97,10 +118,23 @@
       width: 16.5em;
       max-height: 23em;
       gap: 1em;
+      padding: 1em 0.25em;
       transform: translateY(-2em);
       transition: transform 0.3s ease-in-out;
       z-index: 1;
+
+      // * { color } resets inheritance — set explicitly for overlay content
+      .description-body,
+      .description-logo,
+      .description-social-link {
+        color: var(--colour-on-image);
+      }
     }
+  }
+
+  // Overlay text uses --colour-on-image (dark in light mode) — keep icons black
+  html[data-theme="light"] .profile-card:hover .description-logo img {
+    filter: brightness(0);
   }
 }
 

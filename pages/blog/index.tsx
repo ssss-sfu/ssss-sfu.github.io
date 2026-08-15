@@ -2,8 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { readToken } from "@lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { getPosts, type Post } from "@lib/sanity.queries";
-import { Helmet, PostCard } from "@components";
-import { useRouter } from "next/router";
+import { PostCard } from "@components";
 
 export const getStaticProps: GetStaticProps<{
   posts: Post[];
@@ -19,7 +18,6 @@ export const getStaticProps: GetStaticProps<{
   return {
     props: {
       draftMode,
-      token: draftMode ? readToken : "",
       posts,
     },
   };
@@ -28,12 +26,10 @@ export const getStaticProps: GetStaticProps<{
 export default function BlogPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  const router = useRouter();
   const posts = props.posts;
 
   return (
     <div className="blog-page">
-      <Helmet pageTitle={router.pathname} />
       <main>
         <header className="container hero">
           <p>Blog</p>
@@ -42,7 +38,7 @@ export default function BlogPage(
         <section className="container">
           {posts.length ? (
             <div>
-              <h3 className="category-title">Featured</h3>
+              <h2 className="category-title">Featured</h2>
               <div className="posts-list featured">
                 {posts.map((post) => (
                   <PostCard key={post._id} post={post} />

@@ -24,6 +24,9 @@
 @use "./components/past-exec-row.scss";
 
 :root {
+  color-scheme: dark;
+
+  // SOSY Green scale
   --colour-sosy-green-900: #07221c;
   --colour-sosy-green-800: #0e4438;
   --colour-sosy-green-700: #166553;
@@ -34,19 +37,11 @@
   --colour-sosy-green-200: #a7ddd1;
   --colour-sosy-green-100: #d3eee8;
 
-  --colour-cyber-900: #332d00;
-  --colour-cyber-800: #665900;
-  --colour-cyber-700: #998600;
-  --colour-cyber-600: #ccb200;
-  --colour-cyber-500: #ffdf00;
-  --colour-cyber-400: #ffe533;
-  --colour-cyber-300: #fff18c;
-  --colour-cyber-200: #fff299;
-  --colour-cyber-100: #fff9cc;
-
+  // Two surfaces (page + raised) — mid greys stay for text/borders
   --colour-neutral-1200: #141515;
+  --colour-neutral-1200-rgb: 20, 21, 21;
   --colour-neutral-1100: #191a1a;
-  --colour-neutral-1000: #323434;
+  --colour-neutral-1000: #1c1d1d;
   --colour-neutral-900: #4b4e4d;
   --colour-neutral-800: #646867;
   --colour-neutral-700: #7d8281;
@@ -57,6 +52,42 @@
   --colour-neutral-200: #eff0f0;
   --colour-neutral-100: #f7f8f7;
   --colour-neutral-000: #fff;
+
+  // Photo panels
+  --colour-image-overlay: #141515;
+  --colour-on-image: #fff;
+
+  // Hero mask: opaque only behind the nav
+  --colour-hero-mask-top: 0.85;
+  --colour-hero-mask-mid: 0.75;
+  --colour-hero-mask-end: 0.65;
+  --colour-hero-text: var(--colour-on-image);
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+
+  --colour-neutral-1200: #faf9f5;
+  --colour-neutral-1200-rgb: 250, 249, 245;
+  --colour-neutral-1100: #e8e6dc;
+  --colour-neutral-1000: #e8e6dc;
+  --colour-neutral-900: #cacecd;
+  --colour-neutral-800: #b0b5b4;
+  --colour-neutral-700: #979b9a;
+  --colour-neutral-600: #7d8281;
+  --colour-neutral-500: #646867;
+  --colour-neutral-400: #4b4e4d;
+  --colour-neutral-300: #323434;
+  --colour-neutral-200: #191a1a;
+  --colour-neutral-100: #141515;
+  --colour-neutral-000: #141515;
+
+  --colour-image-overlay: #faf9f5;
+  --colour-on-image: #141515;
+
+  --colour-hero-mask-top: 0.75;
+  --colour-hero-mask-mid: 0.25;
+  --colour-hero-mask-end: 0.55;
 }
 
 *,

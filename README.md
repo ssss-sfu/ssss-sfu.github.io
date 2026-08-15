@@ -64,7 +64,23 @@ View the live site here: https://sfussss.org/
    bunx husky
    ```
 
-   d. Create a new branch from Github Issue UI
+   d. Set up environment variables
+
+   Copy the example file and fill in the values:
+
+   | Variable                              | Effect                           |
+   | ------------------------------------- | -------------------------------- |
+   | `NEXT_PUBLIC_SANITY_PROJECT_ID`       | Blog posts (Sanity CMS)          |
+   | `NEXT_PUBLIC_SANITY_DATASET`          | Blog posts (Sanity CMS)          |
+   | `NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY` | The events calendar on `/events` |
+   | `SANITY_API_READ_TOKEN`               | Optional, Server-only            |
+   - Ask the website committee lead for the values.
+
+   - The site runs fine without them, but you just get an empty blog and an empty events calendar. If you are not touching either of those, you can skip this step.
+
+   - Quick Reminder: Anything prefixed with `NEXT_PUBLIC_` is compiled into the JavaScript that ships to browsers, so never put a secret behind that prefix.
+
+   e. Create a new branch from Github Issue UI
 
    ![image](https://github.com/ssss-sfu/ssss-sfu.github.io/assets/70176191/db541fce-a664-4c5a-832a-6158dbd7fabe)
 
@@ -85,13 +101,13 @@ View the live site here: https://sfussss.org/
    git checkout kiaanc/read-me-update
    ```
 
-   e. Run the server locally
+   f. Run the server locally
 
    ```
    bun run dev
    ```
 
-   f. View the project in your browser
+   g. View the project in your browser
 
    ```
    localhost:3000
@@ -101,26 +117,57 @@ View the live site here: https://sfussss.org/
 5. Commit and push your changes
 6. Create a pull request with the following format:
 
-   ```
-   Target Branch: master
+```
+ Target Branch: master
 
-   Title: Clear and descriptive title relevant to the issue
+ Title: Clear and descriptive title relevant to the issue
 
-   Description: Any relevant information about the changes made
+ Description: Any relevant information about the changes made
 
-   Reviewers:
-   - Highfire1 (Anderson)
-   ```
+ Reviewers:
+ - smehars (Mehar)
+```
 
 7. Wait for one of the reviewers to take a look and make changes or merge accordingly.
 
 Thanks for contributing!
 
+## More commands:
+
+| Command                | Effect                                                                                                     |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `bun run dev`          | Starts the dev server on `localhost:3000`                                                                  |
+| `bun run build`        | Creates a Production build. Regenerates `public/sitemap.xml` first, then exports the static site to `out/` |
+| `bun run lint`         | ESLint                                                                                                     |
+| `bun run typecheck`    | TypeScript, no emit                                                                                        |
+| `bun run format:write` | Format everything with Prettier                                                                            |
+| `bun run format:check` | Check formatting without changing files                                                                    |
+
+- CI runs `format:check`, `lint`, `typecheck`, and `build` on every pull request. All four have to pass before a PR can merge.
+
+### Adding images
+
+`public/` is easy to bloat. Make sure to keep it small:
+
+1. Place the file into the right folder: under `public/images/`.
+2. Optimise the image from the repo root using:
+
+```
+ `node scripts/optimize-images.mjs`
+```
+
+- This resizes and re-encodes anything over 250KB in place and skips a file if the result would be larger.
+- It cannot tell an original from a file it has already processed, so a second pass re-compresses everything and compounds the artifacts. Currently: If you need to redo an image, recover the original from git history first.
+- Rough targets: exec headshots ~70KB, full-width hero images ~200–800KB.
+
+- TODO: add image path as an arugment to only optimize a specific image.
+
 ## Past Developers
 
 |     | Version | Release Date      | Contributors   |
 | --- | ------- | ----------------- | -------------- |
-| ✅  | v5.0    | March 20, 2026    | Anderson Tseng |
+| ✅  | v6.0    | August 15, 2026   | Mehar Saini    |
+|     | v5.0    | March 20, 2026    | Anderson Tseng |
 |     | v4.0    | September 9, 2023 | Brian Rahadi   |
 |     | v3.0    | August 17, 2021   | Kiaan Castillo |
 |     | v2.0    | November 17, 2020 | Andy Wang      |

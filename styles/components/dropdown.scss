@@ -1,8 +1,8 @@
 @use "../variables.scss";
 
-.faq-item {
+.dropdown-item {
   position: relative;
-  background: var(--colour-neutral-1100) 100%;
+  background: var(--colour-neutral-1100);
   margin: 1.5rem 0;
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -22,34 +22,48 @@
     font-weight: 700;
     transition: color 0.25s;
 
+    h2 {
+      margin: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
     img {
+      // SVG is white fill — keep white in dark mode
       filter: saturate(0) brightness(2);
-      transition: all 0.25s;
+      transition:
+        filter 0.25s,
+        transform 0.25s;
     }
   }
 
   .content {
     font-size: 1.1rem;
-    overflow: hidden;
-    max-height: 0vh;
-    transition: max-height 0.25s;
-    margin-top: 0.5rem;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.25s ease;
+    margin-top: 0;
+
+    > .content-inner {
+      overflow: hidden;
+      min-height: 0;
+    }
   }
 
   input:checked {
-    & ~ label {
-      color: var(--colour-sosy-green-500); // tbd
-    }
-
     & ~ label img {
-      // https://codepen.io/sosuke/pen/Pjoqqp to #24e98b (--color-sosy-green-500)
-      filter: invert(50%) sepia(84%) saturate(391%) hue-rotate(116deg)
-        brightness(93%) contrast(85%);
       transform: rotate(-180deg);
     }
 
     & ~ .content {
-      max-height: 100vh;
+      grid-template-rows: 1fr;
+      margin-top: 0.5rem;
     }
   }
+}
+
+// Light mode: black chevron
+html[data-theme="light"] .dropdown-item label img {
+  filter: brightness(0);
 }

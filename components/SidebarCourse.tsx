@@ -1,10 +1,9 @@
 import { SFUCourseResponse } from "pages/courses";
-import { Dispatch, MouseEventHandler, SetStateAction } from "react";
-import { Course, SectionsPerTerm } from "types/course";
+import { MouseEventHandler } from "react";
 
 interface SidebarCourseProps {
   course: SFUCourseResponse;
-  closeCourseShown: MouseEventHandler<HTMLSpanElement>;
+  closeCourseShown: MouseEventHandler<HTMLButtonElement>;
 }
 
 interface OfferingPerTerm {
@@ -12,6 +11,18 @@ interface OfferingPerTerm {
     instructors: string[];
     term: string;
   };
+}
+
+function isWithinTwoYears(term: string): boolean {
+  const [semester, yearStr] = term.split(" ");
+  // Approximate term end: Spring Apr, Summer Aug, Fall Dec
+  const month = { Spring: 3, Summer: 7, Fall: 11 }[semester] ?? 0;
+  const offeringDate = new Date(Number(yearStr), month, 1);
+
+  const cutoff = new Date();
+  cutoff.setFullYear(cutoff.getFullYear() - 2);
+
+  return offeringDate >= cutoff;
 }
 
 export const SidebarCourse: React.FC<SidebarCourseProps> = ({
@@ -34,9 +45,14 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
           >
             {course.dept} {course.number} ({course.units})
           </a>
-          <span className="close-sidebar" onClick={closeCourseShown}>
+          <button
+            type="button"
+            className="close-sidebar"
+            onClick={closeCourseShown}
+            aria-label="Close course details"
+          >
             Close
-          </span>
+          </button>
         </p>
         <h2>{course.title}</h2>
         <p>{course.description}</p>
@@ -50,19 +66,21 @@ export const SidebarCourse: React.FC<SidebarCourseProps> = ({
       <div className="offerings-container">
         <ul>
           {course.offerings &&
-            course.offerings.map((offering) => {
-              const [semester, year] = offering.term.split(" ");
-              const semesterLower = semester.toLowerCase();
-              const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
-              return (
-                <li className="offering" key={offering.term}>
-                  <a href={calendarUrl} target="_blank" rel="noreferrer">
-                    {offering.term}
-                  </a>
-                  &nbsp;-&nbsp;{offering.instructors.join(", ") || "N/A"}
-                </li>
-              );
-            })}
+            course.offerings
+              .filter((offering) => isWithinTwoYears(offering.term))
+              .map((offering) => {
+                const [semester, year] = offering.term.split(" ");
+                const semesterLower = semester.toLowerCase();
+                const calendarUrl = `https://www.sfu.ca/students/calendar/${year}/${semesterLower}/courses/${course.dept.toLowerCase()}/${course.number.toLowerCase()}.html`;
+                return (
+                  <li className="offering" key={offering.term}>
+                    <a href={calendarUrl} target="_blank" rel="noreferrer">
+                      {offering.term}
+                    </a>
+                    &nbsp;-&nbsp;{offering.instructors.join(", ") || "N/A"}
+                  </li>
+                );
+              })}
         </ul>
       </div>
     </div>

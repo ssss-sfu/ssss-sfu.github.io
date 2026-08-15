@@ -12,14 +12,11 @@ export const Hero: React.FC<HeroProps> = ({
   return (
     <header
       className="container hero"
-      style={{
-        backgroundImage: `linear-gradient(
-    180deg,
-    #141515 0%,
-    rgba(20, 21, 21, 0.75) 100%
-  ),
-  url("${backgroundImage}")`,
-      }}
+      style={
+        {
+          "--hero-image": `url("${backgroundImage}")`,
+        } as React.CSSProperties
+      }
     >
       <p>{subtitle}</p>
       <h1>{title}</h1>

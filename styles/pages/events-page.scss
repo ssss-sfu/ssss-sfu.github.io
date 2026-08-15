@@ -29,13 +29,23 @@
       height: 16rem;
       border-radius: variables.$border-radius;
       padding: 1rem;
+      color: var(--colour-on-image);
       background:
-        linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
-        url("../../public/images/landing-page/discover-ssss-main.png");
+        linear-gradient(
+          180deg,
+          transparent 0%,
+          var(--colour-image-overlay) 100%
+        ),
+        url("/images/landing-page/discover-ssss-main.png");
       background-size: cover;
       background-position: center;
       cursor: pointer;
       text-decoration: none;
+
+      h3,
+      p {
+        color: var(--colour-on-image);
+      }
     }
 
     .annual-events__link-items {
@@ -43,29 +53,41 @@
 
       .annual-events__link-item:nth-child(1) {
         background:
-          linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
-          url("../../public/images/events-page/annual-events-frosh.jpeg");
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            var(--colour-image-overlay) 100%
+          ),
+          url("/images/events-page/annual-events-frosh.jpeg");
         background-size: cover;
         background-position: center;
       }
       .annual-events__link-item:nth-child(2) {
         background:
-          linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
-          url("../../public/images/landing-page/discover-ssss-about-us.png");
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            var(--colour-image-overlay) 100%
+          ),
+          url("/images/events-page/annual-events-systemshacks.png");
         background-size: cover;
         background-position: center;
       }
       .annual-events__link-item:nth-child(3) {
         background:
-          linear-gradient(180deg, rgba(20, 21, 21, 0) 0%, #141515 100%),
-          url("../../public/images/landing-page/discover-ssss-main.png");
+          linear-gradient(
+            180deg,
+            transparent 0%,
+            var(--colour-image-overlay) 100%
+          ),
+          url("/images/landing-page/discover-ssss-main.png");
         background-size: cover;
         background-position: center;
       }
     }
 
     .annual-events__subscribe-button {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       display: flex;
       justify-content: center;
 
@@ -99,20 +121,20 @@
         }
 
         .annual-events__link-item:nth-child(1)::before {
-          background-image: url("../../public/images/events-page/annual-events-frosh.jpeg");
+          background-image: url("/images/events-page/annual-events-frosh.jpeg");
         }
 
         .annual-events__link-item:nth-child(2)::before {
-          background-image: url("../../public/images/landing-page/discover-ssss-about-us.png");
+          background-image: url("/images/events-page/annual-events-systemshacks.png");
         }
 
         .annual-events__link-item:nth-child(3)::before {
-          background-image: url("../../public/images/landing-page/discover-ssss-main.png");
+          background-image: url("/images/landing-page/discover-ssss-main.png");
         }
       }
 
       .annual-events__subscribe-button {
-        justify-content: flex-end;
+        justify-content: center;
       }
     }
   }

@@ -1,5 +1,4 @@
 import { Hero, Button, EventsCalendar } from "@components";
-import HeroImage from "@images/landing-page/discover-ssss-get-involved.png";
 
 const EventsPage: React.FC = () => {
   return (
@@ -8,7 +7,7 @@ const EventsPage: React.FC = () => {
         <Hero
           title="Join and meet other SoSy students"
           subtitle="Events"
-          backgroundImage={HeroImage.src}
+          backgroundImage="/images/landing-page/discover-ssss-events.png"
         />
         <article className="container annual-events">
           <header>
@@ -43,6 +42,9 @@ const EventsPage: React.FC = () => {
               <p>Job fair in collaboration with the MSESS and SEESS</p>
             </a>
           </section>
+          <section className="annual-events__events-calendar">
+            <EventsCalendar />
+          </section>
           <div className="annual-events__subscribe-button">
             <a
               href="https://calendar.google.com/calendar/u/0?cid=ajdxZmNuZ2Q5Y3JiaGVsaWI2dGdkaWhpM2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
@@ -52,9 +54,6 @@ const EventsPage: React.FC = () => {
               <Button label="Subscribe to Events Calendar" type="secondary" />
             </a>
           </div>
-          <section className="annual-events__events-calendar">
-            <EventsCalendar />
-          </section>
         </article>
       </main>
     </div>

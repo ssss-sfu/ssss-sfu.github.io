@@ -1,20 +1,37 @@
+import { ReactNode } from "react";
 import ChevronDownIcon from "@icons/chevron-down.svg";
 
 interface DropdownProps {
   id: string;
-  title: string;
-  content: string;
+  title: ReactNode;
+  content?: ReactNode;
+  children?: ReactNode;
+  defaultOpen?: boolean;
 }
 
-export const Dropdown: React.FC<DropdownProps> = ({ id, title, content }) => {
+export const Dropdown: React.FC<DropdownProps> = ({
+  id,
+  title,
+  content,
+  children,
+  defaultOpen = false,
+}) => {
+  const body = children ?? content;
+
   return (
-    <div className="faq-item" id={`faq-item-${id}`} key={id}>
-      <input type="checkbox" id={`faq-${id}`} />
-      <label htmlFor={`faq-${id}`}>
+    <div className="dropdown-item" id={`dropdown-item-${id}`}>
+      <input
+        type="checkbox"
+        id={`dropdown-${id}`}
+        defaultChecked={defaultOpen}
+      />
+      <label htmlFor={`dropdown-${id}`}>
         {title}
-        <img src={ChevronDownIcon.src} alt="Chevron" />
+        <img src={ChevronDownIcon.src} alt="" aria-hidden="true" />
       </label>
-      <p className="content">{content}</p>
+      <div className="content">
+        <div className="content-inner">{body}</div>
+      </div>
     </div>
   );
 };

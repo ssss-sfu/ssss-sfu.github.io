@@ -68,7 +68,8 @@
   .post {
     position: relative;
     padding: 16px;
-    background-color: rgb(10, 10, 10);
+    background-color: var(--colour-image-overlay);
+    color: var(--colour-on-image);
     flex: 1 1 0px;
 
     .thumbnail {
@@ -86,11 +87,16 @@
       }
       .overlay {
         border-radius: 12px;
-        background-color: rgba(10, 10, 10, 0.65);
+        background-color: color-mix(
+          in srgb,
+          var(--colour-image-overlay) 65%,
+          transparent
+        );
       }
     }
     .text {
       z-index: 1;
+      color: var(--colour-on-image);
     }
   }
 }
@@ -102,11 +108,11 @@
       .overlay {
         background: linear-gradient(
           40deg,
-          rgba(10, 10, 10, 1) 43%,
-          rgba(10, 9, 0, 0.94) 53%,
-          rgba(10, 9, 0, 0.78) 67%,
-          rgba(10, 9, 0, 0.5982847003154574) 74%,
-          rgba(10, 9, 0, 0) 100%
+          var(--colour-image-overlay) 43%,
+          color-mix(in srgb, var(--colour-image-overlay) 94%, transparent) 53%,
+          color-mix(in srgb, var(--colour-image-overlay) 78%, transparent) 67%,
+          color-mix(in srgb, var(--colour-image-overlay) 60%, transparent) 74%,
+          transparent 100%
         );
       }
       @include variables.viewport(tablet-desktop) {

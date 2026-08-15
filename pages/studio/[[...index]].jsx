@@ -1,4 +1,5 @@
 import { NextStudio } from "next-sanity/studio";
+import { Helmet } from "@components";
 
 export default function StudioPage() {
   const hasSanityConfig =
@@ -6,9 +7,19 @@ export default function StudioPage() {
     Boolean(process.env.NEXT_PUBLIC_SANITY_DATASET);
 
   if (!hasSanityConfig) {
-    return <div>Sanity Studio is not configured.</div>;
+    return (
+      <>
+        <Helmet title="Studio | SSSS" path="/studio" noIndex={true} />
+        <div>Sanity Studio is not configured.</div>
+      </>
+    );
   }
 
   const config = require("../../sanity.config").default;
-  return <NextStudio config={config} />;
+  return (
+    <>
+      <Helmet title="Studio | SSSS" path="/studio" noIndex={true} />
+      <NextStudio config={config} />
+    </>
+  );
 }

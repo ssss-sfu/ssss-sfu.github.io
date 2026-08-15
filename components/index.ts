@@ -13,3 +13,4 @@ export { PastExecsAccordion } from "./PastExecsAccordion";
 export { SocialIcon } from "./SocialIcon";
 export { PostCard } from "./PostCard";
 export { SidebarCourse } from "./SidebarCourse";
+export { JsonLd } from "./JsonLd";

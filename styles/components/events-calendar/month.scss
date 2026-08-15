@@ -60,7 +60,7 @@
 }
 
 .rbc-month-row {
-  background-color: #191a1a;
+  background-color: var(--colour-neutral-1100);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -71,7 +71,7 @@
   height: 100%; // ie-fix
 
   & + & {
-    border-top: 0.5rem solid #141515;
+    border-top: 0.5rem solid var(--colour-neutral-1200);
   }
 }
 
@@ -107,12 +107,12 @@
   flex: 1 0 0%;
 
   & + & {
-    border-left: 0.5rem solid #141515;
+    border-left: 0.5rem solid var(--colour-neutral-1200);
   }
 
   .rbc-rtl & + & {
     border-left-width: 0;
-    border-right: 0.5rem solid #141515;
+    border-right: 0.5rem solid var(--colour-neutral-1200);
   }
 }
 

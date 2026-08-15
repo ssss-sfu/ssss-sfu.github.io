@@ -1,18 +1,38 @@
 [
   {
-    "title": "What is Software Systems?",
-    "content":
-      "Software Systems (SoSy) is a program within the School of Computing Science, that offers courses at both the Surrey and Burnaby campuses. By completing the program, students earn the degree of BSc Software Systems. SoSy is an applied area of computer science that focuses on teaching the skills to develop high-quality software."
+    "title": 
+      "What is Software Systems?",
+    "content": 
+      "Software Systems (SoSy) is a program within the School of Computing Science that offers courses at both the Surrey and Burnaby campuses. By completing the program, students earn a Bachelor of Science (BSc) with a Software Systems designation. SoSy is an applied area of computer science focused on teaching the skills to develop high-quality software."
   },
   {
-    "title":
-      "What is the difference between Computer Science and Software Systems?",
-    "content":
-      "SoSy focuses more on applied, practical programming, while Computing Science focuses more on math and the theory of programming. Computing Science requires more math- and theory-heavy courses than SoSy. Another thing to note here is the structure of the two programs; Computing Science allows for more of a specialization in different areas if you plan your courses correctly, while SoSy is more structured, and doesn’t allow for as much freedom."
+    "title": 
+      "What is the difference between Computing Science and Software Systems?",
+    "content": 
+      "SoSy focuses more on applied, practical programming, while Computing Science focuses more on math and the theory of programming. Computing Science requires more math- and theory-heavy courses than SoSy. Computing Science also allows more specialization if you plan your courses carefully, while SoSy is more structured and offers less elective freedom. SoSy is smaller, often involves more group-project work, and still falls under the School of Computing Science — SoSy students are Computing Science students with added applied programming experience."
   },
   {
-    "title": "How do I get on co-op?",
-    "content":
-      "Students need at least a 2.50 CGPA and 30 credits before applying. New students are required to apply at least 2 terms before the semester they intend to do their first co-op work term. More info about the co-op program is provided on the link above"
+    "title": 
+      "Is the program based entirely in Surrey?",
+    "content": 
+      "SoSy is based at SFU’s Surrey campus, and most of first year (and much of second year) can be completed there. Upper-division courses may still involve Burnaby depending on scheduling, but recent program and scheduling changes are aimed at letting students complete most of the degree at Surrey. Electives outside the core curriculum can also take you to other campuses."
+  },
+  {
+    "title": 
+      "What degree do I graduate with?",
+    "content": 
+      "You graduate with a Bachelor of Science (BSc), the same credential type as Computing Science, with a Software Systems major designation."
+  },
+  {
+    "title": 
+      "Is first year hard? How should I prepare?",
+    "content": 
+      "Professors teach from the ground up — many students start with little or no programming experience. First-year computing courses are taught in C++, and help is available from instructors, labs, and peers. Students often find math harder than coding early on, especially calculus and discrete math (MACM 101 and MACM 201). Brushing up on calculus and discrete math before term starts is one of the most useful ways to prepare."
+  },
+  {
+    "title": 
+      "How do I get on co-op?",
+    "content": 
+      "Students need at least a 2.50 CGPA and 30 credits before applying. New students must apply at least two terms before the semester they intend to do their first co-op work term. See the Co-op links in the Resources section above for prospective co-op details."
   }
 ]

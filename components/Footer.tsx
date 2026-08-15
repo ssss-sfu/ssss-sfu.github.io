@@ -11,22 +11,17 @@ import ContactUsIcon from "@icons/contact-us.svg";
 
 export const Footer: React.FC = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="container">
-        <Link href="/">
+        <Link href="/" aria-label="Software Systems Student Society home">
           <Logo />
         </Link>
         <div className="office-address icon-container">
           <div className="gray-backdrop left-icon">
-            <Image
-              src={OfficeBuildingIcon.src}
-              height={48}
-              width={48}
-              alt="Office Building Icon"
-            />
+            <Image src={OfficeBuildingIcon.src} height={48} width={48} alt="" />
           </div>
           <div className="address icon-right-content">
-            <h4>Office Address</h4>
+            <h3>Office Address</h3>
             <address>
               <a
                 href="https://maps.app.goo.gl/AkVazVCLNbaur4iB7"
@@ -45,49 +40,44 @@ export const Footer: React.FC = () => {
 
         <div className="get-in-touch icon-container">
           <div className="gray-backdrop left-icon">
-            <Image
-              src={ContactUsIcon.src}
-              height={48}
-              width={48}
-              alt="Contact Us Icon"
-            />
+            <Image src={ContactUsIcon.src} height={48} width={48} alt="" />
           </div>
           <div className="address icon-right-content">
-            <h4>Get in Touch</h4>
+            <h3>Get in Touch</h3>
             <address>
               <a href="mailto:ssss-exec@sfu.ca">ssss-exec@sfu.ca</a>
             </address>
           </div>
         </div>
 
-        <div className="footer-socials icon-contianer">
+        <div className="footer-socials">
           <SocialIcon
             href="https://www.facebook.com/ssss.sfu"
             src={FacebookIcon.src}
-            alt="Facebook icon"
+            label="SSSS on Facebook"
           />
           <SocialIcon
             href="https://www.linkedin.com/company/ssss-sfu/"
             src={LinkedInIcon.src}
-            alt="LinkedIn icon"
+            label="SSSS on LinkedIn"
           />
           <SocialIcon
             href="https://www.instagram.com/ssss.sfu/"
             src={InstagramIcon.src}
-            alt="Instagram icon"
+            label="SSSS on Instagram"
           />
           <SocialIcon
             href="https://discord.com/invite/whdfmJbVF7"
             src={DiscordIcon.src}
-            alt="Discord icon"
+            label="SSSS on Discord"
           />
           <SocialIcon
             href="https://github.com/ssss-sfu"
             src={GithubIcon.src}
-            alt="Discord icon"
+            label="SSSS on GitHub"
           />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };

@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { Button } from "@components";
 import HappySeb from "@images/seb/happy-seb-head.svg";
-import SSSSOnDiscord from "@images/landing-page/ssss-on-discord.svg";
 import Link from "next/link";
 
 interface LandingPageProps {}
@@ -18,11 +17,10 @@ const LandingPage: FC<LandingPageProps> = () => {
         <article className="container discover-ssss">
           <header>
             <h2>Discover the SSSS</h2>
-            <Button label="Learn more" type="secondary" />
           </header>
           <a
             className="discover-ssss__main-link-item"
-            href="https://www.sfu.ca/computing/prospective-students/undergraduate-students/programs/degree-programs/softwaresystems.html"
+            href="https://www.sfu.ca/fas/study/future-undergraduates/programs/major/software-systems-bachelor-science.html"
             rel="noreferrer"
             target="_blank"
           >
@@ -35,9 +33,9 @@ const LandingPage: FC<LandingPageProps> = () => {
               <h3>Events Calendar</h3>
               <p>Events</p>
             </Link>
-            <Link href="/get-involved" className="discover-ssss__link-item">
-              <h3>Committees</h3>
-              <p>Get Involved</p>
+            <Link href="/courses" className="discover-ssss__link-item">
+              <h3>Course Explorer</h3>
+              <p>Courses</p>
             </Link>
             <Link href="/about" className="discover-ssss__link-item">
               <h3>Meet the Exec Team</h3>
@@ -47,7 +45,11 @@ const LandingPage: FC<LandingPageProps> = () => {
         </article>
         <article className="container discord-banner">
           <div className="banner">
-            <img src={SSSSOnDiscord.src} alt="SSSS on Discord" />
+            <div
+              className="discord-mark"
+              role="img"
+              aria-label="SSSS on Discord"
+            />
             <h2>We’re on Discord!</h2>
             <div className="status-tags">
               <div className="status-tag">Join other SoSy Students</div>

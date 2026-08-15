@@ -1,19 +1,32 @@
-@use "../variables.scss";
+@use "../variables.scss" as *;
 
 .hero.container {
   position: relative;
   max-width: unset;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: clamp(24rem, 42vh, 32rem);
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-top)) 0,
+      rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-top)) 6.875rem,
+      rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-mid)) 45%,
+      rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-end)) 100%
+    ),
+    var(--hero-image, none);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 10rem;
-  overflow: hidden;
-  padding-bottom: 6rem;
 
   h1,
   p {
-    color: var(--colour-neutral-000);
+    color: var(--colour-hero-text);
   }
 
   p {

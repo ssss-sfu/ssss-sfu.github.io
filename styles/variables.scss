@@ -12,7 +12,7 @@ $easing-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 // Media queries
 $container-max-width: 1440px;
 $gutter: 1.75rem;
-$nav-height: 3.81rem;
+$nav-height: 5.6875rem;
 
 $tablet-min-width: 768px;
 $desktop-min-width: 1025px;
@@ -66,7 +66,7 @@ $nav-collapse-max-width: 1199px;
 
   @include viewport(tablet-desktop) {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
 
   &.no-gutter-padding {
