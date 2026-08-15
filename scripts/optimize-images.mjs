@@ -24,22 +24,22 @@ async function optimize(path) {
   if (before < MIN_BYTES) {
     return null;
   }
-  // exec headshots render in a 288px wide card, everything else is 1600px wide max
-  const maxWidth = path.includes("execs-") ? 800 : 1600;
+  // Exec headshots render in a 288px wide card, everything else is 1600px wide max
+  const isHeadshot = path.includes("execs-");
+  const maxWidth = isHeadshot ? 1000 : 1600;
+  const quality = isHeadshot ? 88 : 80;
   const ext = extname(path).toLowerCase();
   const pipeline = sharp(path)
     .rotate()
     .resize({ width: maxWidth, withoutEnlargement: true });
 
   if (ext === ".png") {
-    // if it's a PNG, compress it with a palette and a quality of 80
-    // preserves transparency and reduces file size
-    pipeline.png({ compressionLevel: 9, palette: true, quality: 80 });
+    // palette compression preserves transparency and reduces file size
+    pipeline.png({ compressionLevel: 9, palette: true, quality });
   } else if (ext === ".webp") {
-    // if it's a WebP, compress it with a quality of 80
-    pipeline.webp({ quality: 80 });
+    pipeline.webp({ quality });
   } else {
-    pipeline.jpeg({ quality: 82, mozjpeg: true });
+    pipeline.jpeg({ quality: isHeadshot ? quality : 82, mozjpeg: true });
   }
 
   // buffer first to avoid writing partial files
