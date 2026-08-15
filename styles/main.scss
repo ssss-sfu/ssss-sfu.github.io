@@ -57,9 +57,10 @@
   --colour-image-overlay: #141515;
   --colour-on-image: #fff;
 
-  // Hero mask: original dark (solid → ~75% / #141515bf)
-  --colour-hero-mask-start: 1;
-  --colour-hero-mask-end: 0.75;
+  // Hero mask: opaque only behind the nav
+  --colour-hero-mask-top: 0.85;
+  --colour-hero-mask-mid: 0.35;
+  --colour-hero-mask-end: 0.65;
   --colour-hero-text: var(--colour-on-image);
 }
 
@@ -84,9 +85,9 @@ html[data-theme="light"] {
   --colour-image-overlay: #faf9f5;
   --colour-on-image: #141515;
 
-  // Softer cream wash — keeps more photo detail than the dark-mode curve
-  --colour-hero-mask-start: 0.4;
-  --colour-hero-mask-end: 0.62;
+  --colour-hero-mask-top: 0.75;
+  --colour-hero-mask-mid: 0.25;
+  --colour-hero-mask-end: 0.55;
 }
 
 *,

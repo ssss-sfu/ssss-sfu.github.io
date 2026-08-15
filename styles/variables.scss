@@ -43,20 +43,6 @@ $nav-collapse-max-width: 1199px;
   }
 }
 
-// Dark: original mask. Light: softer cream wash via CSS variables.
-@mixin hero-image-stack($image-path) {
-  background-image:
-    linear-gradient(
-      180deg,
-      rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-start)) 0%,
-      rgba(var(--colour-neutral-1200-rgb), var(--colour-hero-mask-end)) 100%
-    ),
-    url($image-path);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 @keyframes fade-up {
   0% {
     opacity: 0;
