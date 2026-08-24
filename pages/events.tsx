@@ -7,7 +7,7 @@ const EventsPage: React.FC = () => {
         <Hero
           title="Join and meet other SoSy students"
           subtitle="Events"
-          backgroundImage="/images/landing-page/discover-ssss-events.png"
+          backgroundImage="/images/landing-page/discover-ssss-events.webp"
         />
         <article className="container annual-events">
           <header>

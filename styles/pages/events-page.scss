@@ -36,7 +36,7 @@
           transparent 0%,
           var(--colour-image-overlay) 100%
         ),
-        url("/images/landing-page/discover-ssss-main.png");
+        url("/images/landing-page/discover-ssss-main.webp");
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -80,7 +80,7 @@
             transparent 0%,
             var(--colour-image-overlay) 100%
           ),
-          url("/images/landing-page/discover-ssss-main.png");
+          url("/images/landing-page/discover-ssss-main.webp");
         background-size: cover;
         background-position: center;
       }
@@ -129,7 +129,7 @@
         }
 
         .annual-events__link-item:nth-child(3)::before {
-          background-image: url("/images/landing-page/discover-ssss-main.png");
+          background-image: url("/images/landing-page/discover-ssss-main.webp");
         }
       }
 

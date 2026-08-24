@@ -23,7 +23,7 @@ const GetInvolved: React.FC<GetInvolvedProps> = () => {
       <Hero
         title="Join the Software Systems Student Society"
         subtitle="Get Involved"
-        backgroundImage="/images/landing-page/discover-ssss-main.png"
+        backgroundImage="/images/landing-page/discover-ssss-main.webp"
       />
       <main className="container">
         <section className="main-content">
