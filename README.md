@@ -150,17 +150,29 @@ Thanks for contributing!
 `public/` is easy to bloat. Make sure to keep it small:
 
 1. Place the file into the right folder: under `public/images/`.
-2. Optimise the image from the repo root using:
+2. Convert JPG/PNG files to WebP (optional, but preferred):
 
 ```
- `node scripts/optimize-images.mjs`
+node scripts/convert-to-webp.mjs public/images/about-page/execs-2026/name.jpg
 ```
 
-- This resizes and re-encodes anything over 250KB in place and skips a file if the result would be larger.
-- It cannot tell an original from a file it has already processed, so a second pass re-compresses everything and compounds the artifacts. Currently: If you need to redo an image, recover the original from git history first.
+- This writes `name.webp`, deletes the original, and updates any references to the old path in `pages/`, `components/`, `lib/`, `utils/`, `styles/` and `public/jsons/`.
+
+3. Commit as usual. The pre-commit hook optimizes every image you added or changed in `public/` and re-stages it before the commit is created:
+   - Resizes to 1000px wide for exec headshots (`execs-` folders) and 1600px wide for everything else.
+   - Re-encodes and strips EXIF metadata (including GPS location from phone photos).
+   - Leaves a file untouched if the result would be larger.
+
+Each image is compressed once, when it is first committed, so already-committed images are not re-compressed. If you need to redo an image, start from the original rather than the compressed copy.
+
+You can also run the optimizer by hand:
+
+```
+node scripts/optimize-images.mjs path/to/image.jpg   # specific files, any size
+node scripts/optimize-images.mjs                     # scan all of public/, files over 250KB only
+```
+
 - Rough targets: exec headshots ~70KB, full-width hero images ~200–800KB.
-
-- TODO: add image path as an arugment to only optimize a specific image.
 
 ## Past Developers
 

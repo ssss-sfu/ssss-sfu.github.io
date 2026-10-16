@@ -1,1 +1,2 @@
 bun run precommit
+node scripts/optimize-images.mjs --staged

@@ -22,6 +22,18 @@
       }
     },
     {
+      "name": "Manpreet Singh Parmar",
+      "role": "Secretary",
+      "pronoun": "he/him",
+      "description": "HELLO EVERYONE! I am still here. Call me Dora the explorer the way I be moving up in the world. Besides that, I’m excited for this new chapter. If y'all see me on campus feel free to say hi. When I am not on campus, I'm either playing video games or watching some random sitcom. My fun fact is I have almost fought a kangaroo 😖😔🦘",
+      "imgSrc": "/images/about-page/execs-2026/manpreet.webp",
+      "socials": {
+        "discord": "manpreetking2",
+        "instagram": "https://instagram.com/manpreetking2/",
+        "linkedIn": "https://www.linkedin.com/in/manpreetking2/"
+      }
+    },
+    {
       "name": "Brandon Chattha",
       "role": "Treasurer",
       "pronoun": "he/him",
@@ -56,12 +68,34 @@
       }
     },
     {
-      "name": "Ethan Ke",
+      "name": "Sukhdeep Somal",
       "role": "Director of Visual Design",
       "pronoun": "he/him",
+      "description": "Hey everyone! I’m Sukhdeep, a first-year SoSy student and your Director of Marketing! My job is basically to convince people to look at our posts, which is ironic because I have the attention span of a goldfish with Wi-Fi. When I’m not making graphics or pretending I have my life together, I’m probably coding a random project I’ll never finish or starting another side quest instead of doing my actual assignments. Fun fact: I can spend hours debugging one line of code but will ignore my 47 unread notifications like they don’t exist. My sleep schedule is sponsored by poor decisions and the phrase “I’ll do it tomorrow.” Anyway, if you see me online at an unreasonable hour, no you didn’t. 💀",
+      "imgSrc": "/images/about-page/execs-2026/sukhdeep.webp",
+      "socials": {
+        "discord": "twistedmiraculous",
+        "instagram": "https://instagram.com/deep._.somal/",
+        "linkedIn": "https://www.linkedin.com/in/sukhdeep-kaur-somal-190baa276/"
+      }
+    },
+    {
+      "name": "Ethan Ke",
+      "role": "Director of Marketing",
+      "pronoun": "she/her",
       "description": "Hi I’m Ethan, a second year SoSy student. For fun I play League of Legends.",
       "imgSrc": "/images/about-page/execs-2026/ethan.webp",
       "socials": {}
+    },
+    {
+      "name": "Andrew Hung",
+      "role": "Director of Visual Design",
+      "pronoun": "he/him",
+      "description": "Hello y'all, I'm the (other) Andrew. I'm a first year SoSy student and your second director of visual design! I love doing photography, listening to music, and drawing digitally. Some may also know I play a lot of rhythm games as well.... I'm honoured to be apart of the SSSS exec team for this year. Don't be afraid to message me in the SSSS Discord for anything!",
+      "imgSrc": "/images/about-page/execs-2026/andrewh.webp",
+      "socials": {
+        "linkedIn": "https://www.linkedin.com/in/andrewhungca/"
+      }
     },
     {
       "name": "Noah Zakaib",
@@ -79,7 +113,7 @@
       "role": "Director of Relations",
       "pronoun": "he/him",
       "description": "Hello everyone! My name is Andrew, and I’m a fourth-year SoSy student. I’m big on playing games, both multiplayer and solo, with my recent favorite solo game being Hollow Knight! I enjoy playing piano and guitar, reading, or playing board games with my family. I really like playing table tennis, and I’ve recently been getting into beach volleyball! I’m also a big horror movie enjoyer, so feel free to talk to me about scary films 🤩 I’m looking forward to continue working on the SSSS team as a Director of Relations!",
-      "imgSrc": "/images/about-page/execs-2026/andrew.webp",
+      "imgSrc": "/images/about-page/execs-2026/andrewlg.webp",
       "socials": {
         "discord": "xen0xic",
         "linkedIn": "https://www.linkedin.com/in/andrew-la-grange-1754a6308/"
@@ -121,16 +155,41 @@
       }
     },
     {
-      "name": "Manpreet Singh Parmar",
+      "name": "Nusayba Khan",
+      "role": "1st Year Representative",
+      "pronoun": "she/her",
+      "description": "Hi! My name's Nusayba and I’m a first year SoSy student! I love reading and consuming film and tv, am music obsessed, have been training jiujitsu for almost a decade now, and always have some obscure craft that I am doing on the side. I’m so hyped to be joining the SSSS exec team this year, and I’m always up to chat so feel free to get in touch!",
+      "imgSrc": "/images/about-page/execs-2026/nusayba.webp",
+      "socials": {
+        "discord": "nusayba_",
+        "instagram": "https://instagram.com/nusayba_khan/",
+        "linkedIn": "https://www.linkedin.com/in/nusayba-khan/"
+      }
+    },
+    {
+      "name": "Darren Teo",
       "role": "1st Year Representative",
       "pronoun": "he/him",
-      "description": "HELLO CHAT (SOSY), I’m still here and still as your first year representative (maybe something else too). Besides from school, I like to play video games, play DnD, and yell at my friends for throwing. A fun fact about me is that I work on a roller coaster and I did a cartwheel on said roller coaster. Overall I’m looking forward to this year.",
-      "imgSrc": "/images/about-page/execs-2026/manpreet.webp",
+      "description": "Hi everyone!!! I’m Darren and I will be one of your first year representatives this year! I love hitting the gym and being active outside of campus. Whenever I’m at home, I tend to procrastinate a lot and I’m starting to pay the price 😭Anyways, I’m really excited to start the year off as an executive and don’t be afraid to send me a message!",
+      "imgSrc": "/images/about-page/execs-2026/darren.webp",
       "socials": {
-        "discord": "manpreetking2",
-        "instagram": "https://instagram.com/manpreetking2/",
-        "linkedIn": "https://www.linkedin.com/in/manpreetking2/"
+        "discord": "dareetos",
+        "instagram": "https://instagram.com/daree_tos/",
+        "linkedIn": "https://www.linkedin.com/in/darrenkteo/"
+      }
+    },
+    {
+      "name": "Aaron Lama",
+      "role": "1st Year Representative",
+      "pronoun": "he/him",
+      "description": "Yo, my name is Aaron and I’m your first year non-sosy sosy first year rep 💔. I listen to probably like 5 hours of music a day and love horror movies. I have basically 0 previous coding experience, but I’m a hard last minute worker 🙂. I’m so excited to be here on the SSSS team and I’m always free to talk.",
+      "imgSrc": "/images/about-page/execs-2026/aaron.webp",
+      "socials": {
+        "discord": "ultimatelamatime",
+        "instagram": "https://instagram.com/UltimateLamaTime/",
+        "linkedIn": "https://www.linkedin.com/in/aaron-lama-b38659358/"
       }
     }
+    
   ]
 }
