@@ -68,12 +68,12 @@ View the live site here: https://sfussss.org/
 
    Copy the example file and fill in the values:
 
-   | Variable                        | Effect                           |
-   | ------------------------------- | -------------------------------- |
-   | `NEXT_PUBLIC_SANITY_PROJECT_ID` | Blog posts (Sanity CMS)          |
-   | `NEXT_PUBLIC_SANITY_DATASET`    | Blog posts (Sanity CMS)          |
-   | `GOOGLE_CALENDAR_API_KEY`       | The events calendar on `/events` |
-   | `SANITY_API_READ_TOKEN`         | Optional, Server-only            |
+   | Variable                              | Effect                           |
+   | ------------------------------------- | -------------------------------- |
+   | `NEXT_PUBLIC_SANITY_PROJECT_ID`       | Blog posts (Sanity CMS)          |
+   | `NEXT_PUBLIC_SANITY_DATASET`          | Blog posts (Sanity CMS)          |
+   | `NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY` | The events calendar on `/events` |
+   | `SANITY_API_READ_TOKEN`               | Optional, Server-only            |
    - Ask the website committee lead for the values.
 
    - The site runs fine without them, but you just get an empty blog and an empty events calendar. If you are not touching either of those, you can skip this step.

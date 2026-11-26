@@ -156,32 +156,3 @@ export function articleJsonLd(
     },
   };
 }
-
-// JSON-LD for an upcoming calendar event, so it can appear in Google's event results.
-// Google requires a location, so callers only pass events that have one.
-export function eventJsonLd(event: {
-  title: string;
-  start: string;
-  end: string;
-  location: string;
-}): Record<string, unknown> {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    name: event.title,
-    startDate: event.start,
-    endDate: event.end,
-    eventStatus: "https://schema.org/EventScheduled",
-    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    location: {
-      "@type": "Place",
-      name: event.location,
-      address: event.location,
-    },
-    organizer: {
-      "@type": "Organization",
-      name: ORGANIZATION_NAME,
-      url: SITE_URL,
-    },
-  };
-}

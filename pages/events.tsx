@@ -1,31 +1,8 @@
-import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import { Hero, Button, EventsCalendar, JsonLd } from "@components";
-import { fetchEvents, type CalendarEvent } from "@lib/events";
-import { eventJsonLd } from "@lib/seo.config";
+import { Hero, Button, EventsCalendar } from "@components";
 
-export const getStaticProps: GetStaticProps<{
-  events: CalendarEvent[];
-  eventsJsonLd: Record<string, unknown>[];
-}> = async () => {
-  const events = await fetchEvents();
-  // decided once at build time, so the browser doesn't recompute it with a different "now"
-  const now = new Date();
-  const eventsJsonLd = events
-    .filter(
-      (e): e is CalendarEvent & { location: string } =>
-        Boolean(e.location) && new Date(e.end) >= now
-    )
-    .map(eventJsonLd);
-  return { props: { events, eventsJsonLd } };
-};
-
-export default function EventsPage({
-  events,
-  eventsJsonLd,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+const EventsPage: React.FC = () => {
   return (
     <div className="page events-page">
-      {eventsJsonLd.length > 0 && <JsonLd data={eventsJsonLd} />}
       <main>
         <Hero
           title="Join and meet other SoSy students"
@@ -66,7 +43,7 @@ export default function EventsPage({
             </a>
           </section>
           <section className="annual-events__events-calendar">
-            <EventsCalendar events={events} />
+            <EventsCalendar />
           </section>
           <div className="annual-events__subscribe-button">
             <a
@@ -81,4 +58,6 @@ export default function EventsPage({
       </main>
     </div>
   );
-}
+};
+
+export default EventsPage;
