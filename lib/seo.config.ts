@@ -3,7 +3,9 @@
  */
 
 export const SITE_URL = "https://sfussss.org";
-export const DEFAULT_TITLE = "Software Systems Student Society";
+// "SFU" in titles: it's what people search for; nobody outside the society types "SSSS"
+export const SITE_NAME = "SFU Software Systems Student Society";
+export const DEFAULT_TITLE = `${SITE_NAME} (SSSS)`;
 export const DEFAULT_DESCRIPTION =
   "Official site of the Software Systems Student Society (SSSS) at SFU — events, resources, blog, and ways to get involved.";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
@@ -43,32 +45,32 @@ export const PAGE_SEO: Record<string, PageSEO> = {
     description: DEFAULT_DESCRIPTION,
   },
   "/about": {
-    title: "About | SSSS",
+    title: `About | ${SITE_NAME}`,
     description:
       "Meet the Software Systems Student Society exec team and learn our mission at SFU.",
   },
   "/events": {
-    title: "Events | SSSS",
+    title: `Events | ${SITE_NAME}`,
     description:
       "Upcoming and annual SSSS events for Software Systems students at SFU.",
   },
   "/get-involved": {
-    title: "Get Involved | SSSS",
+    title: `Get Involved | ${SITE_NAME}`,
     description:
       "Run for SSSS elections, join committees, and get involved in the Software Systems community.",
   },
   "/resources": {
-    title: "Resources | SSSS",
+    title: `Resources | ${SITE_NAME}`,
     description:
       "Useful links, tools, and software resources for Software Systems students.",
   },
   "/courses": {
-    title: "Courses | SSSS",
+    title: `Courses | ${SITE_NAME}`,
     description:
       "Course requirements and descriptions for the SFU Software Systems major.",
   },
   "/blog": {
-    title: "Blog | SSSS",
+    title: `Blog | ${SITE_NAME}`,
     description:
       "Articles and updates from the Software Systems Student Society at SFU.",
   },
@@ -97,7 +99,7 @@ export function organizationJsonLd(): Record<string, unknown> {
     name: ORGANIZATION_NAME,
     alternateName: "SSSS",
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.ico`,
+    logo: `${SITE_URL}/logo.png`,
     sameAs: SOCIAL_SAME_AS,
   };
 }
@@ -117,6 +119,7 @@ type BlogPostingInput = {
   excerpt?: string;
   slug: { current: string };
   _createdAt: string;
+  _updatedAt?: string;
   author?: { name?: string };
 };
 
@@ -134,6 +137,7 @@ export function articleJsonLd(
     description: post.excerpt,
     image: [ogImage],
     datePublished: post._createdAt,
+    dateModified: post._updatedAt ?? post._createdAt,
     author: {
       "@type": "Person",
       name: post.author?.name,
@@ -143,12 +147,41 @@ export function articleJsonLd(
       name: "SSSS",
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/favicon.ico`,
+        url: `${SITE_URL}/logo.png`,
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": canonical,
+    },
+  };
+}
+
+// JSON-LD for an upcoming calendar event, so it can appear in Google's event results.
+// Google requires a location, so callers only pass events that have one.
+export function eventJsonLd(event: {
+  title: string;
+  start: string;
+  end: string;
+  location: string;
+}): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: event.title,
+    startDate: event.start,
+    endDate: event.end,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: event.location,
+      address: event.location,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: ORGANIZATION_NAME,
+      url: SITE_URL,
     },
   };
 }

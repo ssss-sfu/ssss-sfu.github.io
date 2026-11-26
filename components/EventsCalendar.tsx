@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import { addMonths, isToday, parseISO, subMonths } from "date-fns";
+import { isToday, parseISO } from "date-fns";
+import type { CalendarEvent } from "@lib/events";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -18,49 +19,17 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-export const EventsCalendar: React.FC = () => {
-  const googleCalendarID =
-    "j7qfcngd9crbhelib6tgdihi3k%40group.calendar.google.com";
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY;
-  const [events, setEvents] = useState<any[]>([]);
-
-  useEffect(() => {
-    // Will fetch events from Google Calendar API
-    // Within a time range of 3 months in the past to 6 months in the future
-    const now = new Date();
-    const timeMin = subMonths(now, 3).toISOString();
-    const timeMax = addMonths(now, 6).toISOString();
-
-    const calendarURL = `https://www.googleapis.com/calendar/v3/calendars/${googleCalendarID}/events?key=${apiKey}&timeMin=${timeMin}&timeMax=${timeMax}&singleEvents=true&orderBy=startTime`;
-
-    fetch(calendarURL)
-      .then((response) => response.json())
-      .then((data) => {
-        const updatedEvents: any[] = [];
-        if (data.items) {
-          for (const event of data.items) {
-            // Handles both all-day and timed events
-            const start = event.start?.dateTime || event.start?.date;
-            const end = event.end?.dateTime || event.end?.date;
-            if (start && end) {
-              // parseISO reads a date-only "2026-11-26" as local midnight;
-              // new Date() would read it as UTC and land on the previous day here
-              updatedEvents.push({
-                title: event.summary,
-                start: parseISO(start),
-                end: parseISO(end),
-                allDay: !event.start?.dateTime,
-              });
-            }
-          }
-        }
-        setEvents(updatedEvents);
-      })
-      // catch block to display errors
-      .catch((error) => {
-        console.error("Error fetching calendar events:", error);
-      });
-  }, [apiKey]);
+export const EventsCalendar: React.FC<{ events: CalendarEvent[] }> = ({
+  events,
+}) => {
+  // parseISO reads a date-only "2026-11-26" as local midnight;
+  // new Date() would read it as UTC and land on the previous day here
+  const calendarEvents = events.map((e) => ({
+    title: e.title,
+    start: parseISO(e.start),
+    end: parseISO(e.end),
+    allDay: e.allDay,
+  }));
 
   const dayPropGetter = (date: Date) => {
     if (isToday(date)) {
@@ -78,7 +47,7 @@ export const EventsCalendar: React.FC = () => {
         onSelectEvent={() => {
           window.open("https://discord.com/invite/whdfmJbVF7", "_blank");
         }}
-        events={events}
+        events={calendarEvents}
         startAccessor="start"
         endAccessor="end"
         style={{ height: 750 }}

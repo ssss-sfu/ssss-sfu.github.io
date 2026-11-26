@@ -7,6 +7,7 @@ import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
 import { Helmet, JsonLd } from "@components";
 import {
+  SITE_NAME,
   DEFAULT_DESCRIPTION,
   DEFAULT_OG_IMAGE,
   articleJsonLd,
@@ -73,7 +74,7 @@ export default function ProjectSlugRoute(
   return (
     <div className="blog-category-page">
       <Helmet
-        title={post.title ? `${post.title} | SSSS` : undefined}
+        title={post.title ? `${post.title} | ${SITE_NAME}` : undefined}
         description={post.excerpt || DEFAULT_DESCRIPTION}
         path={`/blog/${post.slug.current}`}
         image={ogImage}

@@ -26,16 +26,6 @@ function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
-function todayIsoDate() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function priorityForPath(path) {
-  if (path === "/") return "1.0";
-  if (path.startsWith("/blog/")) return "0.6";
-  return "0.8";
-}
-
 async function fetchBlogPosts() {
   const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
   const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
@@ -65,10 +55,10 @@ async function fetchBlogPosts() {
 function buildXml(urls) {
   const body = urls
     .map(
-      ({ loc, lastmod, priority }) => `  <url>
-    <loc>${escapeXml(loc)}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <priority>${priority}</priority>
+      // Google ignores <priority>, and ignores <lastmod> on sites where it's
+      // always "today", so only real dates (blog _updatedAt) are written
+      ({ loc, lastmod }) => `  <url>
+    <loc>${escapeXml(loc)}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ""}
   </url>`
     )
     .join("\n");
@@ -81,14 +71,11 @@ ${body}
 }
 
 async function main() {
-  const today = todayIsoDate();
   const posts = await fetchBlogPosts();
 
   const urls = [
     ...STATIC_PATHS.map((path) => ({
       loc: path === "/" ? SITE_URL : `${SITE_URL}${path}`,
-      lastmod: today,
-      priority: priorityForPath(path),
     })),
     ...posts
       .filter((post) => post?.slug)
@@ -96,10 +83,7 @@ async function main() {
         const path = `/blog/${post.slug}`;
         return {
           loc: `${SITE_URL}${path}`,
-          lastmod: post._updatedAt
-            ? String(post._updatedAt).slice(0, 10)
-            : today,
-          priority: priorityForPath(path),
+          lastmod: post._updatedAt && String(post._updatedAt).slice(0, 10),
         };
       }),
   ];

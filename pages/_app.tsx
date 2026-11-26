@@ -16,6 +16,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         title={lookup?.title}
         description={lookup?.description}
         path={path}
+        // the default 404 page is rendered by Next's built-in /_error route
+        noIndex={router.pathname === "/_error" || router.pathname === "/404"}
       />
       <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
       <HeaderNav />
