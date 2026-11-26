@@ -4,7 +4,7 @@ import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
-import { addMonths, isToday, subMonths } from "date-fns";
+import { addMonths, isToday, parseISO, subMonths } from "date-fns";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -43,10 +43,13 @@ export const EventsCalendar: React.FC = () => {
             const start = event.start?.dateTime || event.start?.date;
             const end = event.end?.dateTime || event.end?.date;
             if (start && end) {
+              // parseISO reads a date-only "2026-11-26" as local midnight;
+              // new Date() would read it as UTC and land on the previous day here
               updatedEvents.push({
                 title: event.summary,
-                start: new Date(start),
-                end: new Date(end),
+                start: parseISO(start),
+                end: parseISO(end),
+                allDay: !event.start?.dateTime,
               });
             }
           }

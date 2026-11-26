@@ -43,3 +43,6 @@ next-env.d.ts
 
 # generated at build time
 /public/sitemap.xml
+
+# graphify graph cache
+graphify-out

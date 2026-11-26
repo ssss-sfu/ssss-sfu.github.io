@@ -7,7 +7,7 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import { apiVersion, dataset, projectId } from "./sanity/env";
+import { apiVersion, dataset, projectId } from "./lib/sanity.api";
 import { schema } from "./sanity/schema";
 
 export default defineConfig({

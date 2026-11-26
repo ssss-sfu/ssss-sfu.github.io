@@ -2,6 +2,7 @@ import { Hero, Dropdown } from "@components";
 import { useState, useEffect, useRef } from "react";
 import { SidebarCourse } from "components/SidebarCourse";
 import ClipLoader from "react-spinners/ClipLoader";
+import { courseKey, groupCourses, type CourseRef } from "@lib/courses";
 
 // API endpoint for SFU Courses
 const SFU_COURSES_API_BASE = "https://api.sfucourses.com/v1/rest/outlines";
@@ -25,12 +26,6 @@ export interface SFUCourseResponse {
     term: string;
   }>;
 }
-
-type CourseRef = {
-  dept: string;
-  number: string;
-  note?: string;
-};
 
 type RequirementGroup = {
   title: string;
@@ -203,23 +198,6 @@ const DEPTH_REQUIREMENTS: TextRequirementSection = {
     "CMPT 415, 416, and 498 may only be included with permission of the school.",
 };
 
-function courseKey(dept: string, number: string) {
-  return `${dept.toUpperCase()}-${number.toUpperCase()}`;
-}
-
-function isUpperLevelCourse(number: string): boolean {
-  const match = number.match(/^(\d{3})/i);
-  if (!match) return false;
-  const level = Number(match[1]);
-  return level >= 300 && level < 500;
-}
-
-function sortCourses(a: CourseRef, b: CourseRef): number {
-  const deptCompare = a.dept.localeCompare(b.dept);
-  if (deptCompare !== 0) return deptCompare;
-  return a.number.localeCompare(b.number, undefined, { numeric: true });
-}
-
 // Flattening requirement courses into a single list of courses
 function flattenRequirementCourses(
   sections: { groups: RequirementGroup[] }[]
@@ -283,45 +261,12 @@ const Courses: React.FC = () => {
       ),
     ])
       .then(([cmptCourses, macmCourses]) => {
-        const toCourseRef = (c: {
-          dept: string;
-          number: string;
-        }): CourseRef => ({
-          dept: c.dept.toUpperCase(),
-          number: c.number.toUpperCase(),
-        });
-
-        const uniqueByKey = (courses: CourseRef[]) =>
-          courses.filter(
-            (course, index, list) =>
-              list.findIndex(
-                (c) =>
-                  courseKey(c.dept, c.number) ===
-                  courseKey(course.dept, course.number)
-              ) === index
-          );
-
-        const depthElectives = uniqueByKey(
-          [...cmptCourses, ...macmCourses]
-            .map(toCourseRef)
-            .filter(
-              (c) =>
-                (c.dept === "CMPT" || c.dept === "MACM") &&
-                isUpperLevelCourse(c.number) &&
-                !upperRequiredSet.has(courseKey(c.dept, c.number))
-            )
-        ).sort(sortCourses);
-
-        const otherCmpt = uniqueByKey(
-          cmptCourses
-            .map(toCourseRef)
-            .filter(
-              (c) =>
-                !allRequiredSet.has(courseKey(c.dept, c.number)) &&
-                !isUpperLevelCourse(c.number)
-            )
-        ).sort(sortCourses);
-
+        const { depthElectives, otherCmpt } = groupCourses(
+          cmptCourses,
+          macmCourses,
+          upperRequiredSet,
+          allRequiredSet
+        );
         setDepthElectiveCourses(depthElectives);
         setOtherCmptCourses(otherCmpt);
       })

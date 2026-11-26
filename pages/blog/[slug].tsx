@@ -2,7 +2,7 @@ import { PortableText } from "@portabletext/react";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import { getImageDimensions } from "@sanity/asset-utils";
-import { readToken } from "../../lib/sanity.api";
+import { dataset, projectId, readToken } from "../../lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { urlForImage } from "@lib/sanity.image";
 import { Helmet, JsonLd } from "@components";
@@ -27,13 +27,10 @@ export const getStaticProps: GetStaticProps<
   },
   Query
 > = async ({ draftMode = false, params = {} }) => {
-  let post: Post | null = null;
-  try {
-    const client = getClient(draftMode ? { token: readToken } : undefined);
-    post = await getPost(client, params.slug);
-  } catch (_) {
-    // Sanity not configured
-  }
+  // only runs for slugs from getStaticPaths, so Sanity is configured here;
+  // a fetch error should fail the build, not deploy a missing post
+  const client = getClient(draftMode ? { token: readToken } : undefined);
+  const post: Post | null = await getPost(client, params.slug);
 
   if (!post) {
     return {
@@ -122,12 +119,11 @@ export default function ProjectSlugRoute(
 
 export const getStaticPaths = async () => {
   let paths: { params: { slug: string } }[] = [];
-  try {
-    const client = getClient();
-    const slugs: string[] = await client.fetch(postSlugsQuery);
+  // no Sanity env (local dev, fork PRs): build without posts.
+  // configured but failing: let it throw so the last good deploy stays live
+  if (projectId && dataset) {
+    const slugs: string[] = await getClient().fetch(postSlugsQuery);
     paths = slugs?.map((slug) => ({ params: { slug } })) || [];
-  } catch (_) {
-    // Sanity not configured
   }
 
   return {

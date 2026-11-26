@@ -1,5 +1,5 @@
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import { readToken } from "@lib/sanity.api";
+import { dataset, projectId, readToken } from "@lib/sanity.api";
 import { getClient } from "@lib/sanity.client";
 import { getPosts, type Post } from "@lib/sanity.queries";
 import { PostCard } from "@components";
@@ -8,11 +8,10 @@ export const getStaticProps: GetStaticProps<{
   posts: Post[];
 }> = async ({ draftMode = false }) => {
   let posts: Post[] = [];
-  try {
+  // no Sanity env: build an empty blog. configured but failing: fail the build
+  if (projectId && dataset) {
     const client = getClient(draftMode ? { token: readToken } : undefined);
     posts = await getPosts(client);
-  } catch (_) {
-    // Sanity not configured; return empty posts
   }
 
   return {

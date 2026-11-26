@@ -53,18 +53,13 @@ async function fetchBlogPosts() {
   );
   const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`;
 
-  try {
-    const res = await fetch(url);
-    if (!res.ok) {
-      console.warn(`Sanity query failed (${res.status}); static routes only.`);
-      return [];
-    }
-    const json = await res.json();
-    return Array.isArray(json.result) ? json.result : [];
-  } catch (err) {
-    console.warn("Sanity fetch error; static routes only.", err.message);
-    return [];
+  // configured but failing: throw (main exits 1) rather than ship a sitemap without posts
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`Sanity query failed (${res.status})`);
   }
+  const json = await res.json();
+  return Array.isArray(json.result) ? json.result : [];
 }
 
 function buildXml(urls) {

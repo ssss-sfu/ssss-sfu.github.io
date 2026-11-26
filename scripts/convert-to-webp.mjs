@@ -45,9 +45,6 @@ async function* walk(dir) {
 async function convert(path) {
   const ext = extname(path);
   const out = path.slice(0, -ext.length) + ".webp";
-  if (existsSync(out)) {
-    throw new Error(`${out} already exists`);
-  }
   // Exec headshots render in a 288px wide card, everything else is 1600px wide max
   const isHeadshot = path.includes("execs-");
   await sharp(path)
@@ -68,12 +65,25 @@ if (files.length === 0) {
   process.exit(1);
 }
 
+const toConvert = files.filter((path) => {
+  if (CONVERTIBLE.has(extname(path).toLowerCase())) return true;
+  console.log(`skipping ${path}: not a JPG or PNG`);
+  return false;
+});
+// check every target before touching anything: failing midway would leave
+// deleted originals whose references were never updated
+const clashes = toConvert
+  .map((path) => path.slice(0, -extname(path).length) + ".webp")
+  .filter((out) => existsSync(out));
+if (clashes.length > 0) {
+  console.error(
+    `already exist, delete them first to replace:\n  ${clashes.join("\n  ")}`
+  );
+  process.exit(1);
+}
+
 const renames = [];
-for (const path of files) {
-  if (!CONVERTIBLE.has(extname(path).toLowerCase())) {
-    console.log(`skipping ${path}: not a JPG or PNG`);
-    continue;
-  }
+for (const path of toConvert) {
   const out = await convert(path);
   renames.push([publicUrl(path), publicUrl(out)]);
   console.log(`${path} -> ${out}`);

@@ -48,13 +48,13 @@ async function optimize(path, { fullScan }) {
   // Exec headshots render in a 288px wide card, everything else is 1600px wide max
   const isHeadshot = path.includes("execs-");
   const maxWidth = isHeadshot ? 1000 : 1600;
+  const { width, exif } = await sharp(path).metadata();
   if (before < MIN_BYTES) {
     if (fullScan) {
       return null;
     }
     // small files are only touched if they're too wide or carry EXIF/GPS metadata,
     // so an already-optimized image isn't compressed a second time
-    const { width, exif } = await sharp(path).metadata();
     if (width <= maxWidth && !exif) {
       return null;
     }
@@ -77,8 +77,10 @@ async function optimize(path, { fullScan }) {
 
   // buffer first to avoid writing partial files
   const buffer = await pipeline.toBuffer();
-  if (buffer.length >= before) {
-    return null; // never make it bigger than the original
+  // keep the original only if it's already narrow enough; an oversized image is
+  // written resized even when PNG re-encoding makes the bytes grow
+  if (buffer.length >= before && width <= maxWidth) {
+    return null;
   }
   await writeFile(path, buffer);
   return { path, before, after: buffer.length };

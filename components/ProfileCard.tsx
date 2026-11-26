@@ -97,12 +97,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
     const resizeObserver = new ResizeObserver(fitDescriptionText);
     resizeObserver.observe(container);
 
-    // if the window is resized,
-    // window.addEventListener("resize", fitDescriptionText);
-    return () => {
-      resizeObserver.disconnect();
-      window.removeEventListener("resize", fitDescriptionText);
-    };
+    return () => resizeObserver.disconnect();
   }, [profile.description, fitDescriptionText]);
 
   function displaySocials(): React.ReactNode {
